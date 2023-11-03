@@ -5,9 +5,9 @@ Extract metadata for each paper using CERMINE and GROBID (provided through API),
 
 - Available APIs
 - ceurspt provides CERMINE and GROBID
-http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2462/paper1.html
-http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2462/paper1.grobid
-http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2462/paper1.cermine
+  - http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2462/paper1.html
+  - http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2462/paper1.grobid
+  - http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2462/paper1.cermine
 - [OPTIONAL] The ceur-ws template introduced a structure into the PDFs and recommended to at least provide a e-mail address or other identifier
   - optimization to extract author information based on the template
 

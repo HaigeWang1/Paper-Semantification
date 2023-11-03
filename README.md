@@ -1,7 +1,5 @@
 # Paper-Semantification
 
-# Main Tasks
-
 ## Input Processing
 Extract metadata for each paper using CERMINE and GROBID (provided through API), including title, authors, affiliations, publication year, etc.
 

@@ -38,9 +38,9 @@ The purpose of this task is to comprehensively process scholarly papers by lever
 #### Invoke metadata extraction modules for uploaded PDFs to auto-populate and validate necessary fields.
 
 # Current Status of task
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Access API
+- [ ] Utilize
+- [ ] Validation
 
 # Deadline
 - [ ] Midterm coordination

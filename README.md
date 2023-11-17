@@ -43,6 +43,6 @@ The purpose of this task is to comprehensively process scholarly papers by lever
 - [ ] Validation
 
 # Deadline
-- [ ] Midterm coordination
-- [ ] Project result delivery
-- [ ] Final presentation
+- [ ] 2024-01-19: Midterm coordination
+- [ ] 2024-03-22: Project result delivery
+- [ ] 2024-03-29: Final presentation

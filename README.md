@@ -1,7 +1,10 @@
-# Paper-Semantification
+# RWTH2023WS-KG-LAB-Task1_Paper-Semantification
 [![GitHub last commit](https://img.shields.io/github/last-commit/HaigeWang1/Paper-Semantification)](https://github.com/HaigeWang1/Paper-Semantification/commits/main)
 [![Issues](https://img.shields.io/github/issues-raw/HaigeWang1/Paper-Semantification)](https://github.com/HaigeWang1/Paper-Semantification/issues)  
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
+
+![image](https://github.com/HaigeWang1/Paper-Semantification/assets/149795813/b18cb83e-6b4f-4053-80c3-c23f693771bd)
+
 # Goal
 ## Input Processing
 Extract metadata for each paper using CERMINE and GROBID (provided through API), including title, authors, affiliations, publication year, etc.

@@ -1,4 +1,4 @@
-# RWTH2023WS-KG-LAB-Task1_Paper-Semantification
+# RWTH2023WS-KG-LAB-Task1-Paper-Semantification
 [![GitHub last commit](https://img.shields.io/github/last-commit/HaigeWang1/Paper-Semantification)](https://github.com/HaigeWang1/Paper-Semantification/commits/main)
 [![Issues](https://img.shields.io/github/issues-raw/HaigeWang1/Paper-Semantification)](https://github.com/HaigeWang1/Paper-Semantification/issues)  
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)

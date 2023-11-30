@@ -37,6 +37,17 @@ The purpose of this task is to comprehensively process scholarly papers by lever
 ### 6. SemPubFlow Integration
 #### Invoke metadata extraction modules for uploaded PDFs to auto-populate and validate necessary fields.
 
+# How to run it
+```
+git clone https://github.com/HaigeWang1/Paper-Semantification.git
+cd Paper-Semantification
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt 
+git clone https://github.com/sebastianGehrmann/dblp-pub.git && cd dblp-pub
+python setup.py install && cd ..
+```
+
 # Current Status of task
 - [ ] Access API
 - [ ] Utilize

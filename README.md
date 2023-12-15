@@ -3,6 +3,18 @@
 [![Issues](https://img.shields.io/github/issues-raw/HaigeWang1/Paper-Semantification)](https://github.com/HaigeWang1/Paper-Semantification/issues)  
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
 
+# How to run it
+```
+git clone https://github.com/HaigeWang1/Paper-Semantification.git
+cd Paper-Semantification
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt 
+git clone https://github.com/sebastianGehrmann/dblp-pub.git && cd dblp-pub
+python setup.py install && cd ..
+rm -rf dblp-pub
+python parser.py -v 1999 2462
+```
 
 # Goal
 The purpose of this task is to comprehensively process scholarly papers by leveraging metadata extraction services such as CERMINE and GROBID APIs.
@@ -37,16 +49,6 @@ The purpose of this task is to comprehensively process scholarly papers by lever
 ### 6. SemPubFlow Integration
 #### Invoke metadata extraction modules for uploaded PDFs to auto-populate and validate necessary fields.
 
-# How to run it
-```
-git clone https://github.com/HaigeWang1/Paper-Semantification.git
-cd Paper-Semantification
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt 
-git clone https://github.com/sebastianGehrmann/dblp-pub.git && cd dblp-pub
-python setup.py install && cd ..
-```
 
 # Current Status of task
 - [ ] Access API

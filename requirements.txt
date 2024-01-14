@@ -1,5 +1,5 @@
-requests
-bs4
-orcid
-Wikidata
+requests==2.31.0
+bs4==0.0.1
+orcid==1.0.3
+Wikidata==0.7.0
 

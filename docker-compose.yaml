@@ -1,0 +1,29 @@
+version: '3'
+services:
+  neo4j:
+    image: neo4j:5.15.0
+    environment:
+      NEO4J_AUTH: none # disable authentication
+    ports:
+      - "7474:7474" # HTTP
+      - "7687:7687" # Bolt
+    volumes:
+      - ./neo4j/data:/data # persists data outside the container
+      # - ./neo4j/logs:/logs # persists logs
+      # - ./neo4j/import:/var/lib/neo4j/import # import location
+      # - ./neo4j/plugins:/plugins # plugins directory
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider localhost:7474 || exit 1"]
+    networks:
+      - interconnection
+
+  paper_sementification_server:
+    image: paper_sementification_server:latest
+    ports:
+      - "8001:8001"
+    networks:
+      - interconnection
+
+networks:
+  interconnection:
+    driver: bridge

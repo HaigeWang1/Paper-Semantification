@@ -1,0 +1,1 @@
+# Here we will create the docker image for the python application

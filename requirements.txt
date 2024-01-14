@@ -2,4 +2,4 @@ requests==2.31.0
 bs4==0.0.1
 orcid==1.0.3
 Wikidata==0.7.0
-
+neo4j==5.16.0

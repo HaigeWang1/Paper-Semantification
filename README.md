@@ -16,6 +16,14 @@ rm -rf dblp-pub
 python parser.py -v 1999 2462
 ```
 
+
+### Dockerized Version (**WIP**)
+
+In the current version of docker-compose.yaml Neo4J database service is launched. It can be then accessed locally through http://localhost:7474
+```
+docker-compose up -d
+```
+
 # Goal
 The purpose of this task is to comprehensively process scholarly papers by leveraging metadata extraction services such as CERMINE and GROBID APIs.
 

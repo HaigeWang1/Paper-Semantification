@@ -2,3 +2,6 @@
 test/__pycache__/
 .vscode
 .venv
+
+# Persisted neo4j data
+neo4j/

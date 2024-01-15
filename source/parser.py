@@ -1,4 +1,3 @@
-
 import requests as req
 import re
 import dblp
@@ -11,13 +10,18 @@ from lxml import etree
 from dataclasses import dataclass
 from typing import Optional, List
 from bs4 import BeautifulSoup 
+import string
+from spellchecker import SpellChecker
+from fuzzywuzzy import fuzz
+
+
 
 @dataclass
 class Author:
     name: str
     affiliation: Optional[List[str]] = None
     email: Optional[List[str]] = None
-    aff_ok: Optional[bool] = None
+    #aff_ok: Optional[bool] = None
     
     def __eq__(self, other):
         if isinstance(other, Author):
@@ -35,7 +39,8 @@ class GrobitFile():
     @property
     def title(self):
         if not self._title:
-            self._title = self.grobidxml.title.getText()
+            self._title = self.grobidxml.title.getText().strip()
+            #self._title = elem_to_text(self.grobidxml.find('title')).strip()
         return self._title
 
 
@@ -80,8 +85,6 @@ class GrobitFile():
                     aff = ', '.join([aff.strip() for aff in affiliation_text.split('\n') if aff.strip() != ''])
                     aff_list += [aff.strip()]
                 affs += [aff_list]
-        # assert(len(authors_list)==len(affiliations))
-        # assert(len(authors_list)==len(emails))
         for i in range(len(authors_list)):
             author_name = authors_list[i]
             author_affiliation = affs[i] if affs[i] else []
@@ -103,7 +106,7 @@ class CermineFile():
     @property
     def title(self):
         if not self._title:
-            self._title = elem_to_text(self.cermine.find('article-title'))
+            self._title = elem_to_text(self.cermine.find('article-title')).strip()
         return self._title
 
 
@@ -111,6 +114,7 @@ class CermineFile():
     def authors(self):
         authors_in_header = self.cermine.find('article-meta').find('contrib-group').findAll('contrib')
         result = []
+
         for author in authors_in_header:
             name = elem_to_text(author.find('string-name'))
             email = []
@@ -128,29 +132,60 @@ class CermineFile():
                 addr = aff_tag.findAll('addr-line')
                 countries = aff_tag.findAll('country')
                 if aff_tag:
-                    affl = ''
+                    affl = []
                     if len(institutions) == len(addr):
                         if len(countries) != 0:
                                 if len(countries) == len(institutions):
-                                    for i in range(len(institutions)): #aff_tag.findAll('institution'):
-                                        affl = (', ').join([elem_to_text(institutions[i])]+  [elem_to_text(addr[i])] + [elem_to_text(countries[0])])
+                                    for i in range(len(institutions)):
+                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(addr[i]) + ' ' + elem_to_text(countries[i])
+                                        affl += [affiliation.strip()]
+                                elif len(countries) == 1:
+                                    for i in range(len(institutions)):                                    
+                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(addr[i]) + ' ' + elem_to_text(countries[0])
+                                        affl += [affiliation.strip()]
                                 else:
-                                    for i in range(len(institutions)): #aff_tag.findAll('institution'):                                        
-                                        affl = (', ').join([elem_to_text(institutions[i])] + [elem_to_text(addr[i])])
-                                    affl += elem_to_text(countries[0])
+                                    for i in range(len(institutions)):
+                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(addr[i])
+                                        affl += [affiliation.strip()]
                         else:
-                            for i in range(len(institutions)): #aff_tag.findAll('institution'):
-                                affl = elem_to_text(institutions[i]) + " " +  elem_to_text(addr[i]) +  ' ' 
-                        affiliations += [affl.strip()]
-                
+                            for i in range(len(institutions)): 
+                                affiliation = elem_to_text(institutions[i]) + ' ' +  elem_to_text(addr[i])
+                                affl += [affiliation.strip()]
+                        affiliations += [(', ').join(affl)]
+                   
+                    elif len(addr)== 0:
+                        if len(countries) != 0:
+                                if len(countries) == len(institutions):
+                                    for i in range(len(institutions)):
+                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(countries[i])
+                                        affl += [affiliation.strip()]
+                                elif len(countries) == 1:
+                                    for i in range(len(institutions)):                                    
+                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(countries[0])
+                                        affl += [affiliation.strip()]
+                                else:
+                                    for i in range(len(institutions)):
+                                        affiliation = elem_to_text(institutions[i]) 
+                                        affl += [affiliation.strip()]
+                        else:
+                            for i in range(len(institutions)): 
+                                affiliation = elem_to_text(institutions[i]) 
+                                affl += [affiliation.strip()]
+                        affiliations += [(', ').join(affl)]
+
+                    else:
+                        for i in range(len(institutions)): #aff_tag.findAll('institution'):                                        
+                            affiliation = elem_to_text(institutions[i]) 
+                            affl += [affiliation.strip()]
+                        affiliations += [(', ').join(affl)]
+                        
                 else:
                     print(f"Author: {name}, Institution not found")
-            
-            author = Author(name=name, affiliation=affiliations, email=email)
+                
+            author = Author(name, affiliations, email)
             result.append(author)
 
         return result
-
 
   
 def elem_to_text(elem = None):
@@ -158,6 +193,11 @@ def elem_to_text(elem = None):
         return elem.getText()
     return ''
 
+def spell_check_correct(text):
+    spell = SpellChecker()
+    corrected_words = [spell.correction(word) if spell.correction(word) is not None else word for word in text.split()]
+    corrected_sentence = ' '.join(corrected_words)
+    return corrected_sentence
 
  
 def are_equal_list_authors(list1: List[Author], list2: List[Author]):
@@ -171,9 +211,6 @@ def are_equal_list_authors(list1: List[Author], list2: List[Author]):
             return False
     return True
         
-
-
-
 def main():
     Web = req.get('http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html') 
   
@@ -188,27 +225,72 @@ def main():
     parser = argparse.ArgumentParser(prog='Web parser', description='Take a list of volume numbers as input and extract the papers')
     parser.add_argument('-v', '--volume', nargs='+', default=[], required=True,help='Volume numbers as integer')     
     args = parser.parse_args()
-    cur_volumes = args.volume
+    #cur_volumes = args.volume
+    cur_volumes = [f'{x}' for x in range(2450, 2455) if f'{x}' in volumes]
     assert(all([vol_nr in volumes for vol_nr in cur_volumes]))
-
-    
     #extract all pages for each vol
     papers = {}
     for v in cur_volumes:
-        url = 'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-' + v 
+        url = 'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-' + v
         Web = req.get(url) 
-        reg2 = r'paper(\d+).pdf'
+        reg2 = rf'Vol-{v}/(.*?).pdf'
+        #reg2 = r'paper(\d+).pdf' ##needs to be changed to reg2 = r'paper(\d+).pdf' to accound for more papers that do not follow this format.
         papers[int(v)] = re.findall(reg2, BeautifulSoup(Web.text, 'lxml').prettify())
-            
+
     for k in papers.keys():
         for p in papers[k]:
-            paper_path = f'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-{k}/paper{p}'
-            # extract metadata for each paper using GROBID 
-            grobid =  GrobitFile(paper_path+'.grobid')
+            paper_path = f'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-{k}/{p}'
+            print(paper_path)
+            try:
+                # extract metadata for each paper using GROBID 
+                grobid =  GrobitFile(paper_path + '.grobid')
 
-            # extract metadata for each paper using CERMINE 
-            cermine =  CermineFile(paper_path+'.cermine')
-            
+                # extract metadata for each paper using CERMINE 
+                cermine =  CermineFile(paper_path + '.cermine')
+                print(k, p)
+
+                # account for spell errors 
+                g_title = spell_check_correct(grobid.title)
+                c_title = spell_check_correct(cermine.title)
+
+                # also consider version before spell errors as this might add another layer of inconsistence
+                g_title2 = grobid.title
+                c_title2 = cermine.title
+                title_list = [g_title, c_title, g_title2, c_title2]
+
+                # remove all spaces and special characters to have a more flexible comparison of the string values
+                for c in list(set(string.punctuation).union(set([' ', '\n', '\t', '∗']))):
+                    for t in title_list:    
+                        t = t.replace(c, '')
+
+                #merge title
+                paper_title = ''
+                if grobid.title.lower() == cermine.title.lower():
+                    print(f'Same titles: {cermine.title}')
+                    paper_title = cermine.title
+                elif g_title.lower() == c_title.lower() or g_title2.lower() == c_title2.lower():
+                    print(f'Almost same titles: {grobid.title}')
+                    paper_title = g_title2
+                elif g_title.lower() in c_title.lower() or grobid.title.lower() in cermine.title.lower() or g_title2.lower() in c_title2.lower():
+                    print(f'Partial title: {grobid.title} is part of {cermine.title}')
+                    paper_title =  grobid.title
+                elif c_title.lower() in g_title.lower() or cermine.title.lower() in grobid.title.lower() or c_title2.lower() in g_title2.lower():
+                    print(f'Partial title: {cermine.title} is part of {grobid.title}')
+                    paper_title = cermine.title
+                else:
+                    #check if string similarity is above a threshold ussing fuzzy matching
+                    if fuzz.ratio(cermine.title, grobid.title) > 95:
+                        paper_title = cermine.title
+                    else :
+                        # TODO: need to decide what to do here
+                        print('Titles not the same: COME UP with solution on how to resolve the conflicts')
+                        print(cermine.title, '\n', grobid.title, '\n')
+
+                #merge author information 
+                
+            except:
+                print('File not found')
+            """
             if grobid.title != cermine.title or not are_equal_list_authors(grobid.authors, cermine.authors):
                 print(f'\n{"*"*100}\n')
                 print(f'Paper {p} PDF: {paper_path}.pdf\n')
@@ -225,13 +307,13 @@ def main():
                 print(f'grobid authors: {grobid.authors}')
                 print('\n')
                 print(f'cermine authors: {cermine.authors}')
-            
+            """
             # (provided through API), including title, authors, affiliations, publication year
 
 
 
 
-    
+    """
     results = dblp.search([grobid.title])
   
     api = orcid.PublicAPI('APP-WNBUUWPD8MWY07XM', 'a5b8023a-cea1-4aa0-92f0-263c186d5556')
@@ -246,7 +328,7 @@ def main():
     client = Client() 
     entity = client.get('Q57983801', load=True)
     print(f'Wikidata entity: {entity}')
-
+    """
 
 
 if __name__ == '__main__':

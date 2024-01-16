@@ -13,8 +13,9 @@ from bs4 import BeautifulSoup
 import string
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz
-
-
+import warnings
+import pandas as pd
+warnings.filterwarnings("ignore")
 
 @dataclass
 class Author:
@@ -40,7 +41,6 @@ class GrobitFile():
     def title(self):
         if not self._title:
             self._title = self.grobidxml.title.getText().strip()
-            #self._title = elem_to_text(self.grobidxml.find('title')).strip()
         return self._title
 
 
@@ -199,18 +199,7 @@ def spell_check_correct(text):
     corrected_sentence = ' '.join(corrected_words)
     return corrected_sentence
 
- 
-def are_equal_list_authors(list1: List[Author], list2: List[Author]):
-    if len(list1) != len(list2):
-        return False
-    for author in list1:
-        if not any([author == a2 for a2 in list2]):
-            return False
-    for author in list2:
-        if not any([author == a1 for a1 in list1]):
-            return False
-    return True
-        
+
 def main():
     Web = req.get('http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html') 
   
@@ -226,7 +215,7 @@ def main():
     parser.add_argument('-v', '--volume', nargs='+', default=[], required=True,help='Volume numbers as integer')     
     args = parser.parse_args()
     #cur_volumes = args.volume
-    cur_volumes = [f'{x}' for x in range(2450, 2455) if f'{x}' in volumes]
+    cur_volumes = [f'{x}' for x in range(2450, 2451) if f'{x}' in volumes]
     assert(all([vol_nr in volumes for vol_nr in cur_volumes]))
     #extract all pages for each vol
     papers = {}
@@ -247,13 +236,21 @@ def main():
 
                 # extract metadata for each paper using CERMINE 
                 cermine =  CermineFile(paper_path + '.cermine')
-                print(k, p)
+
+                pdf_path = f'Vol-{k}/{p}.pdf'
+
+                # use dblp for cross check
+                dblp_result = pd.DataFrame() 
+                if not dblp.search([grobid.title]).empty:
+                    dblp_result = dblp.search([grobid.title])
+                elif not dblp.search([cermine.title]).empty:
+                    dblp_result = dblp.search([cermine.title])
 
                 # account for spell errors 
                 g_title = spell_check_correct(grobid.title)
                 c_title = spell_check_correct(cermine.title)
 
-                # also consider version before spell errors as this might add another layer of inconsistence
+                # consider version before spell errors as this might add another layer of inconsistence
                 g_title2 = grobid.title
                 c_title2 = cermine.title
                 title_list = [g_title, c_title, g_title2, c_title2]
@@ -265,8 +262,14 @@ def main():
 
                 #merge title
                 paper_title = ''
-                if grobid.title.lower() == cermine.title.lower():
-                    print(f'Same titles: {cermine.title}')
+                if not dblp_result.empty:
+                    if len(dblp_result) > 1:
+                       if not dblp_result[dblp_result['Link'].apply(lambda x: pdf_path in x)].empty:
+                           dblp_result = dblp_result[dblp_result['Link'].apply(lambda x: pdf_path in x)].reset_index()
+                    paper_title = dblp_result['Title'][0]
+                    print(paper_title)
+                elif grobid.title.lower() == cermine.title.lower():
+                    #print(f'{cermine.title}')
                     paper_title = cermine.title
                 elif g_title.lower() == c_title.lower() or g_title2.lower() == c_title2.lower():
                     print(f'Almost same titles: {grobid.title}')
@@ -280,14 +283,60 @@ def main():
                 else:
                     #check if string similarity is above a threshold ussing fuzzy matching
                     if fuzz.ratio(cermine.title, grobid.title) > 95:
+                        #assign randomly to the cermine title
                         paper_title = cermine.title
                     else :
                         # TODO: need to decide what to do here
                         print('Titles not the same: COME UP with solution on how to resolve the conflicts')
                         print(cermine.title, '\n', grobid.title, '\n')
+                # TODO: check why some titles are output 2 times for volumen 2451 e.g.
+                        
+                #merge author information
+                dblp_authors = []
+                paper_authors_gr = []
+                paper_authors_ce = []
+                paper_authors = []
 
-                #merge author information 
-                
+                if not dblp_result.empty:          
+                    dblp_authors = dblp_result['Authors'][0]      
+                    #check results from grobid
+                   
+                    if len(dblp_authors) == len(grobid.authors):
+                        for a1 in dblp_authors:
+                            for a2 in grobid.authors:
+                                #only add correct names from dblp
+                                if fuzz.ratio(a1, a2.name) >= 85:
+                                    paper_authors_gr.append(Author(name = a1, affiliation=a2.affiliation, email = a2.email))
+                                    break
+
+                    if len(dblp_authors) == len(cermine.authors):
+                        for a1 in dblp_authors:
+                            for a2 in cermine.authors:
+                                #only add correct names from dblp
+                                if fuzz.ratio(a1, a2.name) >= 85:
+                                    paper_authors_ce.append(Author(name = a1, affiliation=a2.affiliation, email = a2.email))
+                                    break
+
+                    print(paper_authors_gr, '+++++++++++++++')
+                    #TODO: need for extra checks here to make sure that all affiliations are included 
+                    print(len(dblp_authors), len(paper_authors_gr), len(paper_authors_ce))
+                    if len(dblp_authors) == len(paper_authors_gr) and len(dblp_authors) != len(paper_authors_ce):
+                        paper_authors = paper_authors_gr
+                    elif len(dblp_authors) != len(paper_authors_gr) and len(dblp_authors) == len(paper_authors_ce):
+                        paper_authors = paper_authors_ce
+                    elif len(dblp_authors) == len(paper_authors_gr) and len(dblp_authors) != len(paper_authors_ce):
+                        paper_authors = paper_authors_gr
+                    else:
+                        #TODO: decide what to do in this case
+                        paper_authors = dblp_authors
+
+                    print(paper_authors)
+                    print('-----------------------------')
+                else: 
+                    print('No dblp entry: merge results from cermine and grobid')
+                    #TODO: decide what to do here?
+                    # I think its a better idea to take the authors from grobid here; cermine shows multiple problems 
+
             except:
                 print('File not found')
             """

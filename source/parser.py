@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 import string
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz
-
+from neo4j import GraphDatabase
 
 
 @dataclass
@@ -85,9 +85,9 @@ class GrobitFile():
                     aff = ', '.join([aff.strip() for aff in affiliation_text.split('\n') if aff.strip() != ''])
                     aff_list += [aff.strip()]
                 affs += [aff_list]
-        for i in range(len(authors_list)):
+        for i in range(min(len(authors_list), len(affs))):
             author_name = authors_list[i]
-            author_affiliation = affs[i] if affs[i] else []
+            author_affiliation = [affs[i]] if affs[i] else []
             author_email = [emails[i]] if emails[i] else []
             author = Author(author_name, author_affiliation, author_email)
             result.append(author)
@@ -211,8 +211,68 @@ def are_equal_list_authors(list1: List[Author], list2: List[Author]):
             return False
     return True
         
+
+# Neo4j database connection
+class Neo4jConnection:
+    def __init__(self, uri, user, password):
+        self._uri = uri
+        self._user = user
+        self._password = password
+        self._driver = None
+
+    def close(self):
+        if self._driver is not None:
+            self._driver.close()
+
+    def connect(self):
+        self._driver = GraphDatabase.driver(self._uri, auth=(self._user, self._password))
+
+    def query(self, query, parameters=None, db=None):
+        assert self._driver is not None, "Driver not initialized!"
+        session = self._driver.session(database=db) if db is not None else self._driver.session()
+        result = list(session.run(query, parameters))
+        session.close()
+        return result
+
+# Define a function to create nodes and relationships in Neo4j
+def create_neo4j_graph(grobid, cermine, neo4j_connection, url):
+    neo4j_connection.connect()
+    
+    # Create Author nodes
+    for author in grobid.authors:
+        create_author_query = "CREATE (:Author {name: $name, email: $email})"
+        neo4j_connection.query(create_author_query, {"name": author.name, "email": author.email})
+    
+    for author in cermine.authors:
+        create_author_query = "MERGE (:Author {name: $name, email: $email})"
+        neo4j_connection.query(create_author_query, {"name": author.name, "email": author.email})
+
+    # Create Paper nodes
+    create_paper_query = "CREATE (:Paper {title: $title, url: $url})"
+    neo4j_connection.query(create_paper_query, {"title": cermine.title, "url": url})  # Replace with actual URL
+
+    # Create relationships between Authors and Papers
+    for author in grobid.authors:
+        create_relationship_query = "MATCH (a:Author {email: $email}), (p:Paper {title: $title}) CREATE (a)-[:AUTHORED]->(p)"
+        neo4j_connection.query(create_relationship_query, {"email": author.email, "title": grobid.title})
+    
+    for author in cermine.authors:
+        create_relationship_query = "MATCH (a:Author {email: $email}), (p:Paper {title: $title}) CREATE (a)-[:AUTHORED]->(p)"
+        neo4j_connection.query(create_relationship_query, {"email": author.email, "title": cermine.title})
+
+    neo4j_connection.close()
+
+
+
+
+
+
 def main():
     Web = req.get('http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html') 
+    
+    # Use Neo4jConnection to connect to Neo4j database
+    neo4j_conn = Neo4jConnection(uri="neo4j+s://607f3c00.databases.neo4j.io", user="neo4j", password="B4ciag8tPs_szFjyrAFWgz6INlti5_jJUCH9aqb8ETY")
+
   
     S = BeautifulSoup(Web.text, 'lxml') 
     html_txt = S.prettify()
@@ -224,10 +284,12 @@ def main():
     # Here we set the volume we want to consider in the comparisons below
     parser = argparse.ArgumentParser(prog='Web parser', description='Take a list of volume numbers as input and extract the papers')
     parser.add_argument('-v', '--volume', nargs='+', default=[], required=True,help='Volume numbers as integer')     
-    args = parser.parse_args()
+    #args = parser.parse_args()
     #cur_volumes = args.volume
-    cur_volumes = [f'{x}' for x in range(2450, 2455) if f'{x}' in volumes]
+    cur_volumes = [f'{x}' for x in range(2450, 2451) if f'{x}' in volumes]
+    
     assert(all([vol_nr in volumes for vol_nr in cur_volumes]))
+    
     #extract all pages for each vol
     papers = {}
     for v in cur_volumes:
@@ -287,6 +349,10 @@ def main():
                         print(cermine.title, '\n', grobid.title, '\n')
 
                 #merge author information 
+                        
+                # Create Neo4j graph based on extracted metadata
+                url_path = paper_path + ".pdf"
+                create_neo4j_graph(grobid, cermine, neo4j_conn, url_path) 
                 
             except:
                 print('File not found')
@@ -330,6 +396,25 @@ def main():
     print(f'Wikidata entity: {entity}')
     """
 
+    
+    
+
+    '''
+    # Connect to the Neo4j database
+    graph = Graph(uri="neo4j+s://607f3c00.databases.neo4j.io", user="neo4j", password="B4ciag8tPs_szFjyrAFWgz6INlti5_jJUCH9aqb8ETY")
+
+    # Cypher query to retrieve nodes and relationships
+    query = """
+    MATCH (n) RETURN n
+    """
+
+    # Run the query and visualize the result
+    result = graph.run(query)
+
+    # Print the result
+    for record in result:
+        print(record)
+    '''
 
 if __name__ == '__main__':
     main()

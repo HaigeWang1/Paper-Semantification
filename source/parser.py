@@ -444,8 +444,7 @@ def main():
                             
                     # Create Neo4j graph based on extracted metadata
                     create_neo4j_graph(final_author_list,final_title, neo4j_conn, url_path) 
-                    
-                
+                                 
                 #if it is paper, it should belongs to one event
                 else:
                     # extract metadata for each paper using GROBID 
@@ -461,8 +460,8 @@ def main():
                     #merge author information 
                     final_author_list = compare_author(grobid, cermine)
                     final_author_list = grobid.authors
-
-                            
+                    
+                    # To do: create a event node and a proceeding node
                     # Create Neo4j graph based on extracted metadata
                     create_neo4j_graph(final_author_list,final_title, neo4j_conn, url_path) 
                 

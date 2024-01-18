@@ -13,7 +13,7 @@ pip install -r requirements.txt
 git clone https://github.com/sebastianGehrmann/dblp-pub.git && cd dblp-pub
 python setup.py install && cd ..
 rm -rf dblp-pub
-python parser.py -v 1999 2462
+python source/parser.py -v 1999 2462
 ```
 
 

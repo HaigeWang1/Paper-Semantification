@@ -3,3 +3,6 @@ bs4==0.0.1
 orcid==1.0.3
 Wikidata==0.7.0
 neo4j==5.16.0
+pyspellchecker==0.8.0
+fuzzywuzzy==0.18.0
+py2neo==2021.2.4

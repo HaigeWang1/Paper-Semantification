@@ -13,12 +13,10 @@ from bs4 import BeautifulSoup
 import string
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz
-from neo4j import GraphDatabase
 import pandas as pd
-
-=======
+import create_knowledge_graph
+from email_validator import validate_email, EmailNotValidError
 import warnings
-import pandas as pd
 warnings.filterwarnings("ignore")
 
 @dataclass
@@ -26,7 +24,7 @@ class Author:
     name: str
     affiliation: Optional[List[str]] = None
     email: Optional[List[str]] = None
-    #aff_ok: Optional[bool] = None
+    aff_ok: Optional[bool] = None
     
     def __eq__(self, other):
         if isinstance(other, Author):
@@ -34,7 +32,6 @@ class Author:
         return False
   
 # ### GROBID
-    
 class GrobitFile():
     def __init__(self, filename):
         self.grobidxml = BeautifulSoup(req.get(filename).text, 'lxml')
@@ -46,7 +43,7 @@ class GrobitFile():
         if not self._title:
             self._title = self.grobidxml.title.getText().strip()
         return self._title
-  
+
 
     @property
     def authors(self):
@@ -55,6 +52,7 @@ class GrobitFile():
         authors_list = []
         affs = []
         emails = []
+        aff_ok_is_set = False
         for author in authors_in_header:
             persname = author.persname
             affiliations = author.findAll('affiliation')
@@ -80,7 +78,8 @@ class GrobitFile():
                         aff = ', '.join([aff.strip() for aff in affiliation_text.split('\n') if aff.strip() != ''])
                         aff_list += [aff.strip()]
                     affs += [aff_list]
-
+                    aff_ok = True
+                    aff_ok_is_set = True
             elif len(affiliations) != 0: 
                 aff_list = []
                 for affiliation in affiliations:
@@ -89,18 +88,29 @@ class GrobitFile():
                     aff = ', '.join([aff.strip() for aff in affiliation_text.split('\n') if aff.strip() != ''])
                     aff_list += [aff.strip()]
                 affs += [aff_list]
-        for i in range(min(len(authors_list), len(affs))):
-            author_name = authors_list[i]
-            author_affiliation = affs[i] if affs[i] else []
-            author_email = [emails[i]] if emails[i] else []
-            author = Author(author_name, author_affiliation, author_email)
-            result.append(author)
+                aff_ok = False
+                aff_ok_seaff_ok_is_set_flag = True
+        # assume affiliations are correctly assigned if the number of authors is the same as the number of affiliations
+        if len(authors_list) == len(affs):
+            aff_ok = True
+        elif not aff_ok_is_set:
+            aff_ok = False
+        for i in range(len(authors_list)):
+            if aff_ok:
+                author_name = authors_list[i]
+                author_affiliation = affs[i] if affs[i] else []
+                author_email = [emails[i]] if emails[i] else []
+                author = Author(author_name, author_affiliation, author_email,aff_ok=True)
+                result.append(author)
+            else:
+                author_name = authors_list[i]
+                author_email = [emails[i]] if emails[i] else []
+                author = Author(author_name, [], author_email)
+                result.append(author)
 
         return result
 
-
 # ### CERMINE
-    
 class CermineFile():
     def __init__(self, filename):
         self.cermine = BeautifulSoup(req.get(filename).text, 'lxml')
@@ -191,29 +201,6 @@ class CermineFile():
 
         return result
 
-# Neo4j database connection
-    
-class Neo4jConnection:
-    def __init__(self, uri, user, password):
-        self._uri = uri
-        self._user = user
-        self._password = password
-        self._driver = None
-
-    def close(self):
-        if self._driver is not None:
-            self._driver.close()
-
-    def connect(self):
-        self._driver = GraphDatabase.driver(self._uri, auth=(self._user, self._password))
-
-    def query(self, query, parameters=None, db=None):
-        assert self._driver is not None, "Driver not initialized!"
-        session = self._driver.session(database=db) if db is not None else self._driver.session()
-        result = list(session.run(query, parameters))
-        session.close()
-        return result
-  
 def elem_to_text(elem = None):
     if elem:
         return elem.getText()
@@ -224,72 +211,50 @@ def spell_check_correct(text):
     corrected_words = [spell.correction(word) if spell.correction(word) is not None else word for word in text.split()]
     corrected_sentence = ' '.join(corrected_words)
     return corrected_sentence
- 
-def are_equal_list_authors(list1: List[Author], list2: List[Author]):
-    if len(list1) != len(list2):
-        return False
-    for author in list1:
-        if not any([author == a2 for a2 in list2]):
-            return False
-    for author in list2:
-        if not any([author == a1 for a1 in list1]):
+
+def get_cleaned_text(str_list):
+    cleaned_list = []
+    for s in str_list:
+        for c in list(set(string.punctuation)):
+                s = s.replace(c, '')
+        cleaned_list.append(s)
+    return cleaned_list
+
+def issubset(l1, l2):
+    list_1 = get_cleaned_text(l1)
+    list_2 = get_cleaned_text(l2)
+
+    for a in list_1:
+        flag = False
+        for b in list_2:
+            # account for small deviations
+            if fuzz.token_set_ratio(a, b) >= 80:
+                flag = True
+                break
+        if not flag:
             return False
     return True
-        
 
-def create_neo4j_graph_preface(event, preface, author_list,neo4j_connection, url):
-    neo4j_connection.connect()
+def approximate_lists(l1, l2):
+    flag = False
+    for a in l1:
+        for b in l2:
+            if fuzz.token_set_ratio(a, b) >= 80:
+                flag = True
+        if not flag:
+            return False
+    return True
 
-    create_event_query = "CREATE (:Event {event: $event, url: $url})"
-    neo4j_connection.query(create_event_query, {"event": event, "url": url})  # Replace with actual URL
+def check_email(email_adrs): 
+    try: 
+        for email in email_adrs:
+            valid = validate_email(email) 
+        return True    
+    except EmailNotValidError: 
+        return False
 
-    create_preface_query = "CREATE (:Preface {preface: $preface, url: $url})"
-    neo4j_connection.query(create_preface_query, {"preface": preface, "url": url})  # Replace with actual URL
-
-    create_relationship_query = "MATCH (e:Event {event: $event}), (p:Preface {preface: $preface}) CREATE (a)-[:HAS]->(p)"
-    neo4j_connection.query(create_relationship_query, {"event": event, "preface": preface})
-
-    for author in author_list.authors:
-        create_author_query = "CREATE (:Author {name: $name, email: $email, affiliation: $affiliation})"
-        neo4j_connection.query(create_author_query, {"name": author.name, "email": author.email, "affiliation": author.affiliation})
-        create_relationship_query = "MATCH (a:Author {email: $email}), (p:Preface {title: $title}) CREATE (a)-[:CONTAINS]->(p)"
-        neo4j_connection.query(create_relationship_query, {"email": author.email, "title": preface})
-
-
-    neo4j_connection.close()
-
-
-# Define a function to create nodes and relationships in Neo4j
-def create_neo4j_graph(author_list, title, neo4j_connection, url):
-    neo4j_connection.connect()
+def get_paper_title(grobid, cermine, pdf_path):
     
-    # Create Paper nodes
-    create_paper_query = "MERGE (:Paper {title: $title, url: $url})"
-    neo4j_connection.query(create_paper_query, {"title": title, "url": url})  # Replace with actual URL
-
-    # Create Author nodes
-    for author in author_list:
-        # Create Author nodes
-        create_author_query = "MERGE (:Author {name: $name, email: $email})"
-        neo4j_connection.query(create_author_query, {"name": author.name, "email": author.email})
-        
-        # Create Affiliation nodes
-        create_aff_query = "MERGE (:Affiliation {affiliation: $affiliation})"
-        neo4j_connection.query(create_aff_query, {"affiliation": author.affiliation})
-
-         # Create relationships between Authors and Affiliations
-        create_author_aff_query = "MATCH (a:Author {email: $email}), (aff:Affiliation {affiliation: $affiliation}) MERGE (a)-[:AFFILIATED_WITH]->(aff)"
-        neo4j_connection.query(create_author_aff_query, {"email": author.email, "affiliation": author.affiliation})      
-
-    
-        # Create relationships between Authors and Papers
-        create_author_paper_query = "MATCH (a:Author {email: $email}), (p:Paper {title: $title}) MERGE (a)-[:AUTHORED]->(p)"
-        neo4j_connection.query(create_author_paper_query, {"email": author.email, "title": title})
-
-     
-    neo4j_connection.close()
-
-def compare_title(grobid, cermine, pdf_path):
     # use dblp for cross check
     dblp_result = pd.DataFrame() 
     if not dblp.search([grobid.title]).empty:
@@ -297,105 +262,175 @@ def compare_title(grobid, cermine, pdf_path):
     elif not dblp.search([cermine.title]).empty:
         dblp_result = dblp.search([cermine.title])
 
-    #account for spell errors 
-    g_title1 = spell_check_correct(grobid.title)
-    c_title1 = spell_check_correct(cermine.title)
+    # account for spell errors 
+    g_title = spell_check_correct(grobid.title)
+    c_title = spell_check_correct(cermine.title)
 
-    # also consider version before spell errors as this might add another layer of inconsistence
+    # consider version before spell errors as this might add another layer of inconsistence
     g_title2 = grobid.title
     c_title2 = cermine.title
-    title_list = [g_title1, c_title1, g_title2, c_title2]
+    title_list = [g_title, c_title, g_title2, c_title2]
 
     # remove all spaces and special characters to have a more flexible comparison of the string values
-    for c in list(set(string.punctuation).union(set([' ', '\n', '\t', '∗']))):
-        for t in title_list:    
+    for t in title_list:    
+        for c in list(set(string.punctuation).union(set([' ', '\n', '\t', '∗']))):
             t = t.replace(c, '')
 
-    #merge title and find if the titles are the same or almost same or partial same
-    paper_title = ''
-    
+    #merge title
     if not dblp_result.empty:
         if len(dblp_result) > 1:
             if not dblp_result[dblp_result['Link'].apply(lambda x: pdf_path in x)].empty:
                 dblp_result = dblp_result[dblp_result['Link'].apply(lambda x: pdf_path in x)].reset_index()
-        paper_title = dblp_result['Title'][0]
-        return paper_title
+        return dblp_result['Title'][0]
     elif grobid.title.lower() == cermine.title.lower():
-        print(f'Same titles: {cermine.title}')
         return cermine.title
-    elif g_title1.lower() == c_title1.lower() or g_title2.lower() == c_title2.lower():
-        print(f'Almost same titles: {grobid.title}')
+    elif g_title.lower() == c_title.lower() or g_title2.lower() == c_title2.lower():
         return g_title2
-    elif g_title1.lower() in c_title1.lower() or grobid.title.lower() in cermine.title.lower() or g_title2.lower() in c_title2.lower():
-        print(f'Partial title: {grobid.title} is part of {cermine.title}')
-        return grobid.title
-    elif c_title1.lower() in g_title1.lower() or cermine.title.lower() in grobid.title.lower() or c_title2.lower() in g_title2.lower():
-        print(f'Partial title: {cermine.title} is part of {grobid.title}')
+    elif g_title.lower() in c_title.lower() or grobid.title.lower() in cermine.title.lower() or g_title2.lower() in c_title2.lower():
+        return  grobid.title
+    elif c_title.lower() in g_title.lower() or cermine.title.lower() in grobid.title.lower() or c_title2.lower() in g_title2.lower():
         return cermine.title
     else:
         #check if string similarity is above a threshold ussing fuzzy matching
-        if fuzz.ratio(cermine.title, grobid.title) > 80:
-            return cermine.title
+        if fuzz.token_set_ratio(cermine.title, grobid.title) > 85:
+            #assign randomly to the cermine title
+            return c_title.title
         else :
             # TODO: need to decide what to do here
-            print('Titles not the same: COME UP with solution on how to resolve the conflicts')
-            print(cermine.title, '\n', grobid.title, '\n')
+            print('Manual check needed!')
+            return ''
 
-def compare_author(grobid, cermine):
+def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
+    #assign affiliations to each author
+    if aff_grobid == []:
+        aff_author = aff_cermine
+    elif aff_cermine == []:
+        aff_author = aff_grobid
+    elif issubset(aff_grobid, aff_cermine):
+        aff_author = aff_cermine
+    elif issubset(aff_cermine, aff_grobid):
+        aff_author = aff_grobid
+    else:
+        #TODO: manual check what to do this                
+        print('Manual check is needed!')
+        aff_author = []
+
+    # assign emails to each author
+    if email_cermine == []:
+        email_author = email_grobid
+    elif email_grobid == []:
+        email_author = email_cermine
+    elif set(email_cermine).issubset(set(email_grobid)):
+        email_author = email_cermine # take common email address
+    elif set(email_grobid).issubset(set(email_cermine)):
+        email_author = email_grobid # take common email address
+    elif check_email(email_grobid):
+        email_author = email_grobid
+    elif check_email(email_cermine):
+        email_author = email_cermine
+    else:
+        #TODO: manual check what to do this
+        print('Manual check is needed!')
+        email_author = ''
+    return(aff_author, email_author)
+
+def get_author_info(grobid, cermine):                   
+    #merge author information
     dblp_authors = []
     paper_authors_gr = []
     paper_authors_ce = []
     paper_authors = []
     
+    # use dblp for cross check
     dblp_result = pd.DataFrame() 
     if not dblp.search([grobid.title]).empty:
         dblp_result = dblp.search([grobid.title])
     elif not dblp.search([cermine.title]).empty:
         dblp_result = dblp.search([cermine.title])
 
-    if not dblp_result.empty:          
+    if not dblp_result.empty:     
         dblp_authors = dblp_result['Authors'][0]      
-        #check results from grobid
-        
-        if len(dblp_authors) == len(grobid.authors):
-            for a1 in dblp_authors:
-                for a2 in grobid.authors:
-                    #only add correct names from dblp
-                    if fuzz.ratio(a1, a2.name) >= 85:
-                        paper_authors_gr.append(Author(name = a1, affiliation=a2.affiliation, email = a2.email))
-                        break
 
-        if len(dblp_authors) == len(cermine.authors):
-            for a1 in dblp_authors:
-                for a2 in cermine.authors:
-                    #only add correct names from dblp
-                    if fuzz.ratio(a1, a2.name) >= 85:
-                        paper_authors_ce.append(Author(name = a1, affiliation=a2.affiliation, email = a2.email))
-                        break
+    #check results from grobid      
+    paper_authors_gr = {}
+    if 1==1: #len(dblp_authors) == len(grobid.authors):
+        for a1 in dblp_authors:
+            for a2 in grobid.authors:
+                #only add correct names from dblp
+                if fuzz.token_set_ratio(a1, a2.name) >= 80:
+                    if a2.aff_ok:
+                        paper_authors_gr[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
+                    else:
+                        paper_authors_gr[a1] = Author(name = a1, affiliation=[], email = a2.email)
+                    break
 
-        print(paper_authors_gr, '+++++++++++++++')
-        #TODO: need for extra checks here to make sure that all affiliations are included 
-        print(len(dblp_authors), len(paper_authors_gr), len(paper_authors_ce))
-        if len(dblp_authors) == len(paper_authors_gr) and len(dblp_authors) != len(paper_authors_ce):
-            paper_authors = paper_authors_gr
-        elif len(dblp_authors) != len(paper_authors_gr) and len(dblp_authors) == len(paper_authors_ce):
-            paper_authors = paper_authors_ce
-        elif len(dblp_authors) == len(paper_authors_gr) and len(dblp_authors) != len(paper_authors_ce):
-            paper_authors = paper_authors_gr
-        else:
-            #TODO: decide what to do in this case
-            paper_authors = dblp_authors
+    paper_authors_ce = {}
+    if 1==1: #len(dblp_authors) == len(cermine.authors):  -- not sure if we need this here, needs for validation
+        for a1 in dblp_authors:
+            for a2 in cermine.authors:
+                #only add correct names from dblp
+                if fuzz.token_set_ratio (a1, a2.name) >= 80:
+                    paper_authors_ce[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
+                    break
 
-        return paper_authors
-=======
+    aff_author = []
+    email_author = ''
+    aff_grobid = []
+    aff_cermine = []
+    email_grobid = ''
+    email_cermine = ''
+    if not dblp_result.empty:
+        for a in dblp_authors:
+            
+            # check affiliation and email address from grobid and cermine
+            if a in paper_authors_gr.keys():
+                aff_grobid = paper_authors_gr[a].affiliation
+                email_grobid = paper_authors_gr[a].email
+
+            if a in paper_authors_ce.keys():
+                aff_cermine = paper_authors_ce[a].affiliation
+                email_cermine = paper_authors_ce[a].email
+            
+            aff_author, email_author = merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine)
+            paper_authors.append(Author(name=a, affiliation=aff_author, email=email_author))
+
+
+    else:
+        print('No dblp entry: merge results from cermine and grobid')
+        #only possibility here is to automatically merge only in those cases when the authors are the same for both grobid and cermine, otherweise a manual check is required
+        authors_gr = [a.name for a in grobid.authors]
+        authors_ce = [a.name for a in cermine.authors]
+        if len(authors_gr) != len(authors_ce):
+            print('Manual check is needed! Number of extracted authors is not the same!')
+            paper_authors = []
+        elif approximate_lists(authors_gr, authors_ce): # list of authors is (almost) the same
+            author_info = []
+            for a in grobid.authors:
+                for b in cermine.authors:
+                    if fuzz.token_set_ratio(a, b) >= 80:
+                        author_info.append((b.name, a.affiliation, b.affiliation, a.email, b.email))
+            for a_name, aff_grobid, aff_cermine, email_grobid, email_cermine in author_info:
+                #merge results from cermine and grobid
+                aff_author, email_author = merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine)
+                paper_authors.append(Author(name=a_name, affiliation=aff_author, email=email_author))
+
+        else:            
+            #TODO: decide what to do here?
+            # I think its a better idea to take the authors from grobid here; cermine shows multiple problems 
+            print('Manual check is needed! Number of extracted authors is not the same!')
+            paper_authors = []
+
+    print(paper_authors, '\n', '-------------------')
+    print(grobid.authors, '\n', '-------------------')
+    print(cermine.authors, '\n')
+    print('==================================================')
+    return paper_authors
 
 def main():
     Web = req.get('http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html') 
-    
-    # Use Neo4jConnection to connect to Neo4j database
-    neo4j_conn = Neo4jConnection(uri="neo4j+s://607f3c00.databases.neo4j.io", user="neo4j", password="B4ciag8tPs_szFjyrAFWgz6INlti5_jJUCH9aqb8ETY")
+      
+    neo4j_conn = create_knowledge_graph.Neo4jConnection(uri="neo4j+s://607f3c00.databases.neo4j.io", user="neo4j", password="B4ciag8tPs_szFjyrAFWgz6INlti5_jJUCH9aqb8ETY")
 
-  
     S = BeautifulSoup(Web.text, 'lxml') 
     html_txt = S.prettify()
     #extract all volumes
@@ -406,13 +441,10 @@ def main():
     # Here we set the volume we want to consider in the comparisons below
     parser = argparse.ArgumentParser(prog='Web parser', description='Take a list of volume numbers as input and extract the papers')
     parser.add_argument('-v', '--volume', nargs='+', default=[], required=True,help='Volume numbers as integer')     
-    #args = parser.parse_args()
-    #cur_volumes = args.volume
-    cur_volumes = [f'{x}' for x in range(2450, 2451) if f'{x}' in volumes]
-    
-=======
+    args = parser.parse_args()
+    cur_volumes = args.volume
+    #cur_volumes = [f'{x}' for x in range(2456, 2458) if f'{x}' in volumes]
     assert(all([vol_nr in volumes for vol_nr in cur_volumes]))
-    
     #extract all pages for each vol
     papers = {}
     for v in cur_volumes:
@@ -426,181 +458,29 @@ def main():
         for p in papers[k]:
             paper_path = f'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-{k}/{p}'
             print(paper_path)
+
             try:
-                url_path = paper_path + ".pdf"
-
-                #check it is preface or paper
-                if not p == "Preface":
-                    # extract metadata for each paper using GROBID 
-                    grobid =  GrobitFile(paper_path + '.grobid')
-
-                    # extract metadata for each paper using CERMINE 
-                    cermine =  CermineFile(paper_path + '.cermine')
-                    print(k, p)
-
-                    #compare the title and give the final result
-                    final_title = compare_title(grobid, cermine, url_path)
-                    
-                    #merge author information 
-                    final_author_list = compare_author(grobid, cermine)
-                    final_author_list = grobid.authors
-
-                            
-                    # Create Neo4j graph based on extracted metadata
-                    create_neo4j_graph(final_author_list,final_title, neo4j_conn, url_path) 
-                                 
-                #if it is paper, it should belongs to one event
-                else:
-                    # extract metadata for each paper using GROBID 
-                    grobid =  GrobitFile(paper_path + '.grobid')
-
-                    # extract metadata for each paper using CERMINE 
-                    cermine =  CermineFile(paper_path + '.cermine')
-                    print(k, p)
-
-                    #compare the title and give the final result
-                    final_title = compare_title(grobid, cermine, url_path)
-                    
-                    #merge author information 
-                    final_author_list = compare_author(grobid, cermine)
-                    final_author_list = grobid.authors
-                    
-                    # To do: create a event node and a proceeding node
-                    # Create Neo4j graph based on extracted metadata
-                    create_neo4j_graph(final_author_list,final_title, neo4j_conn, url_path) 
-                
-                # extract metadata for each paper using GROBID 
                 grobid =  GrobitFile(paper_path + '.grobid')
-
-                # extract metadata for each paper using CERMINE 
-                cermine =  CermineFile(paper_path + '.cermine')
-
-                pdf_path = f'Vol-{k}/{p}.pdf'
-
-                # use dblp for cross check
-                dblp_result = pd.DataFrame() 
-                if not dblp.search([grobid.title]).empty:
-                    dblp_result = dblp.search([grobid.title])
-                elif not dblp.search([cermine.title]).empty:
-                    dblp_result = dblp.search([cermine.title])
-
-                # account for spell errors 
-                g_title = spell_check_correct(grobid.title)
-                c_title = spell_check_correct(cermine.title)
-
-                # consider version before spell errors as this might add another layer of inconsistence
-                g_title2 = grobid.title
-                c_title2 = cermine.title
-                title_list = [g_title, c_title, g_title2, c_title2]
-
-                # remove all spaces and special characters to have a more flexible comparison of the string values
-                for c in list(set(string.punctuation).union(set([' ', '\n', '\t', '∗']))):
-                    for t in title_list:    
-                        t = t.replace(c, '')
-
-                #merge title
-                paper_title = ''
-                if not dblp_result.empty:
-                    if len(dblp_result) > 1:
-                       if not dblp_result[dblp_result['Link'].apply(lambda x: pdf_path in x)].empty:
-                           dblp_result = dblp_result[dblp_result['Link'].apply(lambda x: pdf_path in x)].reset_index()
-                    paper_title = dblp_result['Title'][0]
-                    print(paper_title)
-                elif grobid.title.lower() == cermine.title.lower():
-                    #print(f'{cermine.title}')
-                    paper_title = cermine.title
-                elif g_title.lower() == c_title.lower() or g_title2.lower() == c_title2.lower():
-                    print(f'Almost same titles: {grobid.title}')
-                    paper_title = g_title2
-                elif g_title.lower() in c_title.lower() or grobid.title.lower() in cermine.title.lower() or g_title2.lower() in c_title2.lower():
-                    print(f'Partial title: {grobid.title} is part of {cermine.title}')
-                    paper_title =  grobid.title
-                elif c_title.lower() in g_title.lower() or cermine.title.lower() in grobid.title.lower() or c_title2.lower() in g_title2.lower():
-                    print(f'Partial title: {cermine.title} is part of {grobid.title}')
-                    paper_title = cermine.title
-                else:
-                    #check if string similarity is above a threshold ussing fuzzy matching
-                    if fuzz.ratio(cermine.title, grobid.title) > 95:
-                        #assign randomly to the cermine title
-                        paper_title = cermine.title
-                    else :
-                        # TODO: need to decide what to do here
-                        print('Titles not the same: COME UP with solution on how to resolve the conflicts')
-                        print(cermine.title, '\n', grobid.title, '\n')
-                # TODO: check why some titles are output 2 times for volumen 2451 e.g.
-                        
-                #merge author information
-                dblp_authors = []
-                paper_authors_gr = []
-                paper_authors_ce = []
-                paper_authors = []
-
-                if not dblp_result.empty:          
-                    dblp_authors = dblp_result['Authors'][0]      
-                    #check results from grobid
-                   
-                    if len(dblp_authors) == len(grobid.authors):
-                        for a1 in dblp_authors:
-                            for a2 in grobid.authors:
-                                #only add correct names from dblp
-                                if fuzz.ratio(a1, a2.name) >= 85:
-                                    paper_authors_gr.append(Author(name = a1, affiliation=a2.affiliation, email = a2.email))
-                                    break
-
-                    if len(dblp_authors) == len(cermine.authors):
-                        for a1 in dblp_authors:
-                            for a2 in cermine.authors:
-                                #only add correct names from dblp
-                                if fuzz.ratio(a1, a2.name) >= 85:
-                                    paper_authors_ce.append(Author(name = a1, affiliation=a2.affiliation, email = a2.email))
-                                    break
-
-                    print(paper_authors_gr, '+++++++++++++++')
-                    #TODO: need for extra checks here to make sure that all affiliations are included 
-                    print(len(dblp_authors), len(paper_authors_gr), len(paper_authors_ce))
-                    if len(dblp_authors) == len(paper_authors_gr) and len(dblp_authors) != len(paper_authors_ce):
-                        paper_authors = paper_authors_gr
-                    elif len(dblp_authors) != len(paper_authors_gr) and len(dblp_authors) == len(paper_authors_ce):
-                        paper_authors = paper_authors_ce
-                    elif len(dblp_authors) == len(paper_authors_gr) and len(dblp_authors) != len(paper_authors_ce):
-                        paper_authors = paper_authors_gr
-                    else:
-                        #TODO: decide what to do in this case
-                        paper_authors = dblp_authors
-
-                    print(paper_authors)
-                    print('-----------------------------')
-                else: 
-                    print('No dblp entry: merge results from cermine and grobid')
-                    #TODO: decide what to do here?
-                    # I think its a better idea to take the authors from grobid here; cermine shows multiple problems 
-
             except:
-                print('File not found')
-            """
-            if grobid.title != cermine.title or not are_equal_list_authors(grobid.authors, cermine.authors):
-                print(f'\n{"*"*100}\n')
-                print(f'Paper {p} PDF: {paper_path}.pdf\n')
-                print(f'Paper {p} grobid: {paper_path}.grobid\n')
-                print(f'Paper {p} cermine: {paper_path}.cermine\n')
-
-            # check if title is the same
-            if grobid.title != cermine.title:
-                print(f'Title discrepancies\n')
-                print(f'grobid title: {grobid.title} \ncermin title: {cermine.title} \n' )
+                print('Grobid file could not get parsed correctly')
             
-            if not are_equal_list_authors(grobid.authors, cermine.authors):
-                print('Author discrepancies\n')
-                print(f'grobid authors: {grobid.authors}')
-                print('\n')
-                print(f'cermine authors: {cermine.authors}')
-            """
-            # (provided through API), including title, authors, affiliations, publication year
+            try:
+                cermine =  CermineFile(paper_path + '.cermine')
+            except:
+                print('Cermine file could not get parsed correctly')
+                                
+            # TODO: check why some titles are output 2 times for volumen 2451 e.g.
+            paper_title = get_paper_title(grobid, cermine, paper_path + ".pdf")
+            print(paper_title)
+            author_list = []
+            if p != 'Preface':
+                author_list = get_author_info(grobid, cermine)
+                #print(author_list)
+                print('------------------------------------')
 
+            #create_knowledge_graph.create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
 
-    """
-    results = dblp.search([grobid.title])
-  
+    """  
     api = orcid.PublicAPI('APP-WNBUUWPD8MWY07XM', 'a5b8023a-cea1-4aa0-92f0-263c186d5556')
     search_token = api.get_search_token_from_orcid()
 

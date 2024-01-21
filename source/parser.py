@@ -439,8 +439,9 @@ def get_author_info(grobid, cermine):
             author_info = []
             for a in grobid.authors:
                 for b in cermine.authors:
-                    if fuzz.token_set_ratio(a, b) >= 80:
+                    if fuzz.token_set_ratio(a.name, b.name) >= 80:
                         author_info.append((b.name, a.affiliation, b.affiliation, a.email, b.email))
+                        
             for a_name, aff_grobid, aff_cermine, email_grobid, email_cermine in author_info:
                 #merge results from cermine and grobid
                 aff_author, email_author = merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine)

@@ -17,7 +17,9 @@ import pandas as pd
 import create_knowledge_graph
 from email_validator import validate_email, EmailNotValidError
 import warnings
+from ftfy import fix_text
 warnings.filterwarnings("ignore")
+
 
 @dataclass
 class Author:
@@ -61,35 +63,36 @@ class GrobitFile():
                 firstname = elem_to_text(persname.find("forename", type="first"))
                 middlename = elem_to_text(persname.find("forename", type="middle"))
                 surname = elem_to_text(persname.surname)
-                name = ''
-                if middlename != '':
-                    name = firstname + ' ' + middlename + ' ' + surname
-                else:
-                    name = firstname + ' ' + surname
-
+                name = ' '.join(list(filter(None, [firstname, middlename, surname])))
                 authors_list.append(name)
                 emails.append(elem_to_text(author.email))
         
-                if len(affiliations) != 0:
+                if affiliations:
                     aff_list = []
                     for affiliation in affiliations:
                         root = etree.fromstring(str(affiliation))
                         affiliation_text = ' '.join(root.xpath('.//text()'))
                         aff = ', '.join([aff.strip() for aff in affiliation_text.split('\n') if aff.strip() != ''])
-                        aff_list += [aff.strip()]
+                        aff_list += [strip_space_and_special_chars(aff)]
                     affs += [aff_list]
                     aff_ok = True
                     aff_ok_is_set = True
-            elif len(affiliations) != 0: 
+                else:
+                    # if no affiliation is found, add empty list
+                    affs += [[]]
+                    aff_ok = False
+                    aff_ok_is_set = True
+            elif affiliations: 
                 aff_list = []
                 for affiliation in affiliations:
                     root = etree.fromstring(str(affiliation))
                     affiliation_text = ' '.join(root.xpath('.//text()'))
                     aff = ', '.join([aff.strip() for aff in affiliation_text.split('\n') if aff.strip() != ''])
-                    aff_list += [aff.strip()]
+                    aff_list += [strip_space_and_special_chars(aff)]
                 affs += [aff_list]
                 aff_ok = False
-                aff_ok_seaff_ok_is_set_flag = True
+                aff_ok_is_set = True
+
         # assume affiliations are correctly assigned if the number of authors is the same as the number of affiliations
         if len(authors_list) == len(affs):
             aff_ok = True
@@ -100,11 +103,20 @@ class GrobitFile():
                 author_name = authors_list[i]
                 author_affiliation = affs[i] if affs[i] else []
                 author_email = [emails[i]] if emails[i] else []
+                
+                # Put the strings through fix_text in order to solve potential encoding/decoding problems (e.g with german umlauts)
+                author_name = fix_text(author_name)
+                author_affiliation = [fix_text(aff_name) for aff_name in author_affiliation]
+                
                 author = Author(author_name, author_affiliation, author_email,aff_ok=True)
                 result.append(author)
             else:
                 author_name = authors_list[i]
                 author_email = [emails[i]] if emails[i] else []
+                
+                # Put the strings through fix_text in order to solve potential encoding/decoding problems (e.g with german umlauts)
+                author_name = fix_text(author_name)
+                
                 author = Author(author_name, [], author_email)
                 result.append(author)
 
@@ -151,51 +163,55 @@ class CermineFile():
                         if len(countries) != 0:
                                 if len(countries) == len(institutions):
                                     for i in range(len(institutions)):
-                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(addr[i]) + ' ' + elem_to_text(countries[i])
-                                        affl += [affiliation.strip()]
+                                        affiliation = elem_to_text(institutions[i]) +  ', ' + elem_to_text(addr[i]) + ', ' + elem_to_text(countries[i])
+                                        affl += [strip_space_and_special_chars(affiliation)]
                                 elif len(countries) == 1:
                                     for i in range(len(institutions)):                                    
-                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(addr[i]) + ' ' + elem_to_text(countries[0])
-                                        affl += [affiliation.strip()]
+                                        affiliation = elem_to_text(institutions[i]) +  ', ' + elem_to_text(addr[i]) + ', ' + elem_to_text(countries[0])
+                                        affl += [strip_space_and_special_chars(affiliation)]
                                 else:
                                     for i in range(len(institutions)):
-                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(addr[i])
-                                        affl += [affiliation.strip()]
+                                        affiliation = elem_to_text(institutions[i]) +  ', ' + elem_to_text(addr[i])
+                                        affl += [strip_space_and_special_chars(affiliation)]
                         else:
                             for i in range(len(institutions)): 
-                                affiliation = elem_to_text(institutions[i]) + ' ' +  elem_to_text(addr[i])
-                                affl += [affiliation.strip()]
+                                affiliation = elem_to_text(institutions[i]) + ', ' +  elem_to_text(addr[i])
+                                affl += [strip_space_and_special_chars(affiliation)]
                         affiliations += [(', ').join(affl)]
                    
                     elif len(addr)== 0:
                         if len(countries) != 0:
                                 if len(countries) == len(institutions):
                                     for i in range(len(institutions)):
-                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(countries[i])
-                                        affl += [affiliation.strip()]
+                                        affiliation = elem_to_text(institutions[i]) +  ', ' + elem_to_text(countries[i])
+                                        affl += [strip_space_and_special_chars(affiliation)]
                                 elif len(countries) == 1:
                                     for i in range(len(institutions)):                                    
-                                        affiliation = elem_to_text(institutions[i]) +  ' ' + elem_to_text(countries[0])
-                                        affl += [affiliation.strip()]
+                                        affiliation = elem_to_text(institutions[i]) +  ', ' + elem_to_text(countries[0])
+                                        affl += [strip_space_and_special_chars(affiliation)]
                                 else:
                                     for i in range(len(institutions)):
                                         affiliation = elem_to_text(institutions[i]) 
-                                        affl += [affiliation.strip()]
+                                        affl += [strip_space_and_special_chars(affiliation)]
                         else:
                             for i in range(len(institutions)): 
                                 affiliation = elem_to_text(institutions[i]) 
-                                affl += [affiliation.strip()]
+                                affl += [strip_space_and_special_chars(affiliation)]
                         affiliations += [(', ').join(affl)]
 
                     else:
                         for i in range(len(institutions)): #aff_tag.findAll('institution'):                                        
                             affiliation = elem_to_text(institutions[i]) 
-                            affl += [affiliation.strip()]
+                            affl += [strip_space_and_special_chars(affiliation)]
                         affiliations += [(', ').join(affl)]
                         
                 else:
                     print(f"Author: {name}, Institution not found")
-                
+            
+            # Put the strings through fix_text in order to solve potential encoding/decoding problems (e.g with german umlauts)
+            name = fix_text(name)
+            affiliations = [fix_text(aff_name) for aff_name in affiliations]
+            
             author = Author(name, affiliations, email)
             result.append(author)
 
@@ -206,6 +222,21 @@ def elem_to_text(elem = None):
         return elem.getText()
     return ''
 
+def strip_space_and_special_chars(text):
+    special_chars_list = [' ', ',', '-']
+    res_text = text
+    cur_text = text
+    while True:
+        for char in special_chars_list:
+            cur_text = cur_text.strip(char)
+        if cur_text == res_text:
+            return res_text
+        else:
+            res_text = cur_text
+        
+        
+        
+        
 def spell_check_correct(text):
     spell = SpellChecker()
     corrected_words = [spell.correction(word) if spell.correction(word) is not None else word for word in text.split()]
@@ -302,23 +333,24 @@ def get_paper_title(grobid, cermine, pdf_path):
 
 def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
     #assign affiliations to each author
-    if aff_grobid == []:
+    if not aff_grobid:
         aff_author = aff_cermine
-    elif aff_cermine == []:
+    elif not aff_cermine:
         aff_author = aff_grobid
     elif issubset(aff_grobid, aff_cermine):
         aff_author = aff_cermine
     elif issubset(aff_cermine, aff_grobid):
         aff_author = aff_grobid
     else:
-        #TODO: manual check what to do this                
+        #TODO: manual check what to do this  
+        # Example: http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper8.pdf           
         print('Manual check is needed!')
         aff_author = []
 
     # assign emails to each author
-    if email_cermine == []:
+    if not email_cermine:
         email_author = email_grobid
-    elif email_grobid == []:
+    elif not email_grobid:
         email_author = email_cermine
     elif set(email_cermine).issubset(set(email_grobid)):
         email_author = email_cermine # take common email address
@@ -383,11 +415,11 @@ def get_author_info(grobid, cermine):
         for a in dblp_authors:
             
             # check affiliation and email address from grobid and cermine
-            if a in paper_authors_gr.keys():
+            if a in paper_authors_gr:
                 aff_grobid = paper_authors_gr[a].affiliation
                 email_grobid = paper_authors_gr[a].email
 
-            if a in paper_authors_ce.keys():
+            if a in paper_authors_ce:
                 aff_cermine = paper_authors_ce[a].affiliation
                 email_cermine = paper_authors_ce[a].email
             
@@ -420,9 +452,9 @@ def get_author_info(grobid, cermine):
             print('Manual check is needed! Number of extracted authors is not the same!')
             paper_authors = []
 
-    print(paper_authors, '\n', '-------------------')
-    print(grobid.authors, '\n', '-------------------')
-    print(cermine.authors, '\n')
+    print('paper_authors: \n', paper_authors, '\n', '-------------------')
+    print('grobid.authors: \n', grobid.authors, '\n', '-------------------')
+    print('cermine.authors: \n', cermine.authors, '\n')
     print('==================================================')
     return paper_authors
 
@@ -443,7 +475,7 @@ def main():
     parser.add_argument('-v', '--volume', nargs='+', default=[], required=True,help='Volume numbers as integer')     
     args = parser.parse_args()
     cur_volumes = args.volume
-    #cur_volumes = [f'{x}' for x in range(2456, 2458) if f'{x}' in volumes]
+    # cur_volumes = [f'{x}' for x in range(2456, 2458) if f'{x}' in volumes]
     assert(all([vol_nr in volumes for vol_nr in cur_volumes]))
     #extract all pages for each vol
     papers = {}
@@ -452,12 +484,14 @@ def main():
         Web = req.get(url) 
         reg2 = rf'Vol-{v}/(.*?).pdf'
         #reg2 = r'paper(\d+).pdf' ##needs to be changed to reg2 = r'paper(\d+).pdf' to accound for more papers that do not follow this format.
-        papers[int(v)] = re.findall(reg2, BeautifulSoup(Web.text, 'lxml').prettify())
+        papers[int(v)] = sorted(list(set(re.findall(reg2, BeautifulSoup(Web.text, 'lxml').prettify()))))
 
     for k in papers.keys():
-        for p in papers[k]:
-            paper_path = f'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-{k}/{p}'
-            print(paper_path)
+        for idx, paper_key in enumerate(papers[k]):
+            if paper_key in ['inivited1', 'xpreface', 'paper3']:
+                continue
+            paper_path = f'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-{k}/{paper_key}'
+            print(f'{paper_path}.pdf')
 
             try:
                 grobid =  GrobitFile(paper_path + '.grobid')
@@ -471,12 +505,11 @@ def main():
                                 
             # TODO: check why some titles are output 2 times for volumen 2451 e.g.
             paper_title = get_paper_title(grobid, cermine, paper_path + ".pdf")
-            print(paper_title)
+            print(f'Parsed title: {paper_title}')
             author_list = []
-            if p != 'Preface':
+            if paper_key != 'Preface':
                 author_list = get_author_info(grobid, cermine)
-                #print(author_list)
-                print('------------------------------------')
+            print('------------------------------------------------------')
 
             #create_knowledge_graph.create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
 

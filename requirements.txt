@@ -8,3 +8,4 @@ fuzzywuzzy==0.18.0
 py2neo==2021.2.4
 email-validator==2.1.0.post1
 ftfy==6.1.3
+python-Levenshtein==0.23.0

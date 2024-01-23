@@ -49,7 +49,12 @@ class GrobitFile():
 
     @property
     def authors(self):
-        authors_in_header = self.grobidxml.analytic.find_all('author')
+        try:
+
+            authors_in_header = self.grobidxml.analytic.find_all('author')
+        except:
+            print('Grobid could not find any authors')
+            return []
         result = []
         authors_list = []
         affs = []
@@ -138,7 +143,12 @@ class CermineFile():
 
     @property
     def authors(self):
-        authors_in_header = self.cermine.find('article-meta').find('contrib-group').findAll('contrib')
+        try:
+            authors_in_header = self.cermine.find('article-meta').find('contrib-group').findAll('contrib')
+        except:
+            print('Cermine could not find any authors')
+            return []
+        
         result = []
 
         for author in authors_in_header:
@@ -481,16 +491,21 @@ def main():
     #extract all pages for each vol
     papers = {}
     for v in cur_volumes:
+        
         url = 'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-' + v
         Web = req.get(url) 
         reg2 = rf'Vol-{v}/(.*?).pdf'
         #reg2 = r'paper(\d+).pdf' ##needs to be changed to reg2 = r'paper(\d+).pdf' to accound for more papers that do not follow this format.
         papers[int(v)] = sorted(list(set(re.findall(reg2, BeautifulSoup(Web.text, 'lxml').prettify()))))
-
+        
+    # remove contents that are not papers
+    for v in cur_volumes:
+        papers[int(v)] =  [ele for ele in papers[int(v)] if ('paper' or 'short')  in ele]
+        
     for k in papers.keys():
         for idx, paper_key in enumerate(papers[k]):
-            if paper_key in ['inivited1', 'xpreface', 'paper3']:
-                continue
+            #if paper_key in ['inivited1', 'xpreface', 'paper3']:
+            #    continue
             paper_path = f'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-{k}/{paper_key}'
             print(f'{paper_path}.pdf')
 
@@ -510,24 +525,12 @@ def main():
             author_list = []
             if paper_key != 'Preface':
                 author_list = get_author_info(grobid, cermine)
+
             print('------------------------------------------------------')
 
             #create_knowledge_graph.create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
 
-    """  
-    api = orcid.PublicAPI('APP-WNBUUWPD8MWY07XM', 'a5b8023a-cea1-4aa0-92f0-263c186d5556')
-    search_token = api.get_search_token_from_orcid()
 
-    work = api.read_record_public('0000-0002-8997-7517', 'activities', search_token)
-    
-    author_name = work['employments']['employment-summary'][0]['source']['source-name']['value']
-    organization = work['employments']['employment-summary'][0]['organization']['name']
-    print(author_name, organization)
-
-    client = Client() 
-    entity = client.get('Q57983801', load=True)
-    print(f'Wikidata entity: {entity}')
-    """
 
 if __name__ == '__main__':
     main()

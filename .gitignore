@@ -5,3 +5,6 @@ __pycache__/
 
 # Persisted neo4j data
 neo4j/
+tmp/
+source/tmp/
+.env

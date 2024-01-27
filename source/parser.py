@@ -259,7 +259,7 @@ def issubset(l1, l2):
         flag = False
         for b in list_2:
             # account for small deviations
-            if fuzz.token_set_ratio(a, b) >= 80:
+            if fuzz.token_set_ratio(a, b) >= 70:
                 flag = True
                 break
         if not flag:
@@ -267,10 +267,13 @@ def issubset(l1, l2):
     return True
 
 def approximate_lists(l1, l2):
+    """
+    Check if two lists are approximately the same.
+    """
     flag = False
     for a in l1:
         for b in l2:
-            if fuzz.token_set_ratio(a, b) >= 80:
+            if fuzz.token_set_ratio(a, b) >= 70:
                 flag = True
         if not flag:
             return False
@@ -433,13 +436,25 @@ def get_author_info(grobid, cermine):
         authors_gr = [a.name for a in grobid.authors]
         authors_ce = [a.name for a in cermine.authors]
         if len(authors_gr) != len(authors_ce):
-            print('Manual check is needed! Number of extracted authors is not the same!')
+            print('Number of extracted authors is not the same while comparing grobid and cermine! We take the intersection of both lists')
+            # take the intersection of both lists
             paper_authors = []
+            authors_intersection = [a for a in authors_gr if a in authors_ce]
+            for iter_author_name in authors_intersection:
+                iter_author_grobid = [a for a in grobid.authors if a.name == iter_author_name][0]
+                iter_author_cermine = [a for a in cermine.authors if a.name == iter_author_name][0]
+                iter_aff_grobid = iter_author_grobid.affiliation
+                iter_aff_cermine = iter_author_cermine.affiliation
+                iter_email_grobid = iter_author_grobid.email
+                iter_email_cermine = iter_author_cermine.email
+                aff_author, email_author = merge_author_info(iter_aff_grobid, iter_aff_cermine, iter_email_grobid, iter_email_cermine)
+                paper_authors.append(Author(name=iter_author_name, affiliation=aff_author, email=email_author))
+
         elif approximate_lists(authors_gr, authors_ce): # list of authors is (almost) the same
             author_info = []
             for a in grobid.authors:
                 for b in cermine.authors:
-                    if fuzz.token_set_ratio(a.name, b.name) >= 80:
+                    if fuzz.token_set_ratio(a.name, b.name) >= 70:
                         author_info.append((b.name, a.affiliation, b.affiliation, a.email, b.email))
                         
             for a_name, aff_grobid, aff_cermine, email_grobid, email_cermine in author_info:

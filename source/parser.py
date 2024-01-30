@@ -226,6 +226,31 @@ class CermineFile():
             result.append(author)
 
         return result
+    
+# Parsing proceedings and events using JSON
+class JsonFile():
+    def __init__(self, filename):
+        self.json = filename.json()    
+    @property
+    def events(self):
+        self._events = self.json["wd.eventLabel"]
+        return self._events
+    @property
+    def proceedings(self):
+        self._proceedings = self.json["wd.itemLabel"]
+        return self._proceedings
+    @property
+    def eventSeries(self):
+        if self.json["wd.eventSeriesLabel"] != '':
+            self._eventSeries = self.json["wd.eventSeriesLabel"]
+            return self._eventSeries
+        else:
+            print("No event series found")
+            return 
+def get_eventsAndProceedings(jsonfile):
+
+    result = { 'proceedings':jsonfile.proceedings,'event':jsonfile.events, 'event series': jsonfile.eventSeries}
+    return result
 
 def elem_to_text(elem = None):
     if elem:
@@ -505,6 +530,7 @@ def main():
     assert(all([vol_nr in volumes for vol_nr in cur_volumes]))
     #extract all pages for each vol
     papers = {}
+    events = {}
     for v in cur_volumes:
         
         url = 'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-' + v
@@ -512,10 +538,25 @@ def main():
         reg2 = rf'Vol-{v}/(.*?).pdf'
         #reg2 = r'paper(\d+).pdf' ##needs to be changed to reg2 = r'paper(\d+).pdf' to accound for more papers that do not follow this format.
         papers[int(v)] = sorted(list(set(re.findall(reg2, BeautifulSoup(Web.text, 'lxml').prettify()))))
+
         
     # remove contents that are not papers
     for v in cur_volumes:
         papers[int(v)] =  [ele for ele in papers[int(v)] if ('paper' or 'short')  in ele]
+    
+    # parsing the events and proceedings as a nested dictionary using key = volume number, value = the json dictionary
+    for v in cur_volumes:
+        url = 'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-' + v + '.json'
+        response = req.get(url)
+
+        try:
+            json_event = JsonFile(response)
+        except:
+            print('Json file could not get parsed correctly')
+        events[int(v)] = get_eventsAndProceedings(json_event)
+    print("Events and proceedings:")
+    print(events)
+    
         
     for k in papers.keys():
         for idx, paper_key in enumerate(papers[k]):

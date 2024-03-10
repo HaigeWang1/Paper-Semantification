@@ -17,12 +17,19 @@ services:
     networks:
       - interconnection
 
-  # paper_sementification_server:
-  #   image: paper_sementification_server:latest
-  #   ports:
-  #     - "8001:8001"
-  #   networks:
-  #     - interconnection
+  paper_semantification:
+    image: paper_semantification:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./source:/app
+    environment:
+      - NEO4J_URI=bolt://neo4j:7687
+    ports:
+      - "8000:8000"
+    networks:
+      - interconnection
 
 networks:
   interconnection:

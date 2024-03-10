@@ -3,7 +3,7 @@
 [![Issues](https://img.shields.io/github/issues-raw/HaigeWang1/Paper-Semantification)](https://github.com/HaigeWang1/Paper-Semantification/issues)  
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
 
-# How to run it
+# How to run it (! TO BE DEPRECATED !)
 ```
 git clone https://github.com/HaigeWang1/Paper-Semantification.git
 cd Paper-Semantification
@@ -17,12 +17,24 @@ python source/parser.py -v 1999 2462
 ```
 
 
-### Dockerized Version (**WIP**)
+### Dockerized Version - Setup
 
-In the current version of docker-compose.yaml Neo4J database service is launched. It can be then accessed locally through http://localhost:7474
-```
-docker-compose up -d
-```
+##### Build the docker image for the  python service paper_sementification 
+`docker -f Dockerfile build -t paper_semantification .`
+
+Docker-compose contains two services:
+1. The Neo4J database
+2. paper_semantification (our python service)
+
+Run the whole application with the command `docker-compose up -d`
+
+- Neo4J can be access locally through http://localhost:7474 
+  - In the server connection interface input `bolt://localhost:7687`
+  - Authentication is disabled, thus ignore the fields related to authentication
+- Our service exposes its APIs through a FastAPI server. The API can be accessed in the Swager UI through htttp://localhost:8000/docs
+
+
+
 
 # Goal
 The purpose of this task is to comprehensively process scholarly papers by leveraging metadata extraction services such as CERMINE and GROBID APIs.

@@ -1,0 +1,261 @@
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper1.pdf
+Parsed title: A Personalized Affect Response Model for Online News Articles.
+Validating via openAI
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+paper_authors: 
+ [Author(name='Kyohei Atarashi', affiliation=['Hokkaido University'], email='atarashi@complex.ist.hokudai.ac.jp'), Author(name='Kyohei Atarashi', affiliation=['Hokkaido University'], email='atarashi@complex.ist.hokudai.ac.jp'), Author(name='Akimi Moriyama', affiliation=['Hokkaido University'], email='a.moriyama@complex.ist.hokudai.ac.jp'), Author(name='Akimi Moriyama', affiliation=['Hokkaido University'], email='a.moriyama@complex.ist.hokudai.ac.jp'), Author(name='Satoshi Oyama', affiliation=['Hokkaido University', 'RIKEN AIP'], email='oyama@ist.hokudai.ac.jp'), Author(name='Satoshi Oyama', affiliation=['Hokkaido University', 'RIKEN AIP'], email='oyama@ist.hokudai.ac.jp'), Author(name='Masahito Kurihara', affiliation=['Hokkaido University'], email='kurihara@ist.hokudai.ac.jp'), Author(name='Masahito Kurihara', affiliation=['Hokkaido University'], email='kurihara@ist.hokudai.ac.jp')] 
+ -------------------
+grobid.authors: 
+ [Author(name='Kyohei Atarashi', affiliation='Hokkaido University', email=None), Author(name='Akimi Moriyama', affiliation='Hokkaido University', email=None), Author(name='Satoshi Oyama', affiliation='Hokkaido University', email='oyama@ist.hokudai.ac.jp'), Author(name='Masahito Kurihara', affiliation='Hokkaido University', email='kurihara@ist.hokudai.ac.jp')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Hokkaido University', affiliation=[], email=[]), Author(name='RIKEN AIP', affiliation=[], email=[]), Author(name='atarashi k', affiliation=[], email=[]), Author(name='a.moriyama astg@complex.ist.hokudai.ac.jp', affiliation=[], email=[]), Author(name='oyama', affiliation=[], email=[]), Author(name='kuriharag@ist.hokudai.ac.jp', affiliation=[], email=[])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Kyohei Atarashi', 'affiliation': ['Hokkaido University'], 'email': ['atarashi@complex.ist.hokudai.ac.jp']}, {'name': 'Akimi Moriyama', 'affiliation': ['Hokkaido University'], 'email': ['a.moriyama@complex.ist.hokudai.ac.jp']}, {'name': 'Satoshi Oyama', 'affiliation': ['Hokkaido University', 'RIKEN AIP'], 'email': ['oyama@ist.hokudai.ac.jp']}, {'name': 'Masahito Kurihara', 'affiliation': ['Hokkaido University'], 'email': ['kurihara@ist.hokudai.ac.jp']}] 
+
+==================================================
+------------------------------------------------------
+atarashi@complex.ist.hokudai.ac.jp
+atarashi@complex.ist.hokudai.ac.jp
+a.moriyama@complex.ist.hokudai.ac.jp
+a.moriyama@complex.ist.hokudai.ac.jp
+oyama@ist.hokudai.ac.jp
+oyama@ist.hokudai.ac.jp
+kurihara@ist.hokudai.ac.jp
+kurihara@ist.hokudai.ac.jp
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper2.pdf
+Parsed title: Emoji-Aware Attention-based Bi-directional GRU Network Model for Chinese Sentiment Analysis.
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Validating via openAI
+Manual check is needed!
+paper_authors: 
+ [Author(name='Da Li', affiliation=['Graduate School of Information Science and Technology, Hokkaido University'], email='lida@ist.hokudai.ac.jp'), Author(name='Da Li', affiliation=['Graduate School of Information Science and Technology, Hokkaido University'], email='lida@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University', 'RIKEN Center for Advanced Intelligence Project (AIP)'], email='rzepka@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University', 'RIKEN Center for Advanced Intelligence Project (AIP)'], email='rzepka@ist.hokudai.ac.jp'), Author(name='Michal Ptaszynski', affiliation=['Department of Computer Science, Kitami Institute of Technology'], email='ptaszynski@cs.kitami-it.ac.jp'), Author(name='Michal Ptaszynski', affiliation=['Department of Computer Science, Kitami Institute of Technology'], email='ptaszynski@cs.kitami-it.ac.jp'), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University'], email=['arakig@ist.hokudai.ac.jp']), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University'], email=['arakig@ist.hokudai.ac.jp'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Da Li', affiliation='Graduate School of Information Science and Technology, Hokkaido University', email='lida@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation='Graduate School of Information Science and Technology, Hokkaido University', email='rzepka@ist.hokudai.ac.jp'), Author(name='Michal Ptaszynski', affiliation='Department of Computer Science, Kitami Institute of Technology', email='ptaszynski@cs.kitami-it.ac.jp'), Author(name='Kenji Araki', affiliation='Graduate School of Information Science and Technology, Hokkaido University', email='araki@ist.hokudai.ac.jp')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Da Li', affiliation=['Graduate School of Information Science and Technology, Hokkaido University'], email=[]), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University', 'RIKEN Center for Advanced Intelligence Project, AIP'], email=[]), Author(name='Michal Ptaszynski', affiliation=['Department of Computer Science, Kitami Institute of Technology'], email=['ptaszynski@cs.kitami-it.ac.jp']), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University'], email=['arakig@ist.hokudai.ac.jp'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Da Li', 'affiliation': ['Graduate School of Information Science and Technology, Hokkaido University'], 'email': ['lida@ist.hokudai.ac.jp']}, {'name': 'Rafal Rzepka', 'affiliation': ['Graduate School of Information Science and Technology, Hokkaido University', 'RIKEN Center for Advanced Intelligence Project (AIP)'], 'email': ['rzepka@ist.hokudai.ac.jp']}, {'name': 'Michal Ptaszynski', 'affiliation': ['Department of Computer Science, Kitami Institute of Technology'], 'email': ['ptaszynski@cs.kitami-it.ac.jp']}, {'name': 'Kenji Araki', 'affiliation': ['Graduate School of Information Science and Technology, Hokkaido University'], 'email': ['araki@ist.hokudai.ac.jp']}] 
+
+==================================================
+------------------------------------------------------
+lida@ist.hokudai.ac.jp
+lida@ist.hokudai.ac.jp
+rzepka@ist.hokudai.ac.jp
+rzepka@ist.hokudai.ac.jp
+ptaszynski@cs.kitami-it.ac.jp
+ptaszynski@cs.kitami-it.ac.jp
+['arakig@ist.hokudai.ac.jp']
+['arakig@ist.hokudai.ac.jp']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper3.pdf
+Parsed title: Influence of Classifiers and Encoders on Argument Classification in Japanese Assembly Minutes.
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Validating via openAI
+paper_authors: 
+ [Author(name='Yasutomo Kimura', affiliation=['Otaru University of Commerce, Japan'], email=['kimura@res.otaru-uc.ac.jp']), Author(name='Yasutomo Kimura', affiliation=['Otaru University of Commerce, Japan'], email=['kimura@res.otaru-uc.ac.jp']), Author(name='Hideyuki Shibuki', affiliation=['National Institute of Informatics, Japan'], email=None), Author(name='Hideyuki Shibuki', affiliation=['National Institute of Informatics, Japan'], email=None), Author(name='Hokuto Ototake', affiliation=['Fukuoka University, Japan'], email=None), Author(name='Hokuto Ototake', affiliation=['Fukuoka University, Japan'], email=None), Author(name='Yuzu Uchida', affiliation=['Hokkai-Gakuen University, Japan'], email=None), Author(name='Yuzu Uchida', affiliation=['Hokkai-Gakuen University, Japan'], email=None), Author(name='Keiichi Takamaru', affiliation=['Utsunomiya Kyowa University, Japan'], email=None), Author(name='Keiichi Takamaru', affiliation=['Utsunomiya Kyowa University, Japan'], email=None), Author(name='Kotaro Sakamoto', affiliation=['Yokohama National University, Japan'], email=None), Author(name='Kotaro Sakamoto', affiliation=['Yokohama National University, Japan'], email=None), Author(name='Madoka Ishioroshi', affiliation=['National Institute of Informatics, Japan'], email=None), Author(name='Madoka Ishioroshi', affiliation=['National Institute of Informatics, Japan'], email=None), Author(name='Teruko Mitamura', affiliation=['Carnegie Mellon University, USA'], email=None), Author(name='Teruko Mitamura', affiliation=['Carnegie Mellon University, USA'], email=None), Author(name='Noriko Kando', affiliation=['National Institute of Informatics, Japan', 'SOKENDAI, Japan'], email=None), Author(name='Noriko Kando', affiliation=['National Institute of Informatics, Japan', 'SOKENDAI, Japan'], email=None)] 
+ -------------------
+grobid.authors: 
+ [Author(name='Yasutomo Kimura', affiliation='Otaru University of Commerce', email='kimura@res.otaru-uc.ac.jp'), Author(name='Hideyuki Shibuki', affiliation='National Institute of Informatics', email=None), Author(name='Hokuto Ototake', affiliation='Fukuoka University', email=None), Author(name='Yuzu Uchida', affiliation='Hokkai-Gakuen University', email=None), Author(name='Keiichi Takamaru', affiliation='Utsunomiya Kyowa University', email=None), Author(name='Kotaro Sakamoto', affiliation='Yokohama National University', email=None), Author(name='Madoka Ishioroshi', affiliation='National Institute of Informatics', email=None), Author(name='Teruko Mitamura', affiliation='Carnegie Mellon University', email=None), Author(name='Noriko Kando', affiliation='National Institute of Informatics', email=None)] 
+ -------------------
+cermine.authors: 
+ [Author(name='Yasutomo Kimura', affiliation=['Otaru University of Commerce, Japan'], email=['kimura@res.otaru-uc.ac.jp']), Author(name='Hideyuki Shibuki', affiliation=['National Institute of Informatics, Japan'], email=[]), Author(name='Hokuto Ototake', affiliation=['Fukuoka University, Japan'], email=[]), Author(name='Yuzu Uchida', affiliation=['Hokkai-Gakuen University, Japan'], email=[]), Author(name='Keiichi Takamaru', affiliation=['Utsunomiya Kyowa University, Japan'], email=[]), Author(name='Kotaro Sakamoto', affiliation=['Yokohama National University, Japan'], email=[]), Author(name='Madoka Ishioroshi', affiliation=['National Institute of Informatics, Japan'], email=[]), Author(name='Teruko Mitamura', affiliation=['Carnegie Mellon University, USA'], email=[]), Author(name='Noriko Kando', affiliation=['National Institute of Informatics, Japan', 'SOKENDAI, Japan'], email=[])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Yasutomo Kimura', 'affiliation': ['Otaru University of Commerce, Japan'], 'email': ['kimura@res.otaru-uc.ac.jp']}, {'name': 'Hideyuki Shibuki', 'affiliation': ['National Institute of Informatics, Japan'], 'email': []}, {'name': 'Hokuto Ototake', 'affiliation': ['Fukuoka University, Japan'], 'email': []}, {'name': 'Yuzu Uchida', 'affiliation': ['Hokkai-Gakuen University, Japan'], 'email': []}, {'name': 'Keiichi Takamaru', 'affiliation': ['Utsunomiya Kyowa University, Japan'], 'email': []}, {'name': 'Kotaro Sakamoto', 'affiliation': ['Yokohama National University, Japan'], 'email': []}, {'name': 'Madoka Ishioroshi', 'affiliation': ['National Institute of Informatics, Japan'], 'email': []}, {'name': 'Teruko Mitamura', 'affiliation': ['Carnegie Mellon University, USA'], 'email': []}, {'name': 'Noriko Kando', 'affiliation': ['National Institute of Informatics, Japan', 'SOKENDAI, Japan'], 'email': []}] 
+
+==================================================
+------------------------------------------------------
+['kimura@res.otaru-uc.ac.jp']
+['kimura@res.otaru-uc.ac.jp']
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper4.pdf
+Parsed title: Debate Outcome Prediction using Automatic Persuasiveness Evaluation and Counterargument Relations.
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Validating via openAI
+paper_authors: 
+ [Author(name='Daiki Shirafuji', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email='dshirafuji@ist.hokudai.ac.jp'), Author(name='Daiki Shirafuji', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email='dshirafuji@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan', 'RIKEN Center for Advanced Intelligence Project (AIP)'], email='rzepka@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan', 'RIKEN Center for Advanced Intelligence Project (AIP)'], email='rzepka@ist.hokudai.ac.jp'), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['arakig@ist.hokudai.ac.jp']), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['arakig@ist.hokudai.ac.jp'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Daiki Shirafuji', affiliation='Graduate School of Information Science and Technology, Hokkaido University', email='dshirafuji@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation='Graduate School of Information Science and Technology, Hokkaido University', email='rzepka@ist.hokudai.ac.jp'), Author(name='Kenji Araki', affiliation='Graduate School of Information Science and Technology, Hokkaido University', email='araki@ist.hokudai.ac.jp')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Daiki Shirafuji', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=[]), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan', 'RIKEN Center for Advanced Intelligence Project, AIP'], email=[]), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['arakig@ist.hokudai.ac.jp'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Daiki Shirafuji', 'affiliation': ['Graduate School of Information Science and Technology, Hokkaido University, Japan'], 'email': ['dshirafuji@ist.hokudai.ac.jp']}, {'name': 'Rafal Rzepka', 'affiliation': ['Graduate School of Information Science and Technology, Hokkaido University, Japan', 'RIKEN Center for Advanced Intelligence Project (AIP)'], 'email': ['rzepka@ist.hokudai.ac.jp']}, {'name': 'Kenji Araki', 'affiliation': ['Graduate School of Information Science and Technology, Hokkaido University, Japan'], 'email': ['araki@ist.hokudai.ac.jp']}] 
+
+==================================================
+------------------------------------------------------
+dshirafuji@ist.hokudai.ac.jp
+dshirafuji@ist.hokudai.ac.jp
+rzepka@ist.hokudai.ac.jp
+rzepka@ist.hokudai.ac.jp
+['arakig@ist.hokudai.ac.jp']
+['arakig@ist.hokudai.ac.jp']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper5.pdf
+Parsed title: Extracting Dialog Structure and Latent Beliefs from Dialog Corpus.
+Validating via openAI
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+paper_authors: 
+ [Author(name='Aishwarya Chhabra', affiliation=['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], email='aishwarya.chhabra@tcs.com'), Author(name='Aishwarya Chhabra', affiliation=['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], email='aishwarya.chhabra@tcs.com'), Author(name='Pratik Saini', affiliation=['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], email='pratik.saini@tcs.com'), Author(name='Pratik Saini', affiliation=['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], email='pratik.saini@tcs.com'), Author(name='Chandrasekhar Anantaram', affiliation=['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], email='c.anantaram@tcs.com'), Author(name='Chandrasekhar Anantaram', affiliation=['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], email='c.anantaram@tcs.com')] 
+ -------------------
+grobid.authors: 
+ [Author(name='Aishwarya Chhabra', affiliation='Tata Consultancy Services Ltd', email='aishwarya.chhabra@tcs.com'), Author(name='Pratik Saini', affiliation='Tata Consultancy Services Ltd', email='pratik.saini@tcs.com'), Author(name='C Anantaram', affiliation='Tata Consultancy Services Ltd', email='c.anantaram@tcs.com')] 
+ -------------------
+cermine.authors: 
+ [Author(name='TCS Research', affiliation=[], email=[]), Author(name='Tata Consultancy Services Ltd', affiliation=[], email=[]), Author(name='Gwal Pahari', affiliation=[], email=[]), Author(name='Gurgaon', affiliation=[], email=[]), Author(name='India', affiliation=[], email=[])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Aishwarya Chhabra', 'affiliation': ['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], 'email': ['aishwarya.chhabra@tcs.com']}, {'name': 'Pratik Saini', 'affiliation': ['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], 'email': ['pratik.saini@tcs.com']}, {'name': 'C. Anantaram', 'affiliation': ['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], 'email': ['c.anantaram@tcs.com']}] 
+
+==================================================
+------------------------------------------------------
+aishwarya.chhabra@tcs.com
+aishwarya.chhabra@tcs.com
+pratik.saini@tcs.com
+pratik.saini@tcs.com
+c.anantaram@tcs.com
+c.anantaram@tcs.com
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper6.pdf
+Parsed title: A Convolutional Neural Network For Ranking Advice Quality In Texts For A Motivational Dialogue System.
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Validating via openAI
+paper_authors: 
+ [Author(name='Patrycja Swieczkowska', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['swieczkowska@ist.hokudai.ac.jp']), Author(name='Patrycja Swieczkowska', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['swieczkowska@ist.hokudai.ac.jp']), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['rzepka@ist.hokudai.ac.jp']), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['rzepka@ist.hokudai.ac.jp']), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['araki@ist.hokudai.ac.jp']), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['araki@ist.hokudai.ac.jp'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Patrycja Swieczkowska', affiliation='Graduate School of Information Science and Technology, Hokkaido University', email='swieczkowska@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation='Graduate School of Information Science and Technology, Hokkaido University', email='rzepka@ist.hokudai.ac.jp'), Author(name='Kenji Araki', affiliation='Graduate School of Information Science and Technology, Hokkaido University', email='araki@ist.hokudai.ac.jp')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Patrycja Swieczkowska', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['swieczkowska@ist.hokudai.ac.jp']), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['rzepka@ist.hokudai.ac.jp']), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['araki@ist.hokudai.ac.jp'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Patrycja Swieczkowska', 'affiliation': ['Graduate School of Information Science and Technology, Hokkaido University, Japan'], 'email': ['swieczkowska@ist.hokudai.ac.jp']}, {'name': 'Rafal Rzepka', 'affiliation': ['Graduate School of Information Science and Technology, Hokkaido University, Japan'], 'email': ['rzepka@ist.hokudai.ac.jp']}, {'name': 'Kenji Araki', 'affiliation': ['Graduate School of Information Science and Technology, Hokkaido University, Japan'], 'email': ['araki@ist.hokudai.ac.jp']}] 
+
+==================================================
+------------------------------------------------------
+['swieczkowska@ist.hokudai.ac.jp']
+['swieczkowska@ist.hokudai.ac.jp']
+['rzepka@ist.hokudai.ac.jp']
+['rzepka@ist.hokudai.ac.jp']
+['araki@ist.hokudai.ac.jp']
+['araki@ist.hokudai.ac.jp']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper7.pdf
+Parsed title: New Approach to Computational Cognition and Predicative Competence.
+Manual check is needed!
+Validating via openAI
+paper_authors: 
+ [Author(name='Rodolfo A. Fiorini', affiliation=['Department of Electronics, Information and Bioengineering, Politecnico di Milano University, Italy', '[Zellweger, 1992] Shea Zellweger. Cards, Mirrors and Hand Held Models that Lead into Elementary Logic. In Proc. Sixteenth Annual Conference of the International Group for the Psychology of Mathematics Education, 1992. University of New Hampshire'], email=['Rodolfo.fiorini@polimi.it']), Author(name='Rodolfo A. Fiorini', affiliation=['Department of Electronics, Information and Bioengineering, Politecnico di Milano University, Italy', '[Zellweger, 1992] Shea Zellweger. Cards, Mirrors and Hand Held Models that Lead into Elementary Logic. In Proc. Sixteenth Annual Conference of the International Group for the Psychology of Mathematics Education, 1992. University of New Hampshire'], email=['Rodolfo.fiorini@polimi.it'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Rodolfo A Fiorini', affiliation='Department of Electronics, Information and Bioengineering, Politecnico di Milano University', email='rodolfo.fiorini@polimi.it')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Rodolfo A. Fiorini', affiliation=['Department of Electronics, Information and Bioengineering, Politecnico di Milano University, Italy', '[Zellweger, 1992] Shea Zellweger. Cards, Mirrors and Hand Held Models that Lead into Elementary Logic. In Proc. Sixteenth Annual Conference of the International Group for the Psychology of Mathematics Education, 1992. University of New Hampshire'], email=['Rodolfo.fiorini@polimi.it'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Rodolfo A. Fiorini', 'affiliation': ['Department of Electronics, Information and Bioengineering, Politecnico di Milano University, Italy'], 'email': ['Rodolfo.fiorini@polimi.it']}] 
+
+==================================================
+------------------------------------------------------
+['Rodolfo.fiorini@polimi.it']
+['Rodolfo.fiorini@polimi.it']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper8.pdf
+Parsed title: Cognitive Biases Undermine Consensus on Definitions of Intelligence and Limit Understanding.
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Validating via openAI
+Manual check is needed!
+Manual check is needed!
+paper_authors: 
+ [Author(name='Dagmar Monett', affiliation=['Computer Science Dept., Berlin School of Economics and Law, Germany', 'AGISI.org'], email=['dagmar.monett@agisi.org']), Author(name='Dagmar Monett', affiliation=['Computer Science Dept., Berlin School of Economics and Law, Germany', 'AGISI.org'], email=['dagmar.monett@agisi.org']), Author(name='Luisa Hoge', affiliation=['Computer Science Dept., Berlin School of Economics and Law, Germany'], email=['hoge@stud.hwr-berlin.de']), Author(name='Luisa Hoge', affiliation=['Computer Science Dept., Berlin School of Economics and Law, Germany'], email=['hoge@stud.hwr-berlin.de']), Author(name='Colin W. P. Lewis', affiliation=['AGISI.org'], email=['colin.lewis@agisi.org']), Author(name='Colin W. P. Lewis', affiliation=['AGISI.org'], email=['colin.lewis@agisi.org'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Dagmar Monett', affiliation='Computer Science Dept, Berlin School of Economics and Law', email='dagmar.monett@agisi.org'), Author(name='Luisa Hoge', affiliation='Computer Science Dept, Berlin School of Economics and Law', email='hoge@stud.hwr-berlin.de'), Author(name='Colin W P Lewis', affiliation='AGISI.org', email='colin.lewis@agisi.org')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Dagmar Monett', affiliation=['Computer Science Dept., Berlin School of Economics and Law, Germany', 'Contact Author'], email=['dagmar.monett@agisi.org']), Author(name='Luisa Hoge', affiliation=['Computer Science Dept., Berlin School of Economics and Law, Germany'], email=['hoge@stud.hwr-berlin.de']), Author(name='Colin W. P. Lewis', affiliation=['Computer Science Dept., Berlin School of Economics and Law, Germany'], email=['colin.lewis@agisi.org'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Dagmar Monett', 'affiliation': ['Computer Science Dept., Berlin School of Economics and Law, Germany', 'AGISI.org'], 'email': ['dagmar.monett@agisi.org']}, {'name': 'Luisa Hoge', 'affiliation': ['Computer Science Dept., Berlin School of Economics and Law, Germany'], 'email': ['s_hoge@stud.hwr-berlin.de']}, {'name': 'Colin W. P. Lewis', 'affiliation': ['AGISI.org'], 'email': ['colin.lewis@agisi.org']}] 
+
+==================================================
+------------------------------------------------------
+['dagmar.monett@agisi.org']
+['dagmar.monett@agisi.org']
+['hoge@stud.hwr-berlin.de']
+['hoge@stud.hwr-berlin.de']
+['colin.lewis@agisi.org']
+['colin.lewis@agisi.org']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper9.pdf
+Parsed title: Implicit Knowledge Completion Method Using Relevance Calculation of Distributed Word Representations
+No dblp entry: merge results from cermine and grobid
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Validating via openAI
+paper_authors: 
+ [Author(name='Sho Takishita', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], email='sho.takishita@ist.hokudai.ac.jp'), Author(name='Sho Takishita', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], email='sho.takishita@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], email='rzepka@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], email='rzepka@ist.hokudai.ac.jp'), Author(name='Kenji Araki', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan'], email=['arakig@ist.hokudai.ac.jp']), Author(name='Kenji Araki', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan'], email=['arakig@ist.hokudai.ac.jp'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Sho Takishita', affiliation='Faculty of Information Science and Technology, Hokkaido University', email='sho.takishita@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation='Faculty of Information Science and Technology, Hokkaido University', email='rzepka@ist.hokudai.ac.jp'), Author(name='Kenji Araki', affiliation='Faculty of Information Science and Technology, Hokkaido University', email='araki@ist.hokudai.ac.jp')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Sho Takishita', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], email=[]), Author(name='Rafal Rzepka', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], email=[]), Author(name='Kenji Araki', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan'], email=['arakig@ist.hokudai.ac.jp'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Sho Takishita', 'affiliation': ['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], 'email': ['sho.takishita@ist.hokudai.ac.jp']}, {'name': 'Rafal Rzepka', 'affiliation': ['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], 'email': ['rzepka@ist.hokudai.ac.jp']}, {'name': 'Kenji Araki', 'affiliation': ['Faculty of Information Science and Technology, Hokkaido University, Japan'], 'email': ['araki@ist.hokudai.ac.jp']}] 
+
+==================================================
+------------------------------------------------------
+sho.takishita@ist.hokudai.ac.jp
+sho.takishita@ist.hokudai.ac.jp
+rzepka@ist.hokudai.ac.jp
+rzepka@ist.hokudai.ac.jp
+['arakig@ist.hokudai.ac.jp']
+['arakig@ist.hokudai.ac.jp']
+Exact matching of paper titles and author names: 8 out of 248
+Exact matching of title, names and emails: 4 out of 248
+Exact matching of all atts: 2 out of 248
+Exact matching of title, names and emails; app. matching of affiliations: 4 out of 248

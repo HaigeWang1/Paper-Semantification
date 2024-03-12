@@ -386,53 +386,7 @@ def get_paper_title(grobid, cermine, pdf_path):
            # print('Manual check needed!')
             return ''
 
-def merge_author_info_openAI(aff_grobid, aff_cermine,aff_openAI, email_grobid, email_cermine, email_openAI):
-    aff_author = []
-    if not aff_grobid:
-        aff_author = aff_cermine
-    elif not aff_cermine:
-        aff_author = aff_grobid
-    elif not aff_grobid and not aff_cermine:
-        aff_author = aff_openAI
-    elif issubset(aff_grobid, aff_cermine):
-        aff_author = aff_cermine
-    elif issubset(aff_cermine, aff_grobid):
-        aff_author = aff_grobid
-    elif issubset(aff_author,aff_openAI):
-        aff_author = aff_openAI
-    else:
-        #TODO: manual check what to do this  
-        # Example: http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper8.pdf           
-        print('Manual check is needed!')
-        aff_author = []
 
-
-    if not email_cermine:
-        email_author = email_grobid
-    elif not email_grobid:
-        email_author = email_cermine
-
-    elif set(email_cermine).issubset(set(email_grobid)):
-        email_author = email_cermine # take common email address
-    elif set(email_grobid).issubset(set(email_cermine)):
-        email_author = email_grobid # take common email address
-    elif check_email(email_grobid):
-        email_author = email_grobid
-    elif check_email(email_cermine):
-        email_author = email_cermine
-    # elif set(email_openAI) < set(email_author):
-    #     email_author = email_openAI
-    # elif check_email(email_openAI):
-    #     email_author = email_openAI
-
-
-    else:
-        if email_openAI !=[]:
-            
-            email_author = email_openAI
-
-        email_author = ''
-    return(aff_author, email_author)
 def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
     #assign affiliations to each author
     if not aff_grobid:
@@ -446,7 +400,7 @@ def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
     else:
         # Example: http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper8.pdf           
         print('Manual check is needed!')
-        aff_author = []
+        aff_author = aff_cermine
 
     # assign emails to each author
     if not email_cermine:
@@ -454,9 +408,9 @@ def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
     elif not email_grobid:
         email_author = email_cermine
     elif set(email_cermine).issubset(set(email_grobid)):
-        email_author = email_cermine # take common email address
-    elif set(email_grobid).issubset(set(email_cermine)):
         email_author = email_grobid # take common email address
+    elif set(email_grobid).issubset(set(email_cermine)):
+        email_author = email_cermine # take common email address
     elif check_email(email_grobid):
         email_author = email_grobid
     elif check_email(email_cermine):
@@ -464,8 +418,9 @@ def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
     else:
         #TODO: manual check what to do this
         print('Manual check is needed!')
-        email_author = ''
+        email_author = email_cermine
     return(aff_author, email_author)
+
 
 def get_author_info(grobid, cermine, openAI):                   
     #merge author information
@@ -477,7 +432,9 @@ def get_author_info(grobid, cermine, openAI):
     #author name from openAI
     for e in openAI:
         openAI_authors.append(e['name'])
-    
+
+
+
     # use dblp for cross check
     dblp_result = pd.DataFrame() 
     if not dblp.search([grobid.title]).empty:
@@ -486,11 +443,12 @@ def get_author_info(grobid, cermine, openAI):
         dblp_result = dblp.search([cermine.title])
 
     if not dblp_result.empty:     
-        dblp_authors = dblp_result['Authors'][0]      
+        dblp_authors = dblp_result['Authors'][0] 
 
+        
     #check results from grobid      
     paper_authors_gr = {}
-    if 1==1: #len(dblp_authors) == len(grobid.authors):
+    if not dblp_result.empty: #len(dblp_authors) == len(grobid.authors):
         for a1 in dblp_authors:
             for a2 in grobid.authors:
                 #only add correct names from dblp
@@ -509,11 +467,11 @@ def get_author_info(grobid, cermine, openAI):
 
 
     paper_authors_ce = {}
-    if 1==1: #len(dblp_authors) == len(cermine.authors):  -- not sure if we need this here, needs for validation
+    if not dblp_result.empty: #len(dblp_authors) == len(cermine.authors):  -- not sure if we need this here, needs for validation
         for a1 in dblp_authors:
             for a2 in cermine.authors:
                 #only add correct names from dblp
-                if fuzz.token_set_ratio (a1, a2.name) >= 80:
+                if fuzz.token_set_ratio(a1, a2.name) >= 80:
                     paper_authors_ce[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
                     break
     #cross check the author name with openAI iff dblp entry is empty
@@ -534,6 +492,8 @@ def get_author_info(grobid, cermine, openAI):
     email_cermine = ''
     aff_openAI = []
     email_openAI = ''
+
+
     if not dblp_result.empty:
         for a in dblp_authors:
             
@@ -548,6 +508,7 @@ def get_author_info(grobid, cermine, openAI):
             
             aff_author, email_author = merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine)
             paper_authors.append(Author(name=a, affiliation=aff_author, email=email_author))
+
 
 
     else:
@@ -572,6 +533,7 @@ def get_author_info(grobid, cermine, openAI):
 
         elif approximate_lists(authors_gr, authors_ce): # list of authors is (almost) the same
             author_info = []
+            paper_authors = []
             for a in grobid.authors:
                 for b in cermine.authors:
                     if fuzz.token_set_ratio(a.name, b.name) >= 70:
@@ -582,33 +544,47 @@ def get_author_info(grobid, cermine, openAI):
                 aff_author, email_author = merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine)
                 paper_authors.append(Author(name=a_name, affiliation=aff_author, email=email_author))
 
-        else:            
-            #TODO: decide what to do here?
-            # I think its a better idea to take the authors from grobid here; cermine shows multiple problems 
-            print('Manual check is needed! Number of extracted authors is not the same!')
-            paper_authors = []
+        #else:            
+        #     #TODO: decide what to do here?
+        #     # I think its a better idea to take the authors from grobid here; cermine shows multiple problems 
+        #     print('Manual check is needed! Number of extracted authors is not the same!')
     
+        
     print('Validating via openAI')
-    for a in paper_authors_gr:
 
-        if a in openAI_authors:
-            tmp = list(filter(lambda person: person['name'] == a, openAI))[0]['email']
-            if not tmp:
-                email_openAI = ''
-            else:
-                email_openAI = tmp[0]
-            aff_openAI = list(filter(lambda person: person['name'] == a, openAI))[0]['affiliation']
+    tmp_paper_authors = []
+    for a in paper_authors:
+        name_author = a.name
+        aff_author = a.affiliation
+        email_author = a.email
 
-        #aff_author, email_author = merge_author_info_openAI(aff_grobid, aff_cermine,aff_openAI,email_grobid,email_cermine, email_openAI)
-        aff_author, email_author = merge_author_info(aff_author,aff_openAI, email_author, email_openAI)
-        paper_authors.append(Author(name=a, affiliation=aff_author, email= email_author))
+        for b in openAI_authors:
+            
+
+            if fuzz.token_set_ratio(name_author, b) >= 80:
+                tmp = list(filter(lambda person: person['name'] == b, openAI))[0]['email']
+                if not tmp:
+                    email_openAI = ''
+                else:
+                    email_openAI = tmp[0]
+                aff_openAI = list(filter(lambda person: person['name'] == b, openAI))[0]['affiliation']
+
+            #aff_author, email_author = merge_author_info_openAI(aff_grobid, aff_cermine,aff_openAI,email_grobid,email_cermine, email_openAI)
+                aff_author, email_author = merge_author_info(aff_author,aff_openAI, email_author, email_openAI)
+                tmp_paper_authors.append(Author(name=name_author, affiliation=aff_author, email= email_author))
+        tmp_paper_authors.append(Author(name=name_author, affiliation=aff_author, email= email_author))
+    paper_authors = tmp_paper_authors
+    #aff_author, email_author = merge_author_info_openAI(aff_grobid, aff_cermine,aff_openAI,email_grobid,email_cermine, email_openAI)
+    
 
 
-   # print('paper_authors: \n', paper_authors, '\n', '-------------------')
+
+    print('paper_authors: \n', paper_authors, '\n', '-------------------')
     print('grobid.authors: \n', grobid.authors, '\n', '-------------------')
-   # print('cermine.authors: \n', cermine.authors, '\n')
+    print('cermine.authors: \n', cermine.authors, '\n','-------------------')
+    print('openAI.authors: \n', openAI, '\n')
+    print('==================================================')
     return paper_authors
-
 def calculate_similarity(row):
     return fuzz.token_set_ratio(row['Author Affiliations_exp'], row['Author Affiliations_act'])
 
@@ -762,7 +738,7 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
                 name = author.name
                 affiliation = '; '.join(author.affiliation)
                 print(author.email)
-                if is_iterable(author.email):
+                if isinstance(author.email, list):
                     email = ', '.join(author.email)
                 elif author.email:
                     email = author.email

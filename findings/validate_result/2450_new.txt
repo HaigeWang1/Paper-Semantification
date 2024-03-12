@@ -1,0 +1,281 @@
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper1.pdf
+Parsed title: How Playlist Evaluation Compares to Track Evaluations in Music Recommender Systems.
+Validating via openAI
+paper_authors: 
+ [Author(name='Sophia Hadash', affiliation=['Jheronimus Academy of Data Science'], email=['s.hadash@tue.nl']), Author(name='Sophia Hadash', affiliation=['Jheronimus Academy of Data Science'], email=['s.hadash@tue.nl']), Author(name='Yu Liang', affiliation=['Jheronimus Academy of Data Science'], email=['y.liang1@tue.nl']), Author(name='Yu Liang', affiliation=['Jheronimus Academy of Data Science'], email=['y.liang1@tue.nl']), Author(name='Martijn C. Willemsen', affiliation=['Eindhoven University of Technology', 'Jheronimus Academy of Data Science'], email=['m.c.willemsen@tue.nl']), Author(name='Martijn C. Willemsen', affiliation=['Eindhoven University of Technology', 'Jheronimus Academy of Data Science'], email=['m.c.willemsen@tue.nl'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Sophia Hadash', affiliation=[], email='s.hadash@tue.nl'), Author(name='Yu Liang', affiliation=[], email='y.liang1@tue.nl'), Author(name='Martijn C Willemsen', affiliation=[], email='m.c.willemsen@tue.nl')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Sophia Hadash', affiliation=["Jheronimus Academy of Data Science, 5211 DA 's-Hertogenbosch, The, Netherlands"], email=['s.hadash@tue.nl']), Author(name='Yu Liang', affiliation=["Jheronimus Academy of Data Science, 5211 DA 's-Hertogenbosch, The, Netherlands"], email=['y.liang1@tue.nl']), Author(name='Martijn C. Willemsen', affiliation=["Eindhoven University of Technology, 5600 MB Eindhoven, The Netherlands, Jheronimus Academy of Data Science, 5211 DA 's-Hertogenbosch, The, Netherlands"], email=['m.c.willemsen@tue.nl'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Sophia Hadash', 'affiliation': ['Jheronimus Academy of Data Science'], 'email': ['s.hadash@tue.nl']}, {'name': 'Yu Liang', 'affiliation': ['Jheronimus Academy of Data Science'], 'email': ['y.liang1@tue.nl']}, {'name': 'Martijn C. Willemsen', 'affiliation': ['Eindhoven University of Technology', 'Jheronimus Academy of Data Science'], 'email': ['m.c.willemsen@tue.nl']}] 
+
+==================================================
+------------------------------------------------------
+['s.hadash@tue.nl']
+['s.hadash@tue.nl']
+['y.liang1@tue.nl']
+['y.liang1@tue.nl']
+['m.c.willemsen@tue.nl']
+['m.c.willemsen@tue.nl']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper2.pdf
+Parsed title: To Explain or not to Explain: the Effects of Personal Characteristics when Explaining Feature-based Recommendations in Different Domains.
+Validating via openAI
+paper_authors: 
+ [Author(name='Martijn Millecamp', affiliation=['Department of Computer Science, KU Leuven'], email=['martijn.millecamp@cs.kuleuven.be']), Author(name='Martijn Millecamp', affiliation=['Department of Computer Science, KU Leuven'], email=['martijn.millecamp@cs.kuleuven.be']), Author(name='Sidra Naveed', affiliation=['Department of Computer Science, Duisburg-Essen University'], email=['sidra.naveed@uni-due.de']), Author(name='Sidra Naveed', affiliation=['Department of Computer Science, Duisburg-Essen University'], email=['sidra.naveed@uni-due.de']), Author(name='Katrien Verbert', affiliation=['Department of Computer Science, KU Leuven'], email=['katrien.verbert@cs.kuleuven.be']), Author(name='Katrien Verbert', affiliation=['Department of Computer Science, KU Leuven'], email=['katrien.verbert@cs.kuleuven.be']), Author(name='Jürgen Ziegler', affiliation=['Department of Computer Science, Duisburg-Essen University'], email=['juergen.ziegler@uni-due.de']), Author(name='Jürgen Ziegler', affiliation=['Department of Computer Science, Duisburg-Essen University'], email=['juergen.ziegler@uni-due.de'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Martijn Millecamp', affiliation=[], email='martijn.millecamp@cs.kuleuven.be'), Author(name='Sidra Naveed', affiliation=[], email='sidra.naveed@uni-due.de'), Author(name='Katrien Verbert', affiliation=[], email='katrien.verbert@cs.kuleuven.be'), Author(name='Jürgen Ziegler', affiliation=[], email='juergen.ziegler@uni-due.de')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Martijn Millecamp∗', affiliation=['Department of Computer Science, KU Leuven, Leuven, Belgium'], email=['martijn.millecamp@cs.kuleuven.be']), Author(name='Katrien Verbert', affiliation=['Department of Computer Science, KU Leuven, Leuven, Belgium'], email=['katrien.verbert@cs.kuleuven.be']), Author(name='Sidra Naveed∗', affiliation=['Department of Computer Science, University'], email=['sidra.naveed@uni-due.de']), Author(name='Jürgen Ziegler', affiliation=['Department of Computer Science, University'], email=['juergen.ziegler@uni-due.de'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Martijn Millecamp', 'affiliation': ['Department of Computer Science, KU Leuven'], 'email': ['martijn.millecamp@cs.kuleuven.be']}, {'name': 'Sidra Naveed', 'affiliation': ['Department of Computer Science, Duisburg-Essen University'], 'email': ['sidra.naveed@uni-due.de']}, {'name': 'Katrien Verbert', 'affiliation': ['Department of Computer Science, KU Leuven'], 'email': ['katrien.verbert@cs.kuleuven.be']}, {'name': 'Jürgen Ziegler', 'affiliation': ['Department of Computer Science, Duisburg-Essen University'], 'email': ['juergen.ziegler@uni-due.de']}] 
+
+==================================================
+------------------------------------------------------
+['martijn.millecamp@cs.kuleuven.be']
+['martijn.millecamp@cs.kuleuven.be']
+['sidra.naveed@uni-due.de']
+['sidra.naveed@uni-due.de']
+['katrien.verbert@cs.kuleuven.be']
+['katrien.verbert@cs.kuleuven.be']
+['juergen.ziegler@uni-due.de']
+['juergen.ziegler@uni-due.de']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper3.pdf
+Parsed title: Designing for serendipity in a university course recommendation system.
+Manual check is needed!
+Manual check is needed!
+Validating via openAI
+paper_authors: 
+ [Author(name='Zachary A. Pardos', affiliation=['University of California, Berkeley'], email=['zp@berkeley.edu']), Author(name='Zachary A. Pardos', affiliation=['University of California, Berkeley'], email=['zp@berkeley.edu']), Author(name='Weijie Jiang', affiliation=['Tsinghua University', 'University of California, Berkeley'], email=['jiangwj.14@sem.tsinghua.edu.cn']), Author(name='Weijie Jiang', affiliation=['Tsinghua University', 'University of California, Berkeley'], email=['jiangwj.14@sem.tsinghua.edu.cn'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Zachary Pardos', affiliation='University of California', email=None), Author(name='Weijie Jiang', affiliation='University of California', email=None)] 
+ -------------------
+cermine.authors: 
+ [Author(name='Zachary Pardos', affiliation=['University of California, Berkeley, USA'], email=['zp@berkeley.edu']), Author(name='Weijie Jiang', affiliation=['Tsinghua University & University of California, Berkeley, USA'], email=['jiangwj.14@sem.tsinghua.edu.cn'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Zachary Pardos', 'affiliation': ['University of California, Berkeley'], 'email': ['zp@berkeley.edu']}, {'name': 'Weijie Jiang', 'affiliation': ['Tsinghua University', 'University of California, Berkeley'], 'email': ['jiangwj.14@sem.tsinghua.edu.cn']}] 
+
+==================================================
+------------------------------------------------------
+['zp@berkeley.edu']
+['zp@berkeley.edu']
+['jiangwj.14@sem.tsinghua.edu.cn']
+['jiangwj.14@sem.tsinghua.edu.cn']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper4.pdf
+Parsed title: Using Facial Recognition Services as Implicit Feedback for Recommenders.
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Validating via openAI
+paper_authors: 
+ [Author(name='Toon De Pessemier', affiliation=['imec - WAVES - Ghent University'], email=['toon.depessemier@ugent.be']), Author(name='Toon De Pessemier', affiliation=['imec - WAVES - Ghent University'], email=['toon.depessemier@ugent.be']), Author(name='Ine Coppens', affiliation=['imec - WAVES - Ghent University'], email=['ine.coppens@ugent.be']), Author(name='Ine Coppens', affiliation=['imec - WAVES - Ghent University'], email=['ine.coppens@ugent.be']), Author(name='Luc Martens', affiliation=['imec - WAVES - Ghent University'], email=['luc1.martens@ugent.be']), Author(name='Luc Martens', affiliation=['imec - WAVES - Ghent University'], email=['luc1.martens@ugent.be'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Toon De Pessemier', affiliation='imec -WAVES, Ghent University', email='toon.depessemier@ugent.be'), Author(name='Ine Coppens', affiliation='imec -WAVES, Ghent University', email='ine.coppens@ugent.be'), Author(name='Luc Martens', affiliation='imec -WAVES, Ghent University', email='luc1.martens@ugent.be')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Toon De Pessemier', affiliation=['imec - WAVES - Ghent University'], email=['toon.depessemier@ugent.be']), Author(name='Ine Coppens', affiliation=['imec - WAVES - Ghent University'], email=['ine.coppens@ugent.be']), Author(name='Luc Martens', affiliation=['imec - WAVES - Ghent University'], email=['luc1.martens@ugent.be'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Toon De Pessemier', 'affiliation': ['imec - WAVES - Ghent University'], 'email': ['toon.depessemier@ugent.be']}, {'name': 'Ine Coppens', 'affiliation': ['imec - WAVES - Ghent University'], 'email': ['ine.coppens@ugent.be']}, {'name': 'Luc Martens', 'affiliation': ['imec - WAVES - Ghent University'], 'email': ['luc1.martens@ugent.be']}] 
+
+==================================================
+------------------------------------------------------
+['toon.depessemier@ugent.be']
+['toon.depessemier@ugent.be']
+['ine.coppens@ugent.be']
+['ine.coppens@ugent.be']
+['luc1.martens@ugent.be']
+['luc1.martens@ugent.be']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper5.pdf
+Parsed title: Generation of Hints to Overcome Difficulty in Operating Interactive Recommender Systems.
+Manual check is needed!
+Manual check is needed!
+Manual check is needed!
+Validating via openAI
+paper_authors: 
+ [Author(name='Yuri Nakao', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['nakao.yuri@fujitsu.com']), Author(name='Yuri Nakao', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['nakao.yuri@fujitsu.com']), Author(name='Takuya Ohwa', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['takuyaohwa@fujitsu.com']), Author(name='Takuya Ohwa', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['takuyaohwa@fujitsu.com']), Author(name='Kotaro Ohori', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['ohori.kotaro@fujitsu.com']), Author(name='Kotaro Ohori', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['ohori.kotaro@fujitsu.com'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Yuri Nakao', affiliation='Fujitsu Laboratories Ltd', email='nakao.yuri@fujitsu.com')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Yuri Nakao', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['nakao.yuri@fujitsu.com']), Author(name='Takuya Ohwa', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['takuyaohwa@fujitsu.com']), Author(name='Kotaro Ohori', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['ohori.kotaro@fujitsu.com'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Yuri Nakao', 'affiliation': ['Fujitsu Laboratories Ltd., Kawasaki, Japan'], 'email': ['nakao.yuri@fujitsu.com']}, {'name': 'Takuya Ohwa', 'affiliation': ['Fujitsu Laboratories Ltd., Kawasaki, Japan'], 'email': ['takuyaohwa@fujitsu.com']}, {'name': 'Kotaro Ohori', 'affiliation': ['Fujitsu Laboratories Ltd., Kawasaki, Japan'], 'email': ['ohori.kotaro@fujitsu.com']}] 
+
+==================================================
+------------------------------------------------------
+['nakao.yuri@fujitsu.com']
+['nakao.yuri@fujitsu.com']
+['takuyaohwa@fujitsu.com']
+['takuyaohwa@fujitsu.com']
+['ohori.kotaro@fujitsu.com']
+['ohori.kotaro@fujitsu.com']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper6.pdf
+Parsed title: Investigating Mechanisms for User Integration in the Activity Goal Recommendation Process by Interface Design.
+Validating via openAI
+paper_authors: 
+ [Author(name='Katja Herrmanny', affiliation=['University of Duisburg-Essen'], email='katja.herrmanny@uni-due.de'), Author(name='Katja Herrmanny', affiliation=['University of Duisburg-Essen'], email='katja.herrmanny@uni-due.de'), Author(name='Simone Löppenberg', affiliation=['University of Duisburg-Essen'], email=None), Author(name='Simone Löppenberg', affiliation=['University of Duisburg-Essen'], email=None), Author(name='Michael Schwarz', affiliation=['University of Duisburg-Essen'], email='michael.schwarz@uni-due.de'), Author(name='Michael Schwarz', affiliation=['University of Duisburg-Essen'], email='michael.schwarz@uni-due.de')] 
+ -------------------
+grobid.authors: 
+ [Author(name='Katja Herrmanny', affiliation=[], email='katja.herrmanny@uni-due.de'), Author(name='Simone Löppenberg', affiliation=[], email=None)] 
+ -------------------
+cermine.authors: 
+ [Author(name='Simone Löppenberg', affiliation=['Katja Herrmanny University of Duisburg-Essen Duisburg, Germany', 'Michael Schwarz University of Duisburg-Essen Duisburg, Germany', 'University of Duisburg-Essen Duisburg, Germany'], email=[])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Katja Herrmanny', 'affiliation': ['University of Duisburg-Essen'], 'email': ['katja.herrmanny@uni-due.de']}, {'name': 'Simone Löppenberg', 'affiliation': ['University of Duisburg-Essen'], 'email': []}, {'name': 'Michael Schwarz', 'affiliation': ['University of Duisburg-Essen'], 'email': ['michael.schwarz@uni-due.de']}] 
+
+==================================================
+------------------------------------------------------
+katja.herrmanny@uni-due.de
+katja.herrmanny@uni-due.de
+None
+None
+michael.schwarz@uni-due.de
+michael.schwarz@uni-due.de
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short1.pdf
+Parsed title: Spotivibes: Tagging Playlist Vibes with Colors.
+Validating via openAI
+paper_authors: 
+ [Author(name='Hiba Abderrazik', affiliation=['Delft University of Technology'], email=['h.abderrazik@student.tudelft.nl']), Author(name='Hiba Abderrazik', affiliation=['Delft University of Technology'], email=['h.abderrazik@student.tudelft.nl']), Author(name='Giovan Angela', affiliation=['Delft University of Technology'], email=['g.j.a.angela@student.tudelft.nl']), Author(name='Giovan Angela', affiliation=['Delft University of Technology'], email=['g.j.a.angela@student.tudelft.nl']), Author(name='Hans Brouwer', affiliation=['Delft University of Technology'], email=['j.c.brouwer@student.tudelft.nl']), Author(name='Hans Brouwer', affiliation=['Delft University of Technology'], email=['j.c.brouwer@student.tudelft.nl']), Author(name='Henky Janse', affiliation=['Delft University of Technology'], email=['h.a.b.janse@student.tudelft.nl']), Author(name='Henky Janse', affiliation=['Delft University of Technology'], email=['h.a.b.janse@student.tudelft.nl']), Author(name='Sterre Lutz', affiliation=['Delft University of Technology'], email=['s.lutz@student.tudelft.nl']), Author(name='Sterre Lutz', affiliation=['Delft University of Technology'], email=['s.lutz@student.tudelft.nl']), Author(name='Gwennan Smitskamp', affiliation=['Delft University of Technology'], email=['g.m.smitskamp@student.tudelft.nl']), Author(name='Gwennan Smitskamp', affiliation=['Delft University of Technology'], email=['g.m.smitskamp@student.tudelft.nl']), Author(name='Sandy Manolios', affiliation=['Delft University of Technology'], email=['s.manolios@tudelft.nl']), Author(name='Sandy Manolios', affiliation=['Delft University of Technology'], email=['s.manolios@tudelft.nl']), Author(name='Cynthia C. S. Liem', affiliation=['Delft University of Technology'], email=['c.c.s.liem@tudelft.nl']), Author(name='Cynthia C. S. Liem', affiliation=['Delft University of Technology'], email=['c.c.s.liem@tudelft.nl'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Hiba Abderrazik', affiliation=[], email='h.abderrazik@student.tudelft.nl'), Author(name='Giovan Angela', affiliation=[], email='g.j.a.angela@student.tudelft.nl'), Author(name='Hans Brouwer', affiliation=[], email='j.c.brouwer@student.tudelft.nl'), Author(name='Henky Janse', affiliation=[], email=None), Author(name='Sterre Lutz', affiliation=[], email='s.lutz@student.tudelft.nl'), Author(name='Gwennan Smitskamp', affiliation=[], email='g.m.smitskamp@student.tudelft.nl')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Hiba Abderrazik∗', affiliation=['Delft University of Technology, Delft, The Netherlands'], email=['h.abderrazik@student.tudelft.nl']), Author(name='Henky Janse∗', affiliation=['Delft University of Technology, Delft, The Netherlands'], email=['h.a.b.janse@student.tudelft.nl']), Author(name='Giovan Angela∗', affiliation=['Delft University of Technology, Delft, The Netherlands'], email=['g.j.a.angela@student.tudelft.nl']), Author(name='Sterre Lutz∗', affiliation=['Delft University of Technology, Delft, The Netherlands'], email=['s.lutz@student.tudelft.nl']), Author(name='Hans Brouwer∗', affiliation=['Delft University of Technology, Delft, The Netherlands'], email=['j.c.brouwer@student.tudelft.nl']), Author(name='Gwennan Smitskamp∗', affiliation=['Delft University of Technology, Delft, The Netherlands'], email=['g.m.smitskamp@student.tudelft.nl']), Author(name='Sandy Manolios', affiliation=['Delft University of Technology, Delft, The Netherlands'], email=['s.manolios@tudelft.nl']), Author(name='Cynthia C. S. Liem', affiliation=['Delft University of Technology, Delft, The Netherlands'], email=['c.c.s.liem@tudelft.nl'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Hiba Abderrazik', 'affiliation': ['Delft University of Technology'], 'email': ['h.abderrazik@student.tudelft.nl']}, {'name': 'Giovan Angela', 'affiliation': ['Delft University of Technology'], 'email': ['g.j.a.angela@student.tudelft.nl']}, {'name': 'Hans Brouwer', 'affiliation': ['Delft University of Technology'], 'email': ['j.c.brouwer@student.tudelft.nl']}, {'name': 'Henky Janse', 'affiliation': ['Delft University of Technology'], 'email': ['h.a.b.janse@student.tudelft.nl']}, {'name': 'Sterre Lutz', 'affiliation': ['Delft University of Technology'], 'email': ['s.lutz@student.tudelft.nl']}, {'name': 'Gwennan Smitskamp', 'affiliation': ['Delft University of Technology'], 'email': ['g.m.smitskamp@student.tudelft.nl']}, {'name': 'Sandy Manolios', 'affiliation': ['Delft University of Technology'], 'email': ['s.manolios@tudelft.nl']}, {'name': 'Cynthia C. S. Liem', 'affiliation': ['Delft University of Technology'], 'email': ['c.c.s.liem@tudelft.nl']}] 
+
+==================================================
+------------------------------------------------------
+['h.abderrazik@student.tudelft.nl']
+['h.abderrazik@student.tudelft.nl']
+['g.j.a.angela@student.tudelft.nl']
+['g.j.a.angela@student.tudelft.nl']
+['j.c.brouwer@student.tudelft.nl']
+['j.c.brouwer@student.tudelft.nl']
+['h.a.b.janse@student.tudelft.nl']
+['h.a.b.janse@student.tudelft.nl']
+['s.lutz@student.tudelft.nl']
+['s.lutz@student.tudelft.nl']
+['g.m.smitskamp@student.tudelft.nl']
+['g.m.smitskamp@student.tudelft.nl']
+['s.manolios@tudelft.nl']
+['s.manolios@tudelft.nl']
+['c.c.s.liem@tudelft.nl']
+['c.c.s.liem@tudelft.nl']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short2.pdf
+Parsed title: Visualizing Ratings in Recommender System Datasets.
+Validating via openAI
+paper_authors: 
+ [Author(name='Diego Monti', affiliation=['Politecnico di Torino'], email=['diego.monti@polito.it']), Author(name='Diego Monti', affiliation=['Politecnico di Torino'], email=['diego.monti@polito.it']), Author(name='Giuseppe Rizzo', affiliation=['LINKS Foundation'], email=['giuseppe.rizzo@linksfoundation.com']), Author(name='Giuseppe Rizzo', affiliation=['LINKS Foundation'], email=['giuseppe.rizzo@linksfoundation.com']), Author(name='Maurizio Morisio', affiliation=['Politecnico di Torino'], email=['maurizio.morisio@polito.it']), Author(name='Maurizio Morisio', affiliation=['Politecnico di Torino'], email=['maurizio.morisio@polito.it'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Diego Monti', affiliation=[], email='diego.monti@polito.it'), Author(name='Giuseppe Rizzo', affiliation=[], email='giuseppe.rizzo@linksfoundation.com'), Author(name='Maurizio Morisio', affiliation=[], email='maurizio.morisio@polito.it')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Diego Monti', affiliation=['Politecnico di Torino'], email=['diego.monti@polito.it']), Author(name='Giuseppe Rizzo', affiliation=['LINKS Foundation'], email=['giuseppe.rizzo@linksfoundation.com']), Author(name='Maurizio Morisio', affiliation=['Politecnico di Torino'], email=['maurizio.morisio@polito.it'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Diego Monti', 'affiliation': ['Politecnico di Torino'], 'email': ['diego.monti@polito.it']}, {'name': 'Giuseppe Rizzo', 'affiliation': ['LINKS Foundation'], 'email': ['giuseppe.rizzo@linksfoundation.com']}, {'name': 'Maurizio Morisio', 'affiliation': ['Politecnico di Torino'], 'email': ['maurizio.morisio@polito.it']}] 
+
+==================================================
+------------------------------------------------------
+['diego.monti@polito.it']
+['diego.monti@polito.it']
+['giuseppe.rizzo@linksfoundation.com']
+['giuseppe.rizzo@linksfoundation.com']
+['maurizio.morisio@polito.it']
+['maurizio.morisio@polito.it']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short3.pdf
+Parsed title: The Effectiveness of Advice Solicitation and Social Peers in an Energy Recommender System.
+Validating via openAI
+Manual check is needed!
+Manual check is needed!
+paper_authors: 
+ [Author(name='Alain Starke', affiliation=['Human-Technology Interaction Group', 'Eindhoven University of Technology', 'Eindhoven, the Netherlands'], email='A.D.Starke@tue.nl'), Author(name='Alain Starke', affiliation=['Human-Technology Interaction Group', 'Eindhoven University of Technology', 'Eindhoven, the Netherlands'], email='A.D.Starke@tue.nl')] 
+ -------------------
+grobid.authors: 
+ [Author(name='Alain Starke', affiliation='Human-Technology Interaction Group, Eindhoven University of Technology Eindhoven', email='a.d.starke@tue.nl')] 
+ -------------------
+cermine.authors: 
+ [] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Alain Starke', 'affiliation': ['Human-Technology Interaction Group', 'Eindhoven University of Technology', 'Eindhoven, the Netherlands'], 'email': ['A.D.Starke@tue.nl']}] 
+
+==================================================
+------------------------------------------------------
+A.D.Starke@tue.nl
+A.D.Starke@tue.nl
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short4.pdf
+Parsed title: Towards Evaluating User Profiling Methods Based on Explicit Ratings on Item Features.
+Validating via openAI
+paper_authors: 
+ [Author(name='Luca Luciano Costanzo', affiliation=['Politecnico di Milano, Italy'], email=['lucaluciano.costanzo@mail.polimi.it']), Author(name='Luca Luciano Costanzo', affiliation=['Politecnico di Milano, Italy'], email=['lucaluciano.costanzo@mail.polimi.it']), Author(name='Yashar Deldjoo', affiliation=['Polytechnic University of Bari, Italy'], email=['deldjooy@acm.org']), Author(name='Yashar Deldjoo', affiliation=['Polytechnic University of Bari, Italy'], email=['deldjooy@acm.org']), Author(name='Maurizio Ferrari Dacrema', affiliation=['Politecnico di Milano, Italy'], email=['maurizio.ferrari@polimi.it']), Author(name='Maurizio Ferrari Dacrema', affiliation=['Politecnico di Milano, Italy'], email=['maurizio.ferrari@polimi.it']), Author(name='Markus Schedl', affiliation=['Johannes Kepler University Linz, Austria'], email=['markus.schedl@jku.at']), Author(name='Markus Schedl', affiliation=['Johannes Kepler University Linz, Austria'], email=['markus.schedl@jku.at']), Author(name='Paolo Cremonesi', affiliation=['Politecnico di Milano, Italy'], email=['paolo.cremonesi@polimi.it']), Author(name='Paolo Cremonesi', affiliation=['Politecnico di Milano, Italy'], email=['paolo.cremonesi@polimi.it'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Luca Luciano Costanzo', affiliation=[], email='lucaluciano.costanzo@mail.polimi.it'), Author(name='Yashar Deldjoo', affiliation=[], email='deldjooy@acm.org'), Author(name='Maurizio Ferrari', affiliation=[], email='maurizio.ferrari@polimi.it'), Author(name='Markus Schedl', affiliation=[], email='markus.schedl@jku.at'), Author(name='Paolo Cremonesi', affiliation=[], email='paolo.cremonesi@polimi.it'), Author(name='Maurizio Ferrari Dacrema', affiliation=[], email=None)] 
+ -------------------
+cermine.authors: 
+ [Author(name='Luca Luciano Costanzo', affiliation=['Politecnico di Milano, Italy'], email=['lucaluciano.costanzo@mail.polimi.it']), Author(name='Yashar Deldjoo', affiliation=['Polytechnic University of Bari, Italy'], email=['deldjooy@acm.org']), Author(name='Maurizio Ferrari Dacrema', affiliation=['Politecnico di Milano, Italy'], email=['maurizio.ferrari@polimi.it']), Author(name='Markus Schedl', affiliation=['Johannes Kepler University Linz, Austria'], email=['markus.schedl@jku.at']), Author(name='Paolo Cremonesi', affiliation=['Politecnico di Milano, Italy'], email=['paolo.cremonesi@polimi.it'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Luca Luciano Costanzo', 'affiliation': ['Politecnico di Milano, Italy'], 'email': ['lucaluciano.costanzo@mail.polimi.it']}, {'name': 'Yashar Deldjoo', 'affiliation': ['Polytechnic University of Bari, Italy'], 'email': ['deldjooy@acm.org']}, {'name': 'Maurizio Ferrari Dacrema', 'affiliation': ['Politecnico di Milano, Italy'], 'email': ['maurizio.ferrari@polimi.it']}, {'name': 'Markus Schedl', 'affiliation': ['Johannes Kepler University Linz, Austria'], 'email': ['markus.schedl@jku.at']}, {'name': 'Paolo Cremonesi', 'affiliation': ['Politecnico di Milano, Italy'], 'email': ['paolo.cremonesi@polimi.it']}] 
+
+==================================================
+------------------------------------------------------
+['lucaluciano.costanzo@mail.polimi.it']
+['lucaluciano.costanzo@mail.polimi.it']
+['deldjooy@acm.org']
+['deldjooy@acm.org']
+['maurizio.ferrari@polimi.it']
+['maurizio.ferrari@polimi.it']
+['markus.schedl@jku.at']
+['markus.schedl@jku.at']
+['paolo.cremonesi@polimi.it']
+['paolo.cremonesi@polimi.it']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short5.pdf
+Parsed title: Does the User Have A Theory of the Recommender? A Pilot Study.
+Validating via openAI
+paper_authors: 
+ [Author(name='Muheeb Faizan Ghori', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['mghori2@depaul.edu']), Author(name='Muheeb Faizan Ghori', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['mghori2@depaul.edu']), Author(name='Arman Dehpanah', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['adehpana@depaul.edu']), Author(name='Arman Dehpanah', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['adehpana@depaul.edu']), Author(name='Jonathan Gemmell', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['jgemmell@cdm.depaul.edu']), Author(name='Jonathan Gemmell', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['jgemmell@cdm.depaul.edu']), Author(name='Hamed Qahri-Saremi', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['hamed.saremi@depaul.edu']), Author(name='Hamed Qahri-Saremi', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['hamed.saremi@depaul.edu']), Author(name='Bamshad Mobasher', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['mobasher@depaul.edu']), Author(name='Bamshad Mobasher', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['mobasher@depaul.edu'])] 
+ -------------------
+grobid.authors: 
+ [Author(name='Faizan Muheeb', affiliation=[], email=None), Author(name='Ghori', affiliation=[], email='mghori2@depaul.edu'), Author(name='Arman Dehpanah', affiliation=[], email='adehpana@depaul.edu'), Author(name='Jonathan Gemmell', affiliation=[], email='jgemmell@cdm.depaul.edu'), Author(name='Hamed Qahri-Saremi', affiliation=[], email='hamed.saremi@depaul.edu'), Author(name='Bamshad Mobasher', affiliation=[], email='mobasher@depaul.edu')] 
+ -------------------
+cermine.authors: 
+ [Author(name='Muheeb Faizan Ghori∗', affiliation=['School of Computing, DePaul University, Chicago, Illinois, USA'], email=['mghori2@depaul.edu']), Author(name='Arman Dehpanah', affiliation=['School of Computing, DePaul University, Chicago, Illinois, USA'], email=['adehpana@depaul.edu']), Author(name='Jonathan Gemmell', affiliation=['School of Computing, DePaul University, Chicago, Illinois, USA'], email=['jgemmell@cdm.depaul.edu']), Author(name='Hamed Qahri-Saremi', affiliation=['School of Computing, DePaul University, Chicago, Illinois, USA'], email=['hamed.saremi@depaul.edu']), Author(name='Bamshad Mobasher', affiliation=['School of Computing, DePaul University, Chicago, Illinois, USA'], email=['mobasher@depaul.edu'])] 
+ -------------------
+openAI.authors: 
+ [{'name': 'Muheeb Faizan Ghori', 'affiliation': ['School of Computing, DePaul University, Chicago, Illinois'], 'email': ['mghori2@depaul.edu']}, {'name': 'Arman Dehpanah', 'affiliation': ['School of Computing, DePaul University, Chicago, Illinois'], 'email': ['adehpana@depaul.edu']}, {'name': 'Jonathan Gemmell', 'affiliation': ['School of Computing, DePaul University, Chicago, Illinois'], 'email': ['jgemmell@cdm.depaul.edu']}, {'name': 'Hamed Qahri-Saremi', 'affiliation': ['School of Computing, DePaul University, Chicago, Illinois'], 'email': ['hamed.saremi@depaul.edu']}, {'name': 'Bamshad Mobasher', 'affiliation': ['School of Computing, DePaul University, Chicago, Illinois'], 'email': ['mobasher@depaul.edu']}] 
+
+==================================================
+------------------------------------------------------
+['mghori2@depaul.edu']
+['mghori2@depaul.edu']
+['adehpana@depaul.edu']
+['adehpana@depaul.edu']
+['jgemmell@cdm.depaul.edu']
+['jgemmell@cdm.depaul.edu']
+['hamed.saremi@depaul.edu']
+['hamed.saremi@depaul.edu']
+['mobasher@depaul.edu']
+['mobasher@depaul.edu']
+Exact matching of paper titles and author names: 11 out of 248
+Exact matching of title, names and emails: 10 out of 248
+Exact matching of all atts: 7 out of 248
+Exact matching of title, names and emails; app. matching of affiliations: 10 out of 248

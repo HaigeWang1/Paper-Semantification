@@ -717,7 +717,8 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
             try: 
                 openAI = openai.OpenAIPapersParser()
                 openAI_author = openAI.parse_authors(path_pdf)
-            except:
+            except Exception as e:
+                print(e)
                 print('OpenAI could not get parsed correctly')
                 openAI_author = []
                                 

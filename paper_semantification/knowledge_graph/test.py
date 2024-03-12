@@ -1,4 +1,4 @@
-from main import Neo4jConnection
+from paper_semantification.knowledge_graph.main import Neo4jConnection
 
 class HelloWorldExample:
 

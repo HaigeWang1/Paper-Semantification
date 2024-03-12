@@ -2,12 +2,7 @@ import requests as req
 import re
 import dblp
 import os
-import argparse
-import orcid
-import json
 from wikidata.client import Client
-from requests import RequestException
-from lxml import etree
 from dataclasses import dataclass
 from typing import Optional, List
 from bs4 import BeautifulSoup 
@@ -15,13 +10,15 @@ import string
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz
 import pandas as pd
-from knowledge_graph.main import Neo4jConnection
-from knowledge_graph.utils import create_neo4j_graph, create_neo4j_graph_preface
+from paper_semantification.knowledge_graph.main import Neo4jConnection
+from paper_semantification.knowledge_graph.utils import create_neo4j_graph, create_neo4j_graph_preface
 from email_validator import validate_email, EmailNotValidError
-import warnings
 from ftfy import fix_text
-warnings.filterwarnings("ignore")
+import grobid_tei_xml
+from xml.etree import ElementTree as ET
 
+import warnings
+warnings.filterwarnings("ignore")
 NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
 
 
@@ -30,7 +27,6 @@ class Author:
     name: str
     affiliation: Optional[List[str]] = None
     email: Optional[List[str]] = None
-    aff_ok: Optional[bool] = None
     
     def __eq__(self, other):
         if isinstance(other, Author):
@@ -38,6 +34,7 @@ class Author:
         return False
   
 # ### GROBID
+    """
 class GrobitFile():
     def __init__(self, filename):
         self.grobidxml = BeautifulSoup(req.get(filename).text, 'lxml')
@@ -63,7 +60,6 @@ class GrobitFile():
         authors_list = []
         affs = []
         emails = []
-        aff_ok_is_set = False
         for author in authors_in_header:
             persname = author.persname
             affiliations = author.findAll('affiliation')
@@ -84,13 +80,9 @@ class GrobitFile():
                         aff = ', '.join([aff.strip() for aff in affiliation_text.split('\n') if aff.strip() != ''])
                         aff_list += [strip_space_and_special_chars(aff)]
                     affs += [aff_list]
-                    aff_ok = True
-                    aff_ok_is_set = True
                 else:
                     # if no affiliation is found, add empty list
                     affs += [[]]
-                    aff_ok = False
-                    aff_ok_is_set = True
             elif affiliations: 
                 aff_list = []
                 for affiliation in affiliations:
@@ -99,16 +91,10 @@ class GrobitFile():
                     aff = ', '.join([aff.strip() for aff in affiliation_text.split('\n') if aff.strip() != ''])
                     aff_list += [strip_space_and_special_chars(aff)]
                 affs += [aff_list]
-                aff_ok = False
-                aff_ok_is_set = True
 
         # assume affiliations are correctly assigned if the number of authors is the same as the number of affiliations
-        if len(authors_list) == len(affs):
-            aff_ok = True
-        elif not aff_ok_is_set:
-            aff_ok = False
         for i in range(len(authors_list)):
-            if aff_ok:
+            if True:
                 author_name = authors_list[i]
                 author_affiliation = affs[i] if affs[i] else []
                 author_email = [emails[i]] if emails[i] else []
@@ -130,7 +116,36 @@ class GrobitFile():
                 result.append(author)
 
         return result
+"""
 
+class GrobitFile():
+    def __init__(self, url):
+        response = req.get(url)
+        if response.status_code == 200:
+            # Parse the XML content
+            root = ET.fromstring(response.content)
+            xml_content = ET.tostring(root, encoding='unicode')
+            self.tei_xml = grobid_tei_xml.parse_document_xml(xml_content)
+
+    @property
+    def title(self):
+        return self.tei_xml.header.title
+
+
+    @property
+    def authors(self):
+        author_list = []
+        for author in self.tei_xml.header.authors:
+            affiliation = []
+            if author.affiliation:
+                if author.affiliation.address:
+                    affiliation =  ', '.join([part for part in [author.affiliation.laboratory, author.affiliation.department, author.affiliation.institution,
+                                                            author.affiliation.address.addr_line, author.affiliation.address.post_code, 
+                                                            author.affiliation.address.settlement, author.affiliation.address.country] if part])
+                affiliation =  ', '.join([part for part in [author.affiliation.laboratory, author.affiliation.department, author.affiliation.institution] if part])
+            author_list.append(Author(author.full_name, affiliation, author.email))
+        return author_list
+    
 # ### CERMINE
 class CermineFile():
     def __init__(self, filename):
@@ -250,9 +265,9 @@ class JsonFile():
             return self._eventSeries
         else:
             print("No event series found")
-            return 
-def get_eventsAndProceedings(jsonfile):
+            return  
 
+def get_eventsAndProceedings(jsonfile):
     result = { 'proceedings':jsonfile.proceedings,'event':jsonfile.events, 'event series': jsonfile.eventSeries}
     return result
 
@@ -272,10 +287,7 @@ def strip_space_and_special_chars(text):
             return res_text
         else:
             res_text = cur_text
-        
-        
-        
-        
+           
 def spell_check_correct(text):
     spell = SpellChecker()
     corrected_words = [spell.correction(word) if spell.correction(word) is not None else word for word in text.split()]
@@ -370,7 +382,7 @@ def get_paper_title(grobid, cermine, pdf_path):
             return c_title.title
         else :
             # TODO: need to decide what to do here
-            print('Manual check needed!')
+           # print('Manual check needed!')
             return ''
 
 def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
@@ -384,7 +396,6 @@ def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
     elif issubset(aff_cermine, aff_grobid):
         aff_author = aff_grobid
     else:
-        #TODO: manual check what to do this  
         # Example: http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper8.pdf           
         print('Manual check is needed!')
         aff_author = []
@@ -432,10 +443,7 @@ def get_author_info(grobid, cermine):
             for a2 in grobid.authors:
                 #only add correct names from dblp
                 if fuzz.token_set_ratio(a1, a2.name) >= 80:
-                    if a2.aff_ok:
-                        paper_authors_gr[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
-                    else:
-                        paper_authors_gr[a1] = Author(name = a1, affiliation=[], email = a2.email)
+                    paper_authors_gr[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
                     break
 
     paper_authors_ce = {}
@@ -507,12 +515,74 @@ def get_author_info(grobid, cermine):
             print('Manual check is needed! Number of extracted authors is not the same!')
             paper_authors = []
 
-    print('paper_authors: \n', paper_authors, '\n', '-------------------')
+   # print('paper_authors: \n', paper_authors, '\n', '-------------------')
     print('grobid.authors: \n', grobid.authors, '\n', '-------------------')
-    print('cermine.authors: \n', cermine.authors, '\n')
-    print('==================================================')
+   # print('cermine.authors: \n', cermine.authors, '\n')
     return paper_authors
 
+def calculate_similarity(row):
+    return fuzz.token_set_ratio(row['Author Affiliations_exp'], row['Author Affiliations_act'])
+
+def preprocess_df(expected_df, actual_df):
+    pattern = r'([A-Za-z])\.'
+    pattern_sp = r'[^a-zA-Z0-9\s]'
+    expected_df['URL'] = expected_df['URL'].str.replace('https', 'http')
+    # Replace the matched pattern with an empty string
+    actual_df['Author name'] = actual_df['Author name'].str.replace(pattern, '', regex=True).str.strip().str.replace('  ', ' ').str.lower()
+    expected_df['Author name'] = expected_df['Author name'].str.replace(pattern, '', regex=True).str.strip().str.replace('  ', ' ').str.lower()
+
+    actual_df['Paper title'] = actual_df['Paper title'].str.replace('.', '').str.lower()
+    expected_df['Paper title'] = expected_df['Paper title'].str.replace('.', '').str.lower()
+
+    actual_df['Author Affiliations mod'] = actual_df['Author Affiliations'].str.replace('\n', '').str.lower().str.replace(pattern_sp, '', regex=True).str.replace(' ', '')
+    expected_df['Author Affiliations mod'] = expected_df['Author Affiliations'].str.replace('\n', '').str.lower().str.replace(pattern_sp, '', regex=True).str.replace(' ', '')
+
+    actual_df['Author E-Mail'] = actual_df['Author E-Mail'].str.lower()
+    expected_df['Author E-Mail'] = expected_df['Author E-Mail'].str.lower()
+    return expected_df, actual_df
+
+def evaluate_results(expected_df, actual_df):
+    expected_df, actual_df = preprocess_df(expected_df, actual_df)
+
+    merged_df = pd.merge(expected_df, actual_df, on=['URL', 'Author name', 'Paper title'] , suffixes=('_exp', '_act'), how='left')
+
+    test_no = merged_df['Paper title'].nunique()
+
+    #1) author names and paper titles: exact matching
+    score_1 = merged_df[merged_df['Proceedings_act'].notna()]['Paper title'].nunique()
+    print(f'Exact matching of paper titles and author names: {score_1} out of {test_no}')
+
+    #2) exact matching of title, author names and email
+    score_2 = merged_df[~((merged_df['Proceedings_act'] == merged_df['Proceedings_exp']) 
+                        & ((merged_df['Author E-Mail_exp'] == merged_df['Author E-Mail_act']) |
+                        (merged_df['Author E-Mail_exp'].isna() & merged_df['Author E-Mail_act'].isna())))]['Paper title'].nunique()
+
+    print(f'Exact matching of title, names and emails: {test_no - score_2} out of {test_no}')
+
+    #3) exact matching, all attributes
+    score_3 = merged_df[~((merged_df['Proceedings_act'] == merged_df['Proceedings_exp']) 
+                        & ((merged_df['Author E-Mail_exp'] == merged_df['Author E-Mail_act']) |
+                        (merged_df['Author E-Mail_exp'].isna() & merged_df['Author E-Mail_act'].isna()))
+                        & (merged_df['Author Affiliations mod_exp'] == merged_df['Author Affiliations mod_act']))]['Paper title'].nunique()
+    print(f'Exact matching of all atts: {test_no - score_3} out of {test_no}')
+
+
+    df = merged_df[(merged_df['Proceedings_act'] == merged_df['Proceedings_exp']) 
+                        & ((merged_df['Author E-Mail_exp'] == merged_df['Author E-Mail_act']) |
+                        (merged_df['Author E-Mail_exp'].isna() & merged_df['Author E-Mail_act'].isna()))]
+    df['similarity_aff'] = df.apply(calculate_similarity, axis=1)
+
+    # Filter rows where the similarity ratio is over 80
+    result = df[df['similarity_aff'] < 90]['Paper title'].nunique()
+    print(f'Exact matching of title, names and emails; app. matching of affiliations: {test_no - score_2-result} out of {test_no}')
+
+def is_iterable(obj):
+    try:
+        iter(obj)
+        return True
+    except TypeError:
+        return False
+    
 def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construct_graph = False) -> List:
     if not volumes and not all_volumes:
         raise ValueError("Either volumes or all_volumes must be specified")
@@ -538,17 +608,15 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
     papers = {}
     events = {}
     for v in cur_volumes:
-        
         url = 'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-' + v
         Web = req.get(url) 
         reg2 = rf'Vol-{v}/(.*?).pdf'
         #reg2 = r'paper(\d+).pdf' ##needs to be changed to reg2 = r'paper(\d+).pdf' to accound for more papers that do not follow this format.
         papers[int(v)] = sorted(list(set(re.findall(reg2, BeautifulSoup(Web.text, 'lxml').prettify()))))
 
-        
     # remove contents that are not papers
     for v in cur_volumes:
-        papers[int(v)] =  [ele for ele in papers[int(v)] if ('paper' or 'short')  in ele]
+        papers[int(v)] =  [ele for ele in papers[int(v)] if 'paper' in ele or 'short'  in ele]
     
     # parsing the events and proceedings as a nested dictionary using key = volume number, value = the json dictionary
     for v in cur_volumes:
@@ -560,9 +628,10 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
         except:
             print('Json file could not get parsed correctly')
         events[int(v)] = get_eventsAndProceedings(json_event)
-    print("Events and proceedings:")
-    print(events)
+    #print("Events and proceedings:")
+    #print(events)
     
+    data = []
         
     for k in papers.keys():
         for idx, paper_key in enumerate(papers[k]):
@@ -583,24 +652,48 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
                                 
             # TODO: check why some titles are output 2 times for volumen 2451 e.g.
             paper_title = get_paper_title(grobid, cermine, paper_path + ".pdf")
-            print(f'Parsed title: {paper_title}')
-            author_list = []
-            if paper_key != 'Preface':
-                author_list = get_author_info(grobid, cermine)
-
-            print('------------------------------------------------------')
-            
+            #print(f'Parsed title: {paper_title}')
+            #author_list = []
+            #if paper_key != 'Preface':
+            author_list = get_author_info(grobid, cermine)
+            #print(author_list)
+            #print('------------------------------------------------------')
             if construct_graph:
                 print(f"Creating graph for paper {paper_title}")
-                create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
+                create_neo4j_graph(author_list, paper_title, neo4j_conn, paper_path+'.pdf') 
 
+            for author in author_list:
+                #print(author)
+                # Extract author details
+                name = author.name
+                affiliation = '; '.join(author.affiliation)
+                print(author.email)
+                if is_iterable(author.email):
+                    email = ', '.join(author.email)
+                elif author.email:
+                    email = author.email
+                else:
+                    email = ''
+                    
+                # Append author details to the data list
+                data.append({'Proceedings': 'Proceedings of the 6th Joint Workshop on Interfaces and Human Decision Making for Recommender Systems', 'Event': 
+                             'Proceedings of the 6th Joint Workshop on Interfaces and Human Decision Making for Recommender Systems', 'Paper title': paper_title,
+                               'Author name': name, 'Author Affiliations': affiliation, 'Author E-Mail': email, 'URL': f'{paper_path}.pdf'})
 
+    df = pd.DataFrame(data)
+    df.reset_index(drop=True, inplace=True)
+    expected_df = pd.read_excel("../test/test_data.xlsx")
+    evaluate_results(expected_df=expected_df, actual_df=df)
+    #create_knowledge_graph.create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
 
 if __name__ == '__main__':
-    construct_graph = False
-    volumes = [2462]
-    all_volumes = False
-    # Set construct_graph to True to construct the graph. Otherwise the graph construction is skipped.
-    parse_volumes(volumes=volumes, all_volumes=all_volumes, construct_graph=construct_graph)
+    # construct_graph = False
+    # volumes = [2462]
+    # all_volumes = False
+    # # Set construct_graph to True to construct the graph. Otherwise the graph construction is skipped.
+    # parse_volumes(volumes=volumes, all_volumes=all_volumes, construct_graph=construct_graph)
+
+    expected_df = pd.read_excel("../test/test_data.xlsx")
+    print(expected_df.head())
 
 

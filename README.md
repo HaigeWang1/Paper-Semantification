@@ -20,7 +20,7 @@ python source/parser.py -v 1999 2462
 ### Dockerized Version - Setup
 
 ##### Build the docker image for the  python service paper_sementification 
-`docker -f Dockerfile build -t paper_semantification .`
+`docker build -t paper_semantification .`
 
 Docker-compose contains two services:
 1. The Neo4J database

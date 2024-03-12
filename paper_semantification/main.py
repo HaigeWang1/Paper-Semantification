@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Query
-from parser import parse_volumes
+from paper_semantification.parser import parse_volumes
 from typing import List
 
 

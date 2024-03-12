@@ -1,12 +1,8 @@
 import requests as req
 import re
-import os
 import dblp
-import argparse
-import orcid
+import os
 from wikidata.client import Client
-from requests import RequestException
-from lxml import etree
 from dataclasses import dataclass
 from typing import Optional, List
 from bs4 import BeautifulSoup 
@@ -14,21 +10,18 @@ import string
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz
 import pandas as pd
-import create_knowledge_graph
-from email_validator import validate_email, EmailNotValidError
-import warnings
-from ftfy import fix_text
 import parser_openai as openai
-import multiprocessing
-from multiprocessing import Pool as proc_pool
-import time
-warnings.filterwarnings("ignore")
-import json
+from paper_semantification.knowledge_graph.main import Neo4jConnection
+from paper_semantification.knowledge_graph.utils import create_neo4j_graph, create_neo4j_graph_preface
+from email_validator import validate_email, EmailNotValidError
+from ftfy import fix_text
 import grobid_tei_xml
 from xml.etree import ElementTree as ET
 
+import warnings
+warnings.filterwarnings("ignore")
+NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
 
-num_proc = multiprocessing.cpu_count()-1
 
 @dataclass
 class Author:
@@ -473,6 +466,7 @@ def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
         print('Manual check is needed!')
         email_author = ''
     return(aff_author, email_author)
+
 def get_author_info(grobid, cermine, openAI):                   
     #merge author information
     dblp_authors = []
@@ -483,9 +477,7 @@ def get_author_info(grobid, cermine, openAI):
     #author name from openAI
     for e in openAI:
         openAI_authors.append(e['name'])
-
-
-
+    
     # use dblp for cross check
     dblp_result = pd.DataFrame() 
     if not dblp.search([grobid.title]).empty:
@@ -494,12 +486,11 @@ def get_author_info(grobid, cermine, openAI):
         dblp_result = dblp.search([cermine.title])
 
     if not dblp_result.empty:     
-        dblp_authors = dblp_result['Authors'][0] 
+        dblp_authors = dblp_result['Authors'][0]      
 
-        
     #check results from grobid      
     paper_authors_gr = {}
-    if not dblp_result.empty: #len(dblp_authors) == len(grobid.authors):
+    if 1==1: #len(dblp_authors) == len(grobid.authors):
         for a1 in dblp_authors:
             for a2 in grobid.authors:
                 #only add correct names from dblp
@@ -518,11 +509,11 @@ def get_author_info(grobid, cermine, openAI):
 
 
     paper_authors_ce = {}
-    if not dblp_result.empty: #len(dblp_authors) == len(cermine.authors):  -- not sure if we need this here, needs for validation
+    if 1==1: #len(dblp_authors) == len(cermine.authors):  -- not sure if we need this here, needs for validation
         for a1 in dblp_authors:
             for a2 in cermine.authors:
                 #only add correct names from dblp
-                if fuzz.token_set_ratio(a1, a2.name) >= 80:
+                if fuzz.token_set_ratio (a1, a2.name) >= 80:
                     paper_authors_ce[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
                     break
     #cross check the author name with openAI iff dblp entry is empty
@@ -543,8 +534,6 @@ def get_author_info(grobid, cermine, openAI):
     email_cermine = ''
     aff_openAI = []
     email_openAI = ''
-
-
     if not dblp_result.empty:
         for a in dblp_authors:
             
@@ -559,7 +548,6 @@ def get_author_info(grobid, cermine, openAI):
             
             aff_author, email_author = merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine)
             paper_authors.append(Author(name=a, affiliation=aff_author, email=email_author))
-
 
 
     else:
@@ -601,33 +589,16 @@ def get_author_info(grobid, cermine, openAI):
             paper_authors = []
     
     print('Validating via openAI')
-
     for a in paper_authors_gr:
         aff_grobid = paper_authors_gr[a].affiliation
         email_grobid = paper_authors_gr[a].email
-
-        # if a in paper_authors_ce:
-        #     aff_cermine = paper_authors_ce[a].affiliation
-        #     email_cermine = paper_authors_ce[a].email
-        # if a in openAI_authors:
-        #     tmp = list(filter(lambda person: person['name'] == a, openAI))[0]['email']
-        #     if not tmp:
-        #         email_openAI = ''
-        #     else:
-        #         email_openAI = tmp[0]
-        #     aff_openAI = list(filter(lambda person: person['name'] == a, openAI))[0]['affiliation']
-
-
         aff_author, email_author = merge_author_info_openAI(aff_grobid, aff_cermine,aff_openAI,email_grobid,email_cermine, email_openAI)
         paper_authors.append(Author(name=a, affiliation=aff_author, email= email_author))
 
 
-
-    print('paper_authors: \n', paper_authors, '\n', '-------------------')
+   # print('paper_authors: \n', paper_authors, '\n', '-------------------')
     print('grobid.authors: \n', grobid.authors, '\n', '-------------------')
-    print('cermine.authors: \n', cermine.authors, '\n','-------------------')
-    print('openAI.authors: \n', openAI, '\n')
-    print('==================================================')
+   # print('cermine.authors: \n', cermine.authors, '\n')
     return paper_authors
 
 def calculate_similarity(row):
@@ -693,25 +664,27 @@ def is_iterable(obj):
     except TypeError:
         return False
     
-def main():
-    Web = req.get('http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html') 
-      
-    neo4j_conn = create_knowledge_graph.Neo4jConnection(uri="neo4j+s://607f3c00.databases.neo4j.io", user="neo4j", password="B4ciag8tPs_szFjyrAFWgz6INlti5_jJUCH9aqb8ETY")
+def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construct_graph = False) -> List:
+    if not volumes and not all_volumes:
+        raise ValueError("Either volumes or all_volumes must be specified")
+    if all_volumes:
+        print("Fetching all volumes from http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html")
+        Web = req.get('http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html') 
+        S = BeautifulSoup(Web.text, 'lxml') 
+        html_txt = S.prettify()
+        #extract all volumes
+        reg1 = r'Vol-(\d+)">'
+        #all volumes from the ceurspt api
+        cur_volumes = re.findall(reg1, html_txt)
+        print(f"List of all volumes: {cur_volumes}")
+    elif volumes:
+        cur_volumes = [str(v) for v in volumes]
 
-    S = BeautifulSoup(Web.text, 'lxml') 
-    html_txt = S.prettify()
-    #extract all volumes
-    reg1 = r'Vol-(\d+)">'
-    #all volumes from the ceurspt api
-    volumes = re.findall(reg1, html_txt)
+    if construct_graph:
+        print("Setting up Neo4j connection")
+        neo4j_conn = Neo4jConnection(uri=NEO4J_URI)  
+        neo4j_conn.connect()  
 
-    # Here we set the volume we want to consider in the comparisons below
-    parser = argparse.ArgumentParser(prog='Web parser', description='Take a list of volume numbers as input and extract the papers')
-    parser.add_argument('-v', '--volume', nargs='+', default=[], required=True,help='Volume numbers as integer')     
-    args = parser.parse_args()
-    cur_volumes = args.volume
-    #cur_volumes = [f'{x}' for x in range(2456, 2457) if f'{x}' in volumes]
-    #assert(all([vol_nr in volumes for vol_nr in cur_volumes]))
     #extract all pages for each vol
     papers = {}
     events = {}
@@ -736,10 +709,8 @@ def main():
         except:
             print('Json file could not get parsed correctly')
         events[int(v)] = get_eventsAndProceedings(json_event)
-    #print("Events and proceedings:")
-    #print(events)
 
-
+    
     data = []
         
     for k in papers.keys():
@@ -752,7 +723,6 @@ def main():
 
             try:
                 grobid =  GrobitFile(paper_path + '.grobid')
-                
             except:
                 print('Grobid file could not get parsed correctly')
             
@@ -760,7 +730,6 @@ def main():
                 cermine =  CermineFile(paper_path + '.cermine')
             except:
                 print('Cermine file could not get parsed correctly')
-            
             try: 
                 openAI = openai.OpenAIPapersParser()
                 openAI_author = openAI.parse_authors(path_pdf)
@@ -768,14 +737,16 @@ def main():
                 print('OpenAI could not get parsed correctly')
                                 
             # TODO: check why some titles are output 2 times for volumen 2451 e.g.
-
-            paper_title = get_paper_title(grobid, cermine, path_pdf)
-            print(f'Parsed title: {paper_title}')
-            author_list = []
-            if paper_key != 'Preface':
-                author_list = get_author_info(grobid, cermine, openAI_author)
-
-            print('------------------------------------------------------')
+            paper_title = get_paper_title(grobid, cermine, paper_path + ".pdf")
+            #print(f'Parsed title: {paper_title}')
+            #author_list = []
+            #if paper_key != 'Preface':
+            author_list = get_author_info(grobid, cermine,openAI_author)
+            #print(author_list)
+            #print('------------------------------------------------------')
+            if construct_graph:
+                print(f"Creating graph for paper {paper_title}")
+                create_neo4j_graph(author_list, paper_title, neo4j_conn, paper_path+'.pdf') 
 
             for author in author_list:
                 #print(author)
@@ -791,18 +762,23 @@ def main():
                     email = ''
                     
                 # Append author details to the data list
-                data.append({'Proceedings': events[int(k)]['proceedings'], 'Event': events[int(k)]['event'], 'Paper title': paper_title,
+                data.append({'Proceedings':  events[int(k)]['proceedings'], 'Event': events[int(k)]['event'], 'Paper title': paper_title,
                                'Author name': name, 'Author Affiliations': affiliation, 'Author E-Mail': email, 'URL': f'{paper_path}.pdf'})
 
     df = pd.DataFrame(data)
     df.reset_index(drop=True, inplace=True)
-    expected_df = pd.read_excel("test/test_data.xlsx")
-    
+    expected_df = pd.read_excel("../test/test_data.xlsx")
     evaluate_results(expected_df=expected_df, actual_df=df)
-    df.to_csv('datafram.csv', index=False)  
     #create_knowledge_graph.create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
 
 if __name__ == '__main__':
-    main()
+    # construct_graph = False
+    # volumes = [2462]
+    # all_volumes = False
+    # # Set construct_graph to True to construct the graph. Otherwise the graph construction is skipped.
+    # parse_volumes(volumes=volumes, all_volumes=all_volumes, construct_graph=construct_graph)
+
+    expected_df = pd.read_excel("../test/test_data.xlsx")
+    print(expected_df.head())
 
 

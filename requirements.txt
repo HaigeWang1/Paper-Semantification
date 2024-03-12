@@ -12,3 +12,4 @@ python-Levenshtein==0.23.0
 PyMuPDF==1.23.19
 openai==1.10.0
 grobid_tei_xml
+openpyxl

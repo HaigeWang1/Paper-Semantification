@@ -418,8 +418,7 @@ def merge_author_info_openAI(aff_grobid, aff_cermine,aff_openAI, email_grobid, e
         email_author = email_grobid
     elif not email_grobid:
         email_author = email_cermine
-    elif not email_cermine and not email_grobid:
-        email_author = email_openAI
+
     elif set(email_cermine).issubset(set(email_grobid)):
         email_author = email_cermine # take common email address
     elif set(email_grobid).issubset(set(email_cermine)):
@@ -428,15 +427,17 @@ def merge_author_info_openAI(aff_grobid, aff_cermine,aff_openAI, email_grobid, e
         email_author = email_grobid
     elif check_email(email_cermine):
         email_author = email_cermine
-    elif set(email_openAI) < set(email_author):
-        email_author = email_openAI
-    elif check_email(email_openAI):
-        email_author = email_openAI
+    # elif set(email_openAI) < set(email_author):
+    #     email_author = email_openAI
+    # elif check_email(email_openAI):
+    #     email_author = email_openAI
 
 
     else:
-        #TODO: manual check what to do this
-        print('Manual check is needed!')
+        if email_openAI !=[]:
+            
+            email_author = email_openAI
+
         email_author = ''
     return(aff_author, email_author)
 def merge_author_info(aff_grobid, aff_cermine, email_grobid, email_cermine):
@@ -797,7 +798,8 @@ def main():
 
     df = pd.DataFrame(data)
     df.reset_index(drop=True, inplace=True)
-    expected_df = pd.read_excel("../test/test_data.xlsx")
+    expected_df = pd.read_excel("test/test_data.xlsx")
+    
     evaluate_results(expected_df=expected_df, actual_df=df)
     #create_knowledge_graph.create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
 

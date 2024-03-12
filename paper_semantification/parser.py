@@ -10,7 +10,7 @@ import string
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz
 import pandas as pd
-import parser_openai as openai
+import paper_semantification.parser_openai as openai
 from paper_semantification.knowledge_graph.main import Neo4jConnection
 from paper_semantification.knowledge_graph.utils import create_neo4j_graph, create_neo4j_graph_preface
 from email_validator import validate_email, EmailNotValidError
@@ -719,6 +719,7 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
                 openAI_author = openAI.parse_authors(path_pdf)
             except:
                 print('OpenAI could not get parsed correctly')
+                openAI_author = []
                                 
             # TODO: check why some titles are output 2 times for volumen 2451 e.g.
             paper_title = get_paper_title(grobid, cermine, paper_path + ".pdf")

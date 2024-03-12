@@ -510,12 +510,11 @@ def get_author_info(grobid, cermine, openAI):
     else:
         for a1 in openAI_authors:
             for a2 in grobid.authors:
-                if fuzz.token_set_ration(a1, a2.name) >= 80:
-                    if a2.aff_ok:
-                        paper_authors_gr[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
-                    else:
-                        paper_authors_gr[a1] = Author(name = a1, affiliation=[], email = a2.email)
-                    break
+                if fuzz.token_set_ratio(a1, a2.name) >= 80:
+                    paper_authors_gr[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
+                else:
+                    paper_authors_gr[a1] = Author(name = a1, affiliation=[], email = a2.email)
+                break
 
 
     paper_authors_ce = {}
@@ -523,19 +522,18 @@ def get_author_info(grobid, cermine, openAI):
         for a1 in dblp_authors:
             for a2 in cermine.authors:
                 #only add correct names from dblp
-                if fuzz.token_set_ratio (a1, a2.name) >= 80:
+                if fuzz.token_set_ratio(a1, a2.name) >= 80:
                     paper_authors_ce[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
                     break
     #cross check the author name with openAI iff dblp entry is empty
     else:
         for a1 in openAI_authors:
             for a2 in cermine.authors:
-                if fuzz.token_set_ration(a1, a2.name) >= 80:
-                    if a2.aff_ok:
-                        paper_authors_ce[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
-                    else:
-                        paper_authors_ce[a1] = Author(name = a1, affiliation=[], email = a2.email)
-                    break
+                if fuzz.token_set_ratio(a1, a2.name) >= 80:
+                    paper_authors_ce[a1] = Author(name = a1, affiliation=a2.affiliation, email = a2.email)
+                else:
+                    paper_authors_ce[a1] = Author(name = a1, affiliation=[], email = a2.email)
+                break
 
     aff_author = []
     email_author = ''
@@ -801,6 +799,7 @@ def main():
     expected_df = pd.read_excel("test/test_data.xlsx")
     
     evaluate_results(expected_df=expected_df, actual_df=df)
+    df.to_csv('datafram.csv', index=False)  
     #create_knowledge_graph.create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
 
 if __name__ == '__main__':

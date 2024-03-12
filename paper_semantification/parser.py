@@ -590,9 +590,17 @@ def get_author_info(grobid, cermine, openAI):
     
     print('Validating via openAI')
     for a in paper_authors_gr:
-        aff_grobid = paper_authors_gr[a].affiliation
-        email_grobid = paper_authors_gr[a].email
-        aff_author, email_author = merge_author_info_openAI(aff_grobid, aff_cermine,aff_openAI,email_grobid,email_cermine, email_openAI)
+
+        if a in openAI_authors:
+            tmp = list(filter(lambda person: person['name'] == a, openAI))[0]['email']
+            if not tmp:
+                email_openAI = ''
+            else:
+                email_openAI = tmp[0]
+            aff_openAI = list(filter(lambda person: person['name'] == a, openAI))[0]['affiliation']
+
+        #aff_author, email_author = merge_author_info_openAI(aff_grobid, aff_cermine,aff_openAI,email_grobid,email_cermine, email_openAI)
+        aff_author, email_author = merge_author_info(aff_author,aff_openAI, email_author, email_openAI)
         paper_authors.append(Author(name=a, affiliation=aff_author, email= email_author))
 
 

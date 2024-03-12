@@ -730,9 +730,13 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
             author_list = get_author_info(grobid, cermine,openAI_author)
             #print(author_list)
             #print('------------------------------------------------------')
+
+            proceeding = events[int(k)]['proceedings']
+            event = events[int(k)]['event']
+
             if construct_graph:
                 print(f"Creating graph for paper {paper_title}")
-                create_neo4j_graph(author_list, paper_title, neo4j_conn, paper_path+'.pdf') 
+                create_neo4j_graph(author_list=author_list, title=paper_title, proceeding=proceeding, event=event, neo4j_connection=neo4j_conn, url=paper_path+'.pdf') 
 
             for author in author_list:
                 #print(author)
@@ -748,23 +752,19 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
                     email = ''
                     
                 # Append author details to the data list
-                data.append({'Proceedings':  events[int(k)]['proceedings'], 'Event': events[int(k)]['event'], 'Paper title': paper_title,
+                data.append({'Proceedings':  proceeding, 'Event': event, 'Paper title': paper_title,
                                'Author name': name, 'Author Affiliations': affiliation, 'Author E-Mail': email, 'URL': f'{paper_path}.pdf'})
 
     df = pd.DataFrame(data)
     df.reset_index(drop=True, inplace=True)
     expected_df = pd.read_excel("../test/test_data.xlsx")
     evaluate_results(expected_df=expected_df, actual_df=df)
-    #create_knowledge_graph.create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
 
 if __name__ == '__main__':
-    # construct_graph = False
-    # volumes = [2462]
-    # all_volumes = False
-    # # Set construct_graph to True to construct the graph. Otherwise the graph construction is skipped.
-    # parse_volumes(volumes=volumes, all_volumes=all_volumes, construct_graph=construct_graph)
-
-    expected_df = pd.read_excel("../test/test_data.xlsx")
-    print(expected_df.head())
+    construct_graph = False
+    volumes = [2462]
+    all_volumes = False
+    # Set construct_graph to True to construct the graph. Otherwise the graph construction is skipped.
+    parse_volumes(volumes=volumes, all_volumes=all_volumes, construct_graph=construct_graph)
 
 

@@ -1,11 +1,8 @@
 import requests as req
 import re
 import dblp
-import argparse
-import orcid
+import os
 from wikidata.client import Client
-from requests import RequestException
-from lxml import etree
 from dataclasses import dataclass
 from typing import Optional, List
 from bs4 import BeautifulSoup 
@@ -13,14 +10,16 @@ import string
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz
 import pandas as pd
-import create_knowledge_graph
+from paper_semantification.knowledge_graph.main import Neo4jConnection
+from paper_semantification.knowledge_graph.utils import create_neo4j_graph, create_neo4j_graph_preface
 from email_validator import validate_email, EmailNotValidError
-import warnings
 from ftfy import fix_text
-warnings.filterwarnings("ignore")
-import json
 import grobid_tei_xml
 from xml.etree import ElementTree as ET
+
+import warnings
+warnings.filterwarnings("ignore")
+NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
 
 
 @dataclass
@@ -584,25 +583,27 @@ def is_iterable(obj):
     except TypeError:
         return False
     
-def main():
-    Web = req.get('http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html') 
-      
-    neo4j_conn = create_knowledge_graph.Neo4jConnection(uri="neo4j+s://607f3c00.databases.neo4j.io", user="neo4j", password="B4ciag8tPs_szFjyrAFWgz6INlti5_jJUCH9aqb8ETY")
+def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construct_graph = False) -> List:
+    if not volumes and not all_volumes:
+        raise ValueError("Either volumes or all_volumes must be specified")
+    if all_volumes:
+        print("Fetching all volumes from http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html")
+        Web = req.get('http://ceurspt.wikidata.dbis.rwth-aachen.de/index.html') 
+        S = BeautifulSoup(Web.text, 'lxml') 
+        html_txt = S.prettify()
+        #extract all volumes
+        reg1 = r'Vol-(\d+)">'
+        #all volumes from the ceurspt api
+        cur_volumes = re.findall(reg1, html_txt)
+        print(f"List of all volumes: {cur_volumes}")
+    elif volumes:
+        cur_volumes = [str(v) for v in volumes]
 
-    S = BeautifulSoup(Web.text, 'lxml') 
-    html_txt = S.prettify()
-    #extract all volumes
-    reg1 = r'Vol-(\d+)">'
-    #all volumes from the ceurspt api
-    volumes = re.findall(reg1, html_txt)
+    if construct_graph:
+        print("Setting up Neo4j connection")
+        neo4j_conn = Neo4jConnection(uri=NEO4J_URI)  
+        neo4j_conn.connect()  
 
-    # Here we set the volume we want to consider in the comparisons below
-    parser = argparse.ArgumentParser(prog='Web parser', description='Take a list of volume numbers as input and extract the papers')
-    parser.add_argument('-v', '--volume', nargs='+', default=[], required=True,help='Volume numbers as integer')     
-    args = parser.parse_args()
-    cur_volumes = args.volume
-    #cur_volumes = [f'{x}' for x in range(2456, 2457) if f'{x}' in volumes]
-    #assert(all([vol_nr in volumes for vol_nr in cur_volumes]))
     #extract all pages for each vol
     papers = {}
     events = {}
@@ -657,6 +658,9 @@ def main():
             author_list = get_author_info(grobid, cermine)
             #print(author_list)
             #print('------------------------------------------------------')
+            if construct_graph:
+                print(f"Creating graph for paper {paper_title}")
+                create_neo4j_graph(author_list, paper_title, neo4j_conn, paper_path+'.pdf') 
 
             for author in author_list:
                 #print(author)
@@ -683,6 +687,13 @@ def main():
     #create_knowledge_graph.create_neo4j_graph(author_list,paper_title, neo4j_conn, paper_path+'.pdf') 
 
 if __name__ == '__main__':
-    main()
+    # construct_graph = False
+    # volumes = [2462]
+    # all_volumes = False
+    # # Set construct_graph to True to construct the graph. Otherwise the graph construction is skipped.
+    # parse_volumes(volumes=volumes, all_volumes=all_volumes, construct_graph=construct_graph)
+
+    expected_df = pd.read_excel("../test/test_data.xlsx")
+    print(expected_df.head())
 
 

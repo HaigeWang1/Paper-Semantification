@@ -7,8 +7,9 @@ import hashlib
 class OpenAIPapersParser:
     def __init__(self, gpt_model="gpt-4"):
         self.client = OpenAI(
-            api_key=os.environ.get("OPENAI_API_KEY")
+            api_key= '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'#os.environ.get("OPENAI_API_KEY")
         )
+
         self.gpt_model = gpt_model
         # Create the tmp folder if it does not exist
         os.makedirs("tmp", exist_ok=True)

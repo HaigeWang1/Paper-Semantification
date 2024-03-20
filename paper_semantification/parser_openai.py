@@ -109,23 +109,3 @@ if __name__ == "__main__":
     # Output: "Take it Personally - A Python library for data enrichment in informetrical applications"
     paper_authors = parser.parse_authors(file_path_url)
     print(paper_authors)
-    # Output: 
-    # [{'name': 'Eva Seidlmayer',
-    # 'affiliation': ['ZB MED Information Centre for Life Sciences, Cologne, Germany'],
-    # 'email': ['seidlmayer@zbmed.de']},
-    # {'name': 'Lukas Galke',
-    # 'affiliation': ['ZBW - Leibniz Information Centre for Economics, Kiel and Hamburg, Germany'],
-    # 'email': []},
-    # {'name': 'Tetyana Melnychuk',
-    # 'affiliation': ['Kiel University, Germany'],
-    # 'email': []},
-    # {'name': 'Carsten Schultz',
-    # 'affiliation': ['Kiel University, Germany'],
-    # 'email': []},
-    # {'name': 'Klaus Tochtermann',
-    # 'affiliation': ['ZBW - Leibniz Information Centre for Economics, Kiel and Hamburg, Germany'],
-    # 'email': []},
-    # {'name': 'Konrad U. Förstner',
-    # 'affiliation': ['ZB MED Information Centre for Life Sciences, Cologne, Germany',
-    # 'TH K¨oln - University for Applied Science, Cologne, Germany'],
-    # 'email': []}]

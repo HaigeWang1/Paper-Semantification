@@ -10,9 +10,9 @@ import string
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz
 import pandas as pd
-import parser_openai as openai
-from knowledge_graph.main import Neo4jConnection
-from knowledge_graph.utils import create_neo4j_graph, create_neo4j_graph_preface
+import paper_semantification.parser_openai as openai
+from paper_semantification.knowledge_graph.main import Neo4jConnection
+from paper_semantification.knowledge_graph.utils import create_neo4j_graph, create_neo4j_graph_preface
 from email_validator import validate_email, EmailNotValidError
 from ftfy import fix_text
 import grobid_tei_xml

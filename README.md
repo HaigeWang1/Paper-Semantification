@@ -3,19 +3,7 @@
 [![Issues](https://img.shields.io/github/issues-raw/HaigeWang1/Paper-Semantification)](https://github.com/HaigeWang1/Paper-Semantification/issues)  
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
 
-# How to run it (! TO BE DEPRECATED !)
-```
-git clone https://github.com/HaigeWang1/Paper-Semantification.git
-cd Paper-Semantification
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt 
-git clone https://github.com/sebastianGehrmann/dblp-pub.git && cd dblp-pub
-python setup.py install && cd ..
-rm -rf dblp-pub
-python source/parser.py -v 1999 2462
-```
-
+# How to run it 
 
 ### Dockerized Version - Setup
 
@@ -32,9 +20,7 @@ Run the whole application with the command `docker-compose up -d`
   - In the server connection interface input `bolt://localhost:7687`
   - Authentication is disabled, thus ignore the fields related to authentication
 - Our service exposes its APIs through a FastAPI server. The API can be accessed in the Swager UI through htttp://localhost:8000/docs
-
-
-
+  - Find the API documentation in the fastapi swagger through the link above
 
 # Goal
 The purpose of this task is to comprehensively process scholarly papers by leveraging metadata extraction services such as CERMINE and GROBID APIs.

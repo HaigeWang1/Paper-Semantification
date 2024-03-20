@@ -1,3 +1,7 @@
+from paper_semantification.knowledge_graph.main import Neo4jConnection
+from paper_semantification import NEO4J_URI
+
+
 def create_neo4j_graph_preface(event, preface, author_list,neo4j_connection, url):
     neo4j_connection.connect()
 
@@ -19,7 +23,6 @@ def create_neo4j_graph_preface(event, preface, author_list,neo4j_connection, url
 
     neo4j_connection.close()
 
-# Define a function to create nodes and relationships in Neo4j
 def create_neo4j_graph(author_list, title, proceeding, event, neo4j_connection, url):
     neo4j_connection.connect()
     
@@ -64,3 +67,13 @@ def create_neo4j_graph(author_list, title, proceeding, event, neo4j_connection, 
 
      
     neo4j_connection.close()
+
+
+def delete_neo4j_graph():
+    print("Setting up Neo4j connection")
+    neo4j_conn = Neo4jConnection(uri=NEO4J_URI)  
+    neo4j_conn.connect()  
+
+    print("Deleting the knowledge graph")
+    delete_query = "MATCH (n) DETACH DELETE n"
+    neo4j_conn.query(delete_query)

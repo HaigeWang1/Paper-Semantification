@@ -1,4 +1,5 @@
 from fastapi import FastAPI, Query
+from paper_semantification.knowledge_graph.utils import delete_neo4j_graph
 from paper_semantification.parser import parse_volumes
 from typing import List
 
@@ -41,6 +42,19 @@ async def get_all_papers_metadata(volumes_ids: List[int] = Query([], description
     all_papers_metadata = [parse_volumes(volumes = volumes_ids, construct_graph = construct_graph, all_volumes = all_volumes)]
     return all_papers_metadata
 
+
+# Endpoint to delete the knowledge graph from the neo4j database
+@app.delete("/delete_graph")
+async def delete_knowledge_graph():
+    """
+    Deletes the knowledge graph from the Neo4j database.
+
+    Returns:
+    - str: Success message.
+    """
+    # Execute neo4j query that deletes all nodes and relationships
+    delete_neo4j_graph()
+    return "Knowledge graph deleted successfully!"
 
 if __name__ == "__main__":
     import uvicorn

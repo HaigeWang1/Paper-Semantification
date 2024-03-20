@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Query
 from paper_semantification.knowledge_graph.utils import delete_neo4j_graph
-from paper_semantification.parser import parse_volumes
+from paper_semantification.parser import parse_volumes, process_single_paper
 from typing import List
 
 
@@ -8,20 +8,19 @@ app = FastAPI()
 
 # Endpoint to extract metadata from a single paper
 @app.get("/metadata/single_paper")
-async def get_single_paper_metadata(paper_id: str = Query(..., description="Paper ID"),
-                                    volume_id: str = Query(..., description="Volume ID")):
+async def get_single_paper_metadata(volume_id: int = Query(..., description="Volume ID"),
+                                    paper_id: int = Query(..., description="Paper ID")):
     """
     Extracts metadata from a single paper.
 
     Parameters:
-    - paper_id (str): ID of the paper.
-    - volume_id (str): ID of the volume.
+    - paper_id (int): ID of the paper.
+    - volume_id (int): ID of the volume.
 
     Returns:
     - dict: Metadata of the paper.
     """
-    # TODO - Replace with actual logic to fetch metadata of the paper
-    # Do we need such a function?
+    paper_metadata = process_single_paper(volume_id=str(volume_id), paper_key=f"paper{str(paper_id)}")
     return None
 
 # Endpoint to extract metadata from all papers in a given volume

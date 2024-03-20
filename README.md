@@ -52,9 +52,6 @@ The purpose of this task is to comprehensively process scholarly papers by lever
 ### 5. Output and Syncing
 #### Store KG privately, ensuring security of personal data such as email addresses. If pushing to a public KG, sanitize private data. Synchronize entities linked to Wikidata.
 
-### 6. SemPubFlow Integration
-#### Invoke metadata extraction modules for uploaded PDFs to auto-populate and validate necessary fields.
-
 
 # Current Status of task
 - [ ] Access API

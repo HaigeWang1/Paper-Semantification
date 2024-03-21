@@ -652,7 +652,7 @@ def is_iterable(obj):
     except TypeError:
         return False
     
-def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construct_graph = False) -> List:
+def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construct_graph = False, do_evaluation: bool = False) -> List:
     if not volumes and not all_volumes:
         raise ValueError("Either volumes or all_volumes must be specified")
     if all_volumes:
@@ -709,13 +709,14 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
             # Append author details to the data list
             data.append({'Proceedings':  proceeding, 'Event': event, 'Paper title': paper_title,
                             'Author name': name, 'Author Affiliations': affiliation, 'Author E-Mail': email, 'URL': f'{paper_path}.pdf'})
-
-    df = pd.DataFrame(data)
-    df.to_csv('actual_df.csv', index=False, encoding='utf-8')    
-    df.reset_index(drop=True, inplace=True)
-    expected_df = pd.read_excel("../test/Lab_test_set_402papers.xlsx")
-    if not df.empty:
-        evaluate_results(expected_df=expected_df, actual_df=df)
+    
+    if do_evaluation:
+        df = pd.DataFrame(data)
+        df.to_csv('actual_df.csv', index=False, encoding='utf-8')    
+        df.reset_index(drop=True, inplace=True)
+        expected_df = pd.read_excel("../test/Lab_test_set_402papers.xlsx")
+        if not df.empty:
+            evaluate_results(expected_df=expected_df, actual_df=df)
 
 def process_single_paper(volume_id, paper_key, events: Optional[dict] = None, construct_graph = False, neo4j_conn = None):
     paper_path = f'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-{volume_id}/{paper_key}'
@@ -772,6 +773,12 @@ def process_single_paper(volume_id, paper_key, events: Optional[dict] = None, co
     if construct_graph:
         print(f"Creating graph for paper {paper_title}")
         create_neo4j_graph(author_list=author_list_final, title=paper_title, proceeding=proceeding, event=event, neo4j_connection=neo4j_conn, url=paper_path+'.pdf') 
+    
+    name = ""
+    affiliation = ""
+    email = ""
+    proceeding = ""
+    event = ""
     for author in author_list_final:
         # Extract author details
         name = author.name

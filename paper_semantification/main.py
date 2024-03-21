@@ -14,14 +14,15 @@ async def get_single_paper_metadata(volume_id: int = Query(..., description="Vol
     Extracts metadata from a single paper.
 
     Parameters:
-    - paper_id (int): ID of the paper.
     - volume_id (int): ID of the volume.
+    - paper_id (int): ID of the paper.
 
     Returns:
     - dict: Metadata of the paper.
     """
     paper_metadata = process_single_paper(volume_id=str(volume_id), paper_key=f"paper{str(paper_id)}")
-    return None
+    return {"paper_path": paper_metadata[0], "paper_title": paper_metadata[1], "name": paper_metadata[2], "affiliation": paper_metadata[3], "email": paper_metadata[4], "proceeding": paper_metadata[5], "event": paper_metadata[6]}
+    # return **paper_metadata
 
 # Endpoint to extract metadata from all papers in a given volume
 @app.get("/metadata/volumes")

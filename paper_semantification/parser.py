@@ -10,9 +10,10 @@ import string
 from spellchecker import SpellChecker
 from fuzzywuzzy import fuzz
 import pandas as pd
-import parser_openai as openai
-from knowledge_graph.main import Neo4jConnection
-from knowledge_graph.utils import create_neo4j_graph, create_neo4j_graph_preface
+import paper_semantification.parser_openai as openai
+from paper_semantification.knowledge_graph.main import Neo4jConnection
+from paper_semantification.knowledge_graph.utils import create_neo4j_graph, create_neo4j_graph_preface
+from paper_semantification import NEO4J_URI
 from email_validator import validate_email, EmailNotValidError
 from ftfy import fix_text
 import grobid_tei_xml
@@ -21,7 +22,6 @@ from unidecode import unidecode
 
 import warnings
 warnings.filterwarnings("ignore")
-NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
 
 
 @dataclass
@@ -652,7 +652,7 @@ def is_iterable(obj):
     except TypeError:
         return False
     
-def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construct_graph = False) -> List:
+def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construct_graph = False, do_evaluation: bool = False) -> List:
     if not volumes and not all_volumes:
         raise ValueError("Either volumes or all_volumes must be specified")
     if all_volumes:
@@ -705,85 +705,99 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
        
     for k in papers.keys():
         for _, paper_key in enumerate(papers[k]):
-            paper_path = f'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-{k}/{paper_key}'
-            path_pdf = paper_path + ".pdf"
-            print(f'{paper_path}.pdf')
-            grobid, cermine = None, None
-            try:
-                grobid =  GrobitFile(paper_path + '.grobid')
-                grobid_title = grobid.title
-            except:
-                print('Grobid file could not get parsed correctly')
-                grobid_title = ''
-            try:
-                cermine =  CermineFile(paper_path + '.cermine')
-                cermine_title = cermine.title
-            except:
-                print('Cermine file could not get parsed correctly')
-                cermine_title = ''
+            paper_path, paper_title, name, affiliation, email, proceeding, event = process_single_paper(k, paper_key, events, construct_graph, neo4j_conn)
+            # Append author details to the data list
+            data.append({'Proceedings':  proceeding, 'Event': event, 'Paper title': paper_title,
+                            'Author name': name, 'Author Affiliations': affiliation, 'Author E-Mail': email, 'URL': f'{paper_path}.pdf'})
+    
+    if do_evaluation:
+        df = pd.DataFrame(data)
+        df.to_csv('actual_df.csv', index=False, encoding='utf-8')    
+        df.reset_index(drop=True, inplace=True)
+        expected_df = pd.read_excel("../test/Lab_test_set_402papers.xlsx")
+        if not df.empty:
+            evaluate_results(expected_df=expected_df, actual_df=df)
 
-            try: 
-                openAI = openai.OpenAIPapersParser()
-                openAI_author = openAI.parse_authors(path_pdf)
-                openAI_title = openAI.extract_title(path_pdf)
-            except Exception as e:
-                print(e)
-                print('OpenAI could not get parsed correctly')
-                openAI_author = []
-                openAI_title = ''
-            paper_title = ''
-            author_list = []
-            if cermine and grobid and openAI:
-                paper_title = get_final_paper_title(grobid_title, cermine_title, openAI_title,  paper_path + ".pdf")
-                author_list = get_author_info(grobid, cermine,openAI_author)
-            elif grobid and openai:
-                # TODOO: need merge function for only two components (grobid & cermine)
-                paper_title = get_paper_title(grobid_title, openai.paper_title, paper_path + ".pdf")
-                author_list = openai.paper_authors
-            elif cermine:
-                paper_title = cermine_title
-                author_list = cermine.authors
-            author_list_final = []
-            for author in author_list:
-                if author not in author_list_final:
-                    author_list_final.append(author)
+def process_single_paper(volume_id, paper_key, events: Optional[dict] = None, construct_graph = False, neo4j_conn = None):
+    paper_path = f'http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-{volume_id}/{paper_key}'
+    path_pdf = paper_path + ".pdf"
+    print(f'{paper_path}.pdf')
+    grobid, cermine = None, None
+    try:
+        grobid =  GrobitFile(paper_path + '.grobid')
+        grobid_title = grobid.title
+    except:
+        print('Grobid file could not get parsed correctly')
+        grobid_title = ''
+    try:
+        cermine =  CermineFile(paper_path + '.cermine')
+        cermine_title = cermine.title
+    except:
+        print('Cermine file could not get parsed correctly')
+        cermine_title = ''
 
-            proceeding = events[int(k)]['proceedings']
-            event = events[int(k)]['event']
-            print(paper_title)
-            print(author_list_final)
-            if construct_graph:
-                print(f"Creating graph for paper {paper_title}")
-                create_neo4j_graph(author_list=author_list_final, title=paper_title, proceeding=proceeding, event=event, neo4j_connection=neo4j_conn, url=paper_path+'.pdf') 
-            for author in author_list_final:
-                #print(author)
-                # Extract author details
-                name = author.name
+    try: 
+        openAI = openai.OpenAIPapersParser()
+        openAI_author = openAI.parse_authors(path_pdf)
+        openAI_title = openAI.extract_title(path_pdf)
+    except Exception as e:
+        print(e)
+        print('OpenAI could not get parsed correctly')
+        openAI_author = []
+        openAI_title = ''
+    paper_title = ''
+    author_list = []
+    if cermine and grobid and openAI:
+        paper_title = get_final_paper_title(grobid_title, cermine_title, openAI_title,  paper_path + ".pdf")
+        author_list = get_author_info(grobid, cermine,openAI_author)
+    elif grobid and openai:
+        # TODOO: need merge function for only two components (grobid & cermine)
+        paper_title = get_paper_title(grobid_title, openai.paper_title, paper_path + ".pdf")
+        author_list = openai.paper_authors
+    elif cermine:
+        paper_title = cermine_title
+        author_list = cermine.authors
+    author_list_final = []
+    for author in author_list:
+        if author not in author_list_final:
+            author_list_final.append(author)
 
-                if isinstance(author.affiliation, list):
-                    affiliation = '; '.join(author.affiliation)
-                elif author.affiliation:
-                    affiliation = author.affiliation
-                else:
-                    affiliation = ''
+    if events:
+        proceeding = events[int(volume_id)]['proceedings']
+        event = events[int(volume_id)]['event']
+    else:
+        proceeding = ''
+        event = ''
+    print(paper_title)
+    print(author_list_final)
+    if construct_graph:
+        print(f"Creating graph for paper {paper_title}")
+        create_neo4j_graph(author_list=author_list_final, title=paper_title, proceeding=proceeding, event=event, neo4j_connection=neo4j_conn, url=paper_path+'.pdf') 
+    
+    name = ""
+    affiliation = ""
+    email = ""
+    proceeding = ""
+    event = ""
+    for author in author_list_final:
+        # Extract author details
+        name = author.name
 
-                if isinstance(author.email, list):
-                    email = ', '.join(author.email)
-                elif author.email:
-                    email = author.email
-                else:
-                    email = ''
-                
-                # Append author details to the data list
-                data.append({'Proceedings':  proceeding, 'Event': event, 'Paper title': paper_title,
-                               'Author name': name, 'Author Affiliations': affiliation, 'Author E-Mail': email, 'URL': f'{paper_path}.pdf'})
+        if isinstance(author.affiliation, list):
+            affiliation = '; '.join(author.affiliation)
+        elif author.affiliation:
+            affiliation = author.affiliation
+        else:
+            affiliation = ''
 
-    df = pd.DataFrame(data)
-    df.to_csv('actual_df.csv', index=False, encoding='utf-8')    
-    df.reset_index(drop=True, inplace=True)
-    expected_df = pd.read_excel("../test/Lab_test_set_402papers.xlsx")
-    if not df.empty:
-        evaluate_results(expected_df=expected_df, actual_df=df)
+        if isinstance(author.email, list):
+            email = ', '.join(author.email)
+        elif author.email:
+            email = author.email
+        else:
+            email = ''
+    return paper_path, paper_title, name, affiliation, email, proceeding, event
+
 
 if __name__ == '__main__':
     construct_graph = False

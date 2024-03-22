@@ -57,11 +57,11 @@ The purpose of this task is to comprehensively process scholarly papers by lever
 
 
 # Current Status of task
-- [ ] Access API
-- [ ] Utilize
-- [ ] Validation
+- [x] Access API
+- [x] Utilize
+- [x] Validation
 
 # Deadline
 - [x] 2024-01-19: Midterm coordination
-- [ ] 2024-03-22: Project result delivery
-- [ ] 2024-03-29: Final presentation
+- [x] 2024-03-22: Project result delivery
+- [ ] 2024-03-28: Final presentation

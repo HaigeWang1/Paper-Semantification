@@ -1,0 +1,28 @@
+['3576']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3576/paper2.pdf
+Emotion detection using deep learning on spectrogram images of the electroencephalogram.
+[Author(name='Mauro Mezzini', affiliation=['Department of Education, Roma Tre University, 00185 Rome, Italy'], email=['mauro.mezzini@uniroma3.it'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3576/paper3.pdf
+Respiratory rate estimation via sensor pressure mattress: a single subject evaluation.
+[Author(name='Artemisia Sarteschi', affiliation=['University of Milano - Bicocca', 'ETH Zürich', 'ARTORG Center for Biomedical Eng. Research, University of Bern'], email='sarteschi.artemisia@gmail.com'), Author(name='Domenico G. Sorrenti', affiliation=['Università di Milano - Bicocca'], email='domenico.sorrenti@unimib.it')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3576/paper4.pdf
+A multi-artifact EEG denoising by frequency-based deep learning.
+[Author(name='Matteo Gabardi', affiliation=['University of Milano-Bicocca', 'Xnext S.p.A.'], email='m.gabardi@campus.unimib.it'), Author(name='Aurora Saibene', affiliation=['University of Milano-Bicocca', 'NeuroMI, Milan Center for Neuroscience'], email='aurora.saibene@unimib.it'), Author(name='Francesca Gasparini', affiliation=['University of Milano-Bicocca', 'NeuroMI, Milan Center for Neuroscience'], email='francesca.gasparini@unimib.it'), Author(name='Daniele Rizzo', affiliation=['Xnext S.p.A.'], email='drizzo@x-next.com'), Author(name='Fabio Antonio Stella', affiliation=['University of Milano-Bicocca', 'NeuroMI, Milan Center for Neuroscience'], email='fabio.stella@unimib.it')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3576/paper5.pdf
+Assessing the impact of selective attention in a minimalist virtual reality driving simulator: An analysis of perceived experience, motion sickness.
+[Author(name='Alessio Facchin', affiliation=['Department of Psychology, Università degli Studi di Milano - Bicocca, Italy'], email=None), Author(name='Stefania La Rocca', affiliation=['Department of Psychology, Università degli Studi di Milano - Bicocca, Italy'], email=None), Author(name='Veronica Strina', affiliation=['Department of Psychology, Università degli Studi di Milano - Bicocca, Italy'], email=None), Author(name='Laura Vacchi', affiliation=['School of Medicine and Surgery, Università degli Studi di Milano - Bicocca, Italy'], email=None), Author(name='Carlotta Lega', affiliation=['Department of Psychology, Università degli Studi di Milano - Bicocca, Italy', 'Department of Brain and Behavioural Sciences, Università di Pavia, Italy'], email=None), Author(name='Simone Fontana', affiliation=['Department of Computer Science, Università degli Studi di Milano - Bicocca, Italy', 'School of Law, Università degli Studi di Milano - Bicocca, Italy'], email=['simone.fontana@unimib.it'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3576/paper6.pdf
+Psychological stress detection with optimally selected EEG channel using machine learning techniques.
+[Author(name='Anne Joo Marthinsen', affiliation=['Norwegian University of Science and Technology, Trondheim, Norway'], email=['annejoomarthinsen@gmail.com']), Author(name='Ivar Tesdal Galtung', affiliation=['Norwegian University of Science and Technology, Trondheim, Norway'], email=['ivartg@stud.ntnu.no']), Author(name='Amandeep Cheema', affiliation=['Norwegian University of Science and Technology, Trondheim, Norway'], email=['cheema.amandeep09@gmail.com']), Author(name='Christian Moe Sletten', affiliation=['Norwegian University of Science and Technology, Trondheim, Norway'], email='chrismsl@stud.ntnu.no'), Author(name='Ida Marie Andreassen', affiliation=['Norwegian University of Science and Technology, Trondheim, Norway'], email=['ida.marie.andreassen@gmail.com']), Author(name='Øystein Sletta', affiliation=['Norwegian University of Science and Technology, Trondheim, Norway'], email='sleoy98@gmail.com'), Author(name='Andrés Felipe Soler', affiliation=['Norwegian University of Science and Technology, Trondheim, Norway'], email=None), Author(name='Marta Molinas', affiliation=['Norwegian University of Science and Technology, Trondheim, Norway'], email=['marta.molinas@ntnu.no'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3576/paper7.pdf
+An experimental protocol to access immersiveness in video games.
+[Author(name='Marika Malaspina', affiliation=['University of Milano-Bicocca', 'NeuroMI, Milan Center for Neuroscience'], email=['m.malaspina11@campus.unimib.it']), Author(name='Jessica Amianto Barbato', affiliation=['University of Milano-Bicocca', 'NeuroMI, Milan Center for Neuroscience'], email=['jessica.amiantobarbato@unimib.it']), Author(name='Marco Cremaschi', affiliation=['University of Milano-Bicocca', 'NeuroMI, Milan Center for Neuroscience'], email=['marco.cremaschi@unimib.it']), Author(name='Francesca Gasparini', affiliation=['University of Milano-Bicocca', 'NeuroMI, Milan Center for Neuroscience'], email=['francesca.gasparini@unimib.it']), Author(name='Alessandra Grossi', affiliation=['University of Milano-Bicocca', 'NeuroMI, Milan Center for Neuroscience'], email=['alessandra.grossi@unimib.it']), Author(name='Aurora Saibene', affiliation=['University of Milano-Bicocca', 'NeuroMI, Milan Center for Neuroscience'], email=['aurora.saibene@unimib.it'])]
+Exact matching of paper titles and author names: 5 out of 404
+Exact matching of title, names and emails: 4 out of 404
+Exact matching of all atts: 1 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 3 out of 404['3576']
+
+Total = 9 (-3) 
+TP = 5 TN = 3 (3 Invited Talks should not be counted as paper)
+       FN = 1 (Andrés Felipe Soler vs. Andres Soler in testset)

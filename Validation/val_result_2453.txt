@@ -1,0 +1,34 @@
+['2453']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2453/paper00.pdf
+Overview of the Cross-Genre Gender Prediction Shared Task on Dutch at CLIN29
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2453/paper01.pdf
+Embedding and Clustering for Cross-Genre Gender Prediction.
+[Author(name='Rianne Bos', affiliation=['CLCG, Information Science', 'University of Groningen, The Netherlands'], email='d.bos.7@student.rug.nl'), Author(name='Kelly Dekker', affiliation=['CLCG, Information Science', 'University of Groningen, The Netherlands'], email='k.dekker.5@student.rug.nl'), Author(name='Harmjan Setz', affiliation=['CLCG, Information Science', 'University of Groningen, The Netherlands'], email='h.setz@student.rug.nl')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2453/paper02.pdf
+Exploring Combining Training Datasets for the CLIN 2019 Shared Task on Cross-genre Gender Detection in Dutch.
+[Author(name='Gerlof Bouma', affiliation=['Department of Swedish / Språkbanken', 'University of Gothenburg'], email='gerlof.bouma@gu.se')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2453/paper03.pdf
+Two Attempts to Predict Author Gender in Cross-Genre Settings in Dutch.
+[Author(name='Eduardo Brito', affiliation=['Fraunhofer IAIS', 'Fraunhofer Center for Machine Learning', 'Sankt Augustin, Germany'], email=None), Author(name='Rafet Sifa', affiliation=['Fraunhofer IAIS', 'Fraunhofer Center for Machine Learning', 'Sankt Augustin, Germany'], email=None), Author(name='Christian Bauckhage', affiliation=['Fraunhofer IAIS', 'Fraunhofer Center for Machine Learning', 'Sankt Augustin, Germany'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2453/paper04.pdf
+wUGs: Co-Training vs. Simple SVM
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2453/paper05.pdf
+Gender prediction using lexical, morphological, syntactic and character-based features in Dutch.
+[Author(name='Evgenii Glazunov', affiliation=['National Research University Higher School of Economics, Moscow, Russia'], email='e.glznv@yandex.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2453/paper06.pdf
+Pooled LSTM for Dutch Cross-genre Gender Classification.
+[Author(name='Matej Martinc', affiliation=['Joˇzef Stefan Institute'], email='matej.martinc@ijs.si'), Author(name='Senja Pollak', affiliation=['Joˇzef Stefan Institute', 'Usher Institute, Medical school, University of Edinburgh, UK'], email='senja.pollak@ijs.si')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2453/paper07.pdf
+ABI Neural Ensemble Model for Gender Prediction Adapt Bar-Ilan Submission for the CLIN29 Shared Task on Gender Prediction.
+[Author(name='Eva Vanmassenhove', affiliation=['ADAPT, School of Computing, Dublin City University, Dublin, Ireland'], email='eva.vanmassenhove@adaptcentre.ie'), Author(name='Amit Moryossef', affiliation=['Computer Science Department, Bar-Ilan University, Ramat-Gan, Israel'], email='amitmoryossef@gmail.com'), Author(name='Alberto Poncelas', affiliation=['ADAPT, School of Computing, Dublin City University, Dublin, Ireland'], email='alberto.poncelas@adaptcentre.ie'), Author(name='Andy Way', affiliation=['ADAPT, School of Computing, Dublin City University, Dublin, Ireland'], email='andy.way@adaptcentre.ie'), Author(name='Dimitar Sht. Shterionov', affiliation=['ADAPT, School of Computing, Dublin City University, Dublin, Ireland'], email='dimitar.shterionov@adaptcentre.ie')]
+Exact matching of paper titles and author names: 5 out of 404
+Exact matching of title, names and emails: 4 out of 404
+Exact matching of all atts: 2 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 4 out of 404
+
+Total = 8
+TP = 5
+TN = 2 (Empty author)

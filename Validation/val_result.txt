@@ -1,0 +1,975 @@
+
+['3601']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3601/regular1.pdf
+Grobid file could not get parsed correctly
+Cermine could not find any authors
+
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3601/regular2.pdf
+Grobid file could not get parsed correctly
+Cermine could not find any authors
+
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3601/regular3.pdf
+Grobid file could not get parsed correctly
+Cermine could not find any authors
+
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3601/short1.pdf
+Grobid file could not get parsed correctly
+Cermine could not find any authors
+
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3601/short2.pdf
+Grobid file could not get parsed correctly
+Cermine could not find any authors
+
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3601/short3.pdf
+Grobid file could not get parsed correctly
+Cermine could not find any authors
+
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3601/short4.pdf
+Grobid file could not get parsed correctly
+Cermine could not find any authors
+
+[]
+['2452']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/inivited1.pdf
+Grobid file could not get parsed correctly
+cannot open broken document
+OpenAI could not get parsed correctly
+Cermine could not find any authors
+
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper1.pdf
+A Personalized Affect Response Model for Online News Articles.
+[Author(name='Kyohei Atarashi', affiliation=['Hokkaido University'], email='atarashi@complex.ist.hokudai.ac.jp'), Author(name='Akimi Moriyama', affiliation=['Hokkaido University'], email='a.moriyama@complex.ist.hokudai.ac.jp'), Author(name='Satoshi Oyama', affiliation=['Hokkaido University', 'RIKEN AIP'], email='oyama@ist.hokudai.ac.jp'), Author(name='Masahito Kurihara', affiliation=['Hokkaido University'], email='kurihara@ist.hokudai.ac.jp')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper2.pdf
+Emoji-Aware Attention-based Bi-directional GRU Network Model for Chinese Sentiment Analysis.
+[Author(name='Da Li', affiliation=['Graduate School of Information Science and Technology, Hokkaido University'], email='lida@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University', 'RIKEN Center for Advanced Intelligence Project (AIP)'], email='rzepka@ist.hokudai.ac.jp'), Author(name='Michal Ptaszynski', affiliation=['Department of Computer Science, Kitami Institute of Technology'], email='ptaszynski@cs.kitami-it.ac.jp'), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University'], email=['arakig@ist.hokudai.ac.jp'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper3.pdf
+Influence of Classifiers and Encoders on Argument Classification in Japanese Assembly Minutes.
+[Author(name='Yasutomo Kimura', affiliation=['Otaru University of Commerce, Japan'], email=['kimura@res.otaru-uc.ac.jp']), Author(name='Hideyuki Shibuki', affiliation=['National Institute of Informatics, Japan'], email=None), Author(name='Hokuto Ototake', affiliation=['Fukuoka University, Japan'], email=None), Author(name='Yuzu Uchida', affiliation=['Hokkai-Gakuen University, Japan'], email=None), Author(name='Keiichi Takamaru', affiliation=['Utsunomiya Kyowa University, Japan'], email=None), Author(name='Kotaro Sakamoto', affiliation=['Yokohama National University, Japan'], email=None), Author(name='Madoka Ishioroshi', affiliation=['National Institute of Informatics, Japan'], email=None), Author(name='Teruko Mitamura', affiliation=['Carnegie Mellon University, USA'], email=None), Author(name='Noriko Kando', affiliation=['National Institute of Informatics, Japan', 'SOKENDAI, Japan'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper4.pdf
+Debate Outcome Prediction using Automatic Persuasiveness Evaluation and Counterargument Relations.
+[Author(name='Daiki Shirafuji', affiliation=['Graduate School of Information Science and Technology, Hokkaido University', 'RIKEN Center for Advanced Intelligence Project (AIP)'], email='dshirafuji@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University', 'RIKEN Center for Advanced Intelligence Project (AIP)'], email='rzepka@ist.hokudai.ac.jp'), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University'], email=['arakig@ist.hokudai.ac.jp'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper5.pdf
+Extracting Dialog Structure and Latent Beliefs from Dialog Corpus.
+[Author(name='Aishwarya Chhabra', affiliation=['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], email='aishwarya.chhabra@tcs.com'), Author(name='Pratik Saini', affiliation=['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], email='pratik.saini@tcs.com'), Author(name='Chandrasekhar Anantaram', affiliation=['TCS Research, Tata Consultancy Services Ltd, Gwal Pahari, Gurgaon, India'], email='c.anantaram@tcs.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper6.pdf
+A Convolutional Neural Network For Ranking Advice Quality In Texts For A Motivational Dialogue System.
+[Author(name='Patrycja Swieczkowska', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['swieczkowska@ist.hokudai.ac.jp']), Author(name='Rafal Rzepka', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['rzepka@ist.hokudai.ac.jp']), Author(name='Kenji Araki', affiliation=['Graduate School of Information Science and Technology, Hokkaido University, Japan'], email=['araki@ist.hokudai.ac.jp'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper7.pdf
+New Approach to Computational Cognition and Predicative Competence.
+[Author(name='Rodolfo A. Fiorini', affiliation=['Department of Electronics, Information and Bioengineering, Politecnico di Milano University, Italy', '[Zellweger, 1992] Shea Zellweger. Cards, Mirrors and Hand Held Models that Lead into Elementary Logic. In Proc. Sixteenth Annual Conference of the International Group for the Psychology of Mathematics Education, 1992. University of New Hampshire'], email=['Rodolfo.fiorini@polimi.it'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper8.pdf
+Cognitive Biases Undermine Consensus on Definitions of Intelligence and Limit Understanding.
+[Author(name='Dagmar Monett', affiliation=['Computer Science Dept., Berlin School of Economics and Law, Germany', 'AGISI.org'], email=['dagmar.monett@agisi.org']), Author(name='Luisa Hoge', affiliation=['Computer Science Dept., Berlin School of Economics and Law, Germany'], email=['hoge@stud.hwr-berlin.de']), Author(name='Colin W. P. Lewis', affiliation=['AGISI.org'], email=['colin.lewis@agisi.org'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2452/paper9.pdf
+Implicit Knowledge Completion Method Using Relevance Calculation of Distributed Word Representations
+[Author(name='Sho Takishita', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], email='sho.takishita@ist.hokudai.ac.jp'), Author(name='Rafal Rzepka', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan', 'RIKEN AIP, Japan'], email='rzepka@ist.hokudai.ac.jp'), Author(name='Kenji Araki', affiliation=['Faculty of Information Science and Technology, Hokkaido University, Japan'], email=['arakig@ist.hokudai.ac.jp'])]
+Exact matching of paper titles and author names: 8 out of 404
+Exact matching of title, names and emails: 4 out of 404
+Exact matching of all atts: 2 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 4 out of 404
+
+Total = 9
+
+['2451']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-01.pdf
+Legal challenges of Robotic Process Automation (RPA) in administrative services.
+[Author(name='Sascha Alpers', affiliation=['FZI Forschungszentrum Informatik, Karlsruhe, Germany'], email='alpers@fzi.de'), Author(name='Christoph Becker', affiliation=['FZI Forschungszentrum Informatik, Karlsruhe, Germany'], email='cbecker@fzi.de'), Author(name='Maria Pieper', affiliation=['FZI Forschungszentrum Informatik, Karlsruhe, Germany'], email='pieper@fzi.de'), Author(name='Manuela Wagner', affiliation=['FZI Forschungszentrum Informatik, Karlsruhe, Germany'], email='wagner@fzi.de'), Author(name='Andreas Oberweis', affiliation=['FZI Forschungszentrum Informatik, Karlsruhe, Germany'], email='oberweis@fzi.de')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-02.pdf
+Controlling Internet of Things devices with Read-Write Linked Data Interfaces using Data-Driven Workflows.
+[Author(name='Nico Aßfalg', affiliation=['Institute AIFB, Karlsruhe Institute of Technology (KIT), Germany'], email='uberq@student.kit.edu'), Author(name='Leonard Nürnberg', affiliation=['Institute AIFB, Karlsruhe Institute of Technology (KIT), Germany'], email='ujeng@student.kit.edu'), Author(name='Benjamin Jochum', affiliation=['Institute AIFB, Karlsruhe Institute of Technology (KIT), Germany'], email='uzebb@student.kit.edu'), Author(name='Tobias Käfer', affiliation=['Institute AIFB, Karlsruhe Institute of Technology (KIT), Germany'], email='tobias.kaefer@kit.edu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-03.pdf
+On Using Subjective Logic to Build Consistent Merged Ontologies.
+[Author(name='Samira Babalou', affiliation=['Heinz-Nixdorf Chair for Distributed Information Systems, Institute for Computer Science, Friedrich Schiller University Jena'], email='samira.babalou@uni-jena.de'), Author(name='Birgitta König-Ries', affiliation=['Heinz-Nixdorf Chair for Distributed Information Systems, Institute for Computer Science, Friedrich Schiller University Jena'], email='birgitta.koenig-ries@uni-jena.de')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-04.pdf
+GMRs: Reconciliation of Generic Merge Requirements in Ontology Integration.
+[Author(name='Samira Babalou', affiliation=['Heinz-Nixdorf Chair for Distributed Information Systems', 'Institute for Computer Science, Friedrich Schiller University Jena, Germany'], email='samira.babalou@uni-jena.de'), Author(name='Birgitta König-Ries', affiliation=['Heinz-Nixdorf Chair for Distributed Information Systems', 'Institute for Computer Science, Friedrich Schiller University Jena, Germany'], email='birgitta.koenig-ries@uni-jena.de')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-05.pdf
+A standard language for the description of datasets obtained in experimental studies.
+[Author(name='Alena Begler', affiliation=['St. Petersburg University'], email='alena.begler@gmail.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-06.pdf
+Doc2RDFa: Semantic Annotation for Web Documents.
+[Author(name='Martin Beno', affiliation=['Vienna University of Economics and Business'], email=None), Author(name='Erwin Filtz', affiliation=['Vienna University of Economics and Business'], email=None), Author(name='Sabrina Kirrane', affiliation=['Vienna University of Economics and Business'], email=None), Author(name='Axel Polleres', affiliation=['Vienna University of Economics and Business'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-07.pdf
+Verifying the Integrity of Information along a Supply Chain using Linked Data and Smart Contracts.
+[Author(name='Christoph Braun', affiliation=['Institute AIFB, Karlsruhe Institute of Technology (KIT), Germany'], email='uvdsl@student.kit.edu'), Author(name='Tobias Käfer', affiliation=['Institute AIFB, Karlsruhe Institute of Technology (KIT), Germany'], email=['tobias.kaefer@kit.edu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-08.pdf
+Semi-automatic Semantic Enrichment of Personal Data Streams.
+[Author(name='Jean-Paul Calbimonte', affiliation=['Institute of Information Systems, University of Applied Sciences and Arts Western Switzelrand (HES-SO), Sierre, Switzerland'], email='jean-paul.calbimonte@hevs.ch'), Author(name='Fabien Dubosson', affiliation=['Institute of Information Systems, University of Applied Sciences and Arts Western Switzelrand (HES-SO), Sierre, Switzerland'], email='fabien.dubosson@hevs.ch'), Author(name='Ilia Kebets', affiliation=['Pryv SA, Lausanne, Switzerland'], email='info@pryv.com'), Author(name='Pierre-Mikael Legris', affiliation=['Pryv SA, Lausanne, Switzerland'], email='info@pryv.com'), Author(name='Michael Ignaz Schumacher', affiliation=['Institute of Information Systems, University of Applied Sciences and Arts Western Switzelrand (HES-SO), Sierre, Switzerland'], email='michael.schumacher@hevs.ch')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-09.pdf
+Towards Semantic Models for Profiling and Behavior Change in eHealth Applications.
+[Author(name='Jean-Paul Calbimonte', affiliation=['eHealth Unit, Institute of Information Systems, University of Applied Sciences and Arts Western Switzelrand (HES-SO), Sierre, Switzerland'], email='Jean-Paul.Calbimonte@hevs.ch'), Author(name='Fabien Dubosson', affiliation=['eHealth Unit, Institute of Information Systems, University of Applied Sciences and Arts Western Switzelrand (HES-SO), Sierre, Switzerland'], email='Fabien.Dubosson@hevs.ch'), Author(name='Michael Ignaz Schumacher', affiliation=['eHealth Unit, Institute of Information Systems, University of Applied Sciences and Arts Western Switzelrand (HES-SO), Sierre, Switzerland'], email='Michael.Schumacher@hevs.ch')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-10.pdf
+Semantic Knowledge Graph Embeddings for biomedical Research: Data Integration using Linked Open Data.
+[Author(name='Jens Dörpinghaus', affiliation=['Fraunhofer Institute for Algorithms and Scientiﬁc Computing'], email=['jens.doerpinghaus@scai.fraunhofer.de']), Author(name='Marc Jacobs', affiliation=['Fraunhofer Institute for Algorithms and Scientiﬁc Computing'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-11.pdf
+Semantic Containers for Data Mobility: A Seismic Activity Use Case.
+[Author(name='Fajar J. Ekaputra', affiliation=['TU Wien, Vienna - Austria'], email='fajar.ekaputra@tuwien.ac.at'), Author(name='Peb Ruswono Aryan', affiliation=['TU Wien, Vienna - Austria'], email='peb.aryan@tuwien.ac.at'), Author(name='Elmar Kiesling', affiliation=['TU Wien, Vienna - Austria'], email=['elmar.kieslingg@tuwien.ac.at']), Author(name='Christoph Fabianek', affiliation=['OwnYourData, Bad Vöslau - Austria'], email='christoph@ownyourdata.eu'), Author(name='Eduard Gringinger', affiliation=['OwnYourData, Bad Vöslau - Austria'], email=['eduardg@ownyourdata.eu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-12.pdf
+Knowledge-based Development of Games Using Design Patterns Ontology.
+[Author(name='Barbara Gizycka', affiliation=['AGH University of Science and Technology'], email='bgizycka@agh.edu.pl'), Author(name='Krzysztof Kutt', affiliation=['AGH University of Science and Technology'], email='kkutt@agh.edu.pl'), Author(name='Grzegorz J. Nalepa', affiliation=['AGH University of Science and Technology'], email='gjn@agh.edu.pl')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-13.pdf
+Automatic License Compatibility Checking.
+[Author(name='Giray Havur', affiliation=['Vienna University of Economics and Business, Austria', 'Siemens AG Österreich, Austria'], email=None), Author(name='Simon Steyskal', affiliation=['Vienna University of Economics and Business, Austria', 'Siemens AG Österreich, Austria'], email=None), Author(name='Oleksandra Panasiuk', affiliation=['STI Innsbruck, University of Innsbruck, Austria'], email=None), Author(name='Anna Fensel', affiliation=['STI Innsbruck, University of Innsbruck, Austria'], email=None), Author(name='Víctor Mireles', affiliation=['The Semantic Web Company, Austria'], email=None), Author(name='Tassilo Pellegrini', affiliation=['St. Pölten University of Applied Sciences, Austria'], email=None), Author(name='Thomas Thurner', affiliation=['The Semantic Web Company, Austria'], email=None), Author(name='Axel Polleres', affiliation=['Vienna University of Economics and Business, Austria'], email=None), Author(name='Sabrina Kirrane', affiliation=['Vienna University of Economics and Business, Austria'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-14.pdf
+Employing Geospatial Semantics and Semantic Web Technologies in Natural Disaster Management.
+[Author(name='Tobias Hellmund', affiliation=['Fraunhofer Institute of Optronics, System Technologies and Image Exploitation IOSB, Karlsruhe, Germany'], email='tobias.hellmund@iosb.fraunhofer.de'), Author(name='Manfred Schenk', affiliation=['Fraunhofer Institute of Optronics, System Technologies and Image Exploitation IOSB, Karlsruhe, Germany'], email='manfred.schenk@iosb.fraunhofer.de'), Author(name='Philipp Hertweck', affiliation=['Fraunhofer Institute of Optronics, System Technologies and Image Exploitation IOSB, Karlsruhe, Germany'], email='philipp.hertweck@iosb.fraunhofer.de'), Author(name='Jürgen Moßgraber', affiliation=['Fraunhofer Institute of Optronics, System Technologies and Image Exploitation IOSB, Karlsruhe, Germany'], email='juergen.mossgraber@iosb.fraunhofer.de')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-15.pdf
+Offline Question Answering over Linked Data using Limited Resources.
+[Author(name='Paramjot Kaur', affiliation=['Data Science Group, University of Paderborn, Germany'], email='first.lastname@upb.de'), Author(name='Vincent Blücher', affiliation=['Leipzig University, Germany', 'Data Science Group, University of Paderborn, Germany'], email='first.lastname@upb.de'), Author(name='Rricha Jalota', affiliation=['Data Science Group, University of Paderborn, Germany'], email='first.lastname@upb.de'), Author(name='Diego Moussallem', affiliation=['Data Science Group, University of Paderborn, Germany', 'Leipzig University, Germany'], email='first.lastname@upb.de'), Author(name='Axel-Cyrille Ngonga Ngomo', affiliation=['Data Science Group, University of Paderborn, Germany', 'Leipzig University, Germany'], email='first.lastname@upb.de'), Author(name='Ricardo Usbeck', affiliation=['Data Science Group, University of Paderborn, Germany', 'Fraunhofer IAIS, Standort Dresden, Germany', 'Leipzig University, Germany'], email='first.lastname@upb.de')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-16.pdf
+ONB Labs - An Open Digital Hub of Cultural Heritage.
+[Author(name='Monika Kovarova-Simecek', affiliation=['University of Applied Sciences St. Pölten'], email=['monika.kovarova-simecek@fhstp.ac.at']), Author(name='Sophie-Carolin Wagner', affiliation=['ONB Labs'], email=None), Author(name='Stefan Karner', affiliation=['ONB Labs'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-17.pdf
+Semantic Integration and Monitoring of File System Activity.
+[Author(name='Kabul Kurniawan', affiliation=['TU Wien', 'University of Vienna'], email=None), Author(name='Andreas Ekelhart', affiliation=['TU Wien', 'SBA Research'], email=None), Author(name='Elmar Kiesling', affiliation=['TU Wien'], email=None), Author(name='Agnes Froschl', affiliation=['TU Wien'], email=None), Author(name='Fajar J. Ekaputra', affiliation=['TU Wien'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-18.pdf
+Change data capture of large-scale RDF data.
+[Author(name='Jindrich Mynarz', affiliation=['MSD Czech Republic s.r.o., Svornosti 3321/2, 150 00 Prague 5, Czech Republic'], email='{name.surname}@merck.com'), Author(name='Adam Sotona', affiliation=['MSD Czech Republic s.r.o., Svornosti 3321/2, 150 00 Prague 5, Czech Republic'], email='{name.surname}@merck.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-19.pdf
+FAIRnets Search - A Prototype Search Service to Find Neural Networks.
+[Author(name='Anna Nguyen', affiliation=['Karlsruhe Institute of Technology (KIT)'], email='firstname.lastname@kit.edu'), Author(name='Tobias Weller', affiliation=['Karlsruhe Institute of Technology (KIT)'], email='firstname.lastname@kit.edu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-20.pdf
+Validating Danish Wikidata lexemes.
+[Author(name='Finn Årup Nielsen', affiliation=['Cognitive Systems, DTU Compute, Technical University of Denmark, Denmark'], email='faan@dtu.dk'), Author(name='Katherine Thornton', affiliation=['Yale University Library, New Haven, CT, USA'], email=['katherine.thornton@yale.edu']), Author(name='José Emilio Labra Gayo', affiliation=['University of Oviedo, Spain'], email=['labra@uniovi.es'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-21.pdf
+OPN: Open Notice Receipt Schema.
+[Author(name='Harshvardhan J. Pandit', affiliation=['ADAPT Centre, Trinity College Dublin, Dublin, Ireland'], email=['pandith@tcd.ie']), Author(name='Mark Lizar', affiliation=['Open Consent Group Ltd'], email='OPNUP@openconsent.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-22.pdf
+Evaluating Ontology Matchers on Real-World Financial Services Data Models.
+[Author(name='Jan Portisch', affiliation=['Data and Web Science Group, University of Mannheim, Germany', 'SAP SE Product Engineering Financial Services, Walldorf, Germany'], email='jan@informatik.uni-mannheim.de'), Author(name='Michael Hladik', affiliation=['SAP SE Product Engineering Financial Services, Walldorf, Germany'], email='michael.hladik@sap.com'), Author(name='Heiko Paulheim', affiliation=['Data and Web Science Group, University of Mannheim, Germany'], email='heiko@informatik.uni-mannheim.de')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-23.pdf
+Take it Personally - A Python library for data enrichment in informetrical applications
+[Author(name='Klaus Tochtermann', affiliation=['ZBW - Leibniz Information Centre for Economics, Kiel and Hamburg, Germany'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-24.pdf
+RDF-based Deployment Pipelining for Efficient Dataset Release Management.
+[Author(name='Claus Stadler', affiliation=['Institute for Applied Informatics (InfAI)'], email='stadler@infai.org'), Author(name='Lisa Wenige', affiliation=['Institute for Applied Informatics (InfAI)'], email='wenige@infai.org'), Author(name='Michael Martin', affiliation=['Institute for Applied Informatics (InfAI)'], email='martin@infai.org'), Author(name='Sebastian Tramp', affiliation=['eccenca GmbH'], email='info@eccenca.com'), Author(name='Kurt Junghanns', affiliation=['Institute for Applied Informatics (InfAI)'], email='junghanns@infai.org')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-25.pdf
+The Hubs and Authorities Transaction Network Analysis using the SANSA framework.
+[Author(name='Danning Sui', affiliation=['Alethio'], email=['danning.sui@consensys.net']), Author(name='Gezim Sejdiu', affiliation=['Smart Data Analytics, University of Bonn, Germany'], email=['sejdiu@cs.uni-bonn.de']), Author(name='Damien Graux', affiliation=['Fraunhofer Institute for Intelligent Analysis and Information Systems, Germany'], email=['damien.graux@iais.fraunhofer.de']), Author(name='Jens Lehmann', affiliation=['Smart Data Analytics, University of Bonn, Germany', 'Fraunhofer Institute for Intelligent Analysis and Information Systems, Germany'], email=['jens.lehmann@cs.uni-bonn.de', 'jens.lehmann@iais.fraunhofer.de'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-26.pdf
+Transfer Learning for Biomedical Named Entity Recognition with BioBERT.
+[Author(name='Anthi Symeonidou', affiliation=['University of Amsterdam', 'Elsevier'], email=['anthi.symeonidou@student.uva.nl']), Author(name='Viachaslau Sazonau', affiliation=['Elsevier'], email=['s.sazonau@elsevier.com']), Author(name='Paul Groth', affiliation=['University of Amsterdam'], email=['p.groth@uva.nl'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-27.pdf
+A Data Model for Linked Stage Graph and the Historical Performing Arts Domain (short paper).
+[Author(name='Tabea Tietz', affiliation=['Karlsruhe Institute of Technology, Institute AIFB, Germany', 'FIZ Karlsruhe – Leibniz Institute for Information Infrastructure, Germany'], email='firstname.lastname@fiz-karlsruhe.de'), Author(name='Oleksandra Bruns', affiliation=['FIZ Karlsruhe', 'Karlsruhe Institute of Technology, Institute AIFB, Germany'], email=None), Author(name='Harald Sack', affiliation=['Karlsruhe Institute of Technology, Institute AIFB, Germany', 'FIZ Karlsruhe – Leibniz Institute for Information Infrastructure, Germany', 'yovisto GmbH, Potsdam, Germany'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-28.pdf
+Discovering Data Sources in a Distributed Network of Heritage Information.
+[Author(name='Miel Vander Sande', affiliation=['IDLab, Ghent University – imec, Belgium'], email=None), Author(name='Sjors de Valk', affiliation=['Dutch Digital Heritage Network, The Netherlands'], email=None), Author(name='Enno Meijers', affiliation=['Dutch Digital Heritage Network, The Netherlands'], email=None), Author(name='Ruben Taelman', affiliation=['IDLab, Ghent University – imec, Belgium'], email=None), Author(name='Herbert Van de Sompel', affiliation=['Data Archiving and Networked Services, The Netherlands'], email=None), Author(name='Ruben Verborgh', affiliation=['IDLab, Ghent University – imec, Belgium'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-29.pdf
+How to Prepare an API for Programming in Natural Language.
+[Author(name='Sebastian Weigelt', affiliation=['Karlsruhe Institute of Technology'], email=['weigelt@kit.edu']), Author(name='Mathias Landhäußer', affiliation=['thingsTHINKING GmbH'], email=['mathias@thingsTHINKING.net']), Author(name='Martin Blersch', affiliation=['Karlsruhe Institute of Technology'], email=['blersch@kit.edu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-30.pdf
+Generating "Who Wants to Be a Millionaire?" Questions Sets Automatically from Wikidata.
+[Author(name='Markus Wohlan', affiliation=['Ostfalia University of Applied Sciences, Dept. of Computer Science, D-38302 Wolfenbüttel, Germany'], email=None), Author(name='Yannik Schröder', affiliation=['Ostfalia University of Applied Sciences, Dept. of Computer Science, D-38302 Wolfenbüttel, Germany'], email=None), Author(name='Frank Höppner', affiliation=['Ostfalia University of Applied Sciences, Dept. of Computer Science, D-38302 Wolfenbüttel, Germany'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-31.pdf
+Triple Pattern Join Cardinality Estimations over HDT with Enhanced Metadata.
+[Author(name='Elena Wössner', affiliation=['Institute AIFB, Karlsruhe Institute of Technology (KIT)'], email=['elena.woessner@student.kit.edu']), Author(name='Chang Qin', affiliation=['Institute AIFB, Karlsruhe Institute of Technology (KIT)'], email=['chang.qin@student.kit.edu']), Author(name='Javier Fernández', affiliation=['Vienna University of Economics and Business', 'Complexity Science Hub Vienna'], email='jfernand@wu.ac.at'), Author(name='Maribel Acosta', affiliation=['Institute AIFB, Karlsruhe Institute of Technology (KIT)'], email=['maribel.acosta@kit.edu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2451/paper-32.pdf
+Visual Query Environment over RDF Data.
+[Author(name='Karlis Cerans', affiliation=[], email=''), Author(name='Julija Ovcinnikova', affiliation=[], email=''), Author(name='Lelde Lace', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Julija Hodakovska', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Aiga Romane', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Mikus Grasmanis', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Elina Kalnina', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Arturs Sprogis', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Agris Sostaks', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None)]
+Exact matching of paper titles and author names: 28 out of 404
+Exact matching of title, names and emails: 14 out of 404
+Exact matching of all atts: 8 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 13 out of 404
+
+Total = 32
+TP =28 
+
+
+['2455']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2455/paper1.pdf
+Speaking of Location: Communicating about Space with Geospatial Natural Language.
+[Author(name='Kristin Stock', affiliation=['Massey Geoinformatics Collaboratory, Massey University, Auckland, New Zealand'], email='k.stock@massey.ac.nz'), Author(name='Christopher B. Jones', affiliation=['School of Computer Science and Informatics, Cardiff University, Cardiff, United Kingdom'], email='jonescb2@cardiff.ac.uk'), Author(name='Thora Tenbrink', affiliation=['Christopher B. Jones School of Computer Science and Informatics, Cardiff University, Cardiff, United Kingdom', 'Kristin Stock Massey Geoinformatics Collaboratory, Massey University, Auckland, New Zealand', 'School of Languages, Literatures and Linguistics, Bangor University, Bangor, United Kingdom'], email=['t.tenbrink@bangor.ac.uk'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2455/paper2.pdf
+Bounded Space and Stratified Reference: A Look at Malayalam Directional Markers.
+[Author(name='Gopinathan Keerthana', affiliation=['The English and Foreign Languages University, Hyderabad, India'], email=['keerthana.gopinathan@gmail.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2455/paper3.pdf
+Geospatial Natural Language in Indigenous Australia: Research Priorities.
+[Author(name='Bill Palmer', affiliation=['School of Humanities and Social Science, University of Newcastle, Australia'], email='bill.palmer@newcastle.edu.au'), Author(name='Joe Blythe', affiliation=['Department of Linguistics, Macquarie University, Australia'], email='joe.blythe@mq.edu.au'), Author(name='Dorothea Hoffmann', affiliation=['Department of Linguistics, University of Oregon, USA', 'University of Newcastle, Australia'], email='dorothea@uoregon.edu'), Author(name='Maïa Ponsonnet', affiliation=['Linguistics, University of Western Australia, Australia'], email=['maia.ponsonnet@uwa.edu.au'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2455/paper4.pdf
+Modeling of Human Mental-Image Based Understanding of Spatiotemporal Language for Intuitive Human-Robot Interaction.
+[Author(name='Masao Yokota', affiliation=['Department of System Management, Fukuoka Institute of Technology, Fukuoka, Japan'], email='yokota@fit.ac.jp'), Author(name='Rojanee Khummongkol', affiliation=['Department of Computer Engineering, University of Phayao, Phayao, Thailand', 'Masao Yokota Department of System Management, Fukuoka Institute of Technology, Fukuoka, Japan'], email=['rojanee.kh@up.ac.th'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2455/paper5.pdf
+Investigating the Dimensions of Spatial Language.
+[Author(name='Adam Richard-Bollans', affiliation=['University of Leeds, UK'], email='mm15alrb@leeds.ac.uk'), Author(name='Lucía Gómez Álvarez', affiliation=['University of Leeds, UK'], email='sc14lga@leeds.ac.uk'), Author(name='Brandon Bennett', affiliation=['University of Leeds, UK'], email='b.bennett@leeds.ac.uk'), Author(name='Anthony G. Cohn', affiliation=['University of Leeds, UK'], email=['a.g.cohn@leeds.ac.uk'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2455/paper6.pdf
+Semi-automatic Description of Named Rivers and Bays for their Representation in a Terminological Knowledge Base.
+[Author(name='Juan Rojas-Garcia', affiliation=['Department of Translation and Interpreting, University of Granada, Spain'], email='juanrojas@ugr.es'), Author(name='Pamela Faber', affiliation=['Department of Translation and Interpreting, University of Granada, Spain', 'Juan Rojas-Garcia'], email=['pfaber@ugr.es'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2455/paper7.pdf
+Suggestion Sequences during Route Planning.
+[Author(name='Crystal J. Bae', affiliation=['University of California, Santa Barbara, USA'], email=['cbae@ucsb.edu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2455/paper8.pdf
+The Use of the Word "Through" in an Indoor Environment.
+[Author(name='Cristina Bahm', affiliation=['Department of Information Systems Technology, La Roche University, USA'], email=['cristina.bahm@laroche.edu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2455/paper9.pdf
+Natural-Language Scene Descriptions for Accessible Non-Visual Museum Exhibit Exploration and Engagement.
+[Author(name='Stacy A. Doore', affiliation=['Department of Computer Science, Bowdoin College, Brunswick, ME, USA'], email='sdoore@bowdoin.edu'), Author(name='Anais Sarrazin', affiliation=['Department of Computer Science, Bowdoin College, Brunswick, ME, USA'], email='asarraz@bowdoin.edu'), Author(name='Nicholas A. Giudice', affiliation=['Anais C. Sarrazin Department of Computer Science, Bowdoin College, Brunswick, ME, USA', 'Stacy A. Doore Department of Computer Science, Bowdoin College, Brunswick, ME, USA', 'Virtual Environment and Multimodal Interaction Lab, Department of Spatial Informatics, University of Maine, Orono, ME, USA'], email=['nicholas.giudice@maine.edu'])]
+Exact matching of paper titles and author names: 9 out of 404
+Exact matching of title, names and emails: 8 out of 404
+Exact matching of all atts: 4 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 8 out of 404
+Total = 9
+100%
+
+['2344']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper1.pdf
+Improving the accuracy of restoring a distorted image via determining the distortion parameters from the Fourier spectrum.
+[Author(name='Valery Sizikov', affiliation=['ITMO University, Saint-Petersburg 197101, Russia'], email=['sizikov2000@mail.ru']), Author(name='Daria Kondulukova', affiliation=['ITMO University, Saint-Petersburg 197101, Russia'], email=['dariakondulukova@mail.ru']), Author(name='Andrei Sergienko', affiliation=['ITMO University, Saint-Petersburg 197101, Russia'], email='master-ac@yandex.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper10.pdf
+Analytical methods of nonstationary processes modeling.
+[Author(name='Sergei Zhmylev', affiliation=['ITMO University, Kronverkskiy pr., 49, lit. A, St. Petersburg, 197101, Russia'], email='korg@cs.ifmo.ru'), Author(name='Ilya Martynchuk', affiliation=['ITMO University, Kronverkskiy pr., 49, lit. A, St. Petersburg, 197101, Russia'], email='mt4.ilja@gmail.com'), Author(name='Valeriy Kireev', affiliation=['ITMO University, Kronverkskiy pr., 49, lit. A, St. Petersburg, 197101, Russia'], email='kk@cs.ifmo.ru'), Author(name='Taufik Aliev', affiliation=['ITMO University, Kronverkskiy pr., 49, lit. A, St. Petersburg, 197101, Russia'], email='aliev@cs.ifmo.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper11.pdf
+The development of point cloud registration algorithm using geometrical features of the multi-sensor 3D scanner.
+[Author(name='Vladimir Gromov', affiliation=['ITMO University, Faculty of Software Engineering and Computer Systems, Saint-Petersburg, Russia'], email=['gromov@vladimir.one']), Author(name='Pavel Kustarev', affiliation=['ITMO University, Faculty of Software Engineering and Computer Systems, Saint-Petersburg, Russia'], email=['kustarev@corp.ifmo.ru'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper12.pdf
+Project-competent paradigm of knowledge representation of the three-level engineering education system.
+[Author(name='Bulat Kubekov', affiliation=['Institute of Information and Computational Tehnologies, Kazakhstan'], email=['b.kubekov@mail.ru']), Author(name='Leonid Bobrov', affiliation=['Novosibirsk state university of Economics and Management, Russia'], email=['bobrov@nsuem.ru']), Author(name='Elena Savelyeva', affiliation=['Kazakh-German University, Kazakhstan'], email=['savelyeva@dku.kz']), Author(name='Vitaliy Naumenko', affiliation=['Institute of Information and Computational Tehnologies, Kazakhstan'], email=None), Author(name='Anar Utegenova', affiliation=['Institute of Information and Computational Tehnologies, Kazakhstan'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper13.pdf
+Features of the hardware implementation of real time Hough transform on FPGA.
+[Author(name='Eleonora Dorofeeva', affiliation=['Research Institute of Light-Guided Photonics, ITMO University, Saint-Petersburg, Russia'], email=['eleonora.dorofeeva@corp.ifmo.ru']), Author(name='Danila Nikiforovskii', affiliation=['Research Institute of Light-Guided Photonics, ITMO University, Saint-Petersburg, Russia'], email=['danikiforovskii@corp.ifmo.ru']), Author(name='Ivan Deyneka', affiliation=['Research Institute of Light-Guided Photonics, ITMO University, Saint-Petersburg, Russia'], email=['igdeyneka@corp.ifmo.ru'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper2.pdf
+Reconstruction of images smeared uniformly and non-uniformly.
+[Author(name='Valery Sizikov', affiliation=['ITMO University, Saint-Petersburg 197101, Russia'], email=['sizikov2000@mail.ru']), Author(name='Aleksandra Dovgan', affiliation=['ITMO University, Saint-Petersburg 197101, Russia'], email=['aleksandra-dv@yandex.ru'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper3.pdf
+Features of hardware implementation of Particle Swarm Optimization (PSO) on FPGA.
+[Author(name='Danila Nikiforovskii', affiliation=['Research Institute of Light-Guided Photonics, ITMO University, Saint-Petersburg, Russia'], email='danikiforovskii@corp.ifmo.ru'), Author(name='Ivan Deyneka', affiliation=['Research Institute of Light-Guided Photonics, ITMO University, Saint-Petersburg, Russia'], email='igdeyneka@corp.ifmo.ru'), Author(name='Daniil Smirnov', affiliation=['Research Institute of Light-Guided Photonics, ITMO University, Saint-Petersburg, Russia'], email=['dsmirnovg@corp.ifmo.ru'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper4.pdf
+Architecture of cloud execution platform for system dynamics models.
+[Author(name='Alexey Mulyukin', affiliation=['ITMO University, Saint-Petersburg, Russia'], email='alexprey@yandex.ru'), Author(name='Ivan Perl', affiliation=['ITMO University, Saint-Petersburg, Russia'], email='ivan.perl@corp.ifmo.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper5.pdf
+A model for estimating energy consumption seen when nodes of ubiquitous sensor networks communicate information to each other.
+[Author(name='Tatyana Astakhova', affiliation=['Nizhny Novgorod State University of Engineering and Economics'], email='ctn af@mail.ru'), Author(name='Natalya Verzun', affiliation=['St. Petersburg State Electrotechnical University “LETI”'], email='verzun.n@unecon.ru'), Author(name='Mikhail Kolbanev', affiliation=['St. Petersburg State Electrotechnical University “LETI”'], email='mokolbanev@mail.ru'), Author(name='Aleksey Shamin', affiliation=['Nizhny Novgorod State University of Engineering and Economics'], email='ngiei-spo@mail.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper6.pdf
+The platform prototype for testing heterogeneous networks in IoT environment.
+[Author(name='Vladislav Shmatkov', affiliation=['ITMO University'], email=['shmatkovvlad@gmail.com']), Author(name='Sergei Spynu', affiliation=['ITMO University'], email='vadervega@gmail.com'), Author(name='Vladimir Pimenov', affiliation=['ITMO University'], email='tik119944@mail.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper7.pdf
+Intersection management tasks in mobile robotic system with decentralized control.
+[Author(name='Sergey Chuprov', affiliation=['ITMO University'], email='drmyscull@gmail.com'), Author(name='Ilya I. Viksnin', affiliation=['ITMO University'], email='wixnin@cit.ifmo.ru'), Author(name='Iuliia Kim', affiliation=['ITMO University'], email='yulia1344@gmail.com'), Author(name='Maria Usova', affiliation=['ITMO University'], email='gipurer@gmail.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper8.pdf
+Logic Graphs: A complete visualization method for logical languages based on Ch. S. Peirce's existential graphs.
+[Author(name='Dmitry Mouromtsev', affiliation=['ITMO University'], email='d.muromtsev@gmail.com'), Author(name='Ildar Baimuratov', affiliation=['ITMO University'], email=['baimuratov.i@gmail.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/paper9.pdf
+Automatic fuzzy-scheduling of threads in Google Thread Sanitizer to detect errors in multithreaded code.
+[Author(name='Oleg Doronin', affiliation=['Saint Petersburg National Research University of Information Technologies, Mechanics and Optics, Russian Federation'], email=['dorooleg@niuitmo.ru']), Author(name='Karina Dergun', affiliation=['Saint Petersburg National Research University of Information Technologies, Mechanics and Optics, Russian Federation'], email='245704@niuitmo.ru'), Author(name='Andrey Dergachev', affiliation=['Saint Petersburg National Research University of Information Technologies, Mechanics and Optics, Russian Federation'], email='amd@corp.ifmo.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short1.pdf
+Recovery of optical parameters of a scene using fully-convolutional neural networks.
+[Author(name='Maksim I. Sorokin', affiliation=['ITMO University, St. Petersburg, Russia'], email='vergotten@gmail.com'), Author(name='Dmitry D. Zhdanov', affiliation=['ITMO University, St. Petersburg, Russia'], email='ddzhdanov@mail.ru'), Author(name='Andrey D. Zhdanov', affiliation=['ITMO University, St. Petersburg, Russia'], email='andrew.gtx@gmail.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short10.pdf
+The model of network map and data placement in the distributed decentralized storage platform.
+[Author(name='Anatoly Bogatyrev', affiliation=['JSC ”NEO Saint Petersburg Competence Center”, St. Petersburg, Russia'], email='anatoly@nspcc.ru'), Author(name='Sergei Liubich', affiliation=['JSC ”NEO Saint Petersburg Competence Center”, St. Petersburg, Russia'], email='sergei@nspcc.ru'), Author(name='Fabian Wahle', affiliation=['JSC ”NEO Saint Petersburg Competence Center”, St. Petersburg, Russia'], email='fabian@nspcc.ru'), Author(name='Stanislav Bogatyrev', affiliation=['JSC ”NEO Saint Petersburg Competence Center”, St. Petersburg, Russia'], email='stanislav@nspcc.ru'), Author(name='Alexey Vanin', affiliation=['JSC ”NEO Saint Petersburg Competence Center”, St. Petersburg, Russia'], email=['alexeyg@nspcc.ru'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short11.pdf
+Zero-knowledge data validation method based on the homomorphic hash function in the distributed decentralized storage platform.
+[Author(name='Stanislav Bogatyrev', affiliation=['JSC ”NEO Saint Petersburg Competence Center”, St. Petersburg, Russia'], email='stanislav@nspcc.ru'), Author(name='Anatoly Bogatyrev', affiliation=['JSC ”NEO Saint Petersburg Competence Center”, St. Petersburg, Russia'], email='anatoly@nspcc.ru'), Author(name='Sergei Liubich', affiliation=['JSC ”NEO Saint Petersburg Competence Center”, St. Petersburg, Russia'], email='sergei@nspcc.ru'), Author(name='Fabian Wahle', affiliation=['JSC ”NEO Saint Petersburg Competence Center”, St. Petersburg, Russia'], email=['fabiang@nspcc.ru'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short2.pdf
+Push-gossip protocol efficiency with network topology propagation.
+[Author(name='Alexey Vanin', affiliation=['NEO Saint Petersburg Competence Center, Saint Petersburg, Russia', 'ITMO University, Saint Petersburg, Russia'], email=['alexey@nspcc.ru']), Author(name='Vladimir A. Bogatyrev', affiliation=['ITMO University, Saint Petersburg, Russia'], email=['vabogatyrev@corp.ifmo.ru'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short3.pdf
+Use of point clouds for video surveillance system cover zone imitation.
+[Author(name='Alexandr Mezhenin', affiliation=['ITMO University, Kronverksky Ave. 49, St. Petersburg, Russia'], email='a.v.mezhenin@gmail.com'), Author(name='Vera Izvozchikova', affiliation=['Orenburg State University, Ave. Pobedy 13, Orenburg, Russia'], email='viza-8.11@mail.ru'), Author(name='Viktoriia Ivanova', affiliation=['ITMO University, Kronverksky Ave. 49, St. Petersburg, Russia'], email='vikaaiv17@gmail.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short4.pdf
+Simulation of computer network with switch and packet reservation.
+[Author(name='Ilya Noskov', affiliation=['ITMO University, Saint-Petersburg, Russia'], email=['noskovii@mail.ru']), Author(name='Vladimir A. Bogatyrev', affiliation=['ITMO University, Saint-Petersburg, Russia'], email=['vladimir.bogatyrev@gmail.com']), Author(name='Ivan Slastikhin', affiliation=['ITMO University, Saint-Petersburg, Russia'], email='stopgo89@gmail.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short5.pdf
+Similarity analysis using Hausdorff metrics.
+[Author(name='Aleksandr Mezhenin', affiliation=['ITMO University, Kronverksky Ave. 49, St. Petersburg, Russia'], email='a.v.mezhenin@gmail.com'), Author(name='Alena Zhigalova', affiliation=['ITMO University, Kronverksky Ave. 49, St. Petersburg, Russia'], email='alenazhigalova@mail.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short6.pdf
+The simulation model of the system with aggregated channels and redundant transmissions on the multiple access level.
+[Author(name='Ivan Slastikhin', affiliation=['ITMO University'], email='stopgo89@gmail.com'), Author(name='Vladimir A. Bogatyrev', affiliation=['ITMO University'], email=['vladimir.bogatyrev@gmail.com']), Author(name='Ilya Noskov', affiliation=['ITMO University'], email=['noskovii@gmail.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short7.pdf
+Improving listening skills in language learning with spaced repetition technique.
+[Author(name='Yaroslav Baranov', affiliation=['ITMO University, Russia'], email='iaroslavbaranov@corp.ifmo.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short8.pdf
+The problem of physically based rendering in the cloud computing system.
+[Author(name='Dmitry Afonkin', affiliation=['ITMO University, St. Petersburg, Russia'], email='daafonkin@corp.ifmo.ru'), Author(name='Dmitry Zhdanov', affiliation=['ITMO University, St. Petersburg, Russia'], email='ddzhdanov@corp.ifmo.ru')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2344/short9.pdf
+Optical transceivers characteristics estimation using FPGA.
+[Author(name='Elisey Litvinov', affiliation=['Research Institute of Light-Guided Photonics, ITMO University'], email=['elitvinov@corp.ifmo.ru']), Author(name='Ivan Deyneka', affiliation=['Research Institute of Light-Guided Photonics, ITMO University'], email=['igdeyneka@corp.ifmo.ru']), Author(name='Artem Aleinik', affiliation=['Research Institute of Light-Guided Photonics, ITMO University'], email=['artemal@corp.ifmo.ru'])]
+Exact matching of paper titles and author names: 23 out of 404
+Exact matching of title, names and emails: 14 out of 404
+Exact matching of all atts: 11 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 14 out of 404
+
+Total = 24
+
+['2650']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper1.pdf
+An Alternative Approach to the Efficiency of Recursive Merge Sort.
+[Author(name='Tibor Ásványi', affiliation=['Eötvös Loránd University, Faculty of Informatics'], email='asvanyi@inf.elte.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper10.pdf
+Integration of Incremental Build Systems Into Software Comprehension Tools.
+[Author(name='Máté Cserép', affiliation=['Eötvös Loránd University, Faculty of Informatics, Hungary'], email='mcserep@inf.elte.hu'), Author(name='Anett Fekete', affiliation=['Eötvös Loránd University, Faculty of Informatics, Hungary'], email=['afekete@inf.elte.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper11.pdf
+Classification of SAT Problem Instances by Machine Learning Methods.
+[Author(name='Márk Danisovszky', affiliation=['Eszterházy Károly University, Faculty of Informatics, Hungary'], email='danisovszky.mark@uni-eszterhazy.hu'), Author(name='Zijian Gyozo Yang', affiliation=['Eszterházy Károly University, Faculty of Informatics, Hungary'], email='yang.zijian.gyozo@uni-eszterhazy.hu'), Author(name='Gábor Kusper', affiliation=['Eszterházy Károly University, Faculty of Informatics, Hungary'], email=['kusper.gabor@uni-eszterhazy.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper12.pdf
+Comprehensive Evaluation of Cross Translation Unit Symbolic Execution.
+[Author(name='Endre Fülöp', affiliation=['ELTE Eötvös Loránd University, Budapest, Hungary', 'Faculty of Informatics, 3in Research Group, Martonvásár, Hungary'], email='gamesh411@gmail.com'), Author(name='Norbert Pataki', affiliation=['ELTE Eötvös Loránd University, Budapest, Hungary', 'Faculty of Informatics, 3in Research Group, Martonvásár, Hungary'], email=['patakino@elte.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper13.pdf
+IEEE 802.11n/ac/ax Hot Zone Traffic Evaluation with Neural Compute Stick Based RNN Methods.
+[Author(name='Zoltán Gál', affiliation=['Faculty of Informatics, University of Debrecen, Debrecen, Hungary'], email='gal.zoltan@unideb.hu'), Author(name='Péter Polgár', affiliation=['Faculty of Informatics, University of Debrecen, Debrecen, Hungary'], email='pulgarpeter@gmail.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper14.pdf
+Machine Learning Techniques for the Classification of Product Descriptions from Darknet Marketplaces.
+[Author(name='Clemens Heistracher', affiliation=['Austrian Institute of Technology'], email='name.surname@ait.ac.at'), Author(name='Franck Mignet', affiliation=['Thales Research & Technology Netherlands'], email=['franck.mignet@nl.thalesgroup.com']), Author(name='Sven Schlarb', affiliation=['Austrian Institute of Technology'], email='name.surname@ait.ac.at')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper15.pdf
+Modelling and Examination of Collective Perception Service for V2X Supported Autonomous Driving.
+[Author(name='Máté Herbert', affiliation=['Budapest University of Technology and Economics Deptartment of Networked Systems and Services'], email=['mherbert1@sch.bme.hu']), Author(name='András Váradi', affiliation=['Commsignia Ltd.'], email='andras.varadi@commsignia.com'), Author(name='László Bokor', affiliation=['Budapest University of Technology and Economics Deptartment of Networked Systems and Services'], email=['bokorl@hit.bme.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper16.pdf
+Statistical Analysis of Hexagonal and Triangular Game of Life.
+[Author(name='Erik Zoltán Hidi', affiliation=['University of Debrecen, Faculty of Informatics'], email=['hidieric@gmail.com']), Author(name='Géza Horváth', affiliation=['University of Debrecen, Faculty of Informatics'], email='horvath.geza@inf.unideb.hu'), Author(name='Dávid Petrik', affiliation=['University of Debrecen, Faculty of Informatics'], email=['david.petrik01@gmail.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper17.pdf
+Planning Safety Solutions, Models and Algorithms for Special Databases.
+[Author(name='Fanni Magdolna Hízó', affiliation=['ELTE Eötvös Loránd University, Faculty of Informatics, Budapest, Hungary'], email=['fanni.hizo@gmail.com']), Author(name='Attila Kiss', affiliation=['ELTE Eötvös Loránd University, Faculty of Informatics, Budapest, Hungary'], email=['kiss@inf.elte.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper18.pdf
+Energy Sparing of the Leach Communication Mechanism With Mobile Sink Node.
+[Author(name='Mohmamed Amine Korteby', affiliation=['Faculty of Informatics, University of Debrecen, Debrecen, Hungary'], email='korteby.amine@inf.unide.hu'), Author(name='Zoltán Gál', affiliation=['Faculty of Informatics, University of Debrecen, Debrecen, Hungary'], email='gal.zoltan@unideb.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper19.pdf
+Feature Reduction for Dependency Graph Construction in Computational Linguistics.
+[Author(name='László Kovács', affiliation=['University of Miskolc, Institute of Information Science, Hungary'], email='kovacs@iit.uni-miskolc.hu'), Author(name='László Csépányi-Fürjes', affiliation=['University of Miskolc, Institute of Information Science, Hungary'], email='csepanyifl@iit.uni-miskolc.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper2.pdf
+Are Computational Thinking Skills Measurable? An Analysis.
+[Author(name='Loice Victorine Atieno', affiliation=['Eötvös Loránd University, Budapest, Hungary'], email=['Atienomunira04@gmail.com']), Author(name='Richard Kwabena Akrofi Baafi', affiliation=['Eötvös Loránd University, Budapest, Hungary'], email=['richbaafius@yahoo.com']), Author(name='Turcsányi-Szabó Márta', affiliation=['Eötvös Loránd University, Budapest, Hungary'], email=['tszmarta@inf.elte.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper20.pdf
+Automatic Diacritic Restoration With Transformer Model Based Neural Machine Translation for East-Central European Languages.
+[Author(name='László János Laki', affiliation=['MTA-PPKE Hungarian Language Technology Research Group, Hungary', 'Pázmány Péter Catholic University, Faculty of Information Technology and Bionics, Hungary'], email=['laki.laszlo@itk.ppke.hu']), Author(name='Zijian Gyozo Yang', affiliation=['MTA-PPKE Hungarian Language Technology Research Group, Hungary', 'Pázmány Péter Catholic University, Faculty of Information Technology and Bionics, Hungary', 'Eszterházy Károly University, Faculty of Informatics, Hungary'], email=['yang.zijian.gyozo@itk.ppke.hu', 'yang.zijian.gyozo@uni-eszterhazy.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper21.pdf
+Extracting Physiological Signals From Smartphone Sensors.
+[Author(name='Martin Csongor László', affiliation=['Eötvös Loránd University, 3in Research Group, Martonvásár, Hungary'], email='irushr@inf.elte.hu'), Author(name='Zoltán Istenes', affiliation=['Eötvös Loránd University, 3in Research Group, Martonvásár, Hungary'], email=['istenes@inf.elte.hu']), Author(name='Ádám Tarcsi', affiliation=['Eötvös Loránd University Faculty of Informatics, Data Science and Data Technology Department'], email='ade@inf.elte.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper22.pdf
+Are Graph Databases Fast Enough for Static P4 Code Analysis?
+[Author(name='Dániel Lukács', affiliation=['Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary'], email='dlukacs@inf.elte.hu'), Author(name='Gergely Pongrácz', affiliation=['Ericsson Hungary Ltd., Budapest, Hungary'], email=['Gergely.Pongracz@ericsson.com']), Author(name='Máté Tejfel', affiliation=['3in Research Group, Eötvös Loránd University, Martonvásár, Hungary'], email='matej@inf.elte.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper23.pdf
+A Study on Formal Consistency Evaluation of Backend and Frontend Business Logic in a Modern Client-Server Application.
+[Author(name='Zsigmond Máriás', affiliation=['Eötvös Loránd University, Faculty of Informatics, Department of Information Systems'], email='zmarias@inf.elte.hu'), Author(name='Bálint Molnár', affiliation=['Eötvös Loránd University, Faculty of Informatics, Department of Information Systems'], email='molnarba@inf.elte.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper24.pdf
+Production Planning, Scheduling and Risk Analysis in Manufacturing Operations by Robotic Process Automation.
+[Author(name='Michael Matonya', affiliation=['University of Debrecen, Faculty of Engineering, Department of Engineering Management and Enterprise'], email='matonya2008@mailbox.undeb.hu'), Author(name='Balázs Kocsi', affiliation=['University of Debrecen, Doctoral School of Informatics'], email=['kocsi.balazs@inf.unideb.hu']), Author(name='László Pusztai', affiliation=['University of Debrecen, Doctoral School of Informatics'], email=['pusztai.laszlo@eng.unideb.hu']), Author(name='István Budai', affiliation=['University of Debrecen, Faculty of Engineering, Department of Engineering Management and Enterprise'], email=['budai.istvan@eng.unideb.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper25.pdf
+Investigation of the Influence of Errors on the Parameters of the Layers of Optical Filters on the Stability of Their Spectral Characteristics.
+[Author(name='Oleksandr Mitsa', affiliation=['Uzhhorod National University, Ukraine'], email=['alex.mitsa@uzhnu.edu.ua']), Author(name='József Holovács', affiliation=['Transcarpathian Hungarian College of Higher Education, Ukraine'], email='holovacs@kmf.uz.ua'), Author(name='Roman Holomb', affiliation=['Uzhhorod National University, Ukraine'], email=['holomb@gmail.com']), Author(name='Oleksandr Levchuk', affiliation=['Uzhhorod National University, Ukraine'], email=['alex.levchuk@uzhnu.edu.ua'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper26.pdf
+Analyzing Forum Members by Their Comments.
+[Author(name='Bianka Nagy', affiliation=['ELTE Eötvös Loránd University, Faculty of Informatics, Budapest, Hungary'], email='nmjpcl@inf.elte.hu'), Author(name='Attila Kiss', affiliation=['ELTE Eötvös Loránd University, Faculty of Informatics, Budapest, Hungary'], email=['kiss@inf.elte.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper27.pdf
+Improving E-Learning Material Quality With the Aid of Deep Learning and Workflow Management.
+[Author(name='Melinda Pap', affiliation=['Eszterházy Károly University, Hungary'], email=['pap.melinda@uni-eszterhazy.hu']), Author(name='László Zsolt Nagy', affiliation=['Eszterházy Károly University, Hungary'], email=['nagy.laszlo.zsolt@uni-eszterhazy.hu']), Author(name='Dániel Fekete', affiliation=['Eszterházy Károly University, Hungary'], email=['fekete.daniel@uni-eszterhazy.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper28.pdf
+An Ellipsoid Object Model of the Refraction Surface.
+[Author(name='Szabolcs Pável', affiliation=['Faculty of Mathematics and Informatics, Babeş-Bolyai University, Cluj-Napoca, Romania', 'Robert Bosch SRL, Cluj-Napoca, Romania'], email=['szabolcs.pavel@cs.ubbcluj.ro'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper29.pdf
+Stack Traces in Function as a Service Framework.
+[Author(name='Ádám Révész', affiliation=['ELTE Eötvös Loránd University, Budapest, Hungary', 'Faculty of Informatics, 3in Research Group, Martonvásár, Hungary'], email='reveszadam@gmail.com'), Author(name='Norbert Pataki', affiliation=['ELTE Eötvös Loránd University, Budapest, Hungary', 'Faculty of Informatics, 3in Research Group, Martonvásár, Hungary'], email=['patakino@elte.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper3.pdf
+The BWConverter Toolchain: An Incomplete Way to Convert SAT Problems into Directed Graphs.
+[Author(name='Tamás Balla', affiliation=['Eszterházy Károly University, Faculty of Informatics'], email=['balla.tamas@uni-eszterhazy.hu']), Author(name='Csaba Biró', affiliation=['Eszterházy Károly University, Faculty of Informatics'], email=['biro.csaba@uni-eszterhazy.hu']), Author(name='Gábor Kusper', affiliation=['Eszterházy Károly University, Faculty of Informatics'], email=['kusper.gabor@uni-eszterhazy.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper30.pdf
+Finding Dense Supermasks in Randomly Initialized Neural Networks.
+[Author(name='Csanád Sándor', affiliation=['Faculty of Mathematics and Informatics, Babeş-Bolyai University, Cluj-Napoca, Romania', 'Robert Bosch SRL, Cluj-Napoca, Romania'], email='csanad.sandor@cs.ubbcluj.ro')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper31.pdf
+Students' Knowledge in File Management After Elementary School.
+[Author(name='Katalin Sebestyén', affiliation=['University of Debrecen, Doctoral School of Informatics'], email=['sebestyen.katalin@inf.unideb.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper32.pdf
+Music Stimuli Recognition from EEG Signals with EMOTIV EPOC Headset.
+[Author(name='Jozsef Suto', affiliation=['University of Debrecen, Department of IT Systems and Networks, Debrecen, Hungary'], email=['suto.jozsef@inf.unideb.hu']), Author(name='Zsanett Jambor', affiliation=['University of Debrecen, Department of IT Systems and Networks, Debrecen, Hungary'], email=['jamborzsanci@gmail.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper33.pdf
+Problem Solving and Interrelation of Concepts in Teaching Algorithmic Thinking and Programming.
+[Author(name='Zsanett Szabó', affiliation=['Eötvös Loránd University'], email=['szabo.zsanett@inf.elte.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper34.pdf
+Towards Decoupling Nullability Semantics from Indirect Access in Pointer Use.
+[Author(name='Richárd Szalay', affiliation=['Eötvös Loránd University, Faculty of Informatics, Department of Programming Languages and Compilers'], email=['szalayrichard@inf.elte.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper35.pdf
+The Effects of Different Congestion Control Algorithms over Multipath Fast Ethernet IPv4/IPv6 Environments.
+[Author(name='Szabolcs Szilágyi', affiliation=['Faculty of Informatics, University of Debrecen, Hungary'], email=['szilagyi.szabolcs@inf.unideb.hu']), Author(name='Imre Bordán', affiliation=['Faculty of Informatics, University of Debrecen, Hungary'], email=['bordanimre@gmail.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper36.pdf
+FFT Based Airborne LIDAR Classification with Open3D and Numpy/Scipy.
+[Author(name='Péter Szutor', affiliation=['University of Debrecen, Faculty of Informatics, Hungary'], email='szppaks@gmail.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper37.pdf
+Classification Refinement With Category Hierarchy.
+[Author(name='Judit Tamás', affiliation=['Eszterházy Károly University'], email=['tamas.judit@uni-eszterhazy.hu']), Author(name='Zsolt Tóth', affiliation=['Eszterházy Károly University'], email=['toth.zsolt@uni-eszterhazy.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper38.pdf
+The Level of Information Security Awareness of First-Year University Students.
+[Author(name='Gábor Törley', affiliation=['Eötvös Loránd University, Faculty of Informatics, Budapest, Hungary'], email='gabor.torley@inf.elte.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper39.pdf
+WebAssembly and Vulkan API in Image Processing Development.
+[Author(name='Róbert Tornai', affiliation=['University of Debrecen, Faculty of Informatics'], email=['tornai.robert@inf.unideb.hu']), Author(name='Péter Fürjes-Benke', affiliation=['University of Debrecen, Faculty of Informatics'], email='furjes.peter99@gmail.com'), Author(name='László File', affiliation=['University of Debrecen, Faculty of Informatics'], email=['file.laszlo.n@gmail.com']), Author(name='Dávid Miklós Nyitrai', affiliation=['University of Debrecen, Faculty of Informatics'], email=['dawnyitrai@gmail.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper4.pdf
+Data Mining and Analysis for Data From Vehicles Based on the OBDII Standard.
+[Author(name='Balázs Bánhelyi', affiliation=['University of Szeged, Hungary'], email='banhelyi@inf.u-szeged.hu'), Author(name='Tamás Szabó', affiliation=['University of Szeged, Hungary'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper40.pdf
+Developing a High-Speed Connectionless File Transfer System with WASM Based Client.
+[Author(name='Róbert Tornai', affiliation=['University of Debrecen, Faculty of Informatics'], email=['tornai.robert@inf.unideb.hu']), Author(name='Dalma Kiss-Imre', affiliation=['University of Debrecen, Faculty of Informatics'], email=['imre.dalma99@gmail.com']), Author(name='Péter Fürjes-Benke', affiliation=['University of Debrecen, Faculty of Informatics'], email='furjes.peter99@gmail.com'), Author(name='Zoltán Gál', affiliation=['University of Debrecen, Faculty of Informatics'], email='zgal@unideb.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper41.pdf
+DevOps Dashboard with Heatmap.
+[Author(name='Márk Török', affiliation=['Department of Programming Languages and Compilers, Eötvös Loránd University'], email='tmark@caesar.elte.hu'), Author(name='Norbert Pataki', affiliation=['ELTE Eötvös Loránd University, Budapest, Hungary', 'Faculty of Informatics, 3in Research Group, Martonvásár, Hungary'], email=['patakino@elte.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper42.pdf
+Simulation of Finite-Source Retrial Queuing Systems With Collisions, Non-Reliable Server and Impatient Customers in the Orbit.
+[Author(name='Ádám Tóth', affiliation=['Faculty of Informatics, University of Debrecen'], email='toth.adam@inf.unideb.hu'), Author(name='János Sztrik', affiliation=['Faculty of Informatics, University of Debrecen'], email=['sztrik.janos@inf.unideb.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper43.pdf
+Computational Exploration of the Degree Sequence of the Malyshev Polynomials.
+[Author(name='Róbert Vajda', affiliation=['Bolyai Institute, University of Szeged, Hungary', "Zolotarev's First Problem (ZFP) in Approximation Theory [1, 2, 15]"], email=['vajdar@math.u-szeged.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper44.pdf
+Extensions and Usage of Veins/Plexe to Evaluate QoS Requirements of Cooperative Platooning.
+[Author(name='András Wippelhauser', affiliation=['Budapest University of Technology and Economics, Department of Networked Systems and Services, Budapest, Hungary'], email=['andras.wippelhauser@gmail.com']), Author(name='László Bokor', affiliation=['Budapest University of Technology and Economics, Department of Networked Systems and Services, Budapest, Hungary'], email=['bokorl@hit.bme.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper45.pdf
+Automatic Tag Recommendation for News Articles.
+[Author(name='Zijian Gyozo Yang', affiliation=['Eszterházy Károly University, Faculty of Informatics, Hungary', 'MTA-PPKE Hungarian Language Technology Research Group, Hungary', 'Pázmány Péter Catholic University, Faculty of Information Technology and Bionics, Hungary'], email=['yang.zijian.gyozo@itk.ppke.hu', 'yang.zijian.gyozo@uni-eszterhazy.hu']), Author(name='Attila Novák', affiliation=['MTA-PPKE Hungarian Language Technology Research Group, Hungary', 'Pázmány Péter Catholic University, Faculty of Information Technology and Bionics, Hungary'], email=['novak.attila@itk.ppke.hu']), Author(name='László János Laki', affiliation=['MTA-PPKE Hungarian Language Technology Research Group, Hungary', 'Pázmány Péter Catholic University, Faculty of Information Technology and Bionics, Hungary'], email=['laki.laszlo@itk.ppke.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper5.pdf
+Implementing a New Interface for Directed Graph Analysis by Existing and New Algorithms.
+[Author(name='Miklós Becsei', affiliation=['University of Debrecen, Hungary, Faculty of Informatics, Department of IT Systems and Networks'], email=None), Author(name='Máté Csongor Széll', affiliation=['University of Debrecen, Hungary, Faculty of Informatics, Department of IT Systems and Networks'], email=None), Author(name='Gergely Kocsis', affiliation=['University of Debrecen, Hungary, Faculty of Informatics, Department of IT Systems and Networks'], email=['kocsis.gergely@inf.unideb.hu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper6.pdf
+Classical Heritage and Text-Based Second Language Learning in Three-Dimensional Virtual Library Environment.
+[Author(name='István Károly Boda', affiliation=['Debrecen Reformed Theological University, Hungary'], email=['boda.istvan@drhe.hu']), Author(name='Erzsébet Tóth', affiliation=['University of Debrecen, Faculty of Informatics, Hungary'], email='toth.erzsebet@inf.unideb.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper7.pdf
+A Comparative Evaluation of Big Data Frameworks for Log Processing.
+[Author(name='Attila Péter Boros', affiliation=['ELTE Eötvös Loránd University, Budapest, Hungary', 'Faculty of Informatics, Department of Information Systems'], email='attila9778@inf.elte.hu'), Author(name='Péter Lehotay-Kéry', affiliation=['ELTE Eötvös Loránd University, Budapest, Hungary', 'Ericsson Hungary, Budapest, Hungary'], email='lkp@caesar.elte.hu'), Author(name='Attila Kiss', affiliation=['ELTE Eötvös Loránd University, Budapest, Hungary', 'J. Selye University, Komárno, Slovakia'], email=['kissae@ujs.sk'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper8.pdf
+On Possible Approaches to Differentiation of Rough Real Functions.
+[Author(name='Zoltán Erno Csajbók', affiliation=['Department of Health Informatics, Faculty of Health, University of Debrecen'], email='csajbok.zoltan@foh.unideb.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2650/paper9.pdf
+Adversarial Example Free Zones for Specific Inputs and Neural Networks.
+[Author(name='Tibor Csendes', affiliation=['University of Szeged, Hungary', '[9] Lecun, Y., Bottou, L., Bengio, Y., and Haffner, P., Gradient-Based Learning Applied to Document Recognition, Proc. of the IEEE, 86 (1998) 2278-2324'], email=['csendes@inf.szte.hu']), Author(name='Nándor Balogh', affiliation=['Redink Ltd., Szeged, Hungary', '[9] Lecun, Y., Bottou, L., Bengio, Y., and Haffner, P., Gradient-Based Learning Applied to Document Recognition, Proc. of the IEEE, 86 (1998) 2278-2324'], email='bn@redink.hu'), Author(name='Balázs Bánhelyi', affiliation=['University of Szeged, Hungary', '[9] Lecun, Y., Bottou, L., Bengio, Y., and Haffner, P., Gradient-Based Learning Applied to Document Recognition, Proc. of the IEEE, 86 (1998) 2278-2324'], email=None), Author(name='Dániel Zombori', affiliation=['University of Szeged, Hungary', '[9] Lecun, Y., Bottou, L., Bengio, Y., and Haffner, P., Gradient-Based Learning Applied to Document Recognition, Proc. of the IEEE, 86 (1998) 2278-2324'], email=None), Author(name='Richárd Tóth', affiliation=['University of Szeged, Hungary', '[9] Lecun, Y., Bottou, L., Bengio, Y., and Haffner, P., Gradient-Based Learning Applied to Document Recognition, Proc. of the IEEE, 86 (1998) 2278-2324'], email=None), Author(name='István Megyeri', affiliation=['University of Szeged, Hungary', '[9] Lecun, Y., Bottou, L., Bengio, Y., and Haffner, P., Gradient-Based Learning Applied to Document Recognition, Proc. of the IEEE, 86 (1998) 2278-2324'], email=None)]
+Exact matching of paper titles and author names: 44 out of 404
+Exact matching of title, names and emails: 0 out of 404
+Exact matching of all atts: 0 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 0 out of 404
+
+Total = 45
+
+TP = 44 TN = 0
+FP = 0  FN = 
+
+['3582']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_01.pdf
+Care Robots and Humanity: How Can We Cope with The Indeterminacy and Ambiguity of Robot-Human Relationships.
+[Author(name='Ryoko Asai', affiliation=['Conference on Technology Ethics - Tethics', 'Meiji University, 1-1 Kanda-Surugadai, Chiyoda-ku, Tokyo 101-8301, Japan', 'Ruhr University, Bochum, Universitätsstraße 150, Bochum, 44801, Germany', 'Uppsala University, P.O. Box 256, Uppsala, SE-751 05, Sweden', 'Uppsala, SE-751 05, Sweden'], email=['ryoko.asai@it.uu.se']), Author(name='Makoto Nakada', affiliation=['Conference on Technology Ethics - Tethics', 'Tsukuba University, 1 Chome 1-1 Tennodai, Tsukuba, 305-8577, Japan', 'Uppsala, SE-751 05, Sweden'], email=None), Author(name='Iordanis Kavathatzopoulos', affiliation=['Conference on Technology Ethics - Tethics', 'Uppsala University, P.O. Box 256', 'Uppsala, SE-751 05, Sweden'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_02.pdf
+Green Capital of Simulated Entertainment: The Reformed Relationship Between Motorsports and Sim Racing and Their Sustainability.
+[Author(name='Ville Malinen', affiliation=['Conference on Technology and Ethics - Tethics', 'University of Jyväskylä, Seminaarinkatu 15, 40014 Jyväskylän yliopisto, Finland'], email=['ville.m.j.malinen@student.jyu.fi'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_03.pdf
+How Do AI Ethics Principles Work? From Process to Product Point of View.
+[Author(name='Kai-Kristian Kemell', affiliation=['AI ethics, Machine Learning, Principles, Product', 'Conference on Technology Ethics - Tethics', 'University of Helsinki, Finland'], email=['kai-kristian.kemell@helsinki.fi']), Author(name='Ville Vakkuri', affiliation=['AI ethics, Machine Learning, Principles, Product', 'Conference on Technology Ethics - Tethics', 'University of Vaasa, Finland'], email=['ville.vakkuri@uwasa.fi']), Author(name='Fahad Sohrab', affiliation=['AI ethics, Machine Learning, Principles, Product', 'Conference on Technology Ethics - Tethics', 'Tampere University, Finland'], email=['fahad.sohrab@tuni.fi'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_04.pdf
+Evaluating the Use of User Content Feed Swapping for Counteracting Filter Bubbles.
+[Author(name='Taylor Richmond', affiliation=['Biomimetics and Intelligent Systems Group, FI-90014 University of Oulu', 'social change in countries like the United States, Iran, Pakistan, China, Egypt'], email=['taylor.richmond@oulu.fi']), Author(name='Lauri Tuovinen', affiliation=['Biomimetics and Intelligent Systems Group, FI-90014 University of Oulu', 'social change in countries like the United States, Iran, Pakistan, China, Egypt'], email=['lauri.tuovinen@oulu.fi'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_05.pdf
+Securing the Internet of Things (IoT) Data Ownership.
+[Author(name='Mikko Vermanen', affiliation=['Conference on Technology Ethics - Tethics', 'Internet of Things, Ethics, Data Ownership, PAPA', 'University of Turku, Rehtorinpellonkatu 3, Turku, Finland'], email=['mikko.vermanen@utu.fi']), Author(name='Juhani Naskali', affiliation=['Conference on Technology Ethics - Tethics', 'Internet of Things, Ethics, Data Ownership, PAPA', 'University of Turku, Rehtorinpellonkatu 3, Turku, Finland'], email=['juhani.naskali@utu.fi']), Author(name='Ville Harkke', affiliation=['Åbo Akademi University, Tuomiokirkontori 3, Turku, Finland', 'Conference on Technology Ethics - Tethics', 'Internet of Things, Ethics, Data Ownership, PAPA'], email=['ville.harkke@utu.fi']), Author(name='Jani Koskinen', affiliation=['Conference on Technology Ethics - Tethics', 'Internet of Things, Ethics, Data Ownership, PAPA', 'University of Turku, Rehtorinpellonkatu 3, Turku, Finland'], email='jasiko@utu.fi')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_06.pdf
+Interfacing Artificial Intelligence for Social Good (AI4SG) and Relational AI Ethics: A Systematic Literature Review.
+[Author(name='Cheshta Arora', affiliation=['Independent Researcher, Norway'], email=['cheshtaarora@outlook.in']), Author(name='Debarun Sarkar', affiliation=['Independent Researcher, India'], email=['debarun@outlook.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_07.pdf
+Student Perceptions of Ethics in Cybersecurity Education.
+[Author(name='Timo Hynninen', affiliation=['Conference on Technology Ethics - Tethics', 'Laurea University of Applied Sciences, Vanha Maantie 9, Espoo, 02650, Finland'], email=['timo.hynninen@laurea.fi'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_08.pdf
+Balancing Innovation and Responsibility with Citizen Data: A Case of Wellness Records.
+[Author(name='Sami Hyrynsalmi', affiliation=['Conference on Technology Ethics - Tethics', 'Data economy, Fairness, Innovation, Personal Data, Responsibility', 'LUT University, Lahti, Finland'], email=None), Author(name='Hannu Vilpponen', affiliation=['Conference on Technology Ethics - Tethics', 'Data economy, Fairness, Innovation, Personal Data, Responsibility', 'University of Jyväskylä, Finland'], email=None), Author(name='Mika Grundström', affiliation=['Conference on Technology Ethics - Tethics', 'Data economy, Fairness, Innovation, Personal Data, Responsibility', 'University of Vaasa, Finland'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_09.pdf
+Research Libraries Approaching Trustworthy Artificial Intelligence.
+[Author(name='Heli Kautonen', affiliation=['Åbo Akademi University, Information Studies, Tuomiokirkontori 3, 20500 Turku, Finland', 'Finnish Literature Society Library, P.O. Box 259, 00171 Helsinki, Finland', 'Proceedings Tethics, Conference on Technology Ethics'], email=['heli.kautonen@finlit.fi']), Author(name='Andrea Gasparini', affiliation=['Oslo University Library, Moltke Moes vei 39, 0851 Oslo, Norway', 'Proceedings Tethics, Conference on Technology Ethics'], email=['a.a.gasparini@ub.uio.no'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_10.pdf
+Ethically Archiving a Hard-to-Access Massive Research Data Set in the Language Bank of Finland: The Finnish Dark Web Marketplace Corpus (FINDarC).
+[Author(name='Krister Lindén', affiliation=['Department of Digital Humanities, University of Helsinki'], email='krister.linden@helsinki.fi'), Author(name='Teemu Ruokolainen', affiliation=['Faculty of Information Technology and Communication Sciences, Tampere University'], email='teemu.ruokolainen@tuni.fi'), Author(name='Lasse Hämäläinen', affiliation=['Faculty of Information Technology and Communication Sciences, Tampere University'], email='lasse.hamalainen@tuni.fi'), Author(name='J. Tuomas Harviainen', affiliation=['Conference on Technology Ethics - Tethics', 'Faculty of Information Technology and Communication Sciences, Tampere University, Kalevantie 4, Tampere, 33014', 'Krister Lindén'], email=['tuomas.harviainen@tuni.fi'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_11.pdf
+Gamers' Attitudes Toward Free-To-Play Revenue Model - Initial Findings From A Global Survey.
+[Author(name='Erno Vanhala', affiliation=['Conference on Technology Ethics - Tethics', 'Department of Software Engineering, LUT University, FI-53851 Lappeenranta, Finland'], email=['erno.vanhala@lut.fi']), Author(name='Sami Hyrynsalmi', affiliation=['Conference on Technology Ethics - Tethics', 'Department of Software Engineering, LUT University, FI-53851 Lappeenranta, Finland'], email=['sami.hyrynsalmi@lut.fi']), Author(name='Jussi Kasurinen', affiliation=['Conference on Technology Ethics - Tethics', 'Department of Software Engineering, LUT University, FI-53851 Lappeenranta, Finland'], email=['jussi.kasurinen@lut.fi'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/FP_12.pdf
+Responsible AI: Law and Advancing Moral Responsibilization.
+[Author(name='Ana Paula Gonzalez Torres', affiliation=['Aalto University, Konemiehentie 2, 02150, Espoo, Finland', 'Conference on Technology Ethics - Tethics'], email=['ana.gonzaleztorres@aalto.fi'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3582/SP_01.pdf
+Superhuman-centered Design for Manufacturing Metaverse
+[Author(name='Janne Heilala', affiliation=['University of Turku'], email=['janne.p.heilala@utu.fi']), Author(name='Saeid Parchegani', affiliation=['University of Turku'], email=['saeid.parcheganichozaki@utu.fi'])]
+Exact matching of paper titles and author names: 11 out of 404
+Exact matching of title, names and emails: 7 out of 404
+Exact matching of all atts: 1 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 7 out of 404
+Total = 13
+
+TP = 12 TN = 0
+FP = 0  FN = 1
+SP_01 Wrong title displayed in the volum web page.
+
+['2000']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/jist2017pd_paper1.pdf
+A Method for Building Ontology Property Explanations.
+[Author(name='Sung-Kwon Yang', affiliation=[], email=''), Author(name='Yongju Lee', affiliation=['A Model for Explaining Ontology Property', 'Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['yongju_lee@snu.ac.kr']), Author(name='Hyunwhan Joe', affiliation=['A Model for Explaining Ontology Property', 'Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['hyunwhanjoe@snu.ac.kr']), Author(name='Hong-Gee Kim', affiliation=['A Model for Explaining Ontology Property', 'Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['hgkim@snu.ac.kr'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/jist2017pd_paper2.pdf
+Action Planning based on Open Knowledge Graphs and LOD.
+[Author(name='Seiji Koide', affiliation=['National Institute of Informatics', 'SOKENDAI (The Graduate University for Advanced Studies)', 'Toyota Motor Corporation'], email=None), Author(name='Fumihiro Kato', affiliation=['National Institute of Informatics', 'SOKENDAI (The Graduate University for Advanced Studies)', 'Toyota Motor Corporation'], email=None), Author(name='Hideaki Takeda', affiliation=['National Institute of Informatics', 'SOKENDAI (The Graduate University for Advanced Studies)', 'Toyota Motor Corporation'], email=['takeda@nii.ac.jp']), Author(name='Yuta Ochiai', affiliation=['Toyota Motor Corporation'], email=None), Author(name='Kenki Ueda', affiliation=['Toyota Motor Corporation'], email=None)]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/jist2017pd_paper3.pdf
+Automatic Alignment between Wikipedia Attributes and DBpedia Properties.
+[Author(name='Thi-Nhu Nguyen', affiliation=['Haiphong University, Vietnam', 'Hanoi University of Science and Technology, Vietnam'], email='nhunt@dhhp.edu.vn'), Author(name='Tuan-Dung Cao', affiliation=['Hanoi University of Science and Technology, Vietnam'], email='dungct@soict.hust.edu.vn')]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/jist2017pd_paper4.pdf
+Extending DUDES for Ranked Template Generation.
+[Author(name='Hyunwhan Joe', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email='hyunwhanjoe@snu.ac.kr'), Author(name='Sung-Kwon Yang', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email='hyunwhanjoe@snu.ac.kr'), Author(name='Yongsun Shim', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email='yongsun0926@snu.ac.kr'), Author(name='Sueun Jang', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email='jchr119@snu.ac.kr'), Author(name='Hong-Gee Kim', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email='hgkim@snu.ac.kr')]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/jist2017pd_paper5.pdf
+Formation of Information Need as a Questioning: A Conceptual Representation for Semantic Web based QA System.
+[Author(name='Yongju Lee', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['yongju_lee@snu.ac.kr']), Author(name='Sung-Kwon Yang', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['yongju_lee@snu.ac.kr']), Author(name='Sueun Jang', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email='jchr119@snu.ac.kr'), Author(name='Hong-Gee Kim', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['hgkim@snu.ac.kr'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/jist2017pd_paper6.pdf
+Graph-based Entity Linking using Shortest Path.
+[Author(name='Yongsun Shim', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['yongsun0926@snu.ac.kr']), Author(name='Sung-Kwon Yang', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['yongsun0926@snu.ac.kr']), Author(name='Hyunwhan Joe', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['hyunwhanjoe@snu.ac.kr']), Author(name='Hong-Gee Kim', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Seoul, Korea'], email=['hgkim@snu.ac.kr'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/jist2017pd_paper7.pdf
+Question Answering as a Language-game.
+[Author(name='Sueun Jang', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Korea'], email='jchr119@snu.ac.kr'), Author(name='Hyunwhan Joe', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Korea'], email=['hyunwhanjoe@snu.ac.kr']), Author(name='Yongju Lee', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Korea'], email=['yongju_lee@snu.ac.kr']), Author(name='Hong-Gee Kim', affiliation=['Biomedical Knowledge Engineering Laboratory, Seoul National University, Korea'], email=['hgkim@snu.ac.kr'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/jist2017pd_paper8.pdf
+SocioScope: an Integrated Framework for Understanding Society from Social Data.
+[Author(name='Hoang Long Nguyen', affiliation=['Department of Computer Engineering, Chung-Ang University'], email=['longnh238@gmail.com']), Author(name='Min-Sung Hong', affiliation=['Department of Computer Engineering, Chung-Ang University'], email=['minsung.holdtime@gmail.com']), Author(name='Na-Yeong Cho', affiliation=['Department of Computer Engineering, Chung-Ang University'], email='joenayoung2@gmail.com'), Author(name='Junbeom Kim', affiliation=['Department of Computer Engineering, Chung-Ang University'], email='dreaminheart@gmail.com'), Author(name='David Camacho', affiliation=['Department of Computer Science, Universidad Autonoma de Madrid'], email='david.camacho@uam.es'), Author(name='Jason J. Jung', affiliation=['Department of Computer Engineering, Chung-Ang University'], email=['j2jung@gmail.com'])]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/paos2017_paper1.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+invalid syntax (<string>, line 1)
+OpenAI could not get parsed correctly
+Action Planning based on Open Knowledge Graphs and LOD.
+[Author(name='Seiji Koide', affiliation=['National Institute of Informatics, 2-1-2 Hitotsubashi, Chiyoda-ku, Tokyo 101-8430, Japan'], email=None), Author(name='Fumihiro Kato', affiliation=['National Institute of Informatics, 2-1-2 Hitotsubashi, Chiyoda-ku, Tokyo 101-8430, Japan'], email=None), Author(name='Hideaki Takeda', affiliation=[], email=['takeda@nii.ac.jp']), Author(name='Yuta Ochiai', affiliation=['Toyota Motor Corporation'], email=None), Author(name='Kenki Ueda', affiliation=['Toyota Motor Corporation'], email=None)]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/paos2017_paper2.pdf
+Open Data Search Framework based on Semi-structured Query Patterns.
+[Author(name='Marut Buranarach', affiliation=['Language and Semantic Technology Laboratory', 'National Electronics and Computer Technology Center (NECTEC), Thailand'], email=['marut.bur@nectec.or.th']), Author(name='Chonlatan Treesirinetr', affiliation=['Department of Computer Science, Faculty of Science, Kasetsart University, Bangkok, Thailand'], email=None), Author(name='Pattama Krataithong', affiliation=['Language and Semantic Technology Laboratory', 'National Electronics and Computer Technology Center (NECTEC), Thailand'], email=['pattama.kra@nectec.or.th']), Author(name='Somchoke Ruengittinun', affiliation=['Department of Computer Science, Faculty of Science, Kasetsart University, Bangkok, Thailand'], email=['somchoke.r@gmail.com'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2000/paos2017_paper3.pdf
+Reducing Miscommunication in Cross-Disciplinary Concept Discovery using Network Text Analysis and Semantic Embedding.
+[Author(name='Akkharawoot Takhom', affiliation=['School of Knowledge Science, Japan Advanced Institute of Science and Technology (JAIST), Nomi, Japan', 'School of Information, Computer and Communication Technology, Sirindhorn International Institute of Technology (SIIT), Thammasat University, Thailand'], email=['akkharawoot@jaist.ac.jp']), Author(name='Prachya Boonkwan', affiliation=['Language and Semantic Technology Laboratory, National Electronics and Computer Technology Center (NECTEC), Pathumthani, Thailand'], email=['prachya.boonkwan@nectec.or.th']), Author(name='Mitsuru Ikeda', affiliation=['School of Knowledge Science, Japan Advanced Institute of Science and Technology (JAIST), Nomi, Japan'], email=['ikeda@jaist.ac.jp']), Author(name='Sasiporn Usanavasin', affiliation=['School of Information, Computer and Communication Technology, Sirindhorn International Institute of Technology (SIIT), Thammasat University, Thailand'], email=['sasiporn.us@siit.tu.ac.th']), Author(name='Thepchai Supnithi', affiliation=['Language and Semantic Technology Laboratory, National Electronics and Computer Technology Center (NECTEC), Pathumthani, Thailand'], email=['thepchai.supnithi@nectec.or.th'])]
+num of author: 5
+Exact matching of paper titles and author names: 10 out of 404
+Exact matching of title, names and emails: 3 out of 404
+Exact matching of all atts: 1 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 2 out of 404
+
+Total = 11
+TP = 10 
+        FN = 1 (special charachters in name of paper1)['2456']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper1.pdf
+Conference v3.0 : A Populated Version of the Conference Dataset.
+[Author(name='Élodie Thiéblin', affiliation=['Institut de Recherche Informatique de Toulouse, France'], email='firstname.lastname@irit.fr'), Author(name='Cássia Trojahn', affiliation=['Institut de Recherche Informatique de Toulouse, France'], email='firstname.lastname@irit.fr')]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper10.pdf
+Knowledge Graph Embedding for Ecotoxicological Effect Prediction.
+[Author(name='Erik Bryhn Myklebust', affiliation=['Norwegian Institute for Water Research (NIVA), Oslo, Norway', 'Department of Informatics, University of Oslo, Oslo, Norway'], email=None), Author(name='Ernesto Jiménez-Ruiz', affiliation=['Department of Informatics, University of Oslo, Oslo, Norway', 'Alan Turing Institute, London, United Kingdom'], email=None), Author(name='Jiaoyan Chen', affiliation=['Department of Computer Science, University of Oxford, United Kingdom'], email=None), Author(name='Raoul Wolf', affiliation=['Norwegian Institute for Water Research (NIVA), Oslo, Norway'], email=None), Author(name='Knut Erik Tollefsen', affiliation=['Norwegian Institute for Water Research (NIVA), Oslo, Norway'], email=None)]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper11.pdf
+Explaining Disclosure Decisions Over Personal Data.
+[Author(name='Roghaiyeh Gachpaz Hamed', affiliation=['ADAPT Centre, Trinity College Dublin, Ireland'], email='ramisa.hamed@adaptcentre.ie'), Author(name='Harshvardhan J. Pandit', affiliation=['ADAPT Centre, Trinity College Dublin, Ireland'], email='harshvardhan.pandit@adaptcentre.ie'), Author(name="Declan O'Sullivan", affiliation=['ADAPT Centre, Trinity College Dublin, Ireland'], email='declan.osullivan@adaptcentre.ie'), Author(name='Owen Conlan', affiliation=['ADAPT Centre, Trinity College Dublin, Ireland'], email='owen.conlan@adaptcentre.ie')]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper12.pdf
+T2WML: A Cell-Based Language to Map Tables into Wikidata Records.
+[Author(name='Pedro A. Szekely', affiliation=['Information Sciences Institute', 'University of Southern California'], email=['pszekely@isi.edu']), Author(name='Daniel Garijo', affiliation=['Information Sciences Institute', 'University of Southern California'], email=['dgarijo@isi.edu']), Author(name='Jay Pujara', affiliation=['Information Sciences Institute', 'University of Southern California'], email=['jpujara@isi.edu']), Author(name='Divij Bhatia', affiliation=['Information Sciences Institute', 'University of Southern California'], email=['divijbha@usc.edu']), Author(name='Jiasheng Wu', affiliation=['Information Sciences Institute', 'University of Southern California'], email='jiashenw@usc.edu')]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper13.pdf
+DTransX: A Distributed Framework for Knowledge Graph Representation Learning.
+[Author(name='Jun Ma', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=None), Author(name='Guozheng Rao', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=None), Author(name='Xiaowang Zhang', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=['xiaowangzhang@tju.edu.cn']), Author(name='Zhiyong Feng', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper14.pdf
+An Overview of the TBFY Knowledge Graph for Public Procurement.
+[Author(name='Ahmet Soylu', affiliation=['SINTEF Digital, Oslo, Norway'], email=None), Author(name='Brian Elvesæter', affiliation=['SINTEF Digital, Oslo, Norway'], email=None), Author(name='Philip Turk', affiliation=['SINTEF Digital, Oslo, Norway'], email=None), Author(name='Dumitru Roman', affiliation=['SINTEF Digital, Oslo, Norway'], email=None), Author(name='Óscar Corcho', affiliation=['Universidad Polit´ecnica de Madrid, Madrid, Spain'], email=None), Author(name='Elena Simperl', affiliation=['University of Southampton, Southampton, the UK'], email=None), Author(name='Ian Makgill', affiliation=['OpenOpps Ltd, London, the UK'], email=None), Author(name='Chris Taggart', affiliation=['OpenCorporates Ltd, London, the UK'], email=None), Author(name='Marko Grobelnik', affiliation=['Joˇzef Stefan Institute, Ljubljana, Slovenia'], email=None), Author(name='Till Christopher Lech', affiliation=['SINTEF Digital, Oslo, Norway'], email=None)]
+num of author: 10
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper15.pdf
+Learning Ontology Axioms over Knowledge Graphs via Representation Learning.
+[Author(name='Leyuan Zhao', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Xiaowang Zhang', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=['xiaowangzhang@tju.edu.cn']), Author(name='Kewen Wang', affiliation=['School of Information and Communication Technology, Griffith University,Brisbane, QLD 4111, Australia'], email=None), Author(name='Zhiyong Feng', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Zhe Wang', affiliation=['School of Information and Communication Technology, Griffith University,Brisbane, QLD 4111, Australia'], email=None)]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper16.pdf
+Mining Discriminative Visual Features Based on Semantic Relations.
+[Author(name='Qing Wei', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Xiaowang Zhang', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=['xiaowangzhang@tju.edu.cn']), Author(name='Kewen Wang', affiliation=['School of Information and Communication Technology, Griffith University, Brisbane, QLD 4111, Australia'], email=None), Author(name='Zhiyong Feng', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper17.pdf
+RecSPARQL for Cross-Domain Recommendations.
+[Author(name='Victor Anthony Arrascue Ayala', affiliation=['University of Freiburg, Georges-Kohler Allee, Geb. 51, 79110 Freiburg, Germany'], email='arrascue@informatik.uni-freiburg.de'), Author(name='Georg Lausen', affiliation=['University of Freiburg, Georges-Kohler Allee, Geb. 51, 79110 Freiburg, Germany'], email=['lauseng@informatik.uni-freiburg.de'])]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper18.pdf
+PoLyInfo RDF: A Semantically Reinforced Polymer Database for Materials Informatics.
+[Author(name='Masashi Ishii', affiliation=['National Institute for Materials Science, 1-1 Namiki, Tsukuba, Ibaraki 305-0044, Japan', 'RDF Design for a Polymer Database'], email=['ISHII.Masashi@nims.go.jp']), Author(name='Taro Takemura', affiliation=['National Institute for Materials Science, 1-1 Namiki, Tsukuba, Ibaraki 305-0044, Japan', 'RDF Design for a Polymer Database'], email=None), Author(name='Mikiko Tanifuji', affiliation=['National Institute for Materials Science, 1-1 Namiki, Tsukuba, Ibaraki 305-0044, Japan', 'RDF Design for a Polymer Database'], email=None)]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper19.pdf
+Predicting Relations between RDF Entities by Multi-Order Interaction Neural Network.
+[Author(name='Qiang Gao', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Fei Guo', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Yunjie Wu', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Xiaowang Zhang', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Zhiyong Feng', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None)]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper2.pdf
+Extending Ontologies in the Nanotechnology Domain using Topic Models and Formal Topical Concept Analysis on Unstructured Text.
+[Author(name='Huanyu Li', affiliation=['The Swedish e-Science Research Centre', 'Linköping University'], email='huanyu.li@liu.se'), Author(name='Rickard Armiento', affiliation=['The Swedish e-Science Research Centre', 'Linköping University'], email='rickard.armiento@liu.se'), Author(name='Patrick Lambrix', affiliation=['The Swedish e-Science Research Centre', 'Linköping University'], email='patrick.lambrix@liu.se')]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper20.pdf
+Multi-Query Optimization in RDF Q/A System.
+[Author(name='Jie Jiao', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Shujun Wang', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Xiaowang Zhang', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email='xiaowangzhang@tju.edu.cn'), Author(name='Zhiyong Feng', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin 300350, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper21.pdf
+Exploiting Wide Property Tables Empowered by Inverse Properties for Efficient Distributed SPARQL Query Evaluation.
+[Author(name='Guilherme Schievelbein', affiliation=['University of Freiburg'], email='schieveg@informatik.uni-freiburg.de'), Author(name='Victor Anthony Arrascue Ayala', affiliation=['University of Freiburg'], email='arrascue@informatik.uni-freiburg.de'), Author(name='Fang Wei-Kleiner', affiliation=['University of Freiburg'], email='fwei@informatik.uni-freiburg.de'), Author(name='Georg Lausen', affiliation=['University of Freiburg'], email=['lauseng@informatik.uni-freiburg.de'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper22.pdf
+Integrating Knowledge Graphs for Comparing the Scientific Output of Academia and Industry.
+[Author(name='Simone Angioni', affiliation=['University of Cagliari'], email='simone.angioni@unica.it'), Author(name='Francesco Osborne', affiliation=['Knowledge Media Institute, The Open University'], email='francesco.osborne@open.ac.uk'), Author(name='Angelo Antonio Salatino', affiliation=['Knowledge Media Institute, The Open University'], email='angelo.salatino@open.ac.uk'), Author(name='Diego Reforgiato Recupero', affiliation=['University of Cagliari'], email='diego.recupero@unica.it'), Author(name='Enrico Motta', affiliation=['Knowledge Media Institute, The Open University'], email='enrico.motta@open.ac.uk')]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper23.pdf
+SRSPG: A Plugin-based Spark Framework for Large-scale RDF Streams Processing on GPU.
+[Author(name='Tenglong Ren', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Guozheng Rao', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None), Author(name='Xiaowang Zhang', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=['xiaowangzhang@tju.edu.cn']), Author(name='Zhiyong Feng', affiliation=['College of Intelligence and Computing, Tianjin University, Tianjin, China', 'Tianjin Key Laboratory of Cognitive Computing and Application, Tianjin, China'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper24.pdf
+Parsing Natural Language Sentences into Robot Actions.
+[Author(name='Gianluca Bardaro', affiliation=['Knowledge Media Institute, The Open University, Milton Keynes (UK)'], email='gianluca.bardaro@open.ac.uk.it'), Author(name='Danilo Dessì', affiliation=['Department of Mathematics and Computer Science, University of Cagliari (Italy)'], email='danilodessi@unica.it'), Author(name='Enrico Motta', affiliation=['Knowledge Media Institute, The Open University, Milton Keynes (UK)'], email='enrico.motta@open.ac.uk.it'), Author(name='Francesco Osborne', affiliation=['Knowledge Media Institute, The Open University, Milton Keynes (UK)'], email='francesco.osborne@open.ac.uk.it'), Author(name='Diego Reforgiato Recupero', affiliation=['Department of Mathematics and Computer Science, University of Cagliari (Italy)'], email=['diego.reforgiatog@unica.it'])]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper25.pdf
+Ontology-Based Event Detection for Wastewater Treatment.
+[Author(name='Yi Sun', affiliation=['Griffith University, Brisbane, Australia'], email=['yi.sun@griffith.edu.au']), Author(name='Zhe Wang', affiliation=['Griffith University, Brisbane, Australia'], email='zhe.wang@griffith.edu.au'), Author(name='Kewen Wang', affiliation=['Griffith University, Brisbane, Australia'], email='k.wang@griffith.edu.au')]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper26.pdf
+Real-World Causal Relationship Discovery from Text.
+[Author(name='Constantine Lignos', affiliation=['Information Sciences Institute', 'University of Southern California'], email='lignos@isi.edu'), Author(name='Chester Palen-Michel', affiliation=['Information Sciences Institute', 'University of Southern California'], email='cpm@isi.edu'), Author(name='Oskar Singer', affiliation=['Information Sciences Institute', 'University of Southern California'], email='osinger@isi.edu'), Author(name='Pedro A. Szekely', affiliation=['Information Sciences Institute', 'University of Southern California'], email='pszekely@isi.edu'), Author(name='Elizabeth Boschee', affiliation=['Information Sciences Institute', 'University of Southern California'], email=['boscheeg@isi.edu'])]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper27.pdf
+Multiple Inheritance of Ontology Concepts in a Semantic-Aware Encoding Scheme.
+[Author(name='Weiqin Xu', affiliation=['LIGM (UMR 8049), CNRS, UPEM, F-77454, Marne-la-Vallée, France', 'ENGIE CRIGEN CSAI Lab'], email='firstname.lastname@u-pem.fr'), Author(name='Olivier Curé', affiliation=['LIGM (UMR 8049), CNRS, UPEM, F-77454, Marne-la-Vallée, France'], email='firstname.lastname@u-pem.fr'), Author(name='Philippe Calvez', affiliation=['LIGM (UMR 8049), CNRS, UPEM, F-77454, Marne-la-Vallée, France', 'ENGIE CRIGEN CSAI Lab'], email=['philippe.calvez1@engie.com'])]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper28.pdf
+Links with Answers: Query Answering for Customer Support.
+[Author(name='Veronika Thost', affiliation=['MIT-IBM Watson AI Lab', 'IBM Research'], email=['veronika.thost@ibm.com']), Author(name='Achille Fokoue', affiliation=['IBM Research'], email='achille@us.ibm.com'), Author(name='Vittorio Castelli', affiliation=['IBM Research'], email='vittorio@us.ibm.com'), Author(name='Salim Roukos', affiliation=['IBM Research'], email=['roukosg@us.ibm.com'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper29.pdf
+Saffron: A Data Value Assessment Tool for Quantifying the Value of Data Assets.
+[Author(name='Judie Attard', affiliation=['ADAPT Centre, Trinity College Dublin, Ireland'], email='judie.attard@adaptcentre.ie'), Author(name='Jeremy Debattista', affiliation=['School of Computer Science and Statistics, Trinity College Dublin, Ireland'], email='debattij@scss.tcd.ie'), Author(name='Rob Brennan', affiliation=['ADAPT Centre, School of Computing, Dublin City University, Ireland'], email='rob.brennan@dcu.ie')]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper3.pdf
+Knowledge Based High-Frequency Question Answering in AliMe Chat.
+[Author(name='Shuangyong Song', affiliation=['Alibaba Group'], email='shuangyong.ssy@alibaba-inc.com'), Author(name='Chao Wang', affiliation=['Alibaba Group'], email='chaowang.wc@alibaba-inc.com'), Author(name='Haiqing Chen', affiliation=['Alibaba Group'], email='haiqing.chenhq@alibaba-inc.com')]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper30.pdf
+Ontology-enabled Analysis of Study Populations.
+[Author(name='Shruthi Chari', affiliation=['Rensselaer Polytechnic Institute, Troy, NY 12180, USA'], email=None), Author(name='Miao Qi', affiliation=['Rensselaer Polytechnic Institute, Troy, NY 12180, USA'], email=None), Author(name='Nkechinyere N. Agu', affiliation=['Rensselaer Polytechnic Institute, Troy, NY 12180, USA'], email=None), Author(name='Oshani Seneviratne', affiliation=['Rensselaer Polytechnic Institute, Troy, NY 12180, USA'], email=None), Author(name='Jamie P. McCusker', affiliation=['Rensselaer Polytechnic Institute, Troy, NY 12180, USA'], email=None), Author(name='Kristin P. Bennett', affiliation=['Rensselaer Polytechnic Institute, Troy, NY 12180, USA'], email=None), Author(name='Amar K. Das', affiliation=['IBM Research, Cambridge, MA'], email=None), Author(name='Deborah L. McGuinness', affiliation=['Rensselaer Polytechnic Institute, Troy, NY 12180, USA'], email=None)]
+num of author: 8
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper32.pdf
+A System for Reasoning-based Link Prediction in Large Knowledge Graphs.
+[Author(name='Hong Wu', affiliation=['College of Intelligence and Computing, Tianjin University, China'], email=None), Author(name='Zhe Wang', affiliation=['School of Information and Communication Technology, Griffith University, Australian'], email=None), Author(name='Xiaowang Zhang', affiliation=['College of Intelligence and Computing, Tianjin University, China'], email=None), Author(name='Pouya Ghiasnezhad Omran', affiliation=['Research School of Computer Science, Australian National University, Australia'], email=None), Author(name='Zhiyong Feng', affiliation=['College of Intelligence and Computing, Tianjin University, China'], email=None), Author(name='Kewen Wang', affiliation=['School of Information and Communication Technology, Griffith University, Australian'], email='k.wang@griffith.edu.au')]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper33.pdf
+Fact Validation with Knowledge Graph Embeddings.
+[Author(name='Ammar Ammar', affiliation=['Maastricht Centre for Systems Biology, Maastricht University'], email=['a.ammar@student.maastrichtuniversity.nl']), Author(name='Remzi Celebi', affiliation=['Institute of Data Science, Maastricht University'], email=['remzi.celebi@maastrichtuniversity.nl'])]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper34.pdf
+A Highly Parallel Engine for RDF.
+[Author(name='Shujun Wang', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=None), Author(name='Yongxin Yu', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=None), Author(name='Xiaowang Zhang', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email='xiaowangzhang@tju.edu.cn'), Author(name='Zhiyong Feng', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper35.pdf
+A Common Framework for Developing Table Understanding Models.
+[Author(name='Jay Pujara', affiliation=['Information Sciences Institute, University of Southern California'], email=['jpujara@isi.edu']), Author(name='Arunkumar Rajendran', affiliation=['Information Sciences Institute, University of Southern California'], email='arunk26jan@gmail.com'), Author(name='Majid Ghasemi-Gol', affiliation=['Information Sciences Institute, University of Southern California'], email='ghasemig@usc.edu'), Author(name='Pedro A. Szekely', affiliation=['Information Sciences Institute, University of Southern California'], email=['pszekely@isi.edu'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper36.pdf
+Toward Predicting Impact of Changes in Evolving Knowledge Graphs.
+[Author(name='Romana Pernischová', affiliation=['University of Zurich'], email='pernischova@ifi.uzh.ch'), Author(name="Daniele Dell'Aglio", affiliation=['University of Zurich'], email='dellaglio@ifi.uzh.ch'), Author(name='Matthew Horridge', affiliation=['Stanford University'], email=['matthew.horridge@stanford.edu']), Author(name='Matthias Baumgartner', affiliation=['University of Zurich'], email=['baumgartner@ifi.uzh.ch']), Author(name='Abraham Bernstein', affiliation=['University of Zurich'], email=['bernstein@ifi.uzh.ch'])]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper37.pdf
+Towards Semantically Structuring GitHub.
+[Author(name='Dennis Oliver Kubitza', affiliation=['University of Bonn – Germany', 'Enterprise Information Systems, Fraunhofer IAIS – Germany'], email='dennis.oliver.kubitza@iais.fraunhofer.de'), Author(name='Matthias Böckmann', affiliation=['University of Bonn – Germany', 'Enterprise Information Systems, Fraunhofer IAIS – Germany'], email='matthias.boeckmann@iais.fraunhofer.de'), Author(name='Damien Graux', affiliation=['Enterprise Information Systems, Fraunhofer IAIS – Germany', 'ADAPT Centre, Trinity College of Dublin – Ireland'], email=['damien.graux@iais.fraunhofer.de'])]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper38.pdf
+Towards a Concurrent Approximate Description Logic Reasoner.
+[Author(name='Raj Kamal Yadav', affiliation=['Knowledgeable Computing and Reasoning Lab, IIIT-Delhi, India'], email='raj16076@iiitd.ac.in'), Author(name='Gunjan Singh', affiliation=['Knowledgeable Computing and Reasoning Lab, IIIT-Delhi, India'], email='gunjans@iiitd.ac.in'), Author(name='Raghava Mutharaju', affiliation=['Knowledgeable Computing and Reasoning Lab, IIIT-Delhi, India'], email='raghava.mutharaju@iiitd.ac.in'), Author(name='Sumit Bhatia', affiliation=['IBM Research AI, Delhi, India'], email=['sumitbhatia@in.ibm.com'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper39.pdf
+Atlas of Paths: a Formal Ontology of Historical Pathways in Italy.
+[Author(name='Luigi Asprino', affiliation=['STLab, ISTC-CNR, Rome, Italy'], email='luigi.asprino@istc.cnr.it'), Author(name='Valentina Anita Carriero', affiliation=['STLab, ISTC-CNR, Rome, Italy'], email='valentina.carriero@istc.cnr.it'), Author(name='Aldo Gangemi', affiliation=['STLab, ISTC-CNR, Rome, Italy', 'FICLIT, University of Bologna, Bologna, Italy'], email=['aldo.gangemi@unibo.it']), Author(name='Ludovica Marinucci', affiliation=['STLab, ISTC-CNR, Rome, Italy'], email=['ludovica.marinuccig@istc.cnr.it']), Author(name='Andrea Giovanni Nuzzolese', affiliation=['STLab, ISTC-CNR, Rome, Italy'], email='andreagiovanni.nuzzolese@cnr.it'), Author(name='Valentina Presutti', affiliation=['STLab, ISTC-CNR, Rome, Italy'], email='valentina.presutti@cnr.it')]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper4.pdf
+An Ontology for Ice Hockey.
+[Author(name='Robin Keskisärkkä', affiliation=['Linköping University'], email='robin.keskisarkka@liu.se'), Author(name='Huanyu Li', affiliation=['Linköping University'], email='huanyu.li@liu.se'), Author(name='Sijin Cheng', affiliation=['Linköping University'], email='sijin.cheng@liu.se'), Author(name='Niklas Carlsson', affiliation=['Linköping University'], email='niklas.carlsson@liu.se'), Author(name='Patrick Lambrix', affiliation=['Linköping University'], email='patrick.lambrix@liu.se')]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper40.pdf
+Integration of Plot-based Ecological Data: A Semantic Approach
+[Author(name='Yi Sun', affiliation=['Terrestrial Ecosystem Research Network (TERN), University of Queensland, St Lucia, 4072 Australia'], email=None), Author(name='Jenny Mahuika', affiliation=['Terrestrial Ecosystem Research Network (TERN), University of Queensland, St Lucia, 4072 Australia'], email=None), Author(name='Alvin Sebastian', affiliation=['Terrestrial Ecosystem Research Network (TERN), University of Queensland, St Lucia, 4072 Australia'], email=None)]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper41.pdf
+Towards an Extensible Web-Based Open-Source Graphical Ontology Editing Framework.
+[Author(name='Sergejs Kozlovics', affiliation=['Institute of Mathematics and Computer Science, University of Latvia (Riga, Latvia)'], email=['sergejs.kozlovics@lumii.lv'])]
+num of author: 1
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper42.pdf
+Smart Topics Miner 2: Improving Proceedings Retrievability at Springer Nature.
+[Author(name='Angelo Antonio Salatino', affiliation=['Knowledge Media Institute, The Open University, MK7 6AA, Milton Keynes, UK'], email=['angelo.salatino@open.ac.uk']), Author(name='Francesco Osborne', affiliation=['Knowledge Media Institute, The Open University, MK7 6AA, Milton Keynes, UK'], email=['francesco.osborne@open.ac.uk']), Author(name='Aliaksandr Birukou', affiliation=['Springer-Verlag GmbH, Tiergartenstrasse 17, 69121 Heidelberg, Germany'], email=['aliaksandr.birukou@springer.com']), Author(name='Enrico Motta', affiliation=['Knowledge Media Institute, The Open University, MK7 6AA, Milton Keynes, UK'], email=['enrico.motta@open.ac.uk'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper43.pdf
+SHACL2SPARQL: Validating a SPARQL Endpoint against Recursive SHACL Constraints.
+[Author(name='Julien Corman', affiliation=['Free University of Bozen-Bolzano, Bolzano, Italy'], email=None), Author(name='Fernando Florenzano', affiliation=['PUC Chile and IMFD, Chile'], email=None), Author(name='Juan L. Reutter', affiliation=['PUC Chile and IMFD, Chile'], email=None), Author(name='Ognjen Savkovic', affiliation=['Free University of Bozen-Bolzano, Bolzano, Italy'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper44.pdf
+NAOMI: INformation Application fOr Relatives of Patients AdMitted to the ICU.
+[Author(name='Femke Ongenae', affiliation=['IDLab - Ghent University - imec'], email=['Femke.Ongenae@ugent.be']), Author(name='Iman Cocquyt', affiliation=['IDLab - Ghent University - imec'], email=None), Author(name='Kevin Claerhout', affiliation=['IDLab - Ghent University - imec'], email=None), Author(name='Kirsten Colpaert', affiliation=['Ghent University Hospital', 'ICU'], email=['Kirsten.Colpaert@UGent.be']), Author(name='Sofie Van Hoecke', affiliation=['IDLab - Ghent University - imec'], email=['Kirsten.Colpaert@UGent.be'])]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper45.pdf
+Monolith: an OBDM and Knowledge Graph Management Platform.
+[Author(name='Valerio Santarelli', affiliation=['Sapienza Universit`a di Roma', 'OBDA Systems'], email='santarelli@diag.uniroma1.it'), Author(name='Lorenzo Lepore', affiliation=['Sapienza Universit`a di Roma', 'OBDA Systems'], email='lepore@diag.uniroma1.it'), Author(name='Manuel Namici', affiliation=['Sapienza Universit`a di Roma', 'OBDA Systems'], email='namicia@diag.uniroma1.it'), Author(name='Giacomo Ronconi', affiliation=['Sapienza Universit`a di Roma', 'OBDA Systems'], email='ronconi@diag.uniroma1.it'), Author(name='Marco Ruzzi', affiliation=['Sapienza Universit`a di Roma', 'OBDA Systems'], email='ruzzi@diag.uniroma1.it'), Author(name='Domenico Fabio Savo', affiliation=['Sapienza Universit`a di Roma', 'OBDA Systems', 'Universit`a degli Studi di Bergamo'], email=['domenicofabio.savo@unibg.it'])]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper46.pdf
+A Semi-Automatic Tool for Linked Data Integration.
+[Author(name='Benjamin Moreau', affiliation=['OpenDataSoft', 'Nantes University, LS2N, CNRS, UMR6004, 44000 Nantes, France'], email='Benjamin.Moreau@opendatasoft.com'), Author(name='Nicolas Terpolilli', affiliation=['OpenDataSoft'], email='Nicolas.Terpolilli@opendatasoft.com'), Author(name='Patricia Serrano-Alvarado', affiliation=['Nantes University, LS2N, CNRS, UMR6004, 44000 Nantes, France'], email='Patricia.Serrano-Alvarado@univ-nantes.fr')]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper47.pdf
+Leolani: A Robot That Communicates and Learns about the Shared World.
+[Author(name='Selene Baez Santamaría', affiliation=['VU University Amsterdam, Computational Lexicology and Terminology Lab'], email=['s.baezsantamaria@vu.nl']), Author(name='Piek Vossen', affiliation=['VU University Amsterdam, Computational Lexicology and Terminology Lab'], email=['p.t.j.m.vossen@vu.nl']), Author(name='Lenka Bajcetic', affiliation=['VU University Amsterdam, Computational Lexicology and Terminology Lab'], email=['l.bajcetic@vu.nl']), Author(name='Suzana Basic', affiliation=['VU University Amsterdam, Computational Lexicology and Terminology Lab'], email=['s.basic@vu.nl']), Author(name='Bram Kraaijeveld', affiliation=['VU University Amsterdam, Computational Lexicology and Terminology Lab'], email=['b.kraaijeveld@vu.nl'])]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper48.pdf
+Cermine could not find any authors
+Cermine could not find any authors
+Cermine could not find any authors
+Cermine could not find any authors
+ODIN: A Dataspace Management System.
+[Author(name='Sergi Nadal', affiliation=['Universitat Politècnica de Catalunya (BarcelonaTech), Barcelona, Spain'], email=None), Author(name='Kashif Rabbani', affiliation=['Universitat Politècnica de Catalunya (BarcelonaTech), Barcelona, Spain'], email=None), Author(name='Oscar Romero', affiliation=['Universitat Politècnica de Catalunya (BarcelonaTech), Barcelona, Spain'], email=None), Author(name='Shumet Tadesse', affiliation=['Universitat Politècnica de Catalunya (BarcelonaTech), Barcelona, Spain'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper49.pdf
+Enabling an Enterprise Data Management Ecosystem using Change Data Capture with Amazon Neptune.
+[Author(name='Bradley R. Bebee', affiliation=['Amazon Web Services, Seattle, WA 98101, USA', 'Change Data Capture in Amazon Neptune'], email=None), Author(name='Rahul Chander', affiliation=['Amazon Web Services, Seattle, WA 98101, USA', 'Change Data Capture in Amazon Neptune'], email=None), Author(name='Ankit Gupta', affiliation=['Amazon Web Services, Seattle, WA 98101, USA', 'Change Data Capture in Amazon Neptune'], email=None), Author(name='Ankesh Khandelwal', affiliation=['Amazon Web Services, Seattle, WA 98101, USA', 'Change Data Capture in Amazon Neptune'], email=None), Author(name='Sainath Mallidi', affiliation=['Amazon Web Services, Seattle, WA 98101, USA', 'Change Data Capture in Amazon Neptune'], email=None), Author(name='Michael Schmidt', affiliation=['Amazon Web Services, Seattle, WA 98101, USA', 'Change Data Capture in Amazon Neptune'], email=None), Author(name='Ronak Sharda', affiliation=['Amazon Web Services, Seattle, WA 98101, USA', 'Change Data Capture in Amazon Neptune'], email=None), Author(name='Bryan B. Thompson', affiliation=['Amazon Web Services, Seattle, WA 98101, USA', 'Change Data Capture in Amazon Neptune'], email=None), Author(name='Prashant Upadhyay', affiliation=['Amazon Web Services, Seattle, WA 98101, USA', 'Change Data Capture in Amazon Neptune'], email=None)]
+num of author: 9
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper5.pdf
+AIRec: Attentive intersection model for tag-aware recommendation.
+[Author(name='Bo Chen', affiliation=['Shanghai Jiao Tong University'], email='chenbo.31@sjtu.edu.cn'), Author(name='Yue Ding', affiliation=['Shanghai Jiao Tong University'], email=['dingyueg@sjtu.edu.cn']), Author(name='Xin Xin', affiliation=['University of Glasgow'], email=['x.xin.1@research.gla.ac.uk']), Author(name='Yunzhe Li', affiliation=['University of Glasgow'], email=['x.xin.1@research.gla.ac.uk']), Author(name='Yule Wang', affiliation=['University of Glasgow'], email=['x.xin.1@research.gla.ac.uk']), Author(name='Dong Wang', affiliation=['Shanghai Jiao Tong University'], email='wangdong@sjtu.edu.cn')]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper50.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+invalid syntax (<string>, line 1)
+OpenAI could not get parsed correctly
+Mv-Index: An Efficient Index for Graph-Query Containment.
+[Author(name='Theofilos Mailis', affiliation=['Athena Research Centre, Greece', 'National and Kapodistrian University of Athens, Greece'], email=None), Author(name='Yannis Kotidis', affiliation=['Athens University of Economics and Business, Greece'], email=None), Author(name='Vaggelis Nikolopoulos', affiliation=['Athena Research Centre, Greece', 'National and Kapodistrian University of Athens, Greece'], email=None), Author(name='Evgeny Kharlamov', affiliation=['Bosch Center for Artificial Intelligence, Germany', 'University of Oslo, Norway'], email=None), Author(name='Ian Horrocks', affiliation=['University of Oxford, United Kingdom'], email=None), Author(name='Yannis E. Ioannidis', affiliation=['Athena Research Centre, Greece', 'National and Kapodistrian University of Athens, Greece'], email=None)]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper51.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+unterminated string literal (detected at line 1) (<string>, line 1)
+OpenAI could not get parsed correctly
+RDF Visualizer: A Tool for Displaying, Browsing and Exploring High Density RDF Data.
+[Author(name='Kostas Petrakis', affiliation=['Institute of Computer Science, FORTH-ICS, Heraklion, Greece'], email=None), Author(name='Nikos Minadakis', affiliation=['Institute of Computer Science, FORTH-ICS, Heraklion, Greece'], email=None), Author(name='Korina Doerr', affiliation=['Institute of Computer Science, FORTH-ICS, Heraklion, Greece'], email=None), Author(name='Maria Theodoridou', affiliation=['Institute of Computer Science, FORTH-ICS, Heraklion, Greece'], email=None), Author(name='Martin Doerr', affiliation=['Institute of Computer Science, FORTH-ICS, Heraklion, Greece'], email=None)]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper52.pdf
+COPAAL - An Interface for Explaining Facts using Corroborative Paths.
+[Author(name='Zafar Habeeb Syed', affiliation=['Data Science Group, Paderborn University, Germany', 'Institute for Applied Informatics, Leipzig, Germany'], email='zsyed@mail.uni-paderborn.de'), Author(name='Nikit Srivastava', affiliation=['Data Science Group, Paderborn University, Germany', 'Institute for Applied Informatics, Leipzig, Germany'], email=['nikit@mail.uni-paderborn.de']), Author(name='Michael Röder', affiliation=['Data Science Group, Paderborn University, Germany', 'Institute for Applied Informatics, Leipzig, Germany'], email='michael.roeder@upb.de'), Author(name='Axel-Cyrille Ngonga Ngomo', affiliation=['Data Science Group, Paderborn University, Germany', 'Institute for Applied Informatics, Leipzig, Germany'], email=['axel.ngonga@upb.de'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper53.pdf
+LimesWebUI - Link Discovery Made Simple.
+[Author(name='Mohamed Ahmed Sherif', affiliation=['Paderborn University, Data Science Group, Pohlweg 51, D-33098 Paderborn, Germany'], email='mohamed.sherif@upb.de'), Author(name='Pestryakova Svetlana', affiliation=['Paderborn University, Data Science Group, Pohlweg 51, D-33098 Paderborn, Germany'], email='pestryakova.svetlana@upb.de'), Author(name='Kevin Dreßler', affiliation=['Paderborn University, Data Science Group, Pohlweg 51, D-33098 Paderborn, Germany'], email='kevin.dreßler@upb.de'), Author(name='Axel-Cyrille Ngonga Ngomo', affiliation=['Paderborn University, Data Science Group, Pohlweg 51, D-33098 Paderborn, Germany'], email='axel-cyrille.ngonga.ngomo@upb.de')]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper54.pdf
+ASIA: a Tool for Assisted Semantic Interpretation and Annotation of Tabular Data.
+[Author(name='Vincenzo Cutrona', affiliation=['University of Milano - Bicocca, Milan, Italy'], email='name.surname@unimib.it'), Author(name='Michele Ciavotta', affiliation=['University of Milano - Bicocca, Milan, Italy'], email='name.surname@unimib.it'), Author(name='Flavio De Paoli', affiliation=['University of Milano - Bicocca, Milan, Italy'], email='name.surname@unimib.it'), Author(name='Matteo Palmonari', affiliation=['University of Milano - Bicocca, Milan, Italy'], email='name.surname@unimib.it')]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper56.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+unterminated string literal (detected at line 3) (<string>, line 3)
+OpenAI could not get parsed correctly
+ShERML: Mapping Relational Data to RDF.
+[Author(name='Iovka Boneva', affiliation=['Univ. Lille, CNRS, Centrale Lille, Inria, UMR 9189 - CRIStAL - Centre de Recherche en Informatique Signal et Automatique de Lille, F-59000 Lille, France'], email=None), Author(name='Jose Martin Lozano Aparicio', affiliation=['Univ. Lille, CNRS, Centrale Lille, Inria, UMR 9189 - CRIStAL - Centre de Recherche en Informatique Signal et Automatique de Lille, F-59000 Lille, France'], email=None), Author(name='Slawomir Staworko', affiliation=['Univ. Lille, CNRS, Centrale Lille, Inria, UMR 9189 - CRIStAL - Centre de Recherche en Informatique Signal et Automatique de Lille, F-59000 Lille, France'], email=None)]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper57.pdf
+MisinfoMe: Who is Interacting with Misinformation?
+[Author(name='Martino Mensio', affiliation=['Knowledge Media institute, The Open University, UK'], email='martino.mensio@open.ac.uk'), Author(name='Harith Alani', affiliation=['Knowledge Media institute, The Open University, UK'], email='h.alani@open.ac.uk')]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper58.pdf
+Agile Knowledge Graph Testing with TESTaLOD.
+[Author(name='Valentina Anita Carriero', affiliation=['STLab, ISTC-CNR, Rome, Italy'], email=None), Author(name='Fabio Mariani', affiliation=['FICLIT, University of Bologna, Bologna, Italy'], email=None), Author(name='Andrea Giovanni Nuzzolese', affiliation=['STLab, ISTC-CNR, Rome, Italy'], email=None), Author(name='Valentina Pasqual', affiliation=['FICLIT, University of Bologna, Bologna, Italy'], email=None), Author(name='Valentina Presutti', affiliation=['STLab, ISTC-CNR, Rome, Italy'], email=None)]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper59.pdf
+Demonstration of a Customizable Representation Model for Graph-Based Visualizations of Ontologies - GizMO.
+[Author(name='Vitalis Wiens', affiliation=['Fraunhofer IAIS, Sankt Augustin, Germany', 'TIB Leibniz Information Centre for Science and Technology, Hannover, Germany'], email='<first name>.<last name>@iais.fraunhofer.de'), Author(name='Michael Galkin', affiliation=['Fraunhofer IAIS, Sankt Augustin, Germany'], email=['g@iais.fraunhofer.de']), Author(name='Steffen Lohmann', affiliation=['Fraunhofer IAIS, Sankt Augustin, Germany'], email=['g@iais.fraunhofer.de']), Author(name='Sören Auer', affiliation=['L3S Research Center, Leibniz University of Hannover, Germany', 'TIB Leibniz Information Centre for Science and Technology, Hannover, Germany'], email=['auer@l3s.de'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper6.pdf
+Knowledge Graph Embedding for Triples Fact Validation.
+[Author(name='Alexis Pister', affiliation=['MONDECA, 35 boulevard de Strasbourg 75010 Paris, France'], email='firstname.lastname@mondeca.com'), Author(name='Ghislain Auguste Atemezing', affiliation=['MONDECA, 35 boulevard de Strasbourg 75010 Paris, France'], email='firstname.lastname@mondeca.com')]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper60.pdf
+RDF Explorer: A Visual Query Builder for Semantic Web Knowledge Graphs.
+[Author(name='Hernán Vargas', affiliation=['Universidad Técnica Federico Santa María, Valparaíso, Chile', 'Instituto Milenio de Fundamentos de los Datos, Santiago, Chile'], email='hvargas@inf.utfsm.cl'), Author(name='Carlos Buil Aranda', affiliation=['Universidad Técnica Federico Santa María, Valparaíso, Chile', 'Instituto Milenio de Fundamentos de los Datos, Santiago, Chile'], email='cbuil@inf.utfsm.cl'), Author(name='Aidan Hogan', affiliation=['DCC, Universidad de Chile, Santiago, Chile', 'Instituto Milenio de Fundamentos de los Datos, Santiago, Chile'], email=['ahogan@dcc.uchile.cl'])]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper61.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+invalid syntax (<string>, line 1)
+OpenAI could not get parsed correctly
+VLX-Stories: A Semantically Linked Event Platform for Media Publishers.
+[Author(name='Delia Fernandez-Canellas', affiliation=['Universitat Politecnica de Catalunya, UPC'], email=None), Author(name='Blai Garolera', affiliation=['Vilynx, Inc'], email=None), Author(name='Elisenda Bou', affiliation=['Vilynx, Inc'], email=None), Author(name='Xavier Giró-i-Nieto', affiliation=['Universitat Politecnica de Catalunya, UPC'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper62.pdf
+LongLife: a Platform for Personalized Search for Health and Life Sciences.
+[Author(name='Patrick Ernst', affiliation=['Max Planck Institute for Informatics'], email='pernst@mpi-inf.mpg.de'), Author(name='Erisa Terolli', affiliation=['Max Planck Institute for Informatics'], email='eterolli@mpi-inf.mpg.de'), Author(name='Gerhard Weikum', affiliation=['Max Planck Institute for Informatics'], email=['weikumg@mpi-inf.mpg.de'])]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper63.pdf
+Exception: unterminated string literal (detected at line 1) (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+invalid syntax (<string>, line 1)
+OpenAI could not get parsed correctly
+A Policy Editor for Semantic Sensor Networks.
+[Author(name='Paolo Pareti', affiliation=['University of Southampton, Southampton, United Kingdom'], email=None), Author(name='George Konstantinidis', affiliation=['University of Southampton, Southampton, United Kingdom'], email=None), Author(name='Timothy J. Norman', affiliation=['University of Southampton, Southampton, United Kingdom'], email=None)]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper64.pdf
+Predicting Missing Links Using PyKEEN.
+[Author(name='Mehdi Ali', affiliation=['Smart Data Analytics Group, University of Bonn, Germany', 'Department of Enterprise Information Systems, Fraunhofer Institute for Intelligent Analysis and Information Systems, Sankt Augustin and Dresden, Germany'], email='mehdi.ali@cs.uni-bonn.de'), Author(name='Charles Tapley Hoyt', affiliation=['Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientiﬁc Computing, Sankt Augustin, Germany'], email='charles.hoyt@scai.fraunhofer.de'), Author(name='Daniel Domingo-Fernández', affiliation=['Department of Bioinformatics, Fraunhofer Institute for Algorithms and Scientiﬁc Computing, Sankt Augustin, Germany'], email=['daniel.domingo.fernandezg@scai.fraunhofer.de']), Author(name='Jens Lehmann', affiliation=['Smart Data Analytics Group, University of Bonn, Germany', 'Department of Enterprise Information Systems, Fraunhofer Institute for Intelligent Analysis and Information Systems, Sankt Augustin and Dresden, Germany'], email=['jens.lehmann@iais.fraunhofer.de', 'jens.lehmanng@cs.uni-bonn.de'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper65.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+CoModIDE - The Comprehensive Modular Ontology Engineering IDE.
+[Author(name='Cogan Shimizu', affiliation=['Data Semantics Lab Wright State University, USA'], email=['shimizu.5@wright.edu']), Author(name='Karl Hammar', affiliation=['Data Semantics Lab Wright State University, USA'], email=['shimizu.5@wright.edu'])]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper66.pdf
+Triplifying Equivalence Set Graphs.
+[Author(name='Luigi Asprino', affiliation=['STLab, ISTC-CNR, Rome, Italy', 'University of Bologna, Bologna, Italy'], email=['luigi.asprino@istc.cnr.it']), Author(name='Wouter Beek', affiliation=['Dept. of Computer Science, VU University Amsterdam, NL'], email='w.g.j.beek@vu.nl'), Author(name='Paolo Ciancarini', affiliation=['University of Bologna, Bologna, Italy'], email=['paolo.ciancarini@unibo.it']), Author(name='Frank van Harmelen', affiliation=['Dept. of Computer Science, VU University Amsterdam, NL'], email=['frank.van.harmeleng@vu.nl']), Author(name='Valentina Presutti', affiliation=['STLab, ISTC-CNR, Rome, Italy'], email=['valentina.presutti@cnr.it'])]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper67.pdf
+Graph-KD: Exploring Relational Information for Knowledge Discovery.
+[Author(name='Roland Roller', affiliation=['DFKI, Berlin, Germany'], email=None), Author(name='Gaurav Vashisth', affiliation=['DFKI, Berlin, Germany'], email=None), Author(name='Philippe Thomas', affiliation=['DFKI, Berlin, Germany'], email=None), Author(name='He Wang', affiliation=['DFKI, Berlin, Germany'], email=None), Author(name='Michael Mikhailov', affiliation=['DFKI, Berlin, Germany'], email=None), Author(name='Mark Stevenson', affiliation=['University of Sheffield, Sheffield, England'], email=None)]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper68.pdf
+Microbenchmarks for Question Answering Systems Using QaldGen.
+[Author(name='Qaiser Mehmood', affiliation=['INSIGHT, NUIG, Ireland'], email=['qaiser.mehmood@insight-centre.org']), Author(name='Abhishek Nadgeri', affiliation=['Service Lee technologies, India'], email=['abhishek.n@servify.in']), Author(name='Muhammad Saleem', affiliation=['University of Leipzig, Germany'], email='lastname@informatik.uni-leipzig.de'), Author(name='Kuldeep Singh', affiliation=['Nuance Communications, Germany'], email=['kuldeep.singh1@nuance.com']), Author(name='Axel-Cyrille Ngonga Ngomo', affiliation=['University of Paderborn, Germany'], email=['axel.ngonga@upb.de']), Author(name='Jens Lehmann', affiliation=['Fraunhofer IAIS, Germany'], email=['jens.lehmann@iais.fraunhofer.de'])]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper69.pdf
+FALCON: An Entity and Relation Linking Framework over DBpedia.
+[Author(name='Ahmad Sakor', affiliation=['L3S Center Germany'], email=['sakor@l3s.de']), Author(name='Kuldeep Singh', affiliation=['Nuance Communications, Germany'], email=['kuldeep.singh1@nuance.com']), Author(name='Maria-Esther Vidal', affiliation=['TIB, Hannover', 'L3S Center Germany'], email=['maria.vidal@tib.eu'])]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper7.pdf
+A CONSTRUCT-Based Query for Weighted RDF Graph Analytics.
+[Author(name='Xin Song', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=None), Author(name='Shizhan Chen', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=None), Author(name='Xiaowang Zhang', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=['xiaowangzhang@tju.edu.cn']), Author(name='Zhiyong Feng', affiliation=['College of Intelligence and Computing, Tianjin University', 'Tianjin Key Laboratory of Cognitive Computing and Application'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper70.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+unterminated string literal (detected at line 1) (<string>, line 1)
+OpenAI could not get parsed correctly
+Shape Designer for ShEx and SHACL constraints.
+[Author(name='Iovka Boneva', affiliation=['Univ. Lille, CNRS, Centrale Lille, Inria, UMR 9189 - CRIStAL - Centre de Recherche en Informatique Signal et Automatique de Lille, F-59000 Lille, France'], email=None), Author(name='Jérémie Dusart', affiliation=['Inria, France'], email=None), Author(name='Daniel Fernández-Álvarez', affiliation=['Inria, France'], email=None), Author(name='José Emilio Labra Gayo', affiliation=['University of Oviedo, Spain'], email=None)]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper71.pdf
+Exception: unterminated string literal (detected at line 1) (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+unterminated string literal (detected at line 1) (<string>, line 1)
+OpenAI could not get parsed correctly
+FoodKG Enabled Q&A Application.
+[Author(name='Steven Haussmann', affiliation=['Rensselaer Polytechnic Institute'], email=None), Author(name='Yu Chen', affiliation=[], email=None), Author(name='Oshani Seneviratne', affiliation=[], email=None), Author(name='Nidhi Rastogi', affiliation=[], email=None), Author(name='James V. Codella', affiliation=[], email=None), Author(name='Ching-Hua Chen', affiliation=[], email=None), Author(name='Deborah L. McGuinness', affiliation=['Rensselaer Polytechnic Institute'], email=None), Author(name='Mohammed J. Zaki', affiliation=['Rensselaer Polytechnic Institute'], email=None)]
+num of author: 8
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper72.pdf
+Feeding Machine Learning with Knowledge Graphs for Explainable Object Detection.
+[Author(name='Freddy Lécué', affiliation=['Thales, CortAIx, Canada', 'Inria, France'], email=['freddy.lecue@inria.fr']), Author(name='Tanguy Pommellet', affiliation=['Thales, CortAIx, Canada'], email='firstname.lastname@ca.thalesgroup.com')]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper73.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+invalid syntax (<string>, line 1)
+OpenAI could not get parsed correctly
+A User Interaction Demonstration For Exploring Medical Knowledge Graph.
+[Author(name='Jin Xiao', affiliation=['PingAn Technology'], email=None), Author(name='Lianfen Miao', affiliation=['PingAn Technology'], email=None), Author(name='Chunyu Li', affiliation=['PingAn Technology'], email=None), Author(name='Ruimin Lu', affiliation=['PingAn Technology'], email=None), Author(name='Bo Chen', affiliation=['PingAn Technology'], email=None), Author(name='Yuan Ni', affiliation=['PingAn Technology'], email=None)]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper74.pdf
+Querying Large-scale RDF Datasets Using the SANSA Framework.
+[Author(name='Claus Stadler', affiliation=['Institute for Applied Informatics (InfAI), University of Leipzig, Germany'], email=['cstadler@informatik.uni-leipzig.de']), Author(name='Gezim Sejdiu', affiliation=['Smart Data Analytics, University of Bonn, Germany'], email='sejdiu@cs.uni-bonn.de'), Author(name='Damien Graux', affiliation=['Enterprise Information Systems, Fraunhofer IAIS, Germany', 'ADAPT Centre, Trinity College of Dublin, Ireland'], email='damien.graux@iais.fraunhofer.de'), Author(name='Jens Lehmann', affiliation=['Smart Data Analytics, University of Bonn, Germany', 'Enterprise Information Systems, Fraunhofer IAIS, Germany'], email=['jens.lehmanng@cs.uni-bonn.de', 'jens.lehmanng@iais.fraunhofer.de'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper75.pdf
+Exploring Fact-checked Claims and their Descriptive Statistics.
+[Author(name='Malo Gasquet', affiliation=['LIRMM / University of Montpellier / CNRS, France'], email=None), Author(name='Darlene Brechtel', affiliation=['LIRMM / University of Montpellier / CNRS, France'], email=None), Author(name='Matthäus Zloch', affiliation=['GESIS - Leibniz Institute for the Social Sciences, Germany'], email=None), Author(name='Andon Tchechmedjiev', affiliation=['LGI2P, IMT Mines-Ales, France'], email=None), Author(name='Katarina Boland', affiliation=['GESIS - Leibniz Institute for the Social Sciences, Germany'], email=None), Author(name='Pavlos Fafalios', affiliation=['Institute of Computer Science, FORTH-ICS, Greece'], email=None), Author(name='Stefan Dietze', affiliation=['GESIS - Leibniz Institute for the Social Sciences, Germany', 'Heinrich-Heine-University Düsseldorf, Germany'], email=None), Author(name='Konstantin Todorov', affiliation=['LIRMM / University of Montpellier / CNRS, France'], email=None)]
+num of author: 8
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper76.pdf
+How to Feed the Squerall with RDF and Other Data Nuts?
+[Author(name='Mohamed Nadjib Mami', affiliation=['Smart Data Analytics (SDA) Group, Bonn University', 'Enterprise Information Systems, Fraunhofer IAIS'], email='mami@cs.uni-bonn.de'), Author(name='Damien Graux', affiliation=['Enterprise Information Systems, Fraunhofer IAIS', 'ADAPT Centre, Trinity College of Dublin'], email=['damien.graux@iais.fraunhofer.de']), Author(name='Simon Scerri', affiliation=['Smart Data Analytics (SDA) Group, Bonn University', 'Enterprise Information Systems, Fraunhofer IAIS'], email='scerri@cs.uni-bonn.de'), Author(name='Hajira Jabeen', affiliation=['Smart Data Analytics (SDA) Group, Bonn University'], email='jabeen@cs.uni-bonn.de'), Author(name='Sören Auer', affiliation=['TIB & L3S Research Center, Hannover University'], email=['auer@l3s.de']), Author(name='Jens Lehmann', affiliation=['Smart Data Analytics (SDA) Group, Bonn University', 'Enterprise Information Systems, Fraunhofer IAIS'], email=['jens.lehmanng@cs.uni-bonn.de'])]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper77.pdf
+Visual Queries over Scholarly Data and other Linked Data Endpoints.
+[Author(name='Kārlis Čerāns', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email='karlis.cerans@lumii.lv'), Author(name='Lelde Lāce', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Aiga Romāne', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Jūlija Ovčiņņikova', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Sergejs Kozlovičs', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Mikus Grasmanis', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Jūlija Hodakovska', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Artūrs Sproģis', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None), Author(name='Agris Šostaks', affiliation=['Institute of Mathematics and Computer Science, University of Latvia'], email=None)]
+num of author: 9
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper78.pdf
+On the Use of Cloud and Semantic Web Technologies for Generative Design.
+[Author(name='Daniel Mercier', affiliation=['Autodesk Research, Toronto ON M5G 1M1, Canada'], email='daniel.mercier@autodesk.com'), Author(name='Ali Hashemi', affiliation=['Autodesk Research, Toronto ON M5G 1M1, Canada'], email='ali.hashemi@autodesk.com')]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper79.pdf
+Towards Semantic Integration of Bosch Manufacturing Data.
+[Author(name='Anees Mehdi', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Evgeny Kharlamov', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Daria Stepanova', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Felix Loesch', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Irlán Grangel-González', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None)]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper8.pdf
+Bootstrapping the Publication of Linked Data Streams.
+[Author(name='Riccardo Tommasini', affiliation=['Politecnico di Milano, DEIB, Milan, Italy'], email=None), Author(name='Mohamed Ragab', affiliation=['University of Tartu, DataSystem Group, Estonia'], email=None), Author(name='Alessandro Falcetta', affiliation=['Politecnico di Milano, DEIB, Milan, Italy'], email=None), Author(name='Emanuele Della Valle', affiliation=['Politecnico di Milano, DEIB, Milan, Italy'], email=None), Author(name='Sherif Sakr', affiliation=['University of Tartu, DataSystem Group, Estonia'], email=None)]
+num of author: 5
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper80.pdf
+Business Driven Insight via a Schema-Centric Data Fabric.
+[Author(name='Dougal Watt', affiliation=['Meaningful Technology, Auckland, NZ'], email=None), Author(name='Brad Bebee', affiliation=['Amazon Web Services, Seattle, WA 98101, USA'], email=None), Author(name='Michael Schmidt', affiliation=['Amazon Web Services, Seattle, WA 98101, USA'], email=None)]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper81.pdf
+Semantic Technologies for the Production and Publication of Open Data in ACI - Automobile Club d'Italia.
+[Author(name='Valerio Santarelli', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='santarelli@obdasystems.com'), Author(name='Domenico Lembo', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='lembo@diag.uniroma1.it'), Author(name='Marco Ruzzi', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='ruzzi@obdasystems.com'), Author(name='Giacomo Ronconi', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='ronconi@obdasystems.com'), Author(name='Paolo Bouquet', affiliation=['OKKAM'], email='bouquet@okkam.it'), Author(name='Andrea Molinari', affiliation=['OKKAM'], email='molinari@okkam.it'), Author(name='Flavio Pompermaier', affiliation=['OKKAM'], email='pompermaier@okkam.it'), Author(name='Daniela Caltabiano', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='caltabiano@informatica.aci.it'), Author(name='Emanuela Catoni', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='catonia@informatica.aci.it'), Author(name='Antonio Fabrizi', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='fabrizi@informatica.aci.it'), Author(name='Mauro Minenna', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='minenna@informatica.aci.it'), Author(name='Mario Punchina', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='punchina@informatica.aci.it'), Author(name='Federico Scafoglieri', affiliation=['(a) ACI Informatica', '(b) Sapienza Universita` di Roma', '(c) OBDA Systems'], email='scafoglieri@diag.uniroma1.it')]
+num of author: 13
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper82.pdf
+Hybrid Enterprise Knowledge Graphs.
+[Author(name='Peter Haase', affiliation=['metaphacts GmbH, Walldorf, Germany'], email='ph@metaphacts.com')]
+num of author: 1
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper83.pdf
+Querying Enterprise Knowledge Graph With Natural Language.
+[Author(name='Junyi Chai', affiliation=['Microsoft AI & R, Bellevue, WA, USA'], email='juchai@microsoft.com'), Author(name='Yonggang Deng', affiliation=['Microsoft AI & R, Bellevue, WA, USA'], email='yoden@microsoft.com'), Author(name='Maochen Guan', affiliation=['Microsoft AI & R, Bellevue, WA, USA'], email='maguan@microsoft.com'), Author(name='Yujie He', affiliation=['Microsoft AI & R, Bellevue, WA, USA'], email='yujh@microsoft.com'), Author(name='Bing Li', affiliation=['Microsoft AI & R, Bellevue, WA, USA'], email='libi@microsoft.com'), Author(name='Rui Yan', affiliation=['Microsoft AI & R, Bellevue, WA, USA'], email='ruya@microsoft.com')]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper84.pdf
+Using a Knowledge Graph of Scenes to Enable Search of Autonomous Driving Data.
+[Author(name='Cory Henson', affiliation=['Corporate Research, Robert Bosch GmbH'], email=['cory.henson@us.bosch.com']), Author(name='Stefan Schmid', affiliation=['Corporate Research, Robert Bosch GmbH'], email=['stefan.schmid@de.bosch.com']), Author(name='Anh Tuan Tran', affiliation=['Chassis Systems Control, Robert Bosch GmbH'], email=['anhtuan.tran2@de.bosch.com']), Author(name='Antonios Karatzoglou', affiliation=['Chassis Systems Control, Robert Bosch GmbH'], email=['antonios.karatzoglou@de.bosch.com'])]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper85.pdf
+Thales XAI Platform: Adaptable Explanation of Machine Learning Systems - A Knowledge Graphs Perspective.
+[Author(name='Freddy Lécué', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems', 'Inria, France'], email=None), Author(name='Baptiste Abeloos', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None), Author(name='Jonathan Anctil', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None), Author(name='Manuel Bergeron', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None), Author(name='Damien Dalla-Rosa', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None), Author(name='Simon Corbeil-Letourneau', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None), Author(name='Florian Martet', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None), Author(name='Tanguy Pommellet', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None), Author(name='Laura Salvan', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None), Author(name='Simon Veilleux', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None), Author(name='Maryam Ziaeefard', affiliation=['CortAIx, Thales, Canada', 'Explainable AI in Critical Systems'], email=None)]
+num of author: 11
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper86.pdf
+Real-life Experiences with Federated Search.
+[Author(name='Kenny Knecht', affiliation=['ONTOFORCE NV, Gent, Belgium'], email='kenny.knecht@ontoforce.com'), Author(name='Paul Vauterin', affiliation=['ONTOFORCE NV, Gent, Belgium'], email=None), Author(name='Hans Constandt', affiliation=['ONTOFORCE NV, Gent, Belgium'], email=None)]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper87.pdf
+Towards Integrating Ontologies into Verification for Autonomous Driving.
+[Author(name='Arut Prakash Kaleeswaran', affiliation=['Robert Bosch Corporate Sector Research, 71272 Renningen, Germany'], email=None), Author(name='Arne Nordmann', affiliation=['Robert Bosch Corporate Sector Research, 71272 Renningen, Germany'], email=None), Author(name='Anees ul Mehdi', affiliation=['Robert Bosch Corporate Sector Research, 71272 Renningen, Germany'], email=None)]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper88.pdf
+The European Data Portal: Scalable Harvesting and Management of Linked Open Data.
+[Author(name='Fabian Kirstein', affiliation=['Fraunhofer FOKUS, Berlin, Germany', 'Weizenbaum Institute for the Networked Society, Berlin, Germany'], email='fabian.kirstein@fokus.fraunhofer.de'), Author(name='Simon Dutkowski', affiliation=['Fraunhofer FOKUS, Berlin, Germany'], email='simon.dutkowski@fokus.fraunhofer.de'), Author(name='Benjamin Dittwald', affiliation=['Fraunhofer FOKUS, Berlin, Germany'], email='benjamin.dittwald@fokus.fraunhofer.de'), Author(name='Manfred Hauswirth', affiliation=['Fraunhofer FOKUS, Berlin, Germany', 'Weizenbaum Institute for the Networked Society, Berlin, Germany', 'TU Berlin, Open Distributed Systems, Berlin, Germany'], email='manfred.hauswirth@fokus.fraunhofer.de')]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper89.pdf
+Towards the Bosch Materials Science Knowledge Base.
+[Author(name='Jannik Strötgen', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Trung-Kien Tran', affiliation=['Bosch Center for Artificial Intelligence'], email=None), Author(name='Annemarie Friedrich', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Dragan Milchevski', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Federico Tomazic', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Anika Marusczyk', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Heike Adel', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Daria Stepanova', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Felix Hildebrand', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None), Author(name='Evgeny Kharlamov', affiliation=['Robert Bosch GmbH, Corporate Research and Bosch Center for Artificial Intelligence, Germany'], email=None)]
+num of author: 10
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper9.pdf
+Embedding OWL Ontologies with OWL2Vec.
+[Author(name='Ole Magnus Holter', affiliation=['Department of Informatics, University of Oslo, Norway'], email=None), Author(name='Erik Bryhn Myklebust', affiliation=['Department of Informatics, University of Oslo, Norway', 'Norwegian Institute for Water Research, Oslo, Norway'], email=None), Author(name='Jiaoyan Chen', affiliation=['Department of Computer Science, University of Oxford, UK'], email=None), Author(name='Ernesto Jiménez-Ruiz', affiliation=['Department of Informatics, University of Oslo, Norway', 'The Alan Turing Institute, London, UK'], email='ernesto.jimenez.ruiz@gmail.com')]
+num of author: 4
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper90.pdf
+Transactional Guarantees for SPARQL Query Execution with Amazon Neptune.
+[Author(name='Bradley R. Bebee', affiliation=['Amazon Web Services, Seattle, WA 98101, USA'], email=None), Author(name='Ankesh Khandelwal', affiliation=['Amazon Web Services, Seattle, WA 98101, USA'], email=None), Author(name='Sainath Mallidi', affiliation=['Amazon Web Services, Seattle, WA 98101, USA'], email=None), Author(name='Bruce McGaughy', affiliation=['Amazon Web Services, Seattle, WA 98101, USA'], email=None), Author(name='Simone Rondelli', affiliation=['Amazon Web Services, Seattle, WA 98101, USA'], email=None), Author(name='Michael Schmidt', affiliation=['Amazon Web Services, Seattle, WA 98101, USA'], email=None), Author(name='Bryan B. Thompson', affiliation=['Amazon Web Services, Seattle, WA 98101, USA'], email=None)]
+num of author: 7
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper91.pdf
+Using Event Graph to Improve Question Answering in E-commerce Customer Service.
+[Author(name='Feng-Lin Li', affiliation=['Alibaba Group'], email='fenglin.lfl@alibaba-inc.com'), Author(name='Kehan Chen', affiliation=['Alibaba Group'], email=None), Author(name='Yan Wan', affiliation=['Alibaba Group'], email=None), Author(name='Weijia Chen', affiliation=['Alibaba Group'], email=None), Author(name='Qi Huang', affiliation=['Alibaba Group'], email=None), Author(name='Yikun Guo', affiliation=['Alibaba Group'], email=['yikun.gyk@alibaba-inc.com'])]
+num of author: 6
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper92.pdf
+Open Services for Lifecycle Collaboration (OSLC) - Extending REST APIs to Connect Data.
+[Author(name='Axel Reichwein', affiliation=['Koneksys, San Francisco CA 94117, USA', 'Traceability in Engineering'], email='axel.reichwein@koneksys.com'), Author(name='Fernando Lopez', affiliation=['Koneksys, Tultitlan 54955, Mexico', 'Traceability in Engineering'], email=['fernando.lopezg@koneksys.com'])]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper93.pdf
+Designing and Building a Hybrid Data Cloud.
+[Author(name='Juan F. Sequeda', affiliation=['data.world, Austin, Texas, USA'], email='juan@data.world'), Author(name='Bryon Jacob', affiliation=['data.world, Austin, Texas, USA'], email=['bryon@data.world']), Author(name='Dave Griffith', affiliation=['data.world, Austin, Texas, USA'], email='dave.griffith@data.world')]
+num of author: 3
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper94.pdf
+Co-LOD: Continuous Space Linked Open Data.
+[Author(name='Mayank Kejriwal', affiliation=['Information Sciences Institute, University of Southern California'], email='kejriwal@isi.edu'), Author(name='Pedro A. Szekely', affiliation=['Information Sciences Institute, University of Southern California'], email='pszekely@isi.edu')]
+num of author: 2
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2456/paper95.pdf
+Datasets First! A Bottom-up Data Linking Paradigm.
+[Author(name='Konstantin Todorov', affiliation=['LIRMM', 'University of Montpellier', 'CNRS, France'], email='konstantin.todorov@lirmm.fr')]
+num of author: 1
+Exact matching of paper titles and author names: 87 out of 404
+Exact matching of title, names and emails: 8 out of 404
+Exact matching of all atts: 7 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 8 out of 404
+
+Total = 95
+TP = 87

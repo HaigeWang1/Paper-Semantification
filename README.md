@@ -19,11 +19,13 @@ Run the whole application with the command `docker-compose up -d`
 - Neo4J can be access locally through http://localhost:7474 
   - In the server connection interface input `bolt://localhost:7687`
   - Authentication is disabled, thus ignore the fields related to authentication
-- Our service exposes its APIs through a FastAPI server. The API can be accessed in the Swager UI through htttp://localhost:8000/docs
+- Our service exposes its APIs through a FastAPI server. The API can be accessed in the Swager UI through http://localhost:8000/docs
   - Find the API documentation in the fastapi swagger through the link above
+    - From the interactive Swagger UI in http://localhost:8000/docs you can call the different endpoints that our service exposes
   - paper_semantification includes a parser that relies on OpenAI public endpoints. To make it work a key is required.
     - Create an .env file in the same folder as docker-compose.yaml
     - Set the env variable `OPENAI_API_KEY="sk-..."`
+    - 
 
 # Goal
 The purpose of this task is to comprehensively process scholarly papers by leveraging metadata extraction services such as CERMINE and GROBID APIs.

@@ -7,6 +7,7 @@
 
 ### Dockerized Version - Setup
 
+- **Prerequisite**: Install `docker` and `docker-compose` at your local machine in order to be able to execute the commands below 
 ##### Build the docker image for the  python service paper_sementification 
 `docker build -t paper_semantification .`
 
@@ -25,7 +26,6 @@ Run the whole application with the command `docker-compose up -d`
   - paper_semantification includes a parser that relies on OpenAI public endpoints. To make it work a key is required.
     - Create an .env file in the same folder as docker-compose.yaml
     - Set the env variable `OPENAI_API_KEY="sk-..."`
-    - 
 
 # Goal
 The purpose of this task is to comprehensively process scholarly papers by leveraging metadata extraction services such as CERMINE and GROBID APIs.

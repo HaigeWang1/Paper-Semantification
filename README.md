@@ -7,7 +7,8 @@
 
 ### Dockerized Version - Setup
 
-- **Prerequisite**: Install `docker` and `docker-compose` at your local machine in order to be able to execute the commands below 
+- **Prerequisite**: Install `docker` and `docker-compose` at your local machine in order to be able to execute the commands below.
+  https://docs.docker.com/get-docker/
 ##### Build the docker image for the  python service paper_sementification 
 `docker build -t paper_semantification .`
 

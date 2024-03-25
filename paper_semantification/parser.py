@@ -672,7 +672,9 @@ def parse_volumes(volumes: List[int] = None, all_volumes: bool = False, construc
     if construct_graph:
         print("Setting up Neo4j connection")
         neo4j_conn = Neo4jConnection(uri=NEO4J_URI)  
-        neo4j_conn.connect()  
+        neo4j_conn.connect()
+    else:
+        neo4j_conn = None
 
     #extract all pages for each vol
     papers = {}

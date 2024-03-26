@@ -4,30 +4,22 @@
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)
 
 # How to run it 
-
-### Dockerized Version - Setup
-
 - **Prerequisite**: Install `docker` and `docker-compose` at your local machine in order to be able to execute the commands below.
   https://docs.docker.com/get-docker/
-##### Build the docker image for the  python service paper_sementification 
-`docker build -t paper_semantification .`
 
-Docker-compose contains two services:
-1. The Neo4J database
-2. paper_semantification (our python service)
+1. `git clone https://github.com/HaigeWang1/Paper-Semantification.git`
+   - paper_semantification includes a parser that relies on OpenAI public endpoints. To make it work a key is required.
+     - Create an .env file in the same folder as docker-compose.yaml
+     - Set the env variable `OPENAI_API_KEY="sk-..."`
+3. `docker build -t paper_semantification .` Build the docker image for the python service paper_sementification
+4. `docker-compose up -d` Run the whole application
 
-Run the whole application with the command `docker-compose up -d`
-
-- Neo4J can be access locally through http://localhost:7474 
-  - In the server connection interface input `bolt://localhost:7687`
-  - Authentication is disabled, thus ignore the fields related to authentication
-- Our service exposes its APIs through a FastAPI server. The API can be accessed in the Swager UI through http://localhost:8000/docs
-  - Find the API documentation in the fastapi swagger through the link above
-    - From the interactive Swagger UI in http://localhost:8000/docs you can call the different endpoints that our service exposes
-  - paper_semantification includes a parser that relies on OpenAI public endpoints. To make it work a key is required.
-    - Create an .env file in the same folder as docker-compose.yaml
-    - Set the env variable `OPENAI_API_KEY="sk-..."`
-
+**Docker-compose** contains two services:
+  1. Database Neo4J can be access locally through **http://localhost:7474**, connect URL **bolt://localhost:7687**.
+     - Authentication is disabled, thus ignore the fields related to authentication
+  2. Our python service exposes its APIs through a FastAPI server **http://localhost:8000/docs**
+     - You can call the different endpoints that our service exposes
+   
 # Goal
 The purpose of this task is to comprehensively process scholarly papers by leveraging metadata extraction services such as CERMINE and GROBID APIs.
 

@@ -1,0 +1,42 @@
+['2000', '2003']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper1.pdf
+Towards Grounding Conceptual Spaces in Neural Representations.
+[Author(name='Lucas Bechberger', affiliation=['Institute of Cognitive Science, Osnabrück University'], email=['lucas.bechberger@uni-osnabrueck.de']), Author(name='Kai-Uwe Kühnberger', affiliation=['Institute of Cognitive Science, Osnabrück University'], email=['kai-uwe.kuehnberger@uni-osnabrueck.de'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper10.pdf
+Category-based Inductive Learning in Shared NeMuS.
+[Author(name='Ana Carolina Melik Schramm', affiliation=['Shared NeMuS Approach to Train Problem', 'Universidade Federal do Amazonas, Instituto de Computaca~o, Campus Setor Norte Coroado - Manaus - AM - Brasil CEP: 69080-900'], email='acms@icomp.ufam.edu.br'), Author(name='Edjard de Souza Mota', affiliation=['Shared NeMuS Approach to Train Problem', 'Universidade Federal do Amazonas, Instituto de Computaca~o, Campus Setor Norte Coroado - Manaus - AM - Brasil CEP: 69080-900'], email=['edjardg@icomp.ufam.edu.br']), Author(name='Jacob M. Howe', affiliation=['City, University of London, London, EC1V 0HB, UK', 'Shared NeMuS Approach to Train Problem'], email='J.M.Howe@city.ac.uk'), Author(name="Artur S. d'Avila Garcez", affiliation=['City, University of London, London, EC1V 0HB, UK', 'Shared NeMuS Approach to Train Problem'], email=['a.garcezg@city.ac.uk'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper11.pdf
+Q-SATyrus: Mapping Neuro-symbolic Reasoning into an Adiabatic Quantum Computer.
+[Author(name='Priscila M. V. Lima', affiliation=['Tercio Pacitti Institute, Federal University of Rio de Janeiro'], email='priscilamvl@gmail.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper2.pdf
+Propositional Rule Extraction from Neural Networks under Background Knowledge.
+[Author(name='Maryam Labaf', affiliation=['Data Semantics (DaSe) Laboratory, Wright State University, Dayton, OH, USA', 'Dept. of Math. and Stat., Wright State University, Dayton, OH, USA'], email=None), Author(name='Pascal Hitzler', affiliation=['Data Semantics (DaSe) Laboratory, Wright State University, Dayton, OH, USA'], email=None), Author(name='Anthony B. Evans', affiliation=['Dept. of Math. and Stat., Wright State University, Dayton, OH, USA'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper3.pdf
+Classical Planning in Deep Latent Space: From Unlabeled Images to PDDL (and back).
+[Author(name='Masataro Asai', affiliation=['Graduate School of Arts and Sciences', 'University of Tokyo'], email='guicho2.71828@gmail.com'), Author(name='Alex Fukunaga', affiliation=['Graduate School of Arts and Sciences', 'University of Tokyo'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper4.pdf
+Explaining Trained Neural Networks with Semantic Web Technologies: First Steps.
+[Author(name='Md. Kamruzzaman Sarker', affiliation=['Data Science and Security Cluster, Wright State University, Dayton, OH, USA'], email=None), Author(name='Ning Xie', affiliation=['Data Science and Security Cluster, Wright State University, Dayton, OH, USA'], email=None), Author(name='Derek Doran', affiliation=['Data Science and Security Cluster, Wright State University, Dayton, OH, USA'], email=None), Author(name='Michael L. Raymer', affiliation=['Data Science and Security Cluster, Wright State University, Dayton, OH, USA'], email=None), Author(name='Pascal Hitzler', affiliation=['Data Science and Security Cluster, Wright State University, Dayton, OH, USA'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper5.pdf
+Inductive Learning in Shared Neural Multi-Spaces.
+[Author(name='Edjard de Souza Mota', affiliation=['City, University of London', 'Universidade Federal do Amazonas'], email='edjard.de-souza-mota@city.ac.uk'), Author(name='Jacob M. Howe', affiliation=['City, University of London'], email='j.m.howe@city.ac.uk'), Author(name="Artur S. d'Avila Garcez", affiliation=['City, University of London'], email=['a.garcezg@city.ac.uk'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper6.pdf
+A Comparison between Deep Q-Networks and Deep Symbolic Reinforcement Learning.
+[Author(name='Aimore R. R. Dutra', affiliation=['City, University of London, London, EC1V 0HB, UK'], email='aimorerrd@hotmail.com'), Author(name="Artur S. d'Avila Garcez", affiliation=['City, University of London, London, EC1V 0HB, UK'], email=['a.garcez@city.ac.uk'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper7.pdf
+Confidence Values and Compact Rule Extraction From Probabilistic Neural Networks.
+[Author(name='Simon Odense', affiliation=['City, University of London, UK'], email=['simon.odense@city.ac.uk']), Author(name="Artur S. d'Avila Garcez", affiliation=['City, University of London, UK'], email=['a.garcez@city.ac.uk'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper8.pdf
+Group Cooperative Teaching Design With Knowledge Graphs in Project-Driven Learning.
+[Author(name='Chunhong Liu', affiliation=[], email=''), Author(name='Jieyu Zhang', affiliation=[], email=''), Author(name='Haoyang Zhang', affiliation=[], email=''), Author(name='Xiaoniu Li', affiliation=[], email=''), Author(name='En Zhang', affiliation=[], email='')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2003/NeSy17_paper9.pdf
+Learning about Actions and Events in Shared NeMuS.
+[Author(name='Milena Rodrigues Tenorio', affiliation=['Universidade Federal do Amazonas'], email='mrt@icomp.ufam.edu.br'), Author(name='Edjard de Souza Mota', affiliation=['Universidade Federal do Amazonas'], email=['edjardg@icomp.ufam.edu.br']), Author(name='Jacob M. Howe', affiliation=['City, University of London'], email='J.M.Howe@city.ac.uk'), Author(name="Artur S. d'Avila Garcez", affiliation=['City, University of London'], email=['a.garcezg@city.ac.uk'])]
+Exact matching of paper titles and author names: 20 out of 404
+Exact matching of title, names and emails: 6 out of 404
+Exact matching of all atts: 3 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 6 out of 404
+
+for 2003 
+Total = 11
+TP = 10

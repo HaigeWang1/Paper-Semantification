@@ -1,0 +1,61 @@
+['2450']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper1.pdf
+How Playlist Evaluation Compares to Track Evaluations in Music Recommender Systems.
+[Author(name='Sophia Hadash', affiliation=['Jheronimus Academy of Data Science'], email=['s.hadash@tue.nl']), Author(name='Yu Liang', affiliation=['Jheronimus Academy of Data Science'], email=['y.liang1@tue.nl']), Author(name='Martijn C. Willemsen', affiliation=['Eindhoven University of Technology', 'Jheronimus Academy of Data Science'], email=['m.c.willemsen@tue.nl'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper2.pdf
+To Explain or not to Explain: the Effects of Personal Characteristics when Explaining Feature-based Recommendations in Different Domains.
+[Author(name='Martijn Millecamp', affiliation=['Department of Computer Science, KU Leuven'], email=['martijn.millecamp@cs.kuleuven.be']), Author(name='Sidra Naveed', affiliation=['Department of Computer Science, Duisburg-Essen University'], email=['sidra.naveed@uni-due.de']), Author(name='Katrien Verbert', affiliation=['Department of Computer Science, KU Leuven'], email=['katrien.verbert@cs.kuleuven.be']), Author(name='Jürgen Ziegler', affiliation=['Department of Computer Science, Duisburg-Essen University'], email=['juergen.ziegler@uni-due.de'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper3.pdf
+Designing for serendipity in a university course recommendation system.
+[Author(name='Zachary A. Pardos', affiliation=['University of California, Berkeley'], email=['zp@berkeley.edu']), Author(name='Weijie Jiang', affiliation=['Tsinghua University', 'University of California, Berkeley'], email=['jiangwj.14@sem.tsinghua.edu.cn'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper4.pdf
+Using Facial Recognition Services as Implicit Feedback for Recommenders.
+[Author(name='Toon De Pessemier', affiliation=['imec - WAVES - Ghent University'], email=['toon.depessemier@ugent.be']), Author(name='Ine Coppens', affiliation=['imec - WAVES - Ghent University'], email=['ine.coppens@ugent.be']), Author(name='Luc Martens', affiliation=['imec - WAVES - Ghent University'], email=['luc1.martens@ugent.be'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper5.pdf
+Generation of Hints to Overcome Difficulty in Operating Interactive Recommender Systems.
+[Author(name='Yuri Nakao', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['nakao.yuri@fujitsu.com']), Author(name='Takuya Ohwa', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['takuyaohwa@fujitsu.com']), Author(name='Kotaro Ohori', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['ohori.kotaro@fujitsu.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper6.pdf
+Investigating Mechanisms for User Integration in the Activity Goal Recommendation Process by Interface Design.
+[Author(name='Katja Herrmanny', affiliation=['University of Duisburg-Essen'], email='katja.herrmanny@uni-due.de'), Author(name='Simone Löppenberg', affiliation=['University of Duisburg-Essen'], email=None), Author(name='Michael Schwarz', affiliation=['University of Duisburg-Essen'], email='michael.schwarz@uni-due.de')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short1.pdf
+['2450']
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper1.pdf
+How Playlist Evaluation Compares to Track Evaluations in Music Recommender Systems.
+[Author(name='Sophia Hadash', affiliation=['Jheronimus Academy of Data Science'], email=['s.hadash@tue.nl']), Author(name='Yu Liang', affiliation=['Jheronimus Academy of Data Science'], email=['y.liang1@tue.nl']), Author(name='Martijn C. Willemsen', affiliation=['Eindhoven University of Technology', 'Jheronimus Academy of Data Science'], email=['m.c.willemsen@tue.nl'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper2.pdf
+To Explain or not to Explain: the Effects of Personal Characteristics when Explaining Feature-based Recommendations in Different Domains.
+[Author(name='Martijn Millecamp', affiliation=['Department of Computer Science, KU Leuven'], email=['martijn.millecamp@cs.kuleuven.be']), Author(name='Sidra Naveed', affiliation=['Department of Computer Science, Duisburg-Essen University'], email=['sidra.naveed@uni-due.de']), Author(name='Katrien Verbert', affiliation=['Department of Computer Science, KU Leuven'], email=['katrien.verbert@cs.kuleuven.be']), Author(name='Jürgen Ziegler', affiliation=['Department of Computer Science, Duisburg-Essen University'], email=['juergen.ziegler@uni-due.de'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper3.pdf
+Designing for serendipity in a university course recommendation system.
+[Author(name='Zachary A. Pardos', affiliation=['University of California, Berkeley'], email=['zp@berkeley.edu']), Author(name='Weijie Jiang', affiliation=['Tsinghua University', 'University of California, Berkeley'], email=['jiangwj.14@sem.tsinghua.edu.cn'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper4.pdf
+Using Facial Recognition Services as Implicit Feedback for Recommenders.
+[Author(name='Toon De Pessemier', affiliation=['imec - WAVES - Ghent University'], email=['toon.depessemier@ugent.be']), Author(name='Ine Coppens', affiliation=['imec - WAVES - Ghent University'], email=['ine.coppens@ugent.be']), Author(name='Luc Martens', affiliation=['imec - WAVES - Ghent University'], email=['luc1.martens@ugent.be'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper5.pdf
+Generation of Hints to Overcome Difficulty in Operating Interactive Recommender Systems.
+[Author(name='Yuri Nakao', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['nakao.yuri@fujitsu.com']), Author(name='Takuya Ohwa', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['takuyaohwa@fujitsu.com']), Author(name='Kotaro Ohori', affiliation=['Fujitsu Laboratories Ltd., Kawasaki, Japan'], email=['ohori.kotaro@fujitsu.com'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/paper6.pdf
+Investigating Mechanisms for User Integration in the Activity Goal Recommendation Process by Interface Design.
+[Author(name='Katja Herrmanny', affiliation=['University of Duisburg-Essen'], email='katja.herrmanny@uni-due.de'), Author(name='Simone Löppenberg', affiliation=['University of Duisburg-Essen'], email=None), Author(name='Michael Schwarz', affiliation=['University of Duisburg-Essen'], email='michael.schwarz@uni-due.de')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short1.pdf
+Spotivibes: Tagging Playlist Vibes with Colors.
+[Author(name='Hiba Abderrazik', affiliation=['Delft University of Technology'], email=['h.abderrazik@student.tudelft.nl']), Author(name='Giovan Angela', affiliation=['Delft University of Technology'], email=['g.j.a.angela@student.tudelft.nl']), Author(name='Hans Brouwer', affiliation=['Delft University of Technology'], email=['j.c.brouwer@student.tudelft.nl']), Author(name='Henky Janse', affiliation=['Delft University of Technology'], email=['h.a.b.janse@student.tudelft.nl']), Author(name='Sterre Lutz', affiliation=['Delft University of Technology'], email=['s.lutz@student.tudelft.nl']), Author(name='Gwennan Smitskamp', affiliation=['Delft University of Technology'], email=['g.m.smitskamp@student.tudelft.nl']), Author(name='Sandy Manolios', affiliation=['Delft University of Technology'], email=['s.manolios@tudelft.nl']), Author(name='Cynthia C. S. Liem', affiliation=['Delft University of Technology'], email=['c.c.s.liem@tudelft.nl'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short2.pdf
+Visualizing Ratings in Recommender System Datasets.
+[Author(name='Diego Monti', affiliation=['Politecnico di Torino'], email=['diego.monti@polito.it']), Author(name='Giuseppe Rizzo', affiliation=['LINKS Foundation'], email=['giuseppe.rizzo@linksfoundation.com']), Author(name='Maurizio Morisio', affiliation=['Politecnico di Torino'], email=['maurizio.morisio@polito.it'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short3.pdf
+The Effectiveness of Advice Solicitation and Social Peers in an Energy Recommender System.
+[Author(name='Alain Starke', affiliation=['Human-Technology Interaction Group', 'Eindhoven University of Technology'], email='A.D.Starke@tue.nl')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short4.pdf
+Towards Evaluating User Profiling Methods Based on Explicit Ratings on Item Features.
+[Author(name='Luca Luciano Costanzo', affiliation=['Politecnico di Milano, Italy'], email=['lucaluciano.costanzo@mail.polimi.it']), Author(name='Yashar Deldjoo', affiliation=['Polytechnic University of Bari, Italy'], email=['deldjooy@acm.org']), Author(name='Maurizio Ferrari Dacrema', affiliation=['Politecnico di Milano, Italy'], email=['maurizio.ferrari@polimi.it']), Author(name='Markus Schedl', affiliation=['Johannes Kepler University Linz, Austria'], email=['markus.schedl@jku.at']), Author(name='Paolo Cremonesi', affiliation=['Politecnico di Milano, Italy'], email=['paolo.cremonesi@polimi.it'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2450/short5.pdf
+Does the User Have A Theory of the Recommender? A Pilot Study.
+[Author(name='Muheeb Faizan Ghori', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['mghori2@depaul.edu']), Author(name='Arman Dehpanah', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['adehpana@depaul.edu']), Author(name='Jonathan Gemmell', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['jgemmell@cdm.depaul.edu']), Author(name='Hamed Qahri-Saremi', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['hamed.saremi@depaul.edu']), Author(name='Bamshad Mobasher', affiliation=['School of Computing, DePaul University, Chicago, Illinois'], email=['mobasher@depaul.edu'])]
+Exact matching of paper titles and author names: 11 out of 404
+Exact matching of title, names and emails: 10 out of 404
+Exact matching of all atts: 6 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 10 out of 404
+
+Total = 11
+100%

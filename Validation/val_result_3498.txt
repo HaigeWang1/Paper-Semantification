@@ -1,0 +1,121 @@
+['3498']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper1.pdf
+Generalizing Conjunctive and Disjunctive Rule Learning to Learning m-of-n Concepts.
+[Author(name='Florian Beck', affiliation=['Johannes Kepler University Linz, Department of Computer Science, Institute for Application-oriented Knowledge Processing (FAW), Linz, Austria'], email='fbeck@faw.jku.at'), Author(name='Johannes Fürnkranz', affiliation=['Johannes Kepler University Linz, Department of Computer Science, Institute for Application-oriented Knowledge Processing (FAW), Linz, Austria'], email='juffi@faw.jku.at'), Author(name='Phuong Huynh Van Quoc', affiliation=['Johannes Kepler University Linz, Department of Computer Science, Institute for Application-oriented Knowledge Processing (FAW), Linz, Austria'], email='vqphuynh@faw.jku.at')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper10.pdf
+Exception: unexpected character after line continuation character (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+unterminated string literal (detected at line 23) (<string>, line 23)
+OpenAI could not get parsed correctly
+Improving Optimization with Gaussian Processes in the Covariance Matrix Adaptation Evolution Strategy.
+[Author(name='Jirí Tumpach', affiliation=['Charles University, Faculty of Mathematics and Physics, Prague, Czech Republic'], email=None), Author(name='Jan Koza', affiliation=['Czech Technical University, Faculty of Information Technology, Prague, Czech Republic'], email=None), Author(name='Martin Holena', affiliation=['Czech Academy of Sciences, Institute of Computer Science, Prague, Czech Republic'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper11.pdf
+Extraction of Legal References from Court Decisions.
+[Author(name='Dávid Varga', affiliation=['Institute of Computer Science, Faculty of Science, Pavol Jozef Šafárik University in Košice'], email='david.varga@student.upjs.sk'), Author(name='Martin Gojdic', affiliation=['Institute of Computer Science, Faculty of Science, Pavol Jozef Šafárik University in Košice'], email='martin.gojdic@student.upjs.sk'), Author(name='Zoltán Szoplák', affiliation=['Institute of Computer Science, Faculty of Science, Pavol Jozef Šafárik University in Košice'], email='zoltan.szoplak@student.upjs.sk'), Author(name='Peter Gurský', affiliation=['Institute of Computer Science, Faculty of Science, Pavol Jozef Šafárik University in Košice'], email='peter.gursky@upjs.sk'), Author(name='Simon Horvát', affiliation=['Institute of Computer Science, Faculty of Science, Pavol Jozef Šafárik University in Košice'], email='simon.horvat@upjs.sk'), Author(name='Stanislav Krajci', affiliation=['Institute of Computer Science, Faculty of Science, Pavol Jozef Šafárik University in Košice'], email='stanislav.krajci@upjs.sk'), Author(name='Lubomir Antoni', affiliation=['Institute of Computer Science, Faculty of Science, Pavol Jozef Šafárik University in Košice'], email='lubomir.antoni@upjs.sk')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper12.pdf
+Efficient Fine-tuning of SlovakBERT with Epinet.
+[Author(name='Jozef Kubík', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email='jozef.kubik@fmph.uniba.sk'), Author(name='Daniel Kyselica', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email='daniel.kyselica@fmph.uniba.sk'), Author(name='Martin Takác', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email='martin.takac@fmph.uniba.sk')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper13.pdf
+Inherently Reciprocal Predicates - Do They Exist At All?
+[Author(name='Markéta Lopatková', affiliation=['Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics'], email='lopatkova@ufal.mff.cuni.cz'), Author(name='Václava Kettnerová', affiliation=['Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics'], email='kettnerova@ufal.mff.cuni.cz')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper14.pdf
+onside Pumping and topside Pumping by Complete CF(¢,$)-grammars
+[Author(name='Frantisek Mráz', affiliation=['Charles University, Department of Computer Science, Malostranské nám. 25, 118 00 Praha 1, Czech Republic'], email='frantisek.mraz@mff.cuni.cz'), Author(name='Martin Plátek', affiliation=['Charles University, Department of Computer Science, Malostranské nám. 25, 118 00 Praha 1, Czech Republic'], email='martin.platek@mff.cuni.cz'), Author(name='Dana Pardubská', affiliation=['Comenius University in Bratislava, Department of Computer Science, Mlynská Dolina, 84248 Bratislava, Slovakia'], email='pardubska@dcs.fmph.uniba.sk'), Author(name='Daniel Prusa', affiliation=['Czech Technical University, Department of Cybernetics, Karlovo nám. 13, 121 35 Praha 2, Czech Republic'], email='prusapa1@fel.cvut.cz')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper15.pdf
+Shortening of the Results of Machine Translation using Paraphrasing Dataset.
+[Author(name='Andrej Perkovic', affiliation=['25, Prague, 118 00, Czech Republic', 'University of Primorska, Faculty of Mathematics, Natural Science and Information Technologies, Glagoljaska 8, 6000'], email='89201045@student.upr.si'), Author(name='Jernej Vicic', affiliation=['25, Prague, 118 00, Czech Republic', 'University of Primorska, Faculty of Mathematics, Natural Science and Information Technologies, Glagoljaska 8, 6000'], email=['jernej.vicic@upr.si']), Author(name='Dávid Javorský', affiliation=['Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics, Malostranské nám. 25, Prague, 118 00, Czech Republic'], email='javorsky@ufal.mff.cuni.cz'), Author(name='Ondrej Bojar', affiliation=['Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics, Malostranské nám. 25, Prague, 118 00, Czech Republic'], email=['ondrej.bojar@mff.cuni.cz'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper16.pdf
+Linking Two Lexical Resources: VALLEX and MorfFlex Lexicons.
+[Author(name='Markéta Lopatková', affiliation=['Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics'], email='lopatkova@ufal.mff.cuni.cz'), Author(name='Jaroslava Hlavácová', affiliation=['Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics'], email='hlavacova@ufal.mff.cuni.cz'), Author(name='Jirí Mírovský', affiliation=['Charles University, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics'], email='mirovsky@ufal.mff.cuni.cz')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper17.pdf
+Two Effective Algorithms Optimize Together.
+[Author(name='Daniel Valenta', affiliation=['Silesian University in Opava, Faculty of Philosophy and Science, Institute of Computer Science, 746 01 Opava, Czech Republic'], email='daniel.valenta@fpf.slu.cz'), Author(name='Radka Poláková', affiliation=['Silesian University in Opava, Faculty of Philosophy and Science, Institute of Computer Science, 746 01 Opava, Czech Republic'], email='radka.polakova@fpf.slu.cz')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper18.pdf
+Notes on Relationship of P Colonies to Osmotic Computing and Computer Viruses.
+[Author(name='Sárka Vavrecková', affiliation=[], email='')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper19.pdf
+Working with Positive Integers in P Colony rw-Automata.
+[Author(name='Lucie Ciencialová', affiliation=['Institute of Computer Science, Faculty of Philosophy and Science in Opava, Silesian Univerity in Opava, Opava, Czech Republic'], email='lucie.ciencialova@fpf.slu.cz'), Author(name='Ludek Cienciala', affiliation=['Institute of Computer Science, Faculty of Philosophy and Science in Opava, Silesian Univerity in Opava, Opava, Czech Republic'], email='ludek.cienciala@fpf.slu.cz')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper2.pdf
+Behavioural Classification of Network Devices using Graph Structure of Private Networks.
+[Author(name='Vojtech Outrata', affiliation=['TD&R Data Science, Cisco Systems', 'Czech Technical University, Faculty of Electrical Engineering'], email='voutrata@cisco.com'), Author(name='Jaroslav Hlavác', affiliation=['TD&R Data Science, Cisco Systems', 'Charles University, Faculty of Mathematics and Physics'], email='jhlavac@cisco.com'), Author(name='Martin Kopp', affiliation=['TD&R Data Science, Cisco Systems'], email='markopp@cisco.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper20.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+invalid syntax (<string>, line 1)
+OpenAI could not get parsed correctly
+Covering Complete Graphs using the Dancing Links Algorithm.
+[Author(name='Petr Kovár', affiliation=['VŠB - Technical University of Ostrava, Department of Applied Mathematics, 17. listopadu 2172/15, 708 00 Ostrava, Czech Republic'], email='petr.kovar@vsb.cz'), Author(name='Yifan Zhang', affiliation=['VŠB - Technical University of Ostrava, Department of Applied Mathematics, 17. listopadu 2172/15, 708 00 Ostrava, Czech Republic'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper21.pdf
+On Geometric Siamese Color Graphs.
+[Author(name='Nina Hronkovicová', affiliation=['Department of Algebra and Geometry, Faculty of Mathematics, Physics and Informatics, Comenius University'], email='nina.hronkovicova@fmph.uniba.sk'), Author(name='Martin Macaj', affiliation=['Department of Algebra and Geometry, Faculty of Mathematics, Physics and Informatics, Comenius University'], email='martin.macaj@fmph.uniba.sk')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper22.pdf
+Constructions of Hypergraphical Regular Representations via k-uniform Hypergraphs of Certain Groups of Order Greater than 32.
+[Author(name='Dominika Mihálová', affiliation=['Comenius University, Faculty of Mathematics, Physics and Informatics, Department of Applied Informatics, Bratislava, Slovakia'], email='dominika.mihalova@fmph.uniba.sk')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper23.pdf
+Analysis of Colouring Properties of Proper (2, 3)-poles.
+[Author(name='Erik Rehulka', affiliation=['Comenius University, Mlynská dolina, 842 48 Bratislava, Slovakia'], email='rehulka3@uniba.sk'), Author(name='Jozef Rajník', affiliation=['Comenius University, Mlynská dolina, 842 48 Bratislava, Slovakia'], email='jozef.rajnik@fmph.uniba.sk')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper24.pdf
+Partial Symmetries and Symmetry Levels of Graphs - A Census.
+[Author(name='Valter Cingel', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email='cingel13@uniba.sk'), Author(name='Matús Gál', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email='gal39@uniba.sk'), Author(name='Tatiana Jajcayová', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email='jajcayova@fmph.uniba.sk')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper25.pdf
+Exception: unexpected character after line continuation character (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+On the Spectra and Spectral Radii of Token Graphs.
+[Author(name='Mónica Reyes', affiliation=[], email=''), Author(name='Cristina Dalfó', affiliation=['Dept. de Matemàtica, Universitat de Lleida, Igualada (Barcelona), Catalonia', '[6] P. Caputo, T. M. Liggett, and T. Richthammer, Proof'], email='cristina.dalfo@udl.cat'), Author(name='Miquel Angel Fiol', affiliation=['Dept. de Matemàtica, Universitat de Lleida, Igualada (Barcelona), Catalonia', '[6] P. Caputo, T. M. Liggett, and T. Richthammer, Proof'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper26.pdf
+An Algorithmic Approach to Determining Spectra of Orders of (k, g)-graphs.
+[Author(name='Leonard Chidiebere Eze', affiliation=['Department of Algebra and Geometry, Faculty of Mathematics, Physics and Informatics, Comenius University, Mlynska Dolina 84248, Bratislava, Slovakia'], email='leonard.eze@fmph.uniba.sk'), Author(name='Róbert Jajcay', affiliation=['Department of Algebra and Geometry, Faculty of Mathematics, Physics and Informatics, Comenius University, Mlynska Dolina 84248, Bratislava, Slovakia'], email='robert.jajcay@fmph.uniba.sk'), Author(name='Dominika Mihálová', affiliation=['Department of Applied Informatics, Faculty of Mathematics, Physics and Informatics, Comenius University, Mlynska Dolina 84248, Bratislava, Slovakia'], email='dominika.mihalova@fmph.uniba.sk')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper27.pdf
+Prefix-free Graphs and Suffix Array Construction in Sublinear Space.
+[Author(name='Andrej Baláz', affiliation=['Department of Applied Informatics, Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email='andrejbalaz001@gmail.com'), Author(name='Alessia Petescia', affiliation=['Department of Applied Informatics, Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper28.pdf
+A Simple and Effective Classifier for the Detection of Psychotic Disorders based on Heart Rate Variability Time Series
+[Author(name='Krisztian Buza', affiliation=['Artificial Intelligence Laboratory, Institute Jozef Stefan, Jamova cesta 39, 1000 Ljubljana, Slovenia', 'BioIntelligence Group, Department of Mathematics-Informatics, Sapientia Hungarian University of Transylvania, Targu Mures, Romania'], email='buza@biointelligence.hu'), Author(name='Kamil Książek', affiliation=['Institute of Theoretical and Applied Informatics, Polish Academy of Sciences, Bałtycka 5, 44-100 Gliwice, Poland'], email=None), Author(name='Wilhelm Masarczyk', affiliation=['Department of Psychiatry, Faculty of Medical Sciences in Zabrze, Medical University of Silesia, Pyskowicka 49, 42-612 Tarnowskie Góry, Poland'], email=None), Author(name='Przemysław Głomb', affiliation=['Institute of Theoretical and Applied Informatics, Polish Academy of Sciences, Bałtycka 5, 44-100 Gliwice, Poland'], email=None), Author(name='Piotr Gorczyca', affiliation=['Department of Psychiatry, Faculty of Medical Sciences in Zabrze, Medical University of Silesia, Pyskowicka 49, 42-612 Tarnowskie Góry, Poland'], email=None), Author(name='Magdalena Piegza', affiliation=['Department of Psychiatry, Faculty of Medical Sciences in Zabrze, Medical University of Silesia, Pyskowicka 49, 42-612 Tarnowskie Góry, Poland'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper29.pdf
+Precise Nanopore Signal Modeling Improves Unsupervised Single-Molecule Methylation Detection.
+[Author(name='Vladimír Boza', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava, Mlynská dolina, 842 48 Bratislava, Slovakia'], email=None), Author(name='Eduard Batmendijn', affiliation=[], email=None), Author(name='Peter Peresíni', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava, Mlynská dolina, 842 48 Bratislava, Slovakia'], email=None), Author(name='Viktória Hodorová', affiliation=['Faculty of Natural Sciences, Comenius University in Bratislava, Ilkovičova 6, 841 05 Bratislava, Slovakia'], email=None), Author(name='Hana Lichancová', affiliation=['Faculty of Natural Sciences, Comenius University in Bratislava, Ilkovičova 6, 841 05 Bratislava, Slovakia'], email=None), Author(name='Rastislav Rabatin', affiliation=[], email=None), Author(name='Brona Brejová', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava, Mlynská dolina, 842 48 Bratislava, Slovakia'], email=None), Author(name='Jozef Nosek', affiliation=['Faculty of Natural Sciences, Comenius University in Bratislava, Ilkovičova 6, 841 05 Bratislava, Slovakia'], email=None), Author(name='Tomás Vinar', affiliation=['Faculty of Mathematics, Physics and Informatics, Comenius University in Bratislava, Mlynská dolina, 842 48 Bratislava, Slovakia'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper3.pdf
+Creating 3D Diorama from Single Image with Deep Learning.
+[Author(name='Martin Vejbora', affiliation=['Faculty of Mathematics and Physics, Charles University, Prague, Czech Republic'], email='mvejbora@seznam.cz'), Author(name='Elena Sikudová', affiliation=['Faculty of Mathematics and Physics, Charles University, Prague, Czech Republic'], email='sikudova@cgg.mff.cuni.cz')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper30.pdf
+Identifying Clusters in Graph Representations of Genomes.
+[Author(name='Eva Herencsárová', affiliation=['Department of Computer Science, Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email=None), Author(name='Brona Brejová', affiliation=['Department of Computer Science, Faculty of Mathematics, Physics and Informatics, Comenius University, Bratislava, Slovakia'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper31.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+invalid syntax (<string>, line 1)
+OpenAI could not get parsed correctly
+ESGq: Alternative Splicing Events Quantification across Conditions based on Event Splicing Graphs.
+[Author(name='Davide Cozzi', affiliation=['Department of Informatics, Systems and Communication, Italy, University of Milano-Bicocca, Milan, Italy'], email='d.cozzi@campus.unimib.it'), Author(name='Paola Bonizzoni', affiliation=['Department of Informatics, Systems and Communication, Italy, University of Milano-Bicocca, Milan, Italy'], email='paola.bonizzoni@unimib.it'), Author(name='Luca Denti', affiliation=['Department of Informatics, Systems and Communication, Italy, University of Milano-Bicocca, Milan, Italy'], email='luca.denti@unimib.it')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper4.pdf
+Anomaly Detection in Texts using Sentence Embeddings.
+[Author(name='Zoltán Szoplák', affiliation=['P. J. Šafárik University in Košice'], email='zoltan.szoplak@student.upjs.sk'), Author(name='Abdulwahed Almarimi', affiliation=['Bani Waleed University'], email='abdulwahedalmarimi@bwu.edu.ly'), Author(name='Asmaa Salem', affiliation=['Bani Waleed University'], email='asmaa.salem@bwu.edu.ly'), Author(name='Gabriela Andrejková', affiliation=['P. J. Šafárik University in Košice'], email='gabriela.andrejkova@upjs.sk')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper5.pdf
+Data Augmentation for Pseudo-Time Series Using Generative Adversarial Networks.
+[Author(name='Zakaria Salmi', affiliation=['ELTE – Eötvös Loránd University, Faculty of Informatics, Budapest, Hungary'], email='q60lw0@inf.elte.hu'), Author(name='José Luis Seixas Junior', affiliation=['ELTE – Eötvös Loránd University, Faculty of Informatics, Budapest, Hungary'], email='jlseixasjr@inf.elte.hu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper6.pdf
+Pattern Recognition and Context Prediction of COVID-19 cases in European Countries.
+[Author(name='Arzu Tosayeva', affiliation=['Cases in country Austria Austria Austria', 'ELTE Eötvös Loránd University, Budapest, Hungary'], email='n0ndni@inf.elte.hu'), Author(name='Ermiyas Birihanu', affiliation=['Cases in country Austria Austria Austria', 'ELTE Eötvös Loránd University, Budapest, Hungary'], email='ermiyasbirihanu@inf.elte.hu'), Author(name='Tsegaye Misikir Tashu', affiliation=['Cases in country Austria Austria Austria', 'Department of Artificial Intelligence, Bernoulli Institute of Mathematics, Computer Science and Artificial Intelligence, The Netherlands, University of Groningen, Groningen, The Netherlands'], email='t.m.tashu@rug.nl')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper7.pdf
+Which Graph Properties Affect GNN Performance for a Given Downstream Task?
+[Author(name='Pavel Procházka', affiliation=['Cisco Systems, Inc.', 'Czech Technical University in Prague'], email='paprocha@cisco.com'), Author(name='Michal Mares', affiliation=['Cisco Systems, Inc., Karlovo náměstí 10, Prague, Czech Republic', 'Czech Technical University in Prague, Technická 2, Prague, Czech Republic', 'In our work, we investigate the problem of creating a', 'To solve the problem of predicting the suitability of a'], email='mimares@cisco.com'), Author(name='Marek Dedic', affiliation=['Cisco Systems, Inc., Karlovo náměstí 10, Prague, Czech Republic', 'Czech Technical University in Prague, Trojanova 13, Prague, Czech Republic', 'In our work, we investigate the problem of creating a', 'To solve the problem of predicting the suitability of a'], email=['marek@dedic.eu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper8.pdf
+Graph Neural Networks for Hotel Recommendation and Quality Assessment.
+[Author(name='Iveta Mrázová', affiliation=['Faculty of Mathematics and Physics, Charles University, Prague, Czech Republic'], email='iveta.mrazova@mff.cuni.cz'), Author(name='Marek Behún', affiliation=['Faculty of Mathematics and Physics, Charles University, Prague, Czech Republic'], email='behunmarek@gmail.com')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3498/paper9.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+invalid syntax (<string>, line 1)
+OpenAI could not get parsed correctly
+Learning-based Leg Contact Detection using Position Feedback Only.
+[Author(name='Jirí Kubík', affiliation=['Czech Technical University, Faculty of Electrical Engineering, Technická 2, 166 27, Prague, Czechia'], email=None), Author(name='Jan Faigl', affiliation=['Czech Technical University, Faculty of Electrical Engineering, Technická 2, 166 27, Prague, Czechia'], email=None)]
+Exact matching of paper titles and author names: 28 out of 404
+Exact matching of title, names and emails: 17 out of 404
+Exact matching of all atts: 8 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 16 out of 404
+Total = 37 (-6)
+TP = 28 TN = 6
+FP = 0  FN = 3
+FN due to the special characters in name (Jirí)

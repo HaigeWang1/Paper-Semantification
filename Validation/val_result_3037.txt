@@ -1,0 +1,65 @@
+['3037']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper0.pdf
+Modification of Scientific Skills through a Robotics Ecology Program
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper1.pdf
+Development and Validation of a Gamified Videogame for Math Learning in Attention Deficit Hyperactivity Disorder Children (ADHD)
+[Author(name='Rodrigo Castro', affiliation=['Universidad ESAN'], email=['rodrigo.cstr@gmail.com']), Author(name='Deyby Huamanchahua', affiliation=['Universidad ESAN'], email=['dhuamanchahuaca@esan.edu.pe'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper10.pdf
+Design and Implementation of an Integrated Academic Management Model with LMS: A Peruvian Private University Study Case
+[Author(name='Emma Margarita Wong-Fajardo', affiliation=['Universidad Católica Santo Toribio de Mogrovejo, Chiclayo, Peru'], email='ewong@usat.edu.pe'), Author(name='Hugo Saavedra-Sánchez', affiliation=['Universidad Católica Santo Toribio de Mogrovejo, Chiclayo, Peru'], email='esaavedra@usat.edu.pe'), Author(name='Mery Mendoza-Rodas', affiliation=['Universidad Católica Santo Toribio de Mogrovejo, Chiclayo, Peru'], email='mmendoza@usat.edu.pe'), Author(name='Ronald Hernández-Vásquez', affiliation=['Universidad Católica Santo Toribio de Mogrovejo, Chiclayo, Peru'], email='rhernandez@usat.edu.pe')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper11.pdf
+Design and Implementation of a Virtual Laboratory for electromagnetic Teaching in Engineering
+[Author(name='Nereyda Castro-Gutiérrez', affiliation=['Universidad Veracruzana, Ixtaczoquitlán, Veracruz, México'], email='nercastro@uv.mx'), Author(name='Jesús Flores-Cruz', affiliation=['Instituto Politécnico Nacional, Ciudad de México, México'], email='jafloresc@ipn.mx'), Author(name='Fermín Acosta-Magallanes', affiliation=['Instituto Politécnico Nacional, Ciudad de México, México'], email='facostam@ipn.mx')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper12.pdf
+Cloud Application for the Generation of Static Websites Through the Recognition of Wireframes using Artificial Intelligence
+[Author(name='Cesar Gutierrez', affiliation=['Universidad Peruana de Ciencias Aplicadas'], email='u201611510@upc.edu.pe'), Author(name='Rodrigo Lara', affiliation=['Universidad Peruana de Ciencias Aplicadas'], email='u201614682@upc.edu.pe'), Author(name='Daniel Subauste', affiliation=['Universidad Peruana de Ciencias Aplicadas'], email=['daniel.subauste@upc.pe'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper13.pdf
+Logical Positivism and its Contributions to Science Teachers Education
+[Author(name='Agustin Adúriz-Bravo', affiliation='Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires', email='aadurizbravo@cefiec.fcen.uba.ar')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper14.pdf
+Sentiment Analysis in the Feedback of Peer Evaluation Activities
+[Author(name='René Elizalde-Solano', affiliation=['Universidad Técnica Particular de Loja', 'Universidad Politécnica de Madrid'], email='rrelizalde@utpl.edu.ec'), Author(name='Ma.Carmen Cabrera-Loayza', affiliation=['Sentiment Analysis, Peer Assessments, Open Campus, Feedback, Open Online Courses, Open', 'Universidad Politécnica de Madrid, Boadilla del Monte 28660, Madrid, España', 'Universidad Técnica Particular de Loja, San Cayetano 1101608, Loja, Ecuador'], email='mccabrerax@utpl.edu.ec'), Author(name='Elzabeth Cadme', affiliation=['Sentiment Analysis, Peer Assessments, Open Campus, Feedback, Open Online Courses, Open', 'Universidad Politécnica de Madrid, Boadilla del Monte 28660, Madrid, España', 'Universidad Técnica Particular de Loja, San Cayetano 1101608, Loja, Ecuador'], email=['iecadme@utpl.edu.ec']), Author(name='Nelson Piedra', affiliation=['Sentiment Analysis, Peer Assessments, Open Campus, Feedback, Open Online Courses, Open', 'Universidad Politécnica de Madrid, Boadilla del Monte 28660, Madrid, España', 'Universidad Técnica Particular de Loja, San Cayetano 1101608, Loja, Ecuador'], email=['nopiedra@utpl.edu.ec'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper15.pdf
+Teaching Experience on the Impacts of COVID-19: Opportunities to Update the Teaching and Learning Process of Bioethics and Scientific Integrity in Human Medicine in Peru
+[Author(name='Klinge Villalba-Condori', affiliation=['Universidad Continental, Arequipa, Peru'], email='kvillalba@continental.edu.pe'), Author(name='Cristian Díaz-Vélez', affiliation=['Facultad de Medicina, Universidad Privada Antenor Orrego, Lima, Peru'], email='cdiazv3@upao.edu.pe')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper16.pdf
+Virtual Platforms under University Teaching During the COVID-19 Pandemic in per Perception of University students
+[Author(name='Agueda Muñoz del Carpio Toia', affiliation=['Escuela de Medicina. Vicerrectorado de Investigación. Escuela de Postgrado. Universidad Católica de Santa María, Arequipa, Perú'], email='amunozde@ucsm.edu.pe'), Author(name='Oliverio Pichardo-Diestra', affiliation=['ECU Consultores en Educación, Trujillo, Peru', 'Instituto de Evaluación de Tecnologías en Salud e Investigación - IETSI, Lima, Perú', 'María, Arequipa, Perú'], email='pichardodiestra@gmail.com'), Author(name='Klinge Villalba-Condori', affiliation=['Universidad Continental, Arequipa, Perú'], email='kvillalba@continental.edu.pe'), Author(name='Sively Mercado-Mamani', affiliation=['María, Arequipa, Perú', 'Vicerrectorado de Investigación. Universidad Nacional Del Altiplano, Puno, Perú'], email='smercado@unap.edu.pe')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper2.pdf
+Self-Perception of Digital Competences Among Peruvian Teachers
+[]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper3.pdf
+Process Mining Model to Guarantee the Privacy of Personal Data in the Healthcare Sector
+[Author(name='Sebastian Saavedra', affiliation=['Universidad Peruana de Ciencias Aplicadas, Lima, Perú'], email='u201613718@upc.edu.pe'), Author(name='José Llatas', affiliation=['Universidad Peruana de Ciencias Aplicadas, Lima, Perú'], email='u201617237@upc.edu.pe'), Author(name='Jimmy Armas-Aguirre', affiliation=['Universidad Peruana de Ciencias Aplicadas, Lima, Perú', 'Pontificia Universidad Católica del Perú, Lima, Perú'], email=['jimmy.armas@upc.pe'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper4.pdf
+Predictive Model for Assigning Exercises to Students in Spreadsheet Functions Using Artificial Neural Networks
+[Author(name='Edwar Saire-Peralta', affiliation=['Universidad Nacional de San Agustín de Arequipa'], email='esaire@unsa.edu.pe')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper5.pdf
+Levels of Information Literacy and its Influence in Reciprocal Teaching in Communication Sciences Students
+[Author(name='Guillermo Ocrospoma', affiliation=['Universidad César Vallejo'], email=['gocrospoma@ucv.edu.pe']), Author(name='Doris Fuster-Guillen', affiliation=['Universidad Nacional Mayor de San Marcos'], email='dfuster@unmsm.edu.pe'), Author(name='Yolvi Ocaña', affiliation=['Universidad Nacional Mayor de San Marcos'], email='yocanaf@unmsm.edu.pe'), Author(name='Klinge Villalba_Condori', affiliation=['Universidad Continental'], email='kvillalba@continental.edu.pe'), Author(name='Arequipa', affiliation=[], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper6.pdf
+Exception: invalid syntax (<string>, line 1)
+Failed to parse the authors string. Asking OpenAI to format it.
+invalid syntax (<string>, line 1)
+OpenAI could not get parsed correctly
+Use and Design of Virtual and Remote Free Access Experiments: World Pendulum Alliance and DLab in Times of COVID 19
+[Author(name='Freddy Torres-Payoma', affiliation='Tecnología e Ingeniería, Universidad Nacional Abierta y a Distancia -UNAD', email=['freddy.torres@unad.edu.co']), Author(name='Manuel Escobar', affiliation=['Fundación Aleph, Bogotá D.C, 111121, Colombia'], email=['manuel.escobar@fundacionaleph.org']), Author(name='Leyton Castro', affiliation='Tecnología e Ingeniería, Universidad Nacional Abierta y a Distancia -UNAD', email=['fljcastroc@unadvirtual.edu.co']), Author(name='Karla Triana', affiliation='Tecnología e Ingeniería, Universidad Nacional Abierta y a Distancia -UNAD', email=['karla.triana@unad.edu.co']), Author(name='Diana Herrera', affiliation='Tecnología e Ingeniería, Universidad Nacional Abierta y a Distancia -UNAD', email=['diana.herrera@unad.edu.co'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper7.pdf
+Vocational Preferences Towards STEM Degrees in High School Students in Peru
+[Author(name='Iván Montes-Iturrizaga', affiliation=['Universidad María Auxiliadora'], email='imontes@uc.cl'), Author(name='Eduardo Franco-Chalco', affiliation=['Universidad María Auxiliadora'], email='efranco1@uc.cl'), Author(name='Klinge Orlando Villalba-Condori', affiliation=['Universidad Continental'], email='kvillalba@continental.edu.pe')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper8.pdf
+Raising Awareness in the Adoption of COVID-19 Preventive Measures in Higher Education Students Through an Epidemiological Surveillance Mobile App
+[Author(name='Jessie Bravo', affiliation=['School of Computer Engineering. Pedro Ruiz Gallo Public University. Lambayeque, Perú'], email=['jbravo@unprg.edu.pe']), Author(name='María Arangurí', affiliation=['School of Computer Engineering. Catholic University Santo Toribio de Mogrovejo. Lambayeque, Peru'], email='maranguri@usat.edu.pe'), Author(name='Roger Alarcón', affiliation=['School of Computer Engineering. Pedro Ruiz Gallo Public University., Lambayeque, Perú. Lambayeque, Peru', 'measures, COVID-19, university'], email='ralarcong@unprg.edu.pe'), Author(name='Fiorella Li', affiliation=['School of Computer Engineering. Catholic University Santo Toribio de Mogrovejo., Lambayeque, Peru', 'measures, COVID-19, university'], email='fli@usat.edu.pe')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-3037/paper9.pdf
+Real-time Identification of the Emotional State in the Classroom to Improve the Teaching-learning Process
+[Author(name='Edward Flores', affiliation=['Universidad Nacional Federico Villarreal, Lima, Perú'], email=['eflores@unfv.edu.pe']), Author(name='José Livia', affiliation=['Universidad Nacional Federico Villarreal, Lima, Perú'], email=['jlivia@unfv.edu.pe']), Author(name='Alfredo García', affiliation=['Universidad Nacional Federico Villarreal, Lima, Perú'], email='agarcia@unfv.edu.pe'), Author(name='María Dávila', affiliation=['Universidad Nacional Federico Villarreal, Lima, Perú'], email='mdavilad@unfv.edu.pe')]
+Exact matching of paper titles and author names: 13 out of 404
+Exact matching of title, names and emails: 8 out of 404
+Exact matching of all atts: 2 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 8 out of 404
+
+Total = 17
+TP = 13 TN = 2 (Empty author entries)
+        FN = 2 (special characters in name)

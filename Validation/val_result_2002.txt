@@ -1,0 +1,40 @@
+['2002']
+No event series found
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/cistclscisumm2017.pdf
+CIST@CLSciSumm-17: Multiple Features Based Citation linkage classification and Summarization
+[Author(name='Lei Li', affiliation=['Center for Intelligence Science and Technology (CIST), School of Computer Beijing University of Posts and Telecommunications (BUPT), Beijing, P.R.China'], email=['leili@bupt.edu.cn']), Author(name='Yazhao Zhang', affiliation=['Center for Intelligence Science and Technology (CIST), School of Computer Beijing University of Posts and Telecommunications (BUPT), Beijing, P.R.China'], email=['yazhao@bupt.edu.cn']), Author(name='Liyuan Mao', affiliation=['Center for Intelligence Science and Technology (CIST), School of Computer Beijing University of Posts and Telecommunications (BUPT), Beijing, P.R.China'], email='circleyuan@bupt.edu.cn'), Author(name='Junqi Chi', affiliation=['Center for Intelligence Science and Technology (CIST), School of Computer Beijing University of Posts and Telecommunications (BUPT), Beijing, P.R.China'], email='cjq@bupt.edu.cn'), Author(name='Moye Chen', affiliation=['Center for Intelligence Science and Technology (CIST), School of Computer Beijing University of Posts and Telecommunications (BUPT), Beijing, P.R.China'], email=['moyec@bupt.edu.cn']), Author(name='Zuying Huang', affiliation=['Center for Intelligence Science and Technology (CIST), School of Computer Beijing University of Posts and Telecommunications (BUPT), Beijing, P.R.China'], email=['zoehuang@bupt.edu.cn'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/editorial.pdf
+The CL-SciSumm Shared Task 2017: Results and Key Insights.
+[Author(name='Kokil Jaidka', affiliation=['University of Pennsylvania, USA'], email=['jaidka@sas.upenn.edu']), Author(name='Muthu Kumar Chandrasekaran', affiliation=['School of Computing, National University of Singapore, Singapore'], email=None), Author(name='Devanshu Jain', affiliation=['University of Pennsylvania, USA'], email=None), Author(name='Min-Yen Kan', affiliation=['School of Computing, National University of Singapore, Singapore', 'Smart Systems Institute, National University of Singapore, Singapore'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/gutclscisumm2017.pdf
+Graz University of Technology at CL-SciSumm 2017: Query Generation Strategies.
+[Author(name='Thomas Felber', affiliation=['Institute of Interactive Systems and Data Science', 'Graz University of Technology', 'Know-Center GmbH'], email='felber@student.tugraz.at'), Author(name='Roman Kern', affiliation=['Institute of Interactive Systems and Data Science', 'Graz University of Technology', 'Know-Center GmbH'], email='rkern@know-center.at')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/jduclscisumm2017.pdf
+SciSumm 2017: Employing Word Vectors for Identifying, Classifying and Summarizing Scientific Documents.
+[Author(name='Aniket Pramanick', affiliation=['Jadavpur University, Kolkata, West Bengal, India'], email=None), Author(name='Salma Mandi', affiliation=['Jadavpur University, Kolkata, West Bengal, India'], email=None), Author(name='Monalisa Dey', affiliation=['Jadavpur University, Kolkata, West Bengal, India'], email=None), Author(name='Dipankar Das', affiliation=['Jadavpur University, Kolkata, West Bengal, India'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/njustclscisumm2017.pdf
+NJUST @ CLSciSumm-17
+[Author(name='Shutian Ma', affiliation=['Department of Information Management, Nanjing University of Science and Technology, Nanjing, China, 210094'], email=['mashutian0608@hotmail.com']), Author(name='Jin Xu', affiliation=['Department of Information Management, Nanjing University of Science and Technology, Nanjing, China, 210094'], email='1292050078@qq.com'), Author(name='Jie Wang', affiliation=['Department of Information Management, Nanjing University of Science and Technology, Nanjing, China, 210094'], email='1342234559@qq.com'), Author(name='Chengzhi Zhang', affiliation=['Department of Information Management, Nanjing University of Science and Technology, Nanjing, China, 210094', 'Fujian Provincial Key Laboratory of Information Processing and Intelligent Control (Minjiang University), Fuzhou, China, 350108'], email=['zhangcz@njust.edu.cn'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/nusclscisumm2017.pdf
+WING-NUS at CL-SciSumm 2017: Learning from Syntactic and Semantic Similarity for Citation Contextualization.
+[Author(name='Animesh Prasad', affiliation=['School of Computing, National University of Singapore, Singapore'], email='a0123877@u.nus.edu')]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/pkuclscisumm2017.pdf
+PKU @ CLSciSumm-17: Citation Contextualization
+[Author(name='Dongxu Zhang?', affiliation=['Peking University'], email=['zhangdongxuu@gmail.com']), Author(name='Sujian Li', affiliation=['Peking University'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/talnclscisumm2017.pdf
+LaSTUS/TALN @ CLSciSumm-17: Cross-document Sentence Matching and Scientific Text Summarization Systems
+[Author(name="Ahmed Abura'ed", affiliation=['Universitat Pompeu Fabra', 'Large-Scale Text Understanding Systems Lab, TALN / DTIC'], email=['ahmed.aburaed@upf.edu']), Author(name='Luis Chiruzzo', affiliation=['Universidad de la República', 'Facultad de Ingeniería, Instituto de Computación'], email='luischir@fing.edu.uy'), Author(name='Horacio Saggion', affiliation=['Universitat Pompeu Fabra', 'Large-Scale Text Understanding Systems Lab, TALN / DTIC'], email=['horacio.saggion@upf.edu']), Author(name='Pablo Accuosto', affiliation=['Universitat Pompeu Fabra', 'Large-Scale Text Understanding Systems Lab, TALN / DTIC'], email=['pablo.accuosto@upf.edu']), Author(name='Alex Bravo', affiliation=['Universitat Pompeu Fabra', 'Large-Scale Text Understanding Systems Lab, TALN / DTIC'], email=['alex.bravo@upf.edu'])]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/uhclscisumm2017.pdf
+University of Houston @ CL-SciSumm 2017: Positional language Models, Structural Correspondence Learning and Textual Entailment.
+[Author(name='Samaneh Karimi', affiliation=['School of Electrical and Computer Engineering, University of Tehran, Iran', 'Computer Science Department, University of Houston, TX 77204'], email=None), Author(name='Luis Moraes', affiliation=['Computer Science Department, University of Houston, TX 77204'], email=None), Author(name='Avisha Das', affiliation=['Computer Science Department, University of Houston, TX 77204'], email=None), Author(name='Rakesh Verma', affiliation=['Computer Science Department, University of Houston, TX 77204'], email=None)]
+http://ceurspt.wikidata.dbis.rwth-aachen.de/Vol-2002/unimaclscisumm2017.pdf
+Citation-Based Summarization of scientific Articles Using Semantic Textual Similarity
+[Author(name='Anne Lauscher', affiliation=['University of Mannheim, Data and Web Science Research Group, B6 26, 68159 Mannheim, Germany'], email=['anne@informatik.uni-mannheim.de']), Author(name='Goran Glavas', affiliation=['University of Mannheim, Data and Web Science Research Group, B6 26, 68159 Mannheim, Germany'], email=['goran@informatik.uni-mannheim.de']), Author(name='Kai Eckert', affiliation=['Stuttgart Media University, Web-based Information Systems and Services, Nobelstraße 10, 70569 Stuttgart, Germany'], email=['eckert@hdm-stuttgart.de'])]
+Exact matching of paper titles and author names: 7 out of 404
+Exact matching of title, names and emails: 3 out of 404
+Exact matching of all atts: 2 out of 404
+Exact matching of title, names and emails; app. matching of affiliations: 3 out of 404
+
+Total = 10
+TP = 7
+        FN = 1 ("?" found in name Dongxu Zhang?)
